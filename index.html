@@ -1,10 +1,471 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>W budowie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrawlManager — bot Discord dla liderów klanów Brawl Stars</title>
+    <meta name="description" content="BrawlManager automatyzuje weryfikację członków, role, raporty i statystyki klanu Brawl Stars na Discordzie. Dodaj bota za darmo, Premium odblokowuje więcej.">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
+<!-- ============ NAVBAR ============ -->
+<header class="navbar">
+    <div class="navbar-inner">
+        <a href="#" class="brand">
+            <span class="brand-mark">🛡️</span>
+            BrawlManager
+        </a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#funkcje">Funkcje</a></li>
+                <li><a href="#komendy">Komendy</a></li>
+                <li><a href="#rotacja-map">Rotacja map</a></li>
+                <li><a href="#premium">Premium</a></li>
+                <li><a href="#start">Szybki start</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-cta">
+            <!-- TODO(Paweł): podmień "#" na prawdziwy link zaproszenia bota (Discord OAuth2 invite URL) - nie znaleziony w kodzie/repo bota, do potwierdzenia. -->
+            <a href="#" class="btn btn-primary btn-small">Dodaj do Discorda</a>
+            <button class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false">☰</button>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero">
+        <div class="container">
+            <div class="eyebrow">🎮 Bot Discord dla klanów Brawl Stars</div>
+            <h1>Weryfikacja, raporty i statystyki klanu w jednym miejscu</h1>
+            <p class="tagline">
+                BrawlManager sam sprawdza puchary, nadaje role zgodne z rangą w klanie i wysyła
+                cykliczne raporty aktywności — Ty tylko czytasz wyniki.
+            </p>
+
+            <div class="hero-actions">
+                <!-- TODO(Paweł): ten sam link zaproszenia co w navbarze, patrz komentarz wyżej. -->
+                <a href="#" class="btn btn-primary">➕ Dodaj do Discorda</a>
+                <a href="https://discord.gg/ARd5PM8VBQ" class="btn btn-secondary" target="_blank" rel="noopener">
+                    💬 Dołącz do serwera wsparcia
+                </a>
+            </div>
+            <p class="hero-note">Darmowy start, bez karty kredytowej. Premium odblokowuje więcej — patrz sekcja niżej.</p>
+
+            <div class="hero-visual">
+                <div class="mock-embed">
+                    <div class="mock-embed-title">🎮 Karta gracza — Ash</div>
+                    <div class="mock-embed-desc">Tag: <code>#2Y0LJVCR</code> · Klan: Nocna Zmiana</div>
+                    <div class="mock-embed-fields">
+                        <div class="mock-embed-field">
+                            <span class="label">Trofea</span>
+                            <span class="value">🏆 24 180</span>
+                        </div>
+                        <div class="mock-embed-field">
+                            <span class="label">Rekord</span>
+                            <span class="value">🏅 24 310</span>
+                        </div>
+                        <div class="mock-embed-field">
+                            <span class="label">Zwycięstwa 3v3</span>
+                            <span class="value">🎖️ 1 204</span>
+                        </div>
+                        <div class="mock-embed-field">
+                            <span class="label">Top brawler</span>
+                            <span class="value">Leon — 780 🏆</span>
+                        </div>
+                    </div>
+                    <div class="mock-embed-footer">Przykładowy wygląd komendy /profil — dane poglądowe</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ 2. FUNKCJE ============ -->
+    <section id="funkcje">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="section-title">Wszystko, czego potrzebuje lider klanu</h2>
+                <p class="section-lede">
+                    Jedna konfiguracja, a bot sam pilnuje weryfikacji, ról i porządku w klanie.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Weryfikacja i role wg rangi</h3>
+                    <p>
+                        Członek wpisuje swój tag z gry, a bot sam sprawdza próg pucharowy i przynależność
+                        do klanu, po czym nadaje właściwą rolę Discord i ujednolica pseudonim.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Raporty tygodniowe i miesięczne</h3>
+                    <p>
+                        Automatyczne podsumowania aktywności klanu trafiają na wybrany kanał —
+                        bez ręcznego liczenia, kto zagrał, a kto nie.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Statystyki gracza i klanu</h3>
+                    <p>
+                        Karta gracza, ranking top 10 klanu i kalkulator progu pucharowego —
+                        jedną komendą, bez wchodzenia w grę.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🗺️</div>
+                    <h3>Powiadomienia o rotacji map</h3>
+                    <p>
+                        Bot informuje Twój serwer, gdy tylko zmieni się mapa albo tryb gry w aktualnej
+                        rotacji Brawl Stars — zero ręcznego sprawdzania.
+                    </p>
+                </div>
+
+                <div class="feature-card is-premium">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Personalizacja <span class="badge">🔒 Premium</span></h3>
+                    <p>
+                        Ustaw własny kolor embedów bota, osobno dla każdej komendy — tak, żeby wyglądał
+                        jak Twój bot, a nie generyczne narzędzie.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ 3. LISTA KOMEND ============ -->
+    <section id="komendy" class="alt">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="section-title">Komendy</h2>
+                <p class="section-lede">
+                    Wszystko dostępne przez slash-komendy (<code>/</code>) na Discordzie.
+                </p>
+            </div>
+
+            <div class="commands-grid">
+                <div class="commands-col">
+                    <h3>Dla członków klanu</h3>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code>/oblicz [tag_gracza]</code>
+                            <p>Sprawdza, czy spełniasz próg pucharowy tego serwera i czy należysz do właściwego klanu.</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code>/profil [tag_gracza]</code>
+                            <p>Karta gracza: poziom, rekordowe trofea, zwycięstwa i top 3 brawlery. Premium dorzuca progres od pierwszego dnia śledzenia.</p>
+                        </div>
+                        <span class="badge badge-partial">🔒 częściowo Premium</span>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code>/klan</code>
+                            <p>Pokazuje pierwszą dziesiątkę klanu posortowaną wg trofeów.</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code>/historia [zakres] [tag_gracza]</code>
+                            <p>Trend trofeów dowolnego gracza z klanu z ostatnich 7 lub 30 dni, wraz z wykresem tekstowym.</p>
+                        </div>
+                        <span class="badge">🔒 Premium</span>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code>/support</code>
+                            <p>Krótkie info o bocie i przycisk-link do serwera wsparcia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="commands-col">
+                    <h3>Dla adminów / liderów serwera</h3>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code>/ustaw_klan [tag]</code>
+                            <p>Powiązuje ten serwer Discord z konkretnym klanem Brawl Stars.</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code>/ustaw_prog [puchary]</code>
+                            <p>Ustawia minimalny próg pucharowy wymagany na tym serwerze.</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code>/ustaw_role [ranga] [rola]</code>
+                            <p>Dopasowuje nazwę roli Discord do konkretnej rangi klanowej (member/senior/vice/prezes).</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code>/ustaw_kanal [kanał]</code>
+                            <p>Ustawia kanał, na który trafiają automatyczne raporty tygodniowe i miesięczne.</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code>/ustaw_kanal_rotacji [kanał]</code>
+                            <p>Ustawia kanał powiadomień o zmianie mapy w rotacji Brawl Stars.</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code>/ustaw_harmonogram [dzień] [godzina]</code>
+                            <p>Ustala dzień tygodnia i godzinę, o której wysyłany jest automatyczny raport tygodniowy.</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code>/panel</code>
+                            <p>Wysyła panel z przyciskiem, dzięki któremu członkowie sami się zweryfikują.</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code>/czystka</code>
+                            <p>Lista członków klanu, którzy są poniżej ustawionego progu pucharowego.</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code>/ustaw_wyglad [komenda]</code>
+                            <p>Kolor embedów bota — jeden wspólny kolor za darmo, osobny kolor dla każdej komendy w Premium.</p>
+                        </div>
+                        <span class="badge badge-partial">🔒 częściowo Premium</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ 4. ROTACJA MAP ============ -->
+    <section id="rotacja-map">
+        <div class="container">
+            <div class="rotation-layout">
+                <div class="rotation-copy">
+                    <div class="eyebrow">🗺️ Zawsze na bieżąco</div>
+                    <h2 class="section-title">Powiadomienia o rotacji map</h2>
+                    <p>
+                        Brawl Stars regularnie zmienia mapy i tryby gry dostępne w rotacji. BrawlManager
+                        pilnuje tego za Ciebie — gdy tylko coś się zmieni, bot wysyła wiadomość na wybrany
+                        kanał Twojego serwera.
+                    </p>
+                    <p>
+                        Dzięki temu klan zawsze wie, na jakiej mapie warto teraz grać i pod jaki tryb
+                        dopasować skład, zamiast samemu sprawdzać to w grze albo na zewnętrznych stronach.
+                    </p>
+
+                    <ul class="rotation-points">
+                        <li><span class="dot">1</span> Skonfiguruj kanał jedną komendą (<code>/ustaw_kanal_rotacji</code>) — reszta dzieje się automatycznie.</li>
+                        <li><span class="dot">2</span> Powiadomienie pojawia się tylko wtedy, gdy mapa albo tryb faktycznie się zmienią — zero spamu.</li>
+                        <li><span class="dot">3</span> Dane pochodzą wprost z oficjalnego API Brawl Stars (Supercell) — zawsze aktualne.</li>
+                    </ul>
+                </div>
+
+                <div class="rotation-mock">
+                    <div class="rotation-mock-header">🗺️ Rotacja map się zmieniła!</div>
+                    <div class="rotation-mock-sub">Przykładowy wygląd powiadomienia na kanale serwera</div>
+
+                    <div class="rotation-swap">
+                        <span class="mode-chip">Zdobądź Klejnoty</span>
+                        <span class="map-tile old">Ukryta Świątynia</span>
+                        <span class="swap-arrow">➜</span>
+                        <span class="map-tile new">Rozdroże Rozbójników</span>
+                    </div>
+                    <div class="rotation-swap">
+                        <span class="mode-chip">Obław Łupów</span>
+                        <span class="map-tile old">Węży Step</span>
+                        <span class="swap-arrow">➜</span>
+                        <span class="map-tile new">Otwarta Przestrzeń</span>
+                    </div>
+
+                    <div class="rotation-mock-footer">
+                        <span>BrawlManager</span>
+                        <span>przykład poglądowy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ 5. PREMIUM ============ -->
+    <section id="premium" class="alt">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="section-title">Free vs Premium</h2>
+                <p class="section-lede">
+                    Darmowa wersja wystarcza, żeby prowadzić klan porządnie. Premium dorzuca głębsze
+                    analizy i personalizację.
+                </p>
+            </div>
+
+            <div class="premium-table-wrap">
+                <table class="premium-table">
+                    <thead>
+                        <tr>
+                            <th>Funkcja</th>
+                            <th>Free</th>
+                            <th class="col-premium">Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="feature-name">Raporty klanowe<span>tygodniowe / miesięczne</span></td>
+                            <td>
+                                <ul>
+                                    <li>Próg klanowy — kto go nie spełnia</li>
+                                    <li>Lista mniej aktywnych członków</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Wszystko z Free, plus:</li>
+                                    <li>Całkowity progres klanu</li>
+                                    <li>Średni przyrost na członka</li>
+                                    <li>Wskaźnik zaangażowania składu</li>
+                                    <li>MVP tygodnia / miesiąca i najsłabszy wynik</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Historia progresu gracza<span><code>/historia</code></span></td>
+                            <td>—</td>
+                            <td>
+                                <ul>
+                                    <li>Trend trofeów dowolnego gracza z klanu (nie tylko własny)</li>
+                                    <li>Zakres 7 lub 30 dni</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Personalizacja kolorów<span><code>/ustaw_wyglad</code></span></td>
+                            <td>Jeden wspólny kolor embedów dla całego bota</td>
+                            <td>
+                                <ul>
+                                    <li>Osobny kolor embedów dla każdej komendy z osobna</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="premium-note">
+                <span>💳</span>
+                <span>
+                    Premium kupuje się bezpośrednio na Discordzie, przez <strong>Discord Server Subscriptions</strong>
+                    (przycisk „Subscribe” w profilu aplikacji BrawlManager) — ta strona nie obsługuje płatności
+                    ani checkoutu.
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ 6. ONBOARDING / SZYBKI START ============ -->
+    <section id="start">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="section-title">Szybki start</h2>
+                <p class="section-lede">
+                    Pięć komend i klan jest w pełni skonfigurowany.
+                </p>
+            </div>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <code>/ustaw_klan</code>
+                    <p>Powiąż serwer z tagiem Twojego klanu Brawl Stars.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <code>/ustaw_prog</code>
+                    <p>Ustaw minimalny wymagany próg pucharowy.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <code>/ustaw_role</code>
+                    <p>Dopasuj nazwy ról Discord do rang klanowych.</p>
+                    <span class="step-optional">opcjonalnie</span>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <code>/ustaw_kanal</code>
+                    <p>Wskaż kanał na automatyczne raporty.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <code>/panel</code>
+                    <p>Wyślij panel weryfikacji — reszta dzieje się sama.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="cta-band alt">
+        <div class="container">
+            <h2>Gotowy, żeby uporządkować klan?</h2>
+            <p>Dodaj BrawlManager do swojego serwera Discord — konfiguracja zajmuje kilka minut.</p>
+            <div class="cta-actions">
+                <!-- TODO(Paweł): ten sam link zaproszenia co w navbarze/hero. -->
+                <a href="#" class="btn btn-primary">➕ Dodaj do Discorda</a>
+                <a href="https://discord.gg/ARd5PM8VBQ" class="btn btn-secondary" target="_blank" rel="noopener">
+                    💬 Serwer wsparcia
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- ============ 7. STOPKA ============ -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="brand-mark">🛡️</span>
+                BrawlManager
+            </div>
+
+            <ul class="footer-links">
+                <li><a href="privacy.html">Polityka prywatności</a></li>
+                <li><a href="tos.html">Regulamin</a></li>
+                <li><a href="https://discord.gg/ARd5PM8VBQ" target="_blank" rel="noopener">Serwer wsparcia</a></li>
+            </ul>
+        </div>
+        <p class="footer-copy">&copy; <span data-year>2026</span> BrawlManagerTeam. Fanowski projekt, niezwiązany oficjalnie z Supercell.</p>
+    </div>
+</footer>
+
+<script src="assets/script.js"></script>
 </body>
 </html>
