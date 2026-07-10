@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wszystkie komendy z wizualizacją — BrawlManager</title>
+    <meta name="description" content="Pełna lista komend BrawlManagera (dla członków i adminów) z dokładną wizualizacją, jak wygląda odpowiedź bota na Discordzie.">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="brand">
+            <img src="assets/logo.png" alt="Logo BrawlManager" class="brand-mark">
+            BrawlManager
+        </a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html#funkcje">Funkcje</a></li>
+                <li><a href="index.html#komendy">Komendy</a></li>
+                <li><a href="komendy.html">Zrzuty komend</a></li>
+                <li><a href="index.html#rotacja-map">Rotacja map</a></li>
+                <li><a href="rotacja-map.html">Wszystkie mapy</a></li>
+                <li><a href="index.html#premium">Premium</a></li>
+                <li><a href="index.html#start">Szybki start</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-cta">
+            <a href="https://discord.com/oauth2/authorize?client_id=1506378216108195851" class="btn btn-primary btn-small" target="_blank" rel="noopener">Dodaj do Discorda</a>
+            <button class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false">☰</button>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <!-- ============ HERO ============ -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="eyebrow">🖥️ Realny wygląd na Discordzie</div>
+            <h1>Wszystkie komendy — dokładnie tak, jak je zobaczysz</h1>
+            <p>
+                Każda z 14 publicznych komend BrawlManagera (dla członków i adminów serwera), wraz z mockupem
+                odpowiedzi bota zbudowanym 1:1 na podstawie realnego kodu bota — te same pola, te same
+                domyślne kolory, te same komunikaty. Komendy deweloperskie/testowe (widoczne tylko na
+                wewnętrznym serwerze zespołu) celowo pominięte.
+            </p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="data-banner">
+            <span>🧩</span>
+            <span>
+                To są <strong>mockupy CSS/HTML</strong>, nie prawdziwe zrzuty ekranu z Discorda — w tym środowisku
+                nie ma dostępu do przeglądarki/automatyzacji, która mogłaby zalogować się do Discorda i wywołać
+                komendy na żywo. Każdy mockup odtwarza jednak dokładnie realną treść (tytuły, pola, domyślne
+                kolory embedów, treść komunikatów) wprost z kodu bota (<code>src/cogs/*.py</code>) — nic tu nie
+                jest zmyślone, to wierna rekonstrukcja, nie tylko "ładny obrazek".
+            </span>
+        </div>
+
+        <div class="command-nav">
+            <a href="#oblicz">/oblicz</a>
+            <a href="#profil">/profil</a>
+            <a href="#klan">/klan</a>
+            <a href="#historia">/historia</a>
+            <a href="#support">/support</a>
+            <a href="#ustaw_klan">/ustaw_klan</a>
+            <a href="#ustaw_prog">/ustaw_prog</a>
+            <a href="#ustaw_role">/ustaw_role</a>
+            <a href="#ustaw_kanal">/ustaw_kanal</a>
+            <a href="#ustaw_kanal_rotacji">/ustaw_kanal_rotacji</a>
+            <a href="#ustaw_harmonogram">/ustaw_harmonogram</a>
+            <a href="#panel">/panel</a>
+            <a href="#czystka">/czystka</a>
+            <a href="#ustaw_wyglad">/ustaw_wyglad</a>
+        </div>
+    </div>
+
+    <!-- ============ DLA CZŁONKÓW KLANU ============ -->
+    <section class="alt">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="section-title">Dla członków klanu</h2>
+                <p class="section-lede">Komendy, z których korzysta każdy zweryfikowany członek.</p>
+            </div>
+
+            <div class="command-showcase">
+
+                <!-- /oblicz -->
+                <div class="command-block" id="oblicz">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code>/oblicz [tag_gracza]</code></div>
+                        <p>Sprawdza, czy gracz spełnia próg pucharowy tego serwera i czy należy do przypisanego klanu.</p>
+                        <ul>
+                            <li>Kolor embeda: zielony, gdy próg spełniony — ciemnoczerwony, gdy nie</li>
+                            <li>Osobne pole na przynależność do klanu (jeśli serwer ma ustawiony tag klanu)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="mock-slash-input"><span class="slash-chip">/</span>oblicz tag_gracza: #2Y0LJVCR</div>
+                        <div class="mock-embed" style="border-left-color:#2ecc71;">
+                            <div class="mock-embed-title">📊 Kalkulator Progu Klanowego - Ash</div>
+                            <div class="mock-embed-fields">
+                                <div class="mock-embed-field"><span class="label">Twoje trofea</span><span class="value">🏆 24 180</span></div>
+                                <div class="mock-embed-field"><span class="label">Cel klanu</span><span class="value">🎯 20 000</span></div>
+                            </div>
+                            <div class="mock-embed-desc" style="margin-top:12px;">✅ Próg osiągnięty! Przekraczasz go o <strong>4 180</strong> 🏆.</div>
+                            <div class="mock-embed-desc">✅ Należysz do klanu tego serwera.</div>
+                            <div class="mock-embed-footer">🎉 Wszystko gra! Jeśli jeszcze nie masz swojej rangi na serwerze, użyj /panel.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /profil -->
+                <div class="command-block" id="profil">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code>/profil [tag_gracza]</code> <span class="badge badge-partial">🔒 częściowo Premium</span></div>
+                        <p>Karta gracza: poziom, rekordowe trofea, zwycięstwa i top 3 brawlery. Premium dorzuca dodatkowe pole z progresem od pierwszego dnia śledzenia historii.</p>
+                    </div>
+                    <div>
+                        <div class="mock-slash-input"><span class="slash-chip">/</span>profil tag_gracza: #2Y0LJVCR</div>
+                        <div class="mock-embed" style="border-left-color:#c27c0e;">
+                            <div class="mock-embed-title">🎮 Karta gracza - Ash</div>
+                            <div class="mock-embed-fields">
+                                <div class="mock-embed-field"><span class="label">Tag</span><span class="value">#2Y0LJVCR</span></div>
+                                <div class="mock-embed-field"><span class="label">Trofea</span><span class="value">🏆 24 180</span></div>
+                                <div class="mock-embed-field"><span class="label">Klan</span><span class="value">Nocna Zmiana</span></div>
+                                <div class="mock-embed-field"><span class="label">⭐ Poziom</span><span class="value">76</span></div>
+                                <div class="mock-embed-field"><span class="label">🏅 Rekordowe trofea</span><span class="value">24 310</span></div>
+                            </div>
+                            <div class="mock-embed-desc" style="margin-top:12px;">🎖️ Zwycięstwa — 3v3: <strong>1 204</strong> · Solo: <strong>312</strong> · Duo: <strong>198</strong></div>
+                            <div class="mock-embed-desc">🔝 Top 3 brawlery: <strong>Leon</strong> — 🏆 780 (Ranga 30), <strong>Meg</strong> — 🏆 720, <strong>Ash</strong> — 🏆 690</div>
+                            <div class="mock-embed-desc" style="color:var(--gold);">📈 Progres gracza (Premium) — Od 12.06.2026: <strong>+1 340</strong> 🏆</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /klan -->
+                <div class="command-block" id="klan">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code>/klan</code></div>
+                        <p>Pokazuje pierwszą dziesiątkę klanu posortowaną wg trofeów, wg tagu klanu skonfigurowanego przez admina (<code>/ustaw_klan</code>).</p>
+                    </div>
+                    <div>
+                        <div class="mock-slash-input"><span class="slash-chip">/</span>klan</div>
+                        <div class="mock-embed" style="border-left-color:#3498db;">
+                            <div class="mock-embed-title">Członkowie klanu (top 10)</div>
+                            <div class="mock-embed-desc" style="margin-top:4px;">
+                                1. Ash — 🏆 24 180<br>
+                                2. Meg — 🏆 23 910<br>
+                                3. Leon_Fan — 🏆 22 705<br>
+                                4. Bibi_Queen — 🏆 21 340<br>
+                                5. Krwawy_Wilk — 🏆 20 998<br>
+                                <span style="color:var(--text-faint);">… i 5 kolejnych pozycji</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /historia -->
+                <div class="command-block" id="historia">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code>/historia [zakres_dni] [tag_gracza]</code> <span class="badge">🔒 Premium</span></div>
+                        <p>Trend trofeów dowolnego gracza z klanu z ostatnich 7 lub 30 dni, z tekstowym wykresem (sparkline).</p>
+                    </div>
+                    <div>
+                        <div class="mock-slash-input"><span class="slash-chip">/</span>historia zakres_dni: Ostatnie 7 dni tag_gracza: #2Y0LJVCR</div>
+                        <div class="mock-embed" style="border-left-color:#71368a;">
+                            <div class="mock-embed-title">📈 Historia progresu - Ash</div>
+                            <div class="mock-embed-desc">Ostatnie 6 dni (7 zapisanych punktów, zakres: 7 dni)</div>
+                            <div class="mock-embed-desc" style="font-family:monospace;font-size:1.1rem;">▂▃▃▄▅▇█</div>
+                            <div class="mock-embed-fields" style="margin-top:10px;">
+                                <div class="mock-embed-field"><span class="label">Start okresu</span><span class="value">🏆 22 840 (04.07)</span></div>
+                                <div class="mock-embed-field"><span class="label">Aktualnie</span><span class="value">🏆 24 180 (10.07)</span></div>
+                                <div class="mock-embed-field"><span class="label">Zmiana (okres)</span><span class="value">+1 340 🏆</span></div>
+                                <div class="mock-embed-field"><span class="label">Dziś</span><span class="value">+210 🏆</span></div>
+                            </div>
+                            <div class="mock-embed-footer">BrawlManager • Dane z ostatnich 7 dni</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /support -->
+                <div class="command-block" id="support">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code>/support</code></div>
+                        <p>Krótkie info o bocie, pierwsze kroki dla admina i przycisk-link do serwera wsparcia.</p>
+                    </div>
+                    <div>
+                        <div class="mock-slash-input"><span class="slash-chip">/</span>support</div>
+                        <div class="mock-embed" style="border-left-color:#f1c40f;">
+                            <div class="mock-embed-title">🛡️ BrawlManager — Pomoc i wsparcie</div>
+                            <div class="mock-embed-desc">Bot dla liderów klanów Brawl Stars i ich członków — weryfikacja, role, statystyki, raporty.</div>
+                            <div class="mock-embed-desc"><strong>⚙️ Pierwsze kroki:</strong> /ustaw_klan, /ustaw_prog, /ustaw_role, /ustaw_kanal, /panel</div>
+                            <a href="#" class="mock-embed-btn">🔗 Serwer wsparcia</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ DLA ADMINÓW ============ -->
+    <section>
+        <div class="container">
+            <div class="section-head">
+                <h2 class="section-title">Dla adminów / liderów serwera</h2>
+                <p class="section-lede">Konfiguracja klanu, progu, ról, kanałów i wyglądu bota.</p>
+            </div>
+
+            <div class="command-showcase">
+
+                <!-- /ustaw_klan -->
+                <div class="command-block" id="ustaw_klan">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code>/ustaw_klan [nowy_tag_klanu]</code></div>
+                        <p>Powiązuje ten serwer Discord z konkretnym klanem Brawl Stars i od razu zapisuje pierwszy punkt historii pucharów wszystkich jego członków.</p>
+                    </div>
+                    <div>
+                        <div class="mock-slash-input"><span class="slash-chip">/</span>ustaw_klan nowy_tag_klanu: #2LQVQCJ</div>
+                        <div class="mock-message">
+                            <img src="assets/logo.png" class="mock-message-avatar" alt="Avatar bota">
+                            <div class="mock-message-body">
+                                <div class="mock-message-head"><span class="mock-message-name">BrawlManager</span><span class="mock-message-tag">BOT</span></div>
+                                <div class="mock-message-text">✅ Powiązano ten serwer z klanem o TAGU: <code>#2LQVQCJ</code>
+📥 Zapisano pierwszy punkt historii pucharów dla <strong>27</strong> graczy — od teraz bot zbiera dane o tym klanie codziennie.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /ustaw_prog -->
+                <div class="command-block" id="ustaw_prog">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code>/ustaw_prog [nowe_puchary]</code></div>
+                        <p>Ustawia minimalny próg pucharowy wymagany na tym serwerze — używany przez <code>/oblicz</code>, panel weryfikacji i <code>/czystka</code>.</p>
+                    </div>
+                    <div>
+                        <div class="mock-slash-input"><span class="slash-chip">/</span>ustaw_prog nowe_puchary: 20000</div>
+                        <div class="mock-message">
+                            <img src="assets/logo.png" class="mock-message-avatar" alt="Avatar bota">
+                            <div class="mock-message-body">
+                                <div class="mock-message-head"><span class="mock-message-name">BrawlManager</span><span class="mock-message-tag">BOT</span></div>
+                                <div class="mock-message-text">🎯 Zaktualizowano próg pucharowy dla tego serwera na: <strong>20 000 🏆</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /ustaw_role -->
+                <div class="command-block" id="ustaw_role">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code>/ustaw_role [ranga_z_gry] [nowa_nazwa_discord]</code></div>
+                        <p>Dopasowuje nazwę roli Discord do konkretnej rangi klanowej (member / senior / vicePresident / president). Odpowiedź widoczna tylko dla admina.</p>
+                    </div>
+                    <div>
+                        <div class="mock-slash-input"><span class="slash-chip">/</span>ustaw_role ranga_z_gry: Członek (member) nowa_nazwa_discord: @Członek</div>
+                        <div class="mock-message">
+                            <img src="assets/logo.png" class="mock-message-avatar" alt="Avatar bota">
+                            <div class="mock-message-body">
+                                <div class="mock-message-head"><span class="mock-message-name">BrawlManager</span><span class="mock-message-tag">BOT</span><span class="mock-message-ephemeral">tylko Ty widzisz tę wiadomość</span></div>
+                                <div class="mock-message-text">✅ Ranga klanowa <code>member</code> będzie od teraz powiązana z rolą o nazwie: <strong>Członek</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /ustaw_kanal -->
+                <div class="command-block" id="ustaw_kanal">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code>/ustaw_kanal [kanal]</code></div>
+                        <p>Ustawia kanał, na który trafiają automatyczne raporty tygodniowe i miesięczne. Bot sam sprawdza, czy ma uprawnienia do pisania i linkowania embedów na wybranym kanale.</p>
+                    </div>
+                    <div>
+                        <div class="mock-slash-input"><span class="slash-chip">/</span>ustaw_kanal kanal: #raporty-klanu</div>
+                        <div class="mock-message">
+                            <img src="assets/logo.png" class="mock-message-avatar" alt="Avatar bota">
+                            <div class="mock-message-body">
+                                <div class="mock-message-head"><span class="mock-message-name">BrawlManager</span><span class="mock-message-tag">BOT</span><span class="mock-message-ephemeral">tylko Ty widzisz tę wiadomość</span></div>
+                                <div class="mock-message-text">📋 Kanał raportów został pomyślnie powiązany z: <code>#raporty-klanu</code>
+Otrzymasz tu automatyczne podsumowania klanu.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /ustaw_kanal_rotacji -->
+                <div class="command-block" id="ustaw_kanal_rotacji">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code>/ustaw_kanal_rotacji [kanal]</code></div>
+                        <p>Ustawia kanał powiadomień o zmianie mapy w rotacji Brawl Stars (funkcja darmowa, opt-in).</p>
+                    </div>
+                    <div>
+                        <div class="mock-slash-input"><span class="slash-chip">/</span>ustaw_kanal_rotacji kanal: #rotacja-map</div>
+                        <div class="mock-message">
+                            <img src="assets/logo.png" class="mock-message-avatar" alt="Avatar bota">
+                            <div class="mock-message-body">
+                                <div class="mock-message-head"><span class="mock-message-name">BrawlManager</span><span class="mock-message-tag">BOT</span><span class="mock-message-ephemeral">tylko Ty widzisz tę wiadomość</span></div>
+                                <div class="mock-message-text">🗺️ Kanał powiadomień o rotacji map został pomyślnie powiązany z: <code>#rotacja-map</code>
+Bot wyśle tu wiadomość za każdym razem, gdy zmieni się mapa w którymś z trybów gry.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /ustaw_harmonogram -->
+                <div class="command-block" id="ustaw_harmonogram">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code>/ustaw_harmonogram [dzien] [godzina]</code></div>
+                        <p>Ustala dzień tygodnia i godzinę, o której wysyłany jest automatyczny raport tygodniowy.</p>
+                    </div>
+                    <div>
+                        <div class="mock-slash-input"><span class="slash-chip">/</span>ustaw_harmonogram dzien: Sobota godzina: 20</div>
+                        <div class="mock-message">
+                            <img src="assets/logo.png" class="mock-message-avatar" alt="Avatar bota">
+                            <div class="mock-message-body">
+                                <div class="mock-message-head"><span class="mock-message-name">BrawlManager</span><span class="mock-message-tag">BOT</span></div>
+                                <div class="mock-message-text">✅ Pomyślnie ustawiono automatyczny raport tygodniowy na: <strong>Sobota</strong> o godzinie <strong>20:00</strong>.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /panel -->
+                <div class="command-block" id="panel">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code>/panel</code></div>
+                        <p>Wysyła panel z przyciskiem, dzięki któremu członkowie sami się zweryfikują (otwiera formularz na tag z gry).</p>
+                    </div>
+                    <div>
+                        <div class="mock-slash-input"><span class="slash-chip">/</span>panel</div>
+                        <div class="mock-embed" style="border-left-color:#2ecc71;">
+                            <div class="mock-embed-title">🛡️ PANEL WERYFIKACJI KLANOWEJ</div>
+                            <div class="mock-embed-desc">Kliknij przycisk poniżej, aby połączyć swoje konto Brawl Stars z profilem na Discordzie.</div>
+                            <div class="mock-embed-desc">System automatycznie sprawdzi próg pucharowy, przydzieli rangi klanowe i zsynchronizuje pseudonim z nickiem z gry.</div>
+                            <a href="#" class="mock-embed-btn">✅ Zweryfikuj profil</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /czystka -->
+                <div class="command-block" id="czystka">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code>/czystka</code></div>
+                        <p>Lista członków klanu, którzy są poniżej ustawionego progu pucharowego — gotowa do przejrzenia przed ewentualnym wyrzuceniem z klanu w grze.</p>
+                    </div>
+                    <div>
+                        <div class="mock-slash-input"><span class="slash-chip">/</span>czystka</div>
+                        <div class="mock-embed" style="border-left-color:#e74c3c;">
+                            <div class="mock-embed-title">🚨 Lista osób poniżej progu</div>
+                            <div class="mock-embed-desc">
+                                • <code>Nowy_Gracz22</code> – <strong>14 300</strong> /20 000 🏆<br>
+                                • <code>Wakacyjny_Wojownik</code> – <strong>17 850</strong> /20 000 🏆<br>
+                                • <code>AFK_Kowalski</code> – <strong>9 120</strong> /20 000 🏆
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /ustaw_wyglad -->
+                <div class="command-block" id="ustaw_wyglad">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code>/ustaw_wyglad [komenda]</code> <span class="badge badge-partial">🔒 częściowo Premium</span></div>
+                        <p>Kolor embedów bota — jeden wspólny kolor za darmo (bez parametru <code>komenda</code>), osobny kolor dla każdej komendy w Premium. Otwiera listę wyboru z 16 kolorami.</p>
+                    </div>
+                    <div>
+                        <div class="mock-slash-input"><span class="slash-chip">/</span>ustaw_wyglad komenda: Profil</div>
+                        <div class="mock-message">
+                            <img src="assets/logo.png" class="mock-message-avatar" alt="Avatar bota">
+                            <div class="mock-message-body">
+                                <div class="mock-message-head"><span class="mock-message-name">BrawlManager</span><span class="mock-message-tag">BOT</span><span class="mock-message-ephemeral">tylko Ty widzisz tę wiadomość</span></div>
+                                <div class="mock-message-text">🎨 Wybierz kolor embedów z listy poniżej:</div>
+                                <div class="mock-select"><span>Wybierz kolor embedów...</span><span>⌄</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <a href="index.html#komendy" class="back-link">← Wróć do strony głównej</a>
+    </div>
+
+</main>
+
+<!-- ============ STOPKA ============ -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="assets/logo.png" alt="Logo BrawlManager" class="brand-mark">
+                BrawlManager
+            </div>
+
+            <ul class="footer-links">
+                <li><a href="privacy.html">Polityka prywatności</a></li>
+                <li><a href="tos.html">Regulamin</a></li>
+                <li><a href="https://discord.gg/ARd5PM8VBQ" target="_blank" rel="noopener">Serwer wsparcia</a></li>
+            </ul>
+        </div>
+        <p class="footer-copy">&copy; <span data-year>2026</span> BrawlManagerTeam. Wszelkie prawa zastrzeżone.</p>
+    </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

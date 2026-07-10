@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotacja map Brawl Stars — BrawlManager</title>
+    <meta name="description" content="Pełna lista trybów gry Brawl Stars z ostatnią i aktualną mapą w rotacji — dane z oficjalnego API Supercella, aktualizowane przez BrawlManagera.">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="brand">
+            <img src="assets/logo.png" alt="Logo BrawlManager" class="brand-mark">
+            BrawlManager
+        </a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html#funkcje">Funkcje</a></li>
+                <li><a href="index.html#komendy">Komendy</a></li>
+                <li><a href="komendy.html">Zrzuty komend</a></li>
+                <li><a href="index.html#rotacja-map">Rotacja map</a></li>
+                <li><a href="rotacja-map.html">Wszystkie mapy</a></li>
+                <li><a href="index.html#premium">Premium</a></li>
+                <li><a href="index.html#start">Szybki start</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-cta">
+            <a href="https://discord.com/oauth2/authorize?client_id=1506378216108195851" class="btn btn-primary btn-small" target="_blank" rel="noopener">Dodaj do Discorda</a>
+            <button class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false">☰</button>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <!-- ============ HERO ============ -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="eyebrow">🗺️ Cała rotacja, jeden rzut oka</div>
+            <h1>Rotacja map Brawl Stars — wszystkie tryby naraz</h1>
+            <p>
+                Dla każdego trybu gry: jaka mapa była ostatnio i jaka jest teraz. Dane pochodzą z tego
+                samego oficjalnego API Brawl Stars (Supercell), z którego korzysta powiadomienie bota na
+                Discordzie — to nie jest kopia układu brawlify.com, tylko własny widok tych samych,
+                publicznych danych.
+            </p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div id="data-banner" class="data-banner" hidden>
+            <span>ℹ️</span>
+            <span id="data-banner-text"></span>
+        </div>
+
+        <div class="rotation-table-wrap">
+            <table class="rotation-full-table">
+                <thead>
+                    <tr>
+                        <th>Tryb gry</th>
+                        <th>Ostatnia mapa</th>
+                        <th>Aktualna mapa</th>
+                        <th>Koniec obecnej rotacji</th>
+                    </tr>
+                </thead>
+                <tbody id="rotation-rows">
+                    <!-- wypełniane przez script.js z assets/rotation.json -->
+                </tbody>
+            </table>
+        </div>
+        <div id="rotation-status" class="rotation-status" hidden></div>
+
+        <div class="info-note">
+            <span>🔮</span>
+            <span>
+                <strong>Kolejna (przyszła) mapa celowo nie jest tu pokazana.</strong> Oficjalne API Brawl Stars
+                (<code>GET /v1/events/rotation</code>) zwraca wyłącznie aktualnie aktywny stan rotacji na tryb —
+                nie ma w nim żadnego zapowiadanego/nadchodzącego eventu ani prognozy. Pokazanie „kolejnej mapy”
+                wymagałoby zgadywania, więc BrawlManager pokazuje tylko to, co da się realnie zweryfikować:
+                ostatnią i aktualną mapę. Winrate/tier-listę per mapa znajdziesz na
+                <a href="https://brawlify.com/maps" target="_blank" rel="noopener">brawlify.com/maps</a>.
+            </span>
+        </div>
+
+        <a href="index.html#rotacja-map" class="back-link">← Wróć do strony głównej</a>
+    </div>
+
+</main>
+
+<!-- ============ STOPKA ============ -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="assets/logo.png" alt="Logo BrawlManager" class="brand-mark">
+                BrawlManager
+            </div>
+
+            <ul class="footer-links">
+                <li><a href="privacy.html">Polityka prywatności</a></li>
+                <li><a href="tos.html">Regulamin</a></li>
+                <li><a href="https://discord.gg/ARd5PM8VBQ" target="_blank" rel="noopener">Serwer wsparcia</a></li>
+            </ul>
+        </div>
+        <p class="footer-copy">&copy; <span data-year>2026</span> BrawlManagerTeam. Wszelkie prawa zastrzeżone.</p>
+    </div>
+</footer>
+
+<script src="assets/script.js"></script>
+<script>
+  // Wczytuje assets/rotation.json (statyczny plik - patrz uwaga w
+  // brawlmanager-subpage-zmiany.md o mechanizmie dostarczania danych) i buduje
+  // tabelę tryb / ostatnia mapa / aktualna mapa / odliczanie do końca slotu.
+  // Świadomie NIE ma tu żadnego bezpośredniego wywołania api.brawlstars.com -
+  // token API to sekret, nie może trafić do kodu klienckiego statycznej strony.
+  (function () {
+    const rowsEl = document.getElementById("rotation-rows");
+    const statusEl = document.getElementById("rotation-status");
+    const bannerEl = document.getElementById("data-banner");
+    const bannerTextEl = document.getElementById("data-banner-text");
+
+    function formatCountdown(iso) {
+      if (!iso) return "—";
+      const end = new Date(iso).getTime();
+      const now = Date.now();
+      const diffMs = end - now;
+      if (isNaN(end)) return "—";
+      if (diffMs <= 0) return "powinno się już zmienić";
+      const totalMin = Math.floor(diffMs / 60000);
+      const h = Math.floor(totalMin / 60);
+      const m = totalMin % 60;
+      return h > 0 ? `za ${h} godz. ${m} min` : `za ${m} min`;
+    }
+
+    function render(data) {
+      const sloty = Array.isArray(data.sloty) ? data.sloty : [];
+
+      if (data._example) {
+        bannerEl.hidden = false;
+        bannerTextEl.innerHTML =
+          "<strong>To są dane przykładowe</strong>, nie aktualny stan gry — strona jeszcze nie ma " +
+          "podpiętego automatycznego źródła danych z bota. Realne dane pojawią się tutaj, gdy mechanizm " +
+          "aktualizacji (patrz dziennik zmian projektu) zostanie wdrożony.";
+      }
+
+      if (!sloty.length) {
+        statusEl.hidden = false;
+        statusEl.textContent = "Brak danych o rotacji map do pokazania.";
+        return;
+      }
+
+      rowsEl.innerHTML = sloty.map((slot) => `
+        <tr>
+          <td class="mode-cell">${slot.tryb ?? "—"}</td>
+          <td class="old-map">${slot.mapa_poprzednia ?? "brak danych"}</td>
+          <td class="current-map">${slot.mapa_aktualna ?? "—"}</td>
+          <td class="countdown">${formatCountdown(slot.koniec_aktualnego_slotu)}</td>
+        </tr>
+      `).join("");
+    }
+
+    fetch("assets/rotation.json", { cache: "no-store" })
+      .then((res) => {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return res.json();
+      })
+      .then(render)
+      .catch(() => {
+        statusEl.hidden = false;
+        statusEl.textContent = "Nie udało się wczytać danych o rotacji map. Spróbuj odświeżyć stronę później.";
+      });
+  })();
+</script>
+</body>
+</html>

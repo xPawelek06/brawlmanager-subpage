@@ -1,0 +1,31 @@
+{
+  "_example": true,
+  "_uwaga": "Plik przykładowy/placeholder — strona jeszcze nie ma podpiętego realnego źródła danych z bota. Zobacz projects/BrawlManager/brawlmanager-subpage-zmiany.md (repo mózgu) po szczegóły i decyzję, jaki mechanizm dostarczania danych wybrać.",
+  "aktualizowano": "2026-07-10T12:00:00Z",
+  "sloty": [
+    {
+      "tryb": "Zdobądź Klejnoty",
+      "mapa_poprzednia": "Ukryta Świątynia",
+      "mapa_aktualna": "Rozdroże Rozbójników",
+      "koniec_aktualnego_slotu": "2026-07-11T08:00:00Z"
+    },
+    {
+      "tryb": "Obław Łupów",
+      "mapa_poprzednia": "Węży Step",
+      "mapa_aktualna": "Otwarta Przestrzeń",
+      "koniec_aktualnego_slotu": "2026-07-11T08:00:00Z"
+    },
+    {
+      "tryb": "Starcie Gwiazd",
+      "mapa_poprzednia": "Boisko Centralne",
+      "mapa_aktualna": "Sędziowski Gwizdek",
+      "koniec_aktualnego_slotu": "2026-07-11T08:00:00Z"
+    },
+    {
+      "tryb": "Bitwa Rywali",
+      "mapa_poprzednia": "Podwójny Cios",
+      "mapa_aktualna": "Ostatnia Szansa",
+      "koniec_aktualnego_slotu": "2026-07-11T08:00:00Z"
+    }
+  ]
+}
