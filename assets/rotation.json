@@ -1,31 +1,95 @@
 {
-  "_example": true,
-  "_uwaga": "Plik przykładowy/placeholder — strona jeszcze nie ma podpiętego realnego źródła danych z bota. Zobacz projects/BrawlManager/brawlmanager-subpage-zmiany.md (repo mózgu) po szczegóły i decyzję, jaki mechanizm dostarczania danych wybrać.",
-  "aktualizowano": "2026-07-10T12:00:00Z",
+  "aktualizowano": "2026-07-11T14:19:13Z",
   "sloty": [
     {
-      "tryb": "Zdobądź Klejnoty",
-      "mapa_poprzednia": "Ukryta Świątynia",
-      "mapa_aktualna": "Rozdroże Rozbójników",
-      "koniec_aktualnego_slotu": "2026-07-11T08:00:00Z"
+      "tryb": "brawlBall",
+      "mapa_poprzednia": null,
+      "mapa_aktualna": "Sneaky Fields",
+      "koniec_aktualnego_slotu": null
     },
     {
-      "tryb": "Obław Łupów",
-      "mapa_poprzednia": "Węży Step",
-      "mapa_aktualna": "Otwarta Przestrzeń",
-      "koniec_aktualnego_slotu": "2026-07-11T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": null,
+      "mapa_aktualna": "Rice Field",
+      "koniec_aktualnego_slotu": null
     },
     {
-      "tryb": "Starcie Gwiazd",
-      "mapa_poprzednia": "Boisko Centralne",
-      "mapa_aktualna": "Sędziowski Gwizdek",
-      "koniec_aktualnego_slotu": "2026-07-11T08:00:00Z"
+      "tryb": "gemGrab",
+      "mapa_poprzednia": null,
+      "mapa_aktualna": "Whisper Vale",
+      "koniec_aktualnego_slotu": null
     },
     {
-      "tryb": "Bitwa Rywali",
-      "mapa_poprzednia": "Podwójny Cios",
-      "mapa_aktualna": "Ostatnia Szansa",
-      "koniec_aktualnego_slotu": "2026-07-11T08:00:00Z"
+      "tryb": "hotZone",
+      "mapa_poprzednia": null,
+      "mapa_aktualna": "Reach for the Stars",
+      "koniec_aktualnego_slotu": null
+    },
+    {
+      "tryb": "duoShowdown",
+      "mapa_poprzednia": null,
+      "mapa_aktualna": "Rice Field",
+      "koniec_aktualnego_slotu": null
+    },
+    {
+      "tryb": "knockout",
+      "mapa_poprzednia": null,
+      "mapa_aktualna": "New Perspective",
+      "koniec_aktualnego_slotu": null
+    },
+    {
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": null,
+      "mapa_aktualna": "Acid Lakes",
+      "koniec_aktualnego_slotu": null
+    },
+    {
+      "tryb": "heist",
+      "mapa_poprzednia": null,
+      "mapa_aktualna": "Bridge Too Far",
+      "koniec_aktualnego_slotu": null
+    },
+    {
+      "tryb": "bounty",
+      "mapa_poprzednia": null,
+      "mapa_aktualna": "Tasty Berry",
+      "koniec_aktualnego_slotu": null
+    },
+    {
+      "tryb": "airHockey",
+      "mapa_poprzednia": null,
+      "mapa_aktualna": "Arabesque",
+      "koniec_aktualnego_slotu": null
+    },
+    {
+      "tryb": "trioShowdown",
+      "mapa_poprzednia": null,
+      "mapa_aktualna": "Rice Field",
+      "koniec_aktualnego_slotu": null
+    },
+    {
+      "tryb": "brawlArena",
+      "mapa_poprzednia": "Silver Highlands",
+      "mapa_aktualna": "Knockout Grounds",
+      "koniec_aktualnego_slotu": null
+    },
+    {
+      "tryb": "deathmatch5v5",
+      "mapa_poprzednia": null,
+      "mapa_aktualna": "Icy ice park",
+      "koniec_aktualnego_slotu": null
+    },
+    {
+      "tryb": "deathmatch",
+      "mapa_poprzednia": null,
+      "mapa_aktualna": "WALKING ON HOT SAND",
+      "koniec_aktualnego_slotu": null
+    },
+    {
+      "tryb": "brawlBall",
+      "mapa_poprzednia": "Backyard Bowl",
+      "mapa_aktualna": "Beach Ball",
+      "koniec_aktualnego_slotu": null
     }
   ]
 }
