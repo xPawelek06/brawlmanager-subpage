@@ -284,67 +284,6 @@ code, .mono {
   text-decoration: underline;
 }
 
-/* Mini mock embed showing off the panel embed feel — reused on komendy.html
-   to visualize every command's real embed output, purely decorative here. */
-.mock-embed {
-  width: 100%;
-  max-width: 460px;
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-left: 4px solid var(--gold);
-  border-radius: var(--radius-md);
-  padding: 20px 22px;
-  text-align: left;
-  box-shadow: var(--shadow-lg);
-}
-
-.mock-embed-title {
-  font-weight: 800;
-  margin-bottom: 6px;
-  font-size: 1.02rem;
-}
-
-.mock-embed-desc {
-  color: var(--text-muted);
-  font-size: 0.88rem;
-  margin-bottom: 14px;
-}
-
-.mock-embed-fields {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.mock-embed-field {
-  background: var(--panel-2);
-  border-radius: var(--radius-sm);
-  padding: 10px 12px;
-}
-
-.mock-embed-field span {
-  display: block;
-}
-
-.mock-embed-field .label {
-  font-size: 0.72rem;
-  color: var(--text-faint);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 4px;
-}
-
-.mock-embed-field .value {
-  font-weight: 700;
-  font-size: 0.94rem;
-}
-
-.mock-embed-footer {
-  margin-top: 14px;
-  font-size: 0.72rem;
-  color: var(--text-faint);
-}
-
 /* ---------- SECTIONS (generic) ---------- */
 
 section {
@@ -866,10 +805,6 @@ footer.site-footer {
     grid-template-columns: 1fr;
   }
 
-  .mock-embed-fields {
-    grid-template-columns: 1fr;
-  }
-
   .rotation-swap {
     flex-wrap: wrap;
   }
@@ -1042,129 +977,39 @@ footer.site-footer {
   margin-bottom: 4px;
 }
 
-/* Discord slash-command input bar mockup - the row the user types before hitting Enter */
-.mock-slash-input {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: var(--panel-2);
-  border: 1px solid var(--border-strong);
-  border-radius: var(--radius-md);
-  padding: 10px 14px;
-  margin-bottom: 14px;
-  font-family: "Cascadia Code", "Consolas", "SFMono-Regular", Menlo, monospace;
-  font-size: 0.86rem;
-}
-
-.mock-slash-input .slash-chip {
-  flex: 0 0 auto;
-  width: 22px;
-  height: 22px;
-  border-radius: 6px;
-  background: var(--purple);
-  color: #fff;
-  display: grid;
-  place-items: center;
-  font-weight: 800;
-  font-size: 0.8rem;
-}
-
-/* Discord plain-text bot message mockup (no embed) - avatar + username row + text */
-.mock-message {
+/* Real Discord screenshot for a command's output (replaces the old CSS mockups). */
+.command-screenshot {
+  display: block;
   width: 100%;
-  display: flex;
-  gap: 12px;
-  background: var(--panel-2);
+  max-width: 460px;
   border-radius: var(--radius-md);
-  padding: 14px 16px;
-  text-align: left;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
 }
 
-.mock-message-avatar {
-  flex: 0 0 auto;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  object-fit: cover;
+/* Side-by-side layout for commands with two screenshot variants (e.g. /historia, /czystka) */
+.command-screenshot-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.mock-message-body {
+.command-screenshot-item {
+  flex: 1 1 220px;
   min-width: 0;
 }
 
-.mock-message-head {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 4px;
-  flex-wrap: wrap;
+.command-screenshot-item .command-screenshot {
+  max-width: 100%;
 }
 
-.mock-message-name {
+.command-screenshot-caption {
+  font-size: 0.76rem;
   font-weight: 700;
-  font-size: 0.9rem;
-}
-
-.mock-message-tag {
-  font-size: 0.62rem;
-  font-weight: 700;
-  background: var(--blue);
-  color: #051622;
-  border-radius: 4px;
-  padding: 1px 5px;
-}
-
-.mock-message-time {
-  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   color: var(--text-faint);
-}
-
-.mock-message-ephemeral {
-  font-size: 0.68rem;
-  color: var(--text-faint);
-  font-style: italic;
-}
-
-.mock-message-text {
-  font-size: 0.88rem;
-  color: var(--text);
-  white-space: pre-line;
-  line-height: 1.55;
-}
-
-.mock-message-text code {
-  background: rgba(255, 255, 255, 0.08);
-  padding: 1px 5px;
-  border-radius: 4px;
-  font-size: 0.85em;
-}
-
-/* Discord select-menu mockup (used for /ustaw_wyglad's colour picker View) */
-.mock-select {
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: var(--panel);
-  border: 1px solid var(--border-strong);
-  border-radius: var(--radius-sm);
-  padding: 10px 14px;
-  font-size: 0.85rem;
-  color: var(--text-muted);
-}
-
-.mock-embed-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 14px;
-  background: rgba(52, 211, 153, 0.14);
-  border: 1px solid rgba(52, 211, 153, 0.4);
-  color: var(--green);
-  border-radius: var(--radius-sm);
-  padding: 8px 16px;
-  font-size: 0.82rem;
-  font-weight: 700;
+  margin-bottom: 8px;
 }
 
 .badge-free {
