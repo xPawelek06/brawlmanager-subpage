@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-07-11T16:13:26Z",
+  "aktualizowano": "2026-07-11T20:13:27Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -9,9 +9,9 @@
     },
     {
       "tryb": "soloShowdown",
-      "mapa_poprzednia": null,
-      "mapa_aktualna": "Rice Field",
-      "koniec_aktualnego_slotu": "2026-07-11T20:00:00Z"
+      "mapa_poprzednia": "Rice Field",
+      "mapa_aktualna": "Molten to the Core",
+      "koniec_aktualnego_slotu": "2026-07-12T20:00:00Z"
     },
     {
       "tryb": "gemGrab",
@@ -20,16 +20,16 @@
       "koniec_aktualnego_slotu": "2026-07-12T00:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": null,
-      "mapa_aktualna": "Reach for the Stars",
-      "koniec_aktualnego_slotu": "2026-07-11T18:00:00Z"
+      "tryb": "heist",
+      "mapa_poprzednia": "Reach for the Stars",
+      "mapa_aktualna": "Quintillion",
+      "koniec_aktualnego_slotu": "2026-07-12T18:00:00Z"
     },
     {
       "tryb": "duoShowdown",
-      "mapa_poprzednia": null,
-      "mapa_aktualna": "Rice Field",
-      "koniec_aktualnego_slotu": "2026-07-11T20:00:00Z"
+      "mapa_poprzednia": "Rice Field",
+      "mapa_aktualna": "Molten to the Core",
+      "koniec_aktualnego_slotu": "2026-07-12T20:00:00Z"
     },
     {
       "tryb": "knockout",
@@ -63,9 +63,9 @@
     },
     {
       "tryb": "trioShowdown",
-      "mapa_poprzednia": null,
-      "mapa_aktualna": "Rice Field",
-      "koniec_aktualnego_slotu": "2026-07-11T20:00:00Z"
+      "mapa_poprzednia": "Rice Field",
+      "mapa_aktualna": "Molten to the Core",
+      "koniec_aktualnego_slotu": "2026-07-12T20:00:00Z"
     },
     {
       "tryb": "brawlArena",
@@ -86,10 +86,10 @@
       "koniec_aktualnego_slotu": "2026-07-12T04:00:00Z"
     },
     {
-      "tryb": "knockout",
-      "mapa_poprzednia": "Beach Ball",
-      "mapa_aktualna": "New Perspective",
-      "koniec_aktualnego_slotu": "2026-07-11T18:00:00Z"
+      "tryb": "knockout5V5",
+      "mapa_poprzednia": "Healthy Middle Ground",
+      "mapa_aktualna": "Crescendo",
+      "koniec_aktualnego_slotu": "2026-07-11T22:00:00Z"
     }
   ]
 }
