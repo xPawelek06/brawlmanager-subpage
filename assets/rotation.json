@@ -1,95 +1,95 @@
 {
-  "aktualizowano": "2026-07-11T14:19:13Z",
+  "aktualizowano": "2026-07-11T16:13:26Z",
   "sloty": [
     {
       "tryb": "brawlBall",
       "mapa_poprzednia": null,
       "mapa_aktualna": "Sneaky Fields",
-      "koniec_aktualnego_slotu": null
+      "koniec_aktualnego_slotu": "2026-07-12T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
       "mapa_poprzednia": null,
       "mapa_aktualna": "Rice Field",
-      "koniec_aktualnego_slotu": null
+      "koniec_aktualnego_slotu": "2026-07-11T20:00:00Z"
     },
     {
       "tryb": "gemGrab",
       "mapa_poprzednia": null,
       "mapa_aktualna": "Whisper Vale",
-      "koniec_aktualnego_slotu": null
+      "koniec_aktualnego_slotu": "2026-07-12T00:00:00Z"
     },
     {
       "tryb": "hotZone",
       "mapa_poprzednia": null,
       "mapa_aktualna": "Reach for the Stars",
-      "koniec_aktualnego_slotu": null
+      "koniec_aktualnego_slotu": "2026-07-11T18:00:00Z"
     },
     {
       "tryb": "duoShowdown",
       "mapa_poprzednia": null,
       "mapa_aktualna": "Rice Field",
-      "koniec_aktualnego_slotu": null
+      "koniec_aktualnego_slotu": "2026-07-11T20:00:00Z"
     },
     {
       "tryb": "knockout",
       "mapa_poprzednia": null,
       "mapa_aktualna": "New Perspective",
-      "koniec_aktualnego_slotu": null
+      "koniec_aktualnego_slotu": "2026-07-12T02:00:00Z"
     },
     {
       "tryb": "soloShowdown",
       "mapa_poprzednia": null,
       "mapa_aktualna": "Acid Lakes",
-      "koniec_aktualnego_slotu": null
+      "koniec_aktualnego_slotu": "2026-07-13T08:00:00Z"
     },
     {
       "tryb": "heist",
       "mapa_poprzednia": null,
       "mapa_aktualna": "Bridge Too Far",
-      "koniec_aktualnego_slotu": null
+      "koniec_aktualnego_slotu": "2026-07-12T08:00:00Z"
     },
     {
-      "tryb": "bounty",
-      "mapa_poprzednia": null,
-      "mapa_aktualna": "Tasty Berry",
-      "koniec_aktualnego_slotu": null
+      "tryb": "tagTeam",
+      "mapa_poprzednia": "Tasty Berry",
+      "mapa_aktualna": "The Great Mighty Lou",
+      "koniec_aktualnego_slotu": "2026-07-12T16:00:00Z"
     },
     {
       "tryb": "airHockey",
       "mapa_poprzednia": null,
       "mapa_aktualna": "Arabesque",
-      "koniec_aktualnego_slotu": null
+      "koniec_aktualnego_slotu": "2026-07-12T10:00:00Z"
     },
     {
       "tryb": "trioShowdown",
       "mapa_poprzednia": null,
       "mapa_aktualna": "Rice Field",
-      "koniec_aktualnego_slotu": null
+      "koniec_aktualnego_slotu": "2026-07-11T20:00:00Z"
     },
     {
       "tryb": "brawlArena",
       "mapa_poprzednia": "Silver Highlands",
       "mapa_aktualna": "Knockout Grounds",
-      "koniec_aktualnego_slotu": null
+      "koniec_aktualnego_slotu": "2026-07-12T14:00:00Z"
     },
     {
       "tryb": "deathmatch5v5",
       "mapa_poprzednia": null,
       "mapa_aktualna": "Icy ice park",
-      "koniec_aktualnego_slotu": null
+      "koniec_aktualnego_slotu": "2026-07-12T12:00:00Z"
     },
     {
       "tryb": "deathmatch",
       "mapa_poprzednia": null,
       "mapa_aktualna": "WALKING ON HOT SAND",
-      "koniec_aktualnego_slotu": null
+      "koniec_aktualnego_slotu": "2026-07-12T04:00:00Z"
     },
     {
-      "tryb": "brawlBall",
-      "mapa_poprzednia": "Backyard Bowl",
-      "mapa_aktualna": "Beach Ball",
-      "koniec_aktualnego_slotu": null
+      "tryb": "knockout",
+      "mapa_poprzednia": "Beach Ball",
+      "mapa_aktualna": "New Perspective",
+      "koniec_aktualnego_slotu": "2026-07-11T18:00:00Z"
     }
   ]
 }
