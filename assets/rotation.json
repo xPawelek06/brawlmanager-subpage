@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-07-12T06:13:26Z",
+  "aktualizowano": "2026-07-12T08:13:26Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": null,
-      "mapa_aktualna": "Sneaky Fields",
-      "koniec_aktualnego_slotu": "2026-07-12T08:00:00Z"
+      "mapa_poprzednia": "Sneaky Fields",
+      "mapa_aktualna": "Backyard Bowl",
+      "koniec_aktualnego_slotu": "2026-07-13T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -44,10 +44,10 @@
       "koniec_aktualnego_slotu": "2026-07-13T08:00:00Z"
     },
     {
-      "tryb": "heist",
-      "mapa_poprzednia": null,
-      "mapa_aktualna": "Bridge Too Far",
-      "koniec_aktualnego_slotu": "2026-07-12T08:00:00Z"
+      "tryb": "brawlBall",
+      "mapa_poprzednia": "Bridge Too Far",
+      "mapa_aktualna": "Backyard Bowl",
+      "koniec_aktualnego_slotu": "2026-07-14T08:00:00Z"
     },
     {
       "tryb": "tagTeam",
@@ -86,10 +86,10 @@
       "koniec_aktualnego_slotu": "2026-07-13T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-07-12T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-07-12T10:00:00Z"
     }
   ]
 }
