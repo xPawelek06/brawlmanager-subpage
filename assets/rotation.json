@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-07-12T12:13:26Z",
+  "aktualizowano": "2026-07-12T14:13:26Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -69,9 +69,9 @@
     },
     {
       "tryb": "brawlArena",
-      "mapa_poprzednia": "Silver Highlands",
-      "mapa_aktualna": "Knockout Grounds",
-      "koniec_aktualnego_slotu": "2026-07-12T14:00:00Z"
+      "mapa_poprzednia": "Knockout Grounds",
+      "mapa_aktualna": "The Smackdome",
+      "koniec_aktualnego_slotu": "2026-07-13T14:00:00Z"
     },
     {
       "tryb": "knockout5V5",
@@ -87,9 +87,9 @@
     },
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Makeshift Scaffolding",
-      "mapa_aktualna": "Backyard Bowl",
-      "koniec_aktualnego_slotu": "2026-07-12T14:00:00Z"
+      "mapa_poprzednia": "Backyard Bowl",
+      "mapa_aktualna": "Beach Ball",
+      "koniec_aktualnego_slotu": "2026-07-12T16:00:00Z"
     }
   ]
 }
