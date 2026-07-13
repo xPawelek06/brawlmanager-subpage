@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-07-13T18:13:27Z",
+  "aktualizowano": "2026-07-13T20:13:26Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -9,9 +9,9 @@
     },
     {
       "tryb": "soloShowdown",
-      "mapa_poprzednia": "Molten to the Core",
-      "mapa_aktualna": "Acid Lakes",
-      "koniec_aktualnego_slotu": "2026-07-13T20:00:00Z"
+      "mapa_poprzednia": "Acid Lakes",
+      "mapa_aktualna": "Gated Community",
+      "koniec_aktualnego_slotu": "2026-07-14T20:00:00Z"
     },
     {
       "tryb": "gemGrab",
@@ -27,9 +27,9 @@
     },
     {
       "tryb": "duoShowdown",
-      "mapa_poprzednia": "Molten to the Core",
-      "mapa_aktualna": "Acid Lakes",
-      "koniec_aktualnego_slotu": "2026-07-13T20:00:00Z"
+      "mapa_poprzednia": "Acid Lakes",
+      "mapa_aktualna": "Gated Community",
+      "koniec_aktualnego_slotu": "2026-07-14T20:00:00Z"
     },
     {
       "tryb": "knockout",
@@ -63,9 +63,9 @@
     },
     {
       "tryb": "trioShowdown",
-      "mapa_poprzednia": "Molten to the Core",
-      "mapa_aktualna": "Acid Lakes",
-      "koniec_aktualnego_slotu": "2026-07-13T20:00:00Z"
+      "mapa_poprzednia": "Acid Lakes",
+      "mapa_aktualna": "Gated Community",
+      "koniec_aktualnego_slotu": "2026-07-14T20:00:00Z"
     },
     {
       "tryb": "brawlArena",
@@ -86,10 +86,10 @@
       "koniec_aktualnego_slotu": "2026-07-14T04:00:00Z"
     },
     {
-      "tryb": "knockout",
-      "mapa_poprzednia": "New Perspective",
-      "mapa_aktualna": "Healthy Middle Ground",
-      "koniec_aktualnego_slotu": "2026-07-13T20:00:00Z"
+      "tryb": "knockout5V5",
+      "mapa_poprzednia": "Healthy Middle Ground",
+      "mapa_aktualna": "Crescendo",
+      "koniec_aktualnego_slotu": "2026-07-13T22:00:00Z"
     }
   ]
 }
