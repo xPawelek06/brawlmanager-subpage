@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-07-13T06:13:27Z",
+  "aktualizowano": "2026-07-13T08:13:26Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Sneaky Fields",
-      "mapa_aktualna": "Backyard Bowl",
-      "koniec_aktualnego_slotu": "2026-07-13T08:00:00Z"
+      "mapa_poprzednia": "Backyard Bowl",
+      "mapa_aktualna": "Spiraling Out",
+      "koniec_aktualnego_slotu": "2026-07-14T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -38,10 +38,10 @@
       "koniec_aktualnego_slotu": "2026-07-14T02:00:00Z"
     },
     {
-      "tryb": "soloShowdown",
-      "mapa_poprzednia": null,
-      "mapa_aktualna": "Acid Lakes",
-      "koniec_aktualnego_slotu": "2026-07-13T08:00:00Z"
+      "tryb": "knockout",
+      "mapa_poprzednia": "Acid Lakes",
+      "mapa_aktualna": "New Horizons",
+      "koniec_aktualnego_slotu": "2026-07-15T08:00:00Z"
     },
     {
       "tryb": "brawlBall",
@@ -86,10 +86,10 @@
       "koniec_aktualnego_slotu": "2026-07-14T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-07-13T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-07-13T10:00:00Z"
     }
   ]
 }
