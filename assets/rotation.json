@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-07-13T00:13:26Z",
+  "aktualizowano": "2026-07-13T02:13:26Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -33,9 +33,9 @@
     },
     {
       "tryb": "knockout",
-      "mapa_poprzednia": "New Perspective",
-      "mapa_aktualna": "Konnakol",
-      "koniec_aktualnego_slotu": "2026-07-13T02:00:00Z"
+      "mapa_poprzednia": "Konnakol",
+      "mapa_aktualna": "Goldarm Gulch",
+      "koniec_aktualnego_slotu": "2026-07-14T02:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -87,9 +87,9 @@
     },
     {
       "tryb": "airHockey",
-      "mapa_poprzednia": "Journey of a Thousand Steps",
-      "mapa_aktualna": "Bouncy Bowl",
-      "koniec_aktualnego_slotu": "2026-07-13T02:00:00Z"
+      "mapa_poprzednia": "Bouncy Bowl",
+      "mapa_aktualna": "Below Zero",
+      "koniec_aktualnego_slotu": "2026-07-13T04:00:00Z"
     }
   ]
 }
