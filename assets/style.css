@@ -1095,6 +1095,15 @@ table.rotation-full-table {
   border: 1px solid var(--border);
   background: var(--panel-2);
   flex: 0 0 auto;
+  cursor: pointer;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.map-thumb:hover,
+.map-thumb:focus-visible {
+  transform: scale(1.08);
+  border-color: var(--border-strong);
+  outline: none;
 }
 
 .map-name {
@@ -1111,4 +1120,65 @@ table.rotation-full-table {
     width: 24px;
     height: 24px;
   }
+}
+
+/* ---------- MAP LIGHTBOX (rotacja-map.html) ---------- */
+
+.map-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(5, 6, 14, 0.86);
+  backdrop-filter: blur(6px);
+}
+
+.map-lightbox[hidden] {
+  display: none;
+}
+
+.map-lightbox-inner {
+  max-width: min(560px, 92vw);
+  text-align: center;
+}
+
+.map-lightbox-inner img {
+  max-width: 100%;
+  max-height: 72vh;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-strong);
+  box-shadow: var(--shadow-lg);
+  background: var(--panel-2);
+}
+
+.map-lightbox-caption {
+  margin: 16px 0 0;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+.map-lightbox-close {
+  position: absolute;
+  top: 22px;
+  right: 24px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  background: var(--panel);
+  color: var(--text);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background 0.15s ease;
+}
+
+.map-lightbox-close:hover,
+.map-lightbox-close:focus-visible {
+  background: var(--panel-2);
 }

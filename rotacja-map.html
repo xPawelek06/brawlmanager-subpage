@@ -41,7 +41,7 @@
             <div class="eyebrow">🗺️ Cała rotacja, jeden rzut oka</div>
             <h1>Rotacja map Brawl Stars — wszystkie tryby naraz</h1>
             <p>
-                Dla każdego trybu gry: jaka mapa była ostatnio i jaka jest teraz. Dane pochodzą z tego
+                Znajdziesz tutaj aktualne rotacje map dla każdego trybu gry! Dane pochodzą z tego
                 samego oficjalnego API Brawl Stars (Supercell), z którego korzysta powiadomienie bota na
                 Discordzie — to nie jest kopia układu brawlify.com, tylko własny widok tych samych,
                 publicznych danych.
@@ -95,6 +95,17 @@
         <a href="index.html#rotacja-map" class="back-link">← Wróć do strony głównej</a>
     </div>
 
+    <!-- Lightbox powiększenia mapy - jeden reużywalny modal, wypełniany przez
+         JS (patrz openLightbox() niżej) po kliknięciu dowolnej miniaturki
+         mapy (.map-thumb) w tabeli. -->
+    <div id="map-lightbox" class="map-lightbox" hidden>
+        <button type="button" class="map-lightbox-close" aria-label="Zamknij podgląd mapy">✕</button>
+        <div class="map-lightbox-inner">
+            <img id="map-lightbox-img" src="" alt="">
+            <p id="map-lightbox-caption" class="map-lightbox-caption"></p>
+        </div>
+    </div>
+
 </main>
 
 <!-- ============ STOPKA ============ -->
@@ -134,6 +145,59 @@
   (function () {
     const rowsEl = document.getElementById("rotation-rows");
     const statusEl = document.getElementById("rotation-status");
+
+    // ==========================================
+    // LIGHTBOX powiększenia mapy (jeden reużywalny modal dla wszystkich
+    // miniaturek - ostatnia i aktualna mapa). Event delegation na rowsEl,
+    // bo wiersze tabeli są tworzone dynamicznie w render() (innerHTML), więc
+    // nasłuchiwanie bezpośrednio na .map-thumb w momencie inicjalizacji by
+    // ich jeszcze nie znalazło.
+    // ==========================================
+    const lightboxEl = document.getElementById("map-lightbox");
+    const lightboxImgEl = document.getElementById("map-lightbox-img");
+    const lightboxCaptionEl = document.getElementById("map-lightbox-caption");
+    const lightboxCloseEl = lightboxEl.querySelector(".map-lightbox-close");
+
+    function openLightbox(src, name) {
+      lightboxImgEl.src = src;
+      lightboxImgEl.alt = "Powiększony podgląd mapy " + name;
+      lightboxCaptionEl.textContent = name;
+      lightboxEl.hidden = false;
+      document.body.style.overflow = "hidden";
+      lightboxCloseEl.focus();
+    }
+
+    function closeLightbox() {
+      lightboxEl.hidden = true;
+      lightboxImgEl.src = "";
+      document.body.style.overflow = "";
+    }
+
+    rowsEl.addEventListener("click", (event) => {
+      const thumb = event.target.closest(".map-thumb");
+      if (thumb) openLightbox(thumb.src, thumb.dataset.mapName || "");
+    });
+
+    // Dostępność klawiaturowa - miniaturki mają tabindex="0"/role="button".
+    rowsEl.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      const thumb = event.target.closest(".map-thumb");
+      if (!thumb) return;
+      event.preventDefault();
+      openLightbox(thumb.src, thumb.dataset.mapName || "");
+    });
+
+    lightboxCloseEl.addEventListener("click", closeLightbox);
+
+    // Klik na ciemne tło (poza obrazkiem/podpisem) zamyka - klik bezpośrednio
+    // na #map-lightbox (nie na jego dzieci) oznacza kliknięcie w tło.
+    lightboxEl.addEventListener("click", (event) => {
+      if (event.target === lightboxEl) closeLightbox();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !lightboxEl.hidden) closeLightbox();
+    });
 
     // Ręcznie utrzymywana lista - stała, niewielka (kilkadziesiąt trybów w
     // historii gry, w rotacji naraz widać zwykle kilkanaście). Tylko tryby,
@@ -211,10 +275,16 @@
       return h > 0 ? `za ${h} godz. ${m} min` : `za ${m} min`;
     }
 
+    // Ręczna implementacja (nie przez div.textContent/innerHTML) - używana też
+    // wewnątrz atrybutów HTML (data-map-name), więc musi escapować cudzysłowy,
+    // nie tylko &/</> (np. "Belle's Rock" ma apostrof, realna nazwa mapy).
     function escapeHtml(str) {
-      const div = document.createElement("div");
-      div.textContent = str ?? "";
-      return div.innerHTML;
+      return String(str ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
     }
 
     function modeCellHtml(trybKey, modesByHash) {
@@ -231,8 +301,11 @@
         return `<div class="map-cell"><span class="map-name">brak danych</span></div>`;
       }
       const hit = mapsByName.get(normalizeMapName(mapName));
+      // Klikalna miniaturka -> otwiera lightbox (patrz obsługa kliknięć niżej,
+      // event delegation na #rotation-rows). data-map-name niesie oryginalną
+      // nazwę do podpisu w lightboxie, bez ponownego szukania w danych.
       const thumb = hit
-        ? `<img class="map-thumb" src="${hit.imageUrl}" alt="" loading="lazy" onerror="this.remove()">`
+        ? `<img class="map-thumb" src="${hit.imageUrl}" alt="Powiększ podgląd mapy ${escapeHtml(mapName)}" data-map-name="${escapeHtml(mapName)}" loading="lazy" role="button" tabindex="0" onerror="this.remove()">`
         : "";
       return `<div class="map-cell">${thumb}<span class="map-name">${escapeHtml(mapName)}</span></div>`;
     }
