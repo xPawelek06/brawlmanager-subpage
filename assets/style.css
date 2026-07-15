@@ -448,87 +448,25 @@ section.alt {
   margin-top: 2px;
 }
 
-/* Custom map-rotation mockup card - own visual design, not a copy of any
-   existing map site: abstract mode "tiles" instead of real Supercell map art */
-.rotation-mock {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 22px;
-  box-shadow: var(--shadow-lg);
-}
-
-.rotation-mock-header {
+/* Real Discord screenshot of a "rotation changed" notification (replaces the
+   old CSS-only mockup with invented Polish map names). Reuses .command-screenshot
+   (defined further down, shared with komendy.html) for the image treatment
+   itself; this card just centers it and adds a caption underneath. */
+.rotation-screenshot-card {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 10px;
-  font-weight: 800;
-  margin-bottom: 4px;
 }
 
-.rotation-mock-sub {
-  color: var(--text-muted);
-  font-size: 0.85rem;
-  margin-bottom: 18px;
+.rotation-screenshot {
+  max-width: 420px;
 }
 
-.rotation-swap {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: var(--panel-2);
-  border-radius: var(--radius-md);
-  padding: 14px 16px;
-  margin-bottom: 12px;
-}
-
-.rotation-swap:last-of-type {
-  margin-bottom: 0;
-}
-
-.mode-chip {
-  font-size: 0.78rem;
-  font-weight: 700;
+.rotation-screenshot-sub {
   color: var(--text-faint);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  min-width: 84px;
-}
-
-.map-tile {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 8px 10px;
-  border-radius: var(--radius-sm);
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
-.map-tile.old {
-  background: rgba(248, 113, 113, 0.08);
-  color: var(--text-faint);
-  text-decoration: line-through;
-}
-
-.map-tile.new {
-  background: rgba(52, 211, 153, 0.12);
-  color: var(--green);
-}
-
-.swap-arrow {
-  color: var(--text-faint);
-  font-size: 1rem;
-}
-
-.rotation-mock-footer {
-  margin-top: 16px;
-  font-size: 0.72rem;
-  color: var(--text-faint);
-  display: flex;
-  justify-content: space-between;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 /* ---------- PREMIUM ---------- */
@@ -812,14 +750,6 @@ footer.site-footer {
 
   .steps {
     grid-template-columns: 1fr;
-  }
-
-  .rotation-swap {
-    flex-wrap: wrap;
-  }
-
-  .mode-chip {
-    min-width: auto;
   }
 
   .footer-inner {

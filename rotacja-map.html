@@ -216,6 +216,19 @@
       Object.entries(PL_NAZWY_TRYBOW).map(([k, v]) => [k.toLowerCase(), v])
     );
 
+    // Ręczne dopasowania ikon dla trybów, których BrawlAPI (v1/gamemodes) nie
+    // zna pod hashem, jakiego używa Supercell w surowym rotation.json - albo
+    // dlatego, że Supercell zmienił nazwę wewnętrzną (airHockey -> tryb
+    // znany publicznie jako "Brawl Hockey"), albo bo tryb faktycznie nie
+    // istnieje w bazie BrawlAPI (deathmatch - sprawdzone 2026-07-15: brak w
+    // pełnej liście v1/gamemodes, brak trafień na cdn.brawlify.com pod
+    // żadnym wariantem nazwy - Deathmatch/DeathMatch/deathmatch/Battle/Batalia,
+    // wszystkie 404; brawlify.com/gamemodes zwraca 403 z tego środowiska.
+    // Świadomie zostawiony bez ikony zamiast zgadywać URL).
+    const MANUAL_ICON_OVERRIDES_LOWER = new Map([
+      ["airhockey", "https://cdn.brawlify.com/game-modes/regular/48000045.png"], // = BrawlAPI "brawlHockey"
+    ]);
+
     // "tagTeam" -> "Tag Team", "airHockey" -> "Air Hockey" itd. - używane
     // tylko gdy trybu nie ma ani w PL_NAZWY_TRYBOW, ani w danych z BrawlAPI.
     function humanizeModeKey(key) {
@@ -264,8 +277,13 @@
     function modeCellHtml(trybKey, modesByHash) {
       const hit = trybKey ? modesByHash.get(trybKey.toLowerCase()) : null;
       const nazwa = (trybKey && PL_NAZWY_TRYBOW_LOWER.get(trybKey.toLowerCase())) || (hit && hit.name) || humanizeModeKey(trybKey);
-      const icon = hit
-        ? `<img class="mode-icon" src="${hit.imageUrl}" alt="" loading="lazy" onerror="this.remove()">`
+      // Gdy BrawlAPI nie zna tego trybu pod danym hashem, sprawdź ręczną listę
+      // fallbacków (patrz MANUAL_ICON_OVERRIDES_LOWER) zanim pokażesz sam tekst.
+      const iconUrl = hit
+        ? hit.imageUrl
+        : (trybKey && MANUAL_ICON_OVERRIDES_LOWER.get(trybKey.toLowerCase())) || null;
+      const icon = iconUrl
+        ? `<img class="mode-icon" src="${iconUrl}" alt="" loading="lazy" onerror="this.remove()">`
         : "";
       return `<div class="mode-cell-inner">${icon}<span>${escapeHtml(nazwa)}</span></div>`;
     }
