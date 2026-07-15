@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-07-15T16:20:59Z",
+  "aktualizowano": "2026-07-15T18:20:59Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -20,10 +20,10 @@
       "koniec_aktualnego_slotu": "2026-07-16T00:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Eating Good!",
-      "mapa_aktualna": "Parallel Plays",
-      "koniec_aktualnego_slotu": "2026-07-15T18:00:00Z"
+      "tryb": "heist",
+      "mapa_poprzednia": "Parallel Plays",
+      "mapa_aktualna": "Photic Doom",
+      "koniec_aktualnego_slotu": "2026-07-16T18:00:00Z"
     },
     {
       "tryb": "duoShowdown",
@@ -87,9 +87,9 @@
     },
     {
       "tryb": "knockout",
-      "mapa_poprzednia": "Beach Ball",
-      "mapa_aktualna": "New Perspective",
-      "koniec_aktualnego_slotu": "2026-07-15T18:00:00Z"
+      "mapa_poprzednia": "New Perspective",
+      "mapa_aktualna": "Healthy Middle Ground",
+      "koniec_aktualnego_slotu": "2026-07-15T20:00:00Z"
     }
   ]
 }
