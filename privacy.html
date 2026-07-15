@@ -69,9 +69,30 @@
         .highlight-box strong {
             color: #2c5282;
         }
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 18px;
+            font-family: 'Arial', sans-serif;
+            font-size: 10pt;
+            font-weight: 600;
+            color: #2b6cb0;
+            text-decoration: none;
+        }
+        .back-home:hover {
+            text-decoration: underline;
+        }
+        @media print {
+            .back-home {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
+
+    <a href="index.html" class="back-home">← Powrót do strony głównej</a>
 
     <h1>Polityka Prywatności</h1>
     <div class="subtitle">Privacy Policy – Aplikacja BrawlManager | Data aktualizacji: 25 czerwca 2026 r.</div>

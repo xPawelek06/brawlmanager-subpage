@@ -594,17 +594,26 @@ table.premium-table {
   margin-bottom: 4px;
 }
 
-.premium-note {
+.premium-cta {
   margin-top: 28px;
   background: rgba(255, 199, 44, 0.08);
   border: 1px solid rgba(255, 199, 44, 0.3);
   border-radius: var(--radius-md);
-  padding: 18px 20px;
-  font-size: 0.92rem;
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.premium-cta-title {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
   color: var(--text);
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
+}
+
+.premium-cta-lede {
+  margin: 0 auto 22px;
+  max-width: 480px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
 }
 
 /* ---------- ONBOARDING ---------- */
@@ -818,8 +827,8 @@ footer.site-footer {
     align-items: flex-start;
   }
 
-  .premium-note {
-    flex-direction: column;
+  .premium-cta {
+    padding: 26px 18px;
   }
 }
 
