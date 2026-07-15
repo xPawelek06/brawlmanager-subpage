@@ -219,14 +219,17 @@
     // Ręczne dopasowania ikon dla trybów, których BrawlAPI (v1/gamemodes) nie
     // zna pod hashem, jakiego używa Supercell w surowym rotation.json - albo
     // dlatego, że Supercell zmienił nazwę wewnętrzną (airHockey -> tryb
-    // znany publicznie jako "Brawl Hockey"), albo bo tryb faktycznie nie
-    // istnieje w bazie BrawlAPI (deathmatch - sprawdzone 2026-07-15: brak w
-    // pełnej liście v1/gamemodes, brak trafień na cdn.brawlify.com pod
-    // żadnym wariantem nazwy - Deathmatch/DeathMatch/deathmatch/Battle/Batalia,
-    // wszystkie 404; brawlify.com/gamemodes zwraca 403 z tego środowiska.
-    // Świadomie zostawiony bez ikony zamiast zgadywać URL).
+    // znany publicznie jako "Brawl Hockey"), albo bo tryb faktycznie nie ma
+    // wpisu w BrawlAPI pod żadną znaną nazwą (deathmatch - lista v1/gamemodes
+    // pomija część scId, obrazki na cdn.brawlify.com/game-modes/regular/
+    // istnieją mimo to pod samym numerem; 48000079 wypada dokładnie w luce
+    // numeracji między sąsiednimi znanymi trybami (78=loadedDuoShowdown,
+    // 80=foodFight) i wizualnie przedstawia czaszkę w rękawicach bokserskich -
+    // pasuje tematycznie do "Batalii"; potwierdzone 2026-07-15 również
+    // zewnętrznym trackerem pokazującym, że tryb ma własną ikonę w grze).
     const MANUAL_ICON_OVERRIDES_LOWER = new Map([
       ["airhockey", "https://cdn.brawlify.com/game-modes/regular/48000045.png"], // = BrawlAPI "brawlHockey"
+      ["deathmatch", "https://cdn.brawlify.com/game-modes/regular/48000079.png"], // luka w numeracji BrawlAPI, dopasowanie wizualne
     ]);
 
     // "tagTeam" -> "Tag Team", "airHockey" -> "Air Hockey" itd. - używane
