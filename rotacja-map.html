@@ -41,10 +41,7 @@
             <div class="eyebrow">🗺️ Cała rotacja, jeden rzut oka</div>
             <h1>Rotacja map Brawl Stars — wszystkie tryby naraz</h1>
             <p>
-                Znajdziesz tutaj aktualne rotacje map dla każdego trybu gry! Dane pochodzą z tego
-                samego oficjalnego API Brawl Stars (Supercell), z którego korzysta powiadomienie bota na
-                Discordzie — to nie jest kopia układu brawlify.com, tylko własny widok tych samych,
-                publicznych danych.
+                Znajdziesz tutaj aktualne rotacje map dla każdego trybu gry!
             </p>
         </div>
     </section>
@@ -66,31 +63,6 @@
             </table>
         </div>
         <div id="rotation-status" class="rotation-status" hidden></div>
-
-        <div class="info-note">
-            <span>🔮</span>
-            <span>
-                <strong>Kolejna (przyszła) mapa celowo nie jest tu pokazana.</strong> Oficjalne API Brawl Stars
-                (<code>GET /v1/events/rotation</code>) zwraca wyłącznie aktualnie aktywny stan rotacji na tryb —
-                nie ma w nim żadnego zapowiadanego/nadchodzącego eventu ani prognozy. Pokazanie „kolejnej mapy”
-                wymagałoby zgadywania, więc BrawlManager pokazuje tylko to, co da się realnie zweryfikować:
-                ostatnią i aktualną mapę. Winrate/tier-listę per mapa znajdziesz na
-                <a href="https://brawlify.com/maps" target="_blank" rel="noopener">brawlify.com/maps</a>.
-            </span>
-        </div>
-
-        <div class="info-note">
-            <span>🎨</span>
-            <span>
-                Ikony trybów gry i podglądy map to oryginalne grafiki z Brawl Stars, © Supercell — wczytywane
-                na żywo z publicznego <a href="https://github.com/Brawlify/CDN" target="_blank" rel="noopener">Brawlify CDN</a>
-                (darmowy, bez limitów, przeznaczony właśnie do takich integracji) zgodnie z
-                <a href="https://supercell.com/en/fan-content-policy/" target="_blank" rel="noopener">Fan Content Policy Supercella</a>.
-                BrawlManager nie jest tworzony, sponsorowany ani zatwierdzony przez Supercell. Jeśli obraz danej
-                mapy nie wczyta się, pokazywana jest sama nazwa — Brawlify jeszcze jej nie skatalogował (dotyczy
-                głównie map z najnowszych eventów).
-            </span>
-        </div>
 
         <a href="index.html#rotacja-map" class="back-link">← Wróć do strony głównej</a>
     </div>
@@ -205,35 +177,35 @@
     // Nowe/rzadkie tryby (np. najświeższe eventy) celowo NIE są zgadywane -
     // dostają fallback humanizeModeKey() zamiast wymyślonego tłumaczenia.
     const PL_NAZWY_TRYBOW = {
-      gemGrab: "Zdobądź Kryształy",
-      brawlBall: "Piłkarze",
-      brawlBall5v5: "Piłkarze 5v5",
-      brawlBall2v2: "Piłkarze 2v2",
+      gemGrab: "Zbiory klejnotów",
+      brawlBall: "Zadyma",
+      brawlBall5v5: "Zadyma 5v5",
+      brawlBall2v2: "Zadyma 2v2",
       heist: "Napad",
       bounty: "Nagroda",
-      knockout: "Eliminacja",
-      knockout5v5: "Eliminacja 5v5",
-      knockout2v2: "Eliminacja 2v2",
-      soloShowdown: "Pojedynek (solo)",
-      duoShowdown: "Pojedynek (duo)",
-      trioShowdown: "Pojedynek (trio)",
-      hotZone: "Strefa Wpływów",
-      hotZone2v2: "Strefa Wpływów 2v2",
+      knockout: "Nokaut",
+      knockout5v5: "Nokaut 5v5",
+      knockout2v2: "Nokaut 2v2",
+      soloShowdown: "Starcie (solo)",
+      duoShowdown: "Starcie (duo)",
+      trioShowdown: "Starcie (trio)",
+      hotZone: "Gorąca strefa",
+      hotZone2v2: "Gorąca strefa 2v2",
       bigGame: "Wielka Gra",
       roboRumble: "Robo Rozróba",
       bossFight: "Walka z Bossem",
       presentPlunder: "Grabież Prezentów",
-      basketBrawl: "Kosz-Brawl",
-      basketBrawl2v2: "Kosz-Brawl 2v2",
+      basketBrawl: "Zadyma pod koszem",
+      basketBrawl2v2: "Zadyma pod koszem 2v2",
       volleyBrawl: "Siatkówka Plażowa",
       payload: "Eskorta Ładunku",
       wipeout: "Eksterminacja",
       wipeout5v5: "Eksterminacja 5v5",
-      duels: "Pojedynki",
-      brawlArena: "Arena Brawlerów",
+      duels: "Starcia",
+      brawlArena: "Arena Zadymy",
       takedown: "Obalenie",
       loneStar: "Samotna Gwiazda",
-      gemGrab5v5: "Zdobądź Kryształy 5v5",
+      gemGrab5v5: "Zbiory klejnotów 5v5",
     };
     // Lookup pomocniczy bez rozróżniania wielkości liter - Supercell w
     // rotation.json bywa niekonsekwentny (np. "brawlBall5V5" z wielkim V,
