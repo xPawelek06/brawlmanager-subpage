@@ -822,6 +822,16 @@ footer.site-footer {
   gap: 8px;
   justify-content: center;
   margin: 32px 0 8px;
+  position: sticky;
+  /* 63px = wysokość .navbar (padding 14px*2 + logo 34px + border 1px) -
+     pasek komend dokuje się tuż pod głównym navbarem, bez szczeliny/nakładania. */
+  top: 63px;
+  z-index: 40;
+  padding: 10px 12px;
+  background: rgba(11, 14, 26, 0.85);
+  backdrop-filter: blur(14px);
+  border-radius: 14px;
+  border: 1px solid var(--border);
 }
 
 .command-nav a {

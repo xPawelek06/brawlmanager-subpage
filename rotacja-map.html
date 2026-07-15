@@ -259,11 +259,24 @@
       const diffMs = end - now;
       if (isNaN(end)) return "—";
       if (diffMs <= 0) return "powinno się już zmienić";
-      const totalMin = Math.floor(diffMs / 60000);
-      const h = Math.floor(totalMin / 60);
-      const m = totalMin % 60;
-      return h > 0 ? `za ${h} godz. ${m} min` : `za ${m} min`;
+      const totalSec = Math.floor(diffMs / 1000);
+      const h = Math.floor(totalSec / 3600);
+      const m = Math.floor((totalSec % 3600) / 60);
+      const s = totalSec % 60;
+      if (h > 0) return `za ${h} godz. ${m} min ${s} s`;
+      if (m > 0) return `za ${m} min ${s} s`;
+      return `za ${s} s`;
     }
+
+    // Odświeżanie na żywo (co sekundę) - podmienia tylko tekst komórek
+    // odliczania na podstawie ISO w data-end, bez ponownego fetcha/renderu
+    // całej tabeli (dane mapy/trybu się nie zmieniają co sekundę, tylko czas).
+    function tickCountdowns() {
+      document.querySelectorAll("td.countdown[data-end]").forEach((el) => {
+        el.textContent = formatCountdown(el.dataset.end);
+      });
+    }
+    setInterval(tickCountdowns, 1000);
 
     // Ręczna implementacja (nie przez div.textContent/innerHTML) - używana też
     // wewnątrz atrybutów HTML (data-map-name), więc musi escapować cudzysłowy,
@@ -319,7 +332,7 @@
           <td class="mode-cell">${modeCellHtml(slot.tryb, modesByHash)}</td>
           <td class="old-map">${mapCellHtml(slot.mapa_poprzednia, mapsByName)}</td>
           <td class="current-map">${mapCellHtml(slot.mapa_aktualna, mapsByName)}</td>
-          <td class="countdown">${formatCountdown(slot.koniec_aktualnego_slotu)}</td>
+          <td class="countdown" data-end="${slot.koniec_aktualnego_slotu || ""}">${formatCountdown(slot.koniec_aktualnego_slotu)}</td>
         </tr>
       `).join("");
     }
