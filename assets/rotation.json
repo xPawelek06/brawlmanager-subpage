@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-07-15T12:20:59Z",
+  "aktualizowano": "2026-07-15T14:20:59Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -69,9 +69,9 @@
     },
     {
       "tryb": "brawlArena",
-      "mapa_poprzednia": "Arena of Glory",
-      "mapa_aktualna": "Mirage Arena",
-      "koniec_aktualnego_slotu": "2026-07-15T14:00:00Z"
+      "mapa_poprzednia": "Mirage Arena",
+      "mapa_aktualna": "Kaiju Lake",
+      "koniec_aktualnego_slotu": "2026-07-16T14:00:00Z"
     },
     {
       "tryb": "knockout5V5",
@@ -87,9 +87,9 @@
     },
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Makeshift Scaffolding",
-      "mapa_aktualna": "Backyard Bowl",
-      "koniec_aktualnego_slotu": "2026-07-15T14:00:00Z"
+      "mapa_poprzednia": "Backyard Bowl",
+      "mapa_aktualna": "Beach Ball",
+      "koniec_aktualnego_slotu": "2026-07-15T16:00:00Z"
     }
   ]
 }
