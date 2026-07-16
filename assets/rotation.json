@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-07-16T06:20:59Z",
+  "aktualizowano": "2026-07-16T08:20:59Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Beach Ball",
-      "mapa_aktualna": "Pinball Dreams",
-      "koniec_aktualnego_slotu": "2026-07-16T08:00:00Z"
+      "mapa_poprzednia": "Pinball Dreams",
+      "mapa_aktualna": "Pinhole Punt",
+      "koniec_aktualnego_slotu": "2026-07-17T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -44,10 +44,10 @@
       "koniec_aktualnego_slotu": "2026-07-17T08:00:00Z"
     },
     {
-      "tryb": "gemGrab",
-      "mapa_poprzednia": "Backyard Bowl",
-      "mapa_aktualna": "Hard Rock Mine",
-      "koniec_aktualnego_slotu": "2026-07-16T08:00:00Z"
+      "tryb": "brawlBall",
+      "mapa_poprzednia": "Hard Rock Mine",
+      "mapa_aktualna": "Bustling Business",
+      "koniec_aktualnego_slotu": "2026-07-18T08:00:00Z"
     },
     {
       "tryb": "tagTeam",
@@ -86,10 +86,10 @@
       "koniec_aktualnego_slotu": "2026-07-17T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-07-16T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-07-16T10:00:00Z"
     }
   ]
 }
