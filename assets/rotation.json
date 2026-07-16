@@ -1,41 +1,41 @@
 {
-  "aktualizowano": "2026-07-15T14:20:59Z",
+  "aktualizowano": "2026-07-16T08:20:59Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Beach Ball",
-      "mapa_aktualna": "Pinball Dreams",
-      "koniec_aktualnego_slotu": "2026-07-16T08:00:00Z"
+      "mapa_poprzednia": "Pinball Dreams",
+      "mapa_aktualna": "Pinhole Punt",
+      "koniec_aktualnego_slotu": "2026-07-17T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
-      "mapa_poprzednia": "Gated Community",
-      "mapa_aktualna": "Cavern Churn",
-      "koniec_aktualnego_slotu": "2026-07-15T20:00:00Z"
+      "mapa_poprzednia": "Cavern Churn",
+      "mapa_aktualna": "Starfruit Supernova",
+      "koniec_aktualnego_slotu": "2026-07-16T20:00:00Z"
     },
     {
       "tryb": "gemGrab",
-      "mapa_poprzednia": "Double Swoosh",
-      "mapa_aktualna": "Deathcap Trap",
-      "koniec_aktualnego_slotu": "2026-07-16T00:00:00Z"
+      "mapa_poprzednia": "Deathcap Trap",
+      "mapa_aktualna": "Snake Pit",
+      "koniec_aktualnego_slotu": "2026-07-17T00:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Eating Good!",
-      "mapa_aktualna": "Parallel Plays",
-      "koniec_aktualnego_slotu": "2026-07-15T18:00:00Z"
+      "tryb": "heist",
+      "mapa_poprzednia": "Parallel Plays",
+      "mapa_aktualna": "Photic Doom",
+      "koniec_aktualnego_slotu": "2026-07-16T18:00:00Z"
     },
     {
       "tryb": "duoShowdown",
-      "mapa_poprzednia": "Gated Community",
-      "mapa_aktualna": "Cavern Churn",
-      "koniec_aktualnego_slotu": "2026-07-15T20:00:00Z"
+      "mapa_poprzednia": "Cavern Churn",
+      "mapa_aktualna": "Starfruit Supernova",
+      "koniec_aktualnego_slotu": "2026-07-16T20:00:00Z"
     },
     {
       "tryb": "knockout",
-      "mapa_poprzednia": "Belle's Rock",
-      "mapa_aktualna": "Think Ahead",
-      "koniec_aktualnego_slotu": "2026-07-16T02:00:00Z"
+      "mapa_poprzednia": "Think Ahead",
+      "mapa_aktualna": "Jungle Top",
+      "koniec_aktualnego_slotu": "2026-07-17T02:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -44,16 +44,16 @@
       "koniec_aktualnego_slotu": "2026-07-17T08:00:00Z"
     },
     {
-      "tryb": "gemGrab",
-      "mapa_poprzednia": "Backyard Bowl",
-      "mapa_aktualna": "Hard Rock Mine",
-      "koniec_aktualnego_slotu": "2026-07-16T08:00:00Z"
+      "tryb": "brawlBall",
+      "mapa_poprzednia": "Hard Rock Mine",
+      "mapa_aktualna": "Bustling Business",
+      "koniec_aktualnego_slotu": "2026-07-18T08:00:00Z"
     },
     {
-      "tryb": "bounty",
-      "mapa_poprzednia": "Shrouding Serpent",
-      "mapa_aktualna": "Hideout",
-      "koniec_aktualnego_slotu": "2026-07-15T16:00:00Z"
+      "tryb": "tagTeam",
+      "mapa_poprzednia": "Hideout",
+      "mapa_aktualna": "Jumpscare Lair",
+      "koniec_aktualnego_slotu": "2026-07-16T16:00:00Z"
     },
     {
       "tryb": "airHockey",
@@ -63,9 +63,9 @@
     },
     {
       "tryb": "trioShowdown",
-      "mapa_poprzednia": "Gated Community",
-      "mapa_aktualna": "Cavern Churn",
-      "koniec_aktualnego_slotu": "2026-07-15T20:00:00Z"
+      "mapa_poprzednia": "Cavern Churn",
+      "mapa_aktualna": "Starfruit Supernova",
+      "koniec_aktualnego_slotu": "2026-07-16T20:00:00Z"
     },
     {
       "tryb": "brawlArena",
@@ -80,16 +80,16 @@
       "koniec_aktualnego_slotu": "2026-07-16T12:00:00Z"
     },
     {
-      "tryb": "deathmatch",
-      "mapa_poprzednia": "Turnover",
-      "mapa_aktualna": "Solitary Deep Sea Fish",
-      "koniec_aktualnego_slotu": "2026-07-16T04:00:00Z"
+      "tryb": "basketBrawl",
+      "mapa_poprzednia": "Solitary Deep Sea Fish",
+      "mapa_aktualna": "Ball Hog",
+      "koniec_aktualnego_slotu": "2026-07-17T04:00:00Z"
     },
     {
-      "tryb": "brawlBall",
-      "mapa_poprzednia": "Backyard Bowl",
-      "mapa_aktualna": "Beach Ball",
-      "koniec_aktualnego_slotu": "2026-07-15T16:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-07-16T10:00:00Z"
     }
   ]
 }
