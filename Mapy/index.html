@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotacja map Brawl Stars — BrawlManager</title>
+    <meta name="description" content="Pełna lista trybów gry Brawl Stars z ostatnią i aktualną mapą w rotacji — dane z oficjalnego API Supercella, aktualizowane przez BrawlManagera.">
+    <link rel="icon" type="image/png" href="/assets/logo.png">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar">
+    <div class="navbar-inner">
+        <a href="/" class="brand">
+            <img src="/assets/logo.png" alt="Logo BrawlManager" class="brand-mark">
+            BrawlManager
+        </a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/Komendy/">Komendy</a></li>
+                <li><a href="/Mapy/">Mapy</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-cta">
+            <a href="https://discord.com/oauth2/authorize?client_id=1506378216108195851" class="btn btn-primary btn-small" target="_blank" rel="noopener">Dodaj do Discorda</a>
+            <button class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false">☰</button>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <!-- ============ HERO ============ -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="eyebrow">🗺️ Cała rotacja, jeden rzut oka</div>
+            <h1>Rotacja map Brawl Stars — wszystkie tryby naraz</h1>
+            <p>
+                Znajdziesz tutaj aktualne rotacje map dla każdego trybu gry!
+            </p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="rotation-table-wrap">
+            <table class="rotation-full-table">
+                <thead>
+                    <tr>
+                        <th>Tryb gry</th>
+                        <th>Ostatnia mapa</th>
+                        <th>Aktualna mapa</th>
+                        <th>Koniec obecnej rotacji</th>
+                    </tr>
+                </thead>
+                <tbody id="rotation-rows">
+                    <!-- wypełniane przez inline script poniżej z assets/rotation.json -->
+                </tbody>
+            </table>
+        </div>
+        <div id="rotation-status" class="rotation-status" hidden></div>
+
+        <a href="/#rotacja-map" class="back-link">← Wróć do strony głównej</a>
+    </div>
+
+    <!-- Lightbox powiększenia mapy - jeden reużywalny modal, wypełniany przez
+         JS (patrz openLightbox() niżej) po kliknięciu dowolnej miniaturki
+         mapy (.map-thumb) w tabeli. -->
+    <div id="map-lightbox" class="map-lightbox" hidden>
+        <button type="button" class="map-lightbox-close" aria-label="Zamknij podgląd mapy">✕</button>
+        <div class="map-lightbox-inner">
+            <img id="map-lightbox-img" src="" alt="">
+            <p id="map-lightbox-caption" class="map-lightbox-caption"></p>
+        </div>
+    </div>
+
+</main>
+
+<!-- ============ STOPKA ============ -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="/assets/logo.png" alt="Logo BrawlManager" class="brand-mark">
+                BrawlManager
+            </div>
+
+            <ul class="footer-links">
+                <li><a href="/privacy.html">Polityka prywatności</a></li>
+                <li><a href="/tos.html">Regulamin</a></li>
+                <li><a href="https://discord.gg/ARd5PM8VBQ" target="_blank" rel="noopener">Serwer wsparcia</a></li>
+            </ul>
+        </div>
+        <p class="footer-copy">&copy; <span data-year>2026</span> BrawlManagerTeam. Wszelkie prawa zastrzeżone.</p>
+    </div>
+</footer>
+
+<script src="/assets/script.js"></script>
+<script>
+  // Wczytuje assets/rotation.json (statyczny plik - patrz uwaga w
+  // brawlmanager-subpage-zmiany.md o mechanizmie dostarczania danych) i buduje
+  // tabelę tryb / ostatnia mapa / aktualna mapa / odliczanie do końca slotu.
+  // Świadomie NIE ma tu żadnego bezpośredniego wywołania api.brawlstars.com -
+  // token API to sekret, nie może trafić do kodu klienckiego statycznej strony.
+  //
+  // Ikony trybów i podglądy map: rotation.json od bota zawiera TYLKO nazwy
+  // (np. tryb "brawlBall", mapa "Beach Ball") - żadnych ID obrazków. Żeby
+  // pokazać grafiki, strona dociąga (client-side, bez klucza/autoryzacji)
+  // publiczne, darmowe dane z BrawlAPI (api.brawlapi.com, CORS otwarty,
+  // Cache-Control ustawiony przez Cloudflare) i sama dopasowuje nazwę ->
+  // obrazek z cdn.brawlify.com. Zob. dziennik zmian po pełne uzasadnienie
+  // wyboru tego źródła i test pokrycia dopasowań.
+  (function () {
+    const rowsEl = document.getElementById("rotation-rows");
+    const statusEl = document.getElementById("rotation-status");
+
+    // ==========================================
+    // LIGHTBOX powiększenia mapy (jeden reużywalny modal dla wszystkich
+    // miniaturek - ostatnia i aktualna mapa). Event delegation na rowsEl,
+    // bo wiersze tabeli są tworzone dynamicznie w render() (innerHTML), więc
+    // nasłuchiwanie bezpośrednio na .map-thumb w momencie inicjalizacji by
+    // ich jeszcze nie znalazło.
+    // ==========================================
+    const lightboxEl = document.getElementById("map-lightbox");
+    const lightboxImgEl = document.getElementById("map-lightbox-img");
+    const lightboxCaptionEl = document.getElementById("map-lightbox-caption");
+    const lightboxCloseEl = lightboxEl.querySelector(".map-lightbox-close");
+
+    function openLightbox(src, name) {
+      lightboxImgEl.src = src;
+      lightboxImgEl.alt = "Powiększony podgląd mapy " + name;
+      lightboxCaptionEl.textContent = name;
+      lightboxEl.hidden = false;
+      document.body.style.overflow = "hidden";
+      lightboxCloseEl.focus();
+    }
+
+    function closeLightbox() {
+      lightboxEl.hidden = true;
+      lightboxImgEl.src = "";
+      document.body.style.overflow = "";
+    }
+
+    rowsEl.addEventListener("click", (event) => {
+      const thumb = event.target.closest(".map-thumb");
+      if (thumb) openLightbox(thumb.src, thumb.dataset.mapName || "");
+    });
+
+    // Dostępność klawiaturowa - miniaturki mają tabindex="0"/role="button".
+    rowsEl.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      const thumb = event.target.closest(".map-thumb");
+      if (!thumb) return;
+      event.preventDefault();
+      openLightbox(thumb.src, thumb.dataset.mapName || "");
+    });
+
+    lightboxCloseEl.addEventListener("click", closeLightbox);
+
+    // Klik na ciemne tło (poza obrazkiem/podpisem) zamyka - klik bezpośrednio
+    // na #map-lightbox (nie na jego dzieci) oznacza kliknięcie w tło.
+    lightboxEl.addEventListener("click", (event) => {
+      if (event.target === lightboxEl) closeLightbox();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !lightboxEl.hidden) closeLightbox();
+    });
+
+    // Ręcznie utrzymywana lista - stała, niewielka (kilkadziesiąt trybów w
+    // historii gry, w rotacji naraz widać zwykle kilkanaście). Tylko tryby,
+    // których polską nazwę znam z dużą pewnością (stabilne w grze od lat).
+    // Nowe/rzadkie tryby (np. najświeższe eventy) celowo NIE są zgadywane -
+    // dostają fallback humanizeModeKey() zamiast wymyślonego tłumaczenia.
+    const PL_NAZWY_TRYBOW = {
+      knockout: "Nokaut",
+      gemGrab: "Zbiory Klejnotów",
+      brawlBall: "Zadyma",
+      heist: "Napad",
+      basketBrawl: "Zadyma pod Koszem",
+      hotZone: "Gorąca Strefa",
+      bounty: "Nagroda",
+      volleyBrawl: "Zadyma pod Siatką",
+      soloShowdown: "Starcie (solo)",
+      duoShowdown: "Starcie (duo)",
+      trioShowdown: "Starcie (trio)",
+      loadedShowdown: "Naładowane Starcie",
+      knockout5v5: "Nokaut 5v5",
+      wipeout5v5: "Batalia 5v5",
+      brawlBall5v5: "Zadyma 5v5",
+      brawlHockey5v5: "Hokejowa Zadyma 5v5",
+      gemGrab5v5: "Zbiory Klejnotów 5v5",
+      loveBombing: "Atak Miłości ",
+      shadowSmash5v5: "Potyczka w Cieniach 5v5",
+      trioGemGrab: "Zbiory Klejnotów z Tercetem",
+      trioWipeout: "Batalia z  Tercetem",
+      brawlHockey: "Hokejowa Zadyma",
+      duels: "Pojedynki",
+      // Supercell zmienił nazwę wewnętrzną tego trybu na "tagTeam" w
+      // surowym rotation.json (potwierdzone 2026-07-16 na produkcyjnych
+      // danych bota - klucz "duels" się tam nie pojawia). Zostawiamy oba
+      // klucze na wypadek, gdyby stary wariant kiedyś wrócił.
+      tagTeam: "Pojedynki",
+      brawlArena: "Arena Zadymy",
+      wipeout: "Batalia",
+      treasureHunt: "Pogoń za Skarbem",
+      tokenRun: "Żetonowy Wyścig",
+      dodgeBrawl: "Zbijak",
+      soulCollector: "Zbiór Dusz",
+      presentPlunder: "Rabunek Prezentów",
+      safeBlast: "Wybuch Kontrolowany",
+      shadowSmash: "Potyczka w Cieniach",
+      paintBrawl: "Starcie Kolorów",
+      spiritWars: "Wojny Duchów",
+      subwayRun: "Bieg Subway",
+      duoMegaBoss: "MegaBoss dla Dwojga",
+      hawkinsHunt: "Łowy w Hawkins",
+      upsideShowdown: "Starcie po Drugiej Stronie",
+      swarm: "Swarm",
+      superBall: "SuperPiłka",
+      largeShowdown: "Large Showdown",
+      loadedDuoShowdown: "Naładowanie Starcie (duo)",
+      mechaGuard: "MechaStrażnik",
+    };
+    // Lookup pomocniczy bez rozróżniania wielkości liter - Supercell w
+    // rotation.json bywa niekonsekwentny (np. "brawlBall5V5" z wielkim V,
+    // podczas gdy BrawlAPI/PL_NAZWY_TRYBOW używają małego "5v5").
+    const PL_NAZWY_TRYBOW_LOWER = new Map(
+      Object.entries(PL_NAZWY_TRYBOW).map(([k, v]) => [k.toLowerCase(), v])
+    );
+
+    // Ręczne dopasowania ikon dla trybów, których BrawlAPI (v1/gamemodes) nie
+    // zna pod hashem, jakiego używa Supercell w surowym rotation.json - albo
+    // dlatego, że Supercell zmienił nazwę wewnętrzną (airHockey -> tryb
+    // znany publicznie jako "Brawl Hockey", tagTeam -> tryb znany publicznie
+    // jako "Duels"), albo bo tryb faktycznie nie ma wpisu w BrawlAPI pod
+    // żadną znaną nazwą (deathmatch - lista v1/gamemodes pomija część scId,
+    // obrazki na cdn.brawlify.com/game-modes/regular/ istnieją mimo to pod
+    // samym numerem; 48000079 wypada dokładnie w luce numeracji między
+    // sąsiednimi znanymi trybami (78=loadedDuoShowdown, 80=foodFight) i
+    // wizualnie przedstawia czaszkę w rękawicach bokserskich - dopasowanie
+    // wizualne z 2026-07-15, ale UWAGA: zweryfikowane 2026-07-16, że to NIE
+    // jest ikona Wipeout/"Batalii" - ten wpis nigdy się nie trafiał dla
+    // "wipeout", bo prawdziwy klucz w rotation.json to "wipeout", nie
+    // "deathmatch"; zostawiony na wypadek, gdyby "deathmatch" kiedyś
+    // faktycznie wystąpił jako osobny tryb, ale nie służy do niczego dziś).
+    const MANUAL_ICON_OVERRIDES_LOWER = new Map([
+      ["airhockey", "https://cdn.brawlify.com/game-modes/regular/48000045.png"], // = BrawlAPI "brawlHockey"
+      ["tagteam", "https://cdn.brawlify.com/game-modes/regular/48000024.png"], // = BrawlAPI "duels" (Pojedynki)
+      // "wipeout" ma dziś (2026-07-16) poprawny wpis w BrawlAPI pod własnym
+      // scHash "wipeout" (id 48000025, prawdziwa ikona Wipeout) - hit z
+      // BrawlAPI go już znajdzie automatycznie, więc ten override nigdy się
+      // nie uruchomi w normalnych warunkach. Trzymamy go jawnie jako
+      // zabezpieczenie na wypadek, gdyby BrawlAPI kiedyś usunęło/zmieniło
+      // ten wpis (community-maintained, już raz go brakowało).
+      ["wipeout", "https://cdn.brawlify.com/game-modes/regular/48000025.png"], // = BrawlAPI "wipeout" (Batalia)
+      ["deathmatch", "https://cdn.brawlify.com/game-modes/regular/48000079.png"], // luka w numeracji BrawlAPI, dopasowanie wizualne, klucz nigdy realnie nie występuje
+    ]);
+
+    // "tagTeam" -> "Tag Team", "airHockey" -> "Air Hockey" itd. - używane
+    // tylko gdy trybu nie ma ani w PL_NAZWY_TRYBOW, ani w danych z BrawlAPI.
+    function humanizeModeKey(key) {
+      if (!key) return "Nieznany tryb";
+      const spaced = key.replace(/([a-z])([A-Z])/g, "$1 $2");
+      return spaced.replace(/\b\w/g, (c) => c.toUpperCase());
+    }
+
+    // Normalizacja nazwy mapy do porównania z bazą BrawlAPI - różnice bywają
+    // tylko w apostrofach/wykrzyknikach/wielkości liter (np. "Belle's Rock" w
+    // rotation.json vs "Belles Rock" w BrawlAPI). Zweryfikowane na 25
+    // realnych nazwach map z produkcyjnego rotation.json: 25/25 dopasowań.
+    function normalizeMapName(name) {
+      return (name || "")
+        .toLowerCase()
+        .replace(/['’!]/g, "")
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+
+    function formatCountdown(iso) {
+      if (!iso) return "—";
+      const end = new Date(iso).getTime();
+      const now = Date.now();
+      const diffMs = end - now;
+      if (isNaN(end)) return "—";
+      if (diffMs <= 0) return "powinno się już zmienić";
+      const totalSec = Math.floor(diffMs / 1000);
+      const h = Math.floor(totalSec / 3600);
+      const m = Math.floor((totalSec % 3600) / 60);
+      const s = totalSec % 60;
+      if (h > 0) return `za ${h} godz. ${m} min ${s} s`;
+      if (m > 0) return `za ${m} min ${s} s`;
+      return `za ${s} s`;
+    }
+
+    // Odświeżanie na żywo (co sekundę) - podmienia tylko tekst komórek
+    // odliczania na podstawie ISO w data-end, bez ponownego fetcha/renderu
+    // całej tabeli (dane mapy/trybu się nie zmieniają co sekundę, tylko czas).
+    function tickCountdowns() {
+      document.querySelectorAll("td.countdown[data-end]").forEach((el) => {
+        el.textContent = formatCountdown(el.dataset.end);
+      });
+    }
+    setInterval(tickCountdowns, 1000);
+
+    // Ręczna implementacja (nie przez div.textContent/innerHTML) - używana też
+    // wewnątrz atrybutów HTML (data-map-name), więc musi escapować cudzysłowy,
+    // nie tylko &/</> (np. "Belle's Rock" ma apostrof, realna nazwa mapy).
+    function escapeHtml(str) {
+      return String(str ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+    }
+
+    function modeCellHtml(trybKey, modesByHash) {
+      const hit = trybKey ? modesByHash.get(trybKey.toLowerCase()) : null;
+      const nazwa = (trybKey && PL_NAZWY_TRYBOW_LOWER.get(trybKey.toLowerCase())) || (hit && hit.name) || humanizeModeKey(trybKey);
+      // Gdy BrawlAPI nie zna tego trybu pod danym hashem, sprawdź ręczną listę
+      // fallbacków (patrz MANUAL_ICON_OVERRIDES_LOWER) zanim pokażesz sam tekst.
+      const iconUrl = hit
+        ? hit.imageUrl
+        : (trybKey && MANUAL_ICON_OVERRIDES_LOWER.get(trybKey.toLowerCase())) || null;
+      const icon = iconUrl
+        ? `<img class="mode-icon" src="${iconUrl}" alt="" loading="lazy" onerror="this.remove()">`
+        : "";
+      return `<div class="mode-cell-inner">${icon}<span>${escapeHtml(nazwa)}</span></div>`;
+    }
+
+    function mapCellHtml(mapName, mapsByName) {
+      if (!mapName) {
+        return `<div class="map-cell"><span class="map-name">brak danych</span></div>`;
+      }
+      const hit = mapsByName.get(normalizeMapName(mapName));
+      // Klikalna miniaturka -> otwiera lightbox (patrz obsługa kliknięć niżej,
+      // event delegation na #rotation-rows). data-map-name niesie oryginalną
+      // nazwę do podpisu w lightboxie, bez ponownego szukania w danych.
+      const thumb = hit
+        ? `<img class="map-thumb" src="${hit.imageUrl}" alt="Powiększ podgląd mapy ${escapeHtml(mapName)}" data-map-name="${escapeHtml(mapName)}" loading="lazy" role="button" tabindex="0" onerror="this.remove()">`
+        : "";
+      return `<div class="map-cell">${thumb}<span class="map-name">${escapeHtml(mapName)}</span></div>`;
+    }
+
+    function render(data, modesByHash, mapsByName) {
+      const sloty = Array.isArray(data.sloty) ? data.sloty : [];
+
+      if (!sloty.length) {
+        statusEl.hidden = false;
+        statusEl.textContent = "Brak danych o rotacji map do pokazania.";
+        return;
+      }
+
+      rowsEl.innerHTML = sloty.map((slot) => `
+        <tr>
+          <td class="mode-cell">${modeCellHtml(slot.tryb, modesByHash)}</td>
+          <td class="old-map">${mapCellHtml(slot.mapa_poprzednia, mapsByName)}</td>
+          <td class="current-map">${mapCellHtml(slot.mapa_aktualna, mapsByName)}</td>
+          <td class="countdown" data-end="${slot.koniec_aktualnego_slotu || ""}">${formatCountdown(slot.koniec_aktualnego_slotu)}</td>
+        </tr>
+      `).join("");
+    }
+
+    // Trzy niezależne fetch-e: rotation.json JEST krytyczny (bez niego nie ma
+    // tabeli), gamemodes/maps z BrawlAPI są WZBOGACENIEM - jeśli akurat nie
+    // odpowiedzą (sieć, przeciążenie CDN), strona ma dalej pokazać tabelę
+    // tekstową zamiast się wywalić. Stąd allSettled zamiast all().
+    Promise.allSettled([
+      fetch("/assets/rotation.json", { cache: "no-store" }).then((res) => {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return res.json();
+      }),
+      fetch("https://api.brawlapi.com/v1/gamemodes").then((res) => {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return res.json();
+      }),
+      fetch("https://api.brawlapi.com/v1/maps").then((res) => {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return res.json();
+      }),
+    ]).then(([rotationResult, gamemodesResult, mapsResult]) => {
+      if (rotationResult.status !== "fulfilled") {
+        statusEl.hidden = false;
+        statusEl.textContent = "Nie udało się wczytać danych o rotacji map. Spróbuj odświeżyć stronę później.";
+        return;
+      }
+
+      const modesByHash = new Map();
+      if (gamemodesResult.status === "fulfilled") {
+        const list = gamemodesResult.value.list || [];
+        list.forEach((m) => {
+          if (m.scHash) modesByHash.set(String(m.scHash).toLowerCase(), m);
+        });
+      } else {
+        console.warn("BrawlAPI gamemodes niedostępne - tabela pokaże tryby bez ikon.", gamemodesResult.reason);
+      }
+
+      const mapsByName = new Map();
+      if (mapsResult.status === "fulfilled") {
+        const list = mapsResult.value.list || [];
+        list.forEach((m) => {
+          const key = normalizeMapName(m.name);
+          if (key && !mapsByName.has(key)) mapsByName.set(key, m);
+        });
+      } else {
+        console.warn("BrawlAPI maps niedostępne - tabela pokaże mapy bez podglądu.", mapsResult.reason);
+      }
+
+      render(rotationResult.value, modesByHash, mapsByName);
+    });
+  })();
+</script>
+</body>
+</html>
