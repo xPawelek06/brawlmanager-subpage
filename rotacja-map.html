@@ -200,6 +200,11 @@
       trioWipeout: "Batalia z  Tercetem",
       brawlHockey: "Hokejowa Zadyma",
       duels: "Pojedynki",
+      // Supercell zmienił nazwę wewnętrzną tego trybu na "tagTeam" w
+      // surowym rotation.json (potwierdzone 2026-07-16 na produkcyjnych
+      // danych bota - klucz "duels" się tam nie pojawia). Zostawiamy oba
+      // klucze na wypadek, gdyby stary wariant kiedyś wrócił.
+      tagTeam: "Pojedynki",
       brawlArena: "Arena Zadymy",
       wipeout: "Batalia",
       treasureHunt: "Pogoń za Skarbem",
@@ -231,17 +236,29 @@
     // Ręczne dopasowania ikon dla trybów, których BrawlAPI (v1/gamemodes) nie
     // zna pod hashem, jakiego używa Supercell w surowym rotation.json - albo
     // dlatego, że Supercell zmienił nazwę wewnętrzną (airHockey -> tryb
-    // znany publicznie jako "Brawl Hockey"), albo bo tryb faktycznie nie ma
-    // wpisu w BrawlAPI pod żadną znaną nazwą (deathmatch - lista v1/gamemodes
-    // pomija część scId, obrazki na cdn.brawlify.com/game-modes/regular/
-    // istnieją mimo to pod samym numerem; 48000079 wypada dokładnie w luce
-    // numeracji między sąsiednimi znanymi trybami (78=loadedDuoShowdown,
-    // 80=foodFight) i wizualnie przedstawia czaszkę w rękawicach bokserskich -
-    // pasuje tematycznie do "Batalii"; potwierdzone 2026-07-15 również
-    // zewnętrznym trackerem pokazującym, że tryb ma własną ikonę w grze).
+    // znany publicznie jako "Brawl Hockey", tagTeam -> tryb znany publicznie
+    // jako "Duels"), albo bo tryb faktycznie nie ma wpisu w BrawlAPI pod
+    // żadną znaną nazwą (deathmatch - lista v1/gamemodes pomija część scId,
+    // obrazki na cdn.brawlify.com/game-modes/regular/ istnieją mimo to pod
+    // samym numerem; 48000079 wypada dokładnie w luce numeracji między
+    // sąsiednimi znanymi trybami (78=loadedDuoShowdown, 80=foodFight) i
+    // wizualnie przedstawia czaszkę w rękawicach bokserskich - dopasowanie
+    // wizualne z 2026-07-15, ale UWAGA: zweryfikowane 2026-07-16, że to NIE
+    // jest ikona Wipeout/"Batalii" - ten wpis nigdy się nie trafiał dla
+    // "wipeout", bo prawdziwy klucz w rotation.json to "wipeout", nie
+    // "deathmatch"; zostawiony na wypadek, gdyby "deathmatch" kiedyś
+    // faktycznie wystąpił jako osobny tryb, ale nie służy do niczego dziś).
     const MANUAL_ICON_OVERRIDES_LOWER = new Map([
       ["airhockey", "https://cdn.brawlify.com/game-modes/regular/48000045.png"], // = BrawlAPI "brawlHockey"
-      ["deathmatch", "https://cdn.brawlify.com/game-modes/regular/48000079.png"], // luka w numeracji BrawlAPI, dopasowanie wizualne
+      ["tagteam", "https://cdn.brawlify.com/game-modes/regular/48000024.png"], // = BrawlAPI "duels" (Pojedynki)
+      // "wipeout" ma dziś (2026-07-16) poprawny wpis w BrawlAPI pod własnym
+      // scHash "wipeout" (id 48000025, prawdziwa ikona Wipeout) - hit z
+      // BrawlAPI go już znajdzie automatycznie, więc ten override nigdy się
+      // nie uruchomi w normalnych warunkach. Trzymamy go jawnie jako
+      // zabezpieczenie na wypadek, gdyby BrawlAPI kiedyś usunęło/zmieniło
+      // ten wpis (community-maintained, już raz go brakowało).
+      ["wipeout", "https://cdn.brawlify.com/game-modes/regular/48000025.png"], // = BrawlAPI "wipeout" (Batalia)
+      ["deathmatch", "https://cdn.brawlify.com/game-modes/regular/48000079.png"], // luka w numeracji BrawlAPI, dopasowanie wizualne, klucz nigdy realnie nie występuje
     ]);
 
     // "tagTeam" -> "Tag Team", "airHockey" -> "Air Hockey" itd. - używane
