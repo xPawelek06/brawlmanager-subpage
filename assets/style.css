@@ -917,6 +917,11 @@ footer.site-footer {
   box-shadow: var(--shadow-lg);
 }
 
+/* Usage screenshot stacked above the result screenshot within the same command-block. */
+.command-screenshot-usage {
+  margin-bottom: 16px;
+}
+
 /* Side-by-side layout for commands with two screenshot variants (e.g. /historia, /czystka) */
 .command-screenshot-group {
   display: flex;
