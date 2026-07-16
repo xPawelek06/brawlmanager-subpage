@@ -816,17 +816,33 @@ footer.site-footer {
 
 /* ---------- COMMAND SHOWCASE (komendy.html) ---------- */
 
+/* Sticky lives on the WRAPPER (.container instance around .command-nav), not on
+   .command-nav itself. Reason (found via a real Playwright scroll test, not just
+   reading CSS): a sticky element's containing block for offset purposes is its
+   DIRECT parent's box (same rule as position:relative), not any further-out
+   ancestor. .command-nav's direct parent used to be a bare <div class="container">
+   containing nothing but the nav itself, so that box was only ever as tall as the
+   nav — zero room to stick, so it behaved exactly like position:static (confirmed:
+   with sticky on .command-nav, scrolling 1500px moved it to y=-1100 instead of
+   clamping at top:63px). Moving position:sticky to this wrapper instead means ITS
+   direct parent is .command-nav-stick-area (see komendy.html), which spans the
+   full height of all the command sections — giving it real room to stay pinned.
+   Confirmed with the same Playwright test: nav now clamps at y=63 from scroll
+   500px all the way to scroll 5000px, matching .navbar's always-visible behavior. */
+.command-nav-container {
+  position: sticky;
+  /* 63px = wysokość .navbar (padding 14px*2 + logo 34px + border 1px) -
+     pasek komend dokuje się tuż pod głównym navbarem, bez szczeliny/nakładania. */
+  top: 63px;
+  z-index: 40;
+}
+
 .command-nav {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   justify-content: center;
   margin: 32px 0 8px;
-  position: sticky;
-  /* 63px = wysokość .navbar (padding 14px*2 + logo 34px + border 1px) -
-     pasek komend dokuje się tuż pod głównym navbarem, bez szczeliny/nakładania. */
-  top: 63px;
-  z-index: 40;
   padding: 10px 12px;
   background: rgba(11, 14, 26, 0.85);
   backdrop-filter: blur(14px);
@@ -907,7 +923,10 @@ footer.site-footer {
   margin-bottom: 4px;
 }
 
-/* Real Discord screenshot for a command's output (replaces the old CSS mockups). */
+/* Real Discord screenshot for a command's output (replaces the old CSS mockups).
+   Clickable (opens #command-lightbox, see inline script at the bottom of
+   komendy.html) — cursor/hover/focus mirror .map-thumb on rotacja-map.html so
+   the "this is enlargeable" affordance feels consistent across the site. */
 .command-screenshot {
   display: block;
   width: 100%;
@@ -915,6 +934,15 @@ footer.site-footer {
   border-radius: var(--radius-md);
   border: 1px solid var(--border);
   box-shadow: var(--shadow-lg);
+  cursor: pointer;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.command-screenshot:hover,
+.command-screenshot:focus-visible {
+  transform: scale(1.015);
+  border-color: var(--border-strong);
+  outline: none;
 }
 
 /* Usage screenshot stacked above the result screenshot within the same command-block. */
@@ -957,6 +985,73 @@ footer.site-footer {
   .command-block {
     grid-template-columns: 1fr;
   }
+}
+
+/* ---------- COMMAND LIGHTBOX (komendy.html) ----------
+   Deliberately a separate, analogous ruleset to .map-lightbox below, not a
+   shared one — see the HTML comment next to #command-lightbox in komendy.html
+   for why. Visually identical to .map-lightbox on purpose (same design
+   language for "click to enlarge" across the site), just under its own class
+   names so the two pages' lightboxes stay fully independent. */
+
+.command-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(5, 6, 14, 0.86);
+  backdrop-filter: blur(6px);
+}
+
+.command-lightbox[hidden] {
+  display: none;
+}
+
+.command-lightbox-inner {
+  max-width: min(720px, 92vw);
+  text-align: center;
+}
+
+.command-lightbox-inner img {
+  max-width: 100%;
+  max-height: 84vh;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-strong);
+  box-shadow: var(--shadow-lg);
+  background: var(--panel-2);
+  cursor: default;
+}
+
+.command-lightbox-caption {
+  margin: 16px 0 0;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+.command-lightbox-close {
+  position: absolute;
+  top: 22px;
+  right: 24px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  background: var(--panel);
+  color: var(--text);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background 0.15s ease;
+}
+
+.command-lightbox-close:hover,
+.command-lightbox-close:focus-visible {
+  background: var(--panel-2);
 }
 
 /* ---------- FULL MAP ROTATION TABLE (rotacja-map.html) ---------- */
