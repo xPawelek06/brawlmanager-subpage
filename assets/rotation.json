@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-07-16T22:15:10Z",
+  "aktualizowano": "2026-07-17T00:15:10Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -15,9 +15,9 @@
     },
     {
       "tryb": "gemGrab",
-      "mapa_poprzednia": "Deathcap Trap",
-      "mapa_aktualna": "Snake Pit",
-      "koniec_aktualnego_slotu": "2026-07-17T00:00:00Z"
+      "mapa_poprzednia": "Snake Pit",
+      "mapa_aktualna": "Gem Fort",
+      "koniec_aktualnego_slotu": "2026-07-18T00:00:00Z"
     },
     {
       "tryb": "hotZone",
@@ -86,10 +86,10 @@
       "koniec_aktualnego_slotu": "2026-07-17T04:00:00Z"
     },
     {
-      "tryb": "knockout5V5",
-      "mapa_poprzednia": "Crescendo",
-      "mapa_aktualna": "Journey of a Thousand Steps",
-      "koniec_aktualnego_slotu": "2026-07-17T00:00:00Z"
+      "tryb": "airHockey",
+      "mapa_poprzednia": "Journey of a Thousand Steps",
+      "mapa_aktualna": "Bouncy Bowl",
+      "koniec_aktualnego_slotu": "2026-07-17T02:00:00Z"
     }
   ]
 }
