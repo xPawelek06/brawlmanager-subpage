@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-07-17T20:15:10Z",
+  "aktualizowano": "2026-07-17T22:15:10Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -87,9 +87,9 @@
     },
     {
       "tryb": "knockout5V5",
-      "mapa_poprzednia": "Healthy Middle Ground",
-      "mapa_aktualna": "Crescendo",
-      "koniec_aktualnego_slotu": "2026-07-17T22:00:00Z"
+      "mapa_poprzednia": "Crescendo",
+      "mapa_aktualna": "Journey of a Thousand Steps",
+      "koniec_aktualnego_slotu": "2026-07-18T00:00:00Z"
     }
   ]
 }
