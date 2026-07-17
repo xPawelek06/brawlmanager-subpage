@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-07-17T10:15:10Z",
+  "aktualizowano": "2026-07-17T12:15:10Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -74,10 +74,10 @@
       "koniec_aktualnego_slotu": "2026-07-17T14:00:00Z"
     },
     {
-      "tryb": "brawlBall5V5",
-      "mapa_poprzednia": "Rastermind",
-      "mapa_aktualna": "Insane Streamer",
-      "koniec_aktualnego_slotu": "2026-07-17T12:00:00Z"
+      "tryb": "deathmatch5v5",
+      "mapa_poprzednia": "Insane Streamer",
+      "mapa_aktualna": "Slippery road",
+      "koniec_aktualnego_slotu": "2026-07-18T12:00:00Z"
     },
     {
       "tryb": "deathmatch",
@@ -86,10 +86,10 @@
       "koniec_aktualnego_slotu": "2026-07-18T04:00:00Z"
     },
     {
-      "tryb": "soloShowdown",
-      "mapa_poprzednia": "Flying Fantasies",
-      "mapa_aktualna": "Makeshift Scaffolding",
-      "koniec_aktualnego_slotu": "2026-07-17T12:00:00Z"
+      "tryb": "brawlBall",
+      "mapa_poprzednia": "Makeshift Scaffolding",
+      "mapa_aktualna": "Backyard Bowl",
+      "koniec_aktualnego_slotu": "2026-07-17T14:00:00Z"
     }
   ]
 }
