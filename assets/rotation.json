@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-07-18T06:15:10Z",
+  "aktualizowano": "2026-07-18T08:15:10Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Pinhole Punt",
-      "mapa_aktualna": "Bustling Business",
-      "koniec_aktualnego_slotu": "2026-07-18T08:00:00Z"
+      "mapa_poprzednia": "Bustling Business",
+      "mapa_aktualna": "Nutmeg",
+      "koniec_aktualnego_slotu": "2026-07-19T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -44,10 +44,10 @@
       "koniec_aktualnego_slotu": "2026-07-19T08:00:00Z"
     },
     {
-      "tryb": "brawlBall",
-      "mapa_poprzednia": "Hard Rock Mine",
-      "mapa_aktualna": "Bustling Business",
-      "koniec_aktualnego_slotu": "2026-07-18T08:00:00Z"
+      "tryb": "hotZone",
+      "mapa_poprzednia": "Bustling Business",
+      "mapa_aktualna": "Dueling Beetles",
+      "koniec_aktualnego_slotu": "2026-07-20T08:00:00Z"
     },
     {
       "tryb": "tagTeam",
@@ -86,10 +86,10 @@
       "koniec_aktualnego_slotu": "2026-07-19T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-07-18T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-07-18T10:00:00Z"
     }
   ]
 }
