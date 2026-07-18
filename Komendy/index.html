@@ -64,19 +64,19 @@
     <div class="command-nav-stick-area">
     <div class="container command-nav-container">
         <div class="command-nav">
-            <a href="#oblicz">/oblicz</a>
-            <a href="#profil">/profil</a>
-            <a href="#klan">/klan</a>
-            <a href="#historia">/historia</a>
+            <a href="#sprawdz_puchary">/sprawdz_puchary</a>
+            <a href="#profil_bs">/profil_bs</a>
+            <a href="#ranking_klanu">/ranking_klanu</a>
+            <a href="#historia_pucharow">/historia_pucharow</a>
             <a href="#support">/support</a>
             <a href="#ustaw_klan">/ustaw_klan</a>
-            <a href="#ustaw_prog">/ustaw_prog</a>
-            <a href="#ustaw_role">/ustaw_role</a>
-            <a href="#ustaw_kanal">/ustaw_kanal</a>
+            <a href="#ustaw_prog_pucharow">/ustaw_prog_pucharow</a>
+            <a href="#ustaw_role_rang">/ustaw_role_rang</a>
+            <a href="#ustaw_kanal_raportow">/ustaw_kanal_raportow</a>
             <a href="#ustaw_kanal_rotacji">/ustaw_kanal_rotacji</a>
-            <a href="#ustaw_harmonogram">/ustaw_harmonogram</a>
-            <a href="#panel">/panel</a>
-            <a href="#czystka">/czystka</a>
+            <a href="#ustaw_harmonogram_raportow">/ustaw_harmonogram_raportow</a>
+            <a href="#panel_weryfikacji">/panel_weryfikacji</a>
+            <a href="#czystka_klanu">/czystka_klanu</a>
             <a href="#ustaw_wyglad">/ustaw_wyglad</a>
         </div>
     </div>
@@ -91,10 +91,10 @@
 
             <div class="command-showcase">
 
-                <!-- /oblicz -->
-                <div class="command-block" id="oblicz">
+                <!-- /sprawdz_puchary -->
+                <div class="command-block" id="sprawdz_puchary">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/oblicz [tag_gracza]</code></div>
+                        <div class="command-tag"><code>/sprawdz_puchary [tag_gracza]</code></div>
                         <p>Sprawdza, czy gracz spełnia próg pucharowy tego serwera i czy należy do przypisanego klanu.</p>
                         <ul>
                             <li>Kolor embeda: zielony, gdy próg spełniony — ciemnoczerwony, gdy nie</li>
@@ -107,10 +107,10 @@
                     </div>
                 </div>
 
-                <!-- /profil -->
-                <div class="command-block" id="profil">
+                <!-- /profil_bs -->
+                <div class="command-block" id="profil_bs">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/profil [tag_gracza]</code> <span class="badge badge-partial">🔒 częściowo Premium</span></div>
+                        <div class="command-tag"><code>/profil_bs [tag_gracza]</code> <span class="badge badge-partial">🔒 częściowo Premium</span></div>
                         <p>Karta gracza: poziom, rekordowe trofea, zwycięstwa i top 3 brawlery. Premium dorzuca dodatkowe pole z progresem od pierwszego dnia śledzenia historii.</p>
                     </div>
                     <div>
@@ -128,10 +128,10 @@
                     </div>
                 </div>
 
-                <!-- /klan -->
-                <div class="command-block" id="klan">
+                <!-- /ranking_klanu -->
+                <div class="command-block" id="ranking_klanu">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/klan</code></div>
+                        <div class="command-tag"><code>/ranking_klanu</code></div>
                         <p>Pokazuje pierwszą dziesiątkę klanu posortowaną wg trofeów, wg tagu klanu skonfigurowanego przez admina (<code>/ustaw_klan</code>).</p>
                     </div>
                     <div>
@@ -140,10 +140,10 @@
                     </div>
                 </div>
 
-                <!-- /historia -->
-                <div class="command-block" id="historia">
+                <!-- /historia_pucharow -->
+                <div class="command-block" id="historia_pucharow">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/historia [zakres_dni] [tag_gracza]</code> <span class="badge">🔒 Premium</span></div>
+                        <div class="command-tag"><code>/historia_pucharow [zakres_dni] [tag_gracza]</code> <span class="badge">🔒 Premium</span></div>
                         <p>Trend trofeów dowolnego gracza z klanu z ostatnich 7 lub 30 dni, z tekstowym wykresem (sparkline).</p>
                     </div>
                     <div class="command-screenshot-group">
@@ -198,11 +198,11 @@
                     </div>
                 </div>
 
-                <!-- /ustaw_prog -->
-                <div class="command-block" id="ustaw_prog">
+                <!-- /ustaw_prog_pucharow -->
+                <div class="command-block" id="ustaw_prog_pucharow">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/ustaw_prog [nowe_puchary]</code></div>
-                        <p>Ustawia minimalny próg pucharowy wymagany na tym serwerze — używany przez <code>/oblicz</code>, panel weryfikacji i <code>/czystka</code>.</p>
+                        <div class="command-tag"><code>/ustaw_prog_pucharow [nowe_puchary]</code></div>
+                        <p>Ustawia minimalny próg pucharowy wymagany na tym serwerze — używany przez <code>/sprawdz_puchary</code>, panel weryfikacji i <code>/czystka_klanu</code>.</p>
                     </div>
                     <div>
                         <img src="/assets/screenshots/ustaw_prog-uzycie.png" alt="Wpisywanie komendy /ustaw_prog na Discordzie" class="command-screenshot command-screenshot-usage" role="button" tabindex="0">
@@ -210,10 +210,10 @@
                     </div>
                 </div>
 
-                <!-- /ustaw_role -->
-                <div class="command-block" id="ustaw_role">
+                <!-- /ustaw_role_rang -->
+                <div class="command-block" id="ustaw_role_rang">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/ustaw_role [ranga_z_gry] [nowa_nazwa_discord]</code></div>
+                        <div class="command-tag"><code>/ustaw_role_rang [ranga_z_gry] [nowa_nazwa_discord]</code></div>
                         <p>Dopasowuje nazwę roli Discord do konkretnej rangi klanowej (member / senior / vicePresident / president). Odpowiedź widoczna tylko dla admina.</p>
                     </div>
                     <div>
@@ -222,10 +222,10 @@
                     </div>
                 </div>
 
-                <!-- /ustaw_kanal -->
-                <div class="command-block" id="ustaw_kanal">
+                <!-- /ustaw_kanal_raportow -->
+                <div class="command-block" id="ustaw_kanal_raportow">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/ustaw_kanal [kanal]</code></div>
+                        <div class="command-tag"><code>/ustaw_kanal_raportow [kanal]</code></div>
                         <p>Ustawia kanał, na który trafiają automatyczne raporty tygodniowe i miesięczne. Bot sam sprawdza, czy ma uprawnienia do pisania i linkowania embedów na wybranym kanale.</p>
                     </div>
                     <div>
@@ -246,10 +246,10 @@
                     </div>
                 </div>
 
-                <!-- /ustaw_harmonogram -->
-                <div class="command-block" id="ustaw_harmonogram">
+                <!-- /ustaw_harmonogram_raportow -->
+                <div class="command-block" id="ustaw_harmonogram_raportow">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/ustaw_harmonogram [dzien] [godzina]</code></div>
+                        <div class="command-tag"><code>/ustaw_harmonogram_raportow [dzien] [godzina]</code></div>
                         <p>Ustala dzień tygodnia i godzinę, o której wysyłany jest automatyczny raport tygodniowy.</p>
                     </div>
                     <div>
@@ -258,10 +258,10 @@
                     </div>
                 </div>
 
-                <!-- /panel -->
-                <div class="command-block" id="panel">
+                <!-- /panel_weryfikacji -->
+                <div class="command-block" id="panel_weryfikacji">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/panel</code></div>
+                        <div class="command-tag"><code>/panel_weryfikacji</code></div>
                         <p>Wysyła panel z przyciskiem, dzięki któremu członkowie sami się zweryfikują (otwiera formularz na tag z gry).</p>
                     </div>
                     <div>
@@ -270,10 +270,10 @@
                     </div>
                 </div>
 
-                <!-- /czystka -->
-                <div class="command-block" id="czystka">
+                <!-- /czystka_klanu -->
+                <div class="command-block" id="czystka_klanu">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/czystka</code></div>
+                        <div class="command-tag"><code>/czystka_klanu</code></div>
                         <p>Lista członków klanu, którzy są poniżej ustawionego progu pucharowego — gotowa do przejrzenia przed ewentualnym wyrzuceniem z klanu w grze.</p>
                     </div>
                     <div>
