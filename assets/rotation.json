@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-07-19T08:15:10Z",
+  "aktualizowano": "2026-07-19T10:15:10Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -57,9 +57,9 @@
     },
     {
       "tryb": "airHockey",
-      "mapa_poprzednia": "Arabesque",
-      "mapa_aktualna": "Nullscapes",
-      "koniec_aktualnego_slotu": "2026-07-19T10:00:00Z"
+      "mapa_poprzednia": "Nullscapes",
+      "mapa_aktualna": "Raging Ocean",
+      "koniec_aktualnego_slotu": "2026-07-20T10:00:00Z"
     },
     {
       "tryb": "trioShowdown",
@@ -87,9 +87,9 @@
     },
     {
       "tryb": "soloShowdown",
-      "mapa_poprzednia": "Dueling Beetles",
-      "mapa_aktualna": "Flying Fantasies",
-      "koniec_aktualnego_slotu": "2026-07-19T10:00:00Z"
+      "mapa_poprzednia": "Flying Fantasies",
+      "mapa_aktualna": "Makeshift Scaffolding",
+      "koniec_aktualnego_slotu": "2026-07-19T12:00:00Z"
     }
   ]
 }
