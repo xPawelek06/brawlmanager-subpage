@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-07-18T22:15:10Z",
+  "aktualizowano": "2026-07-19T00:15:10Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -15,9 +15,9 @@
     },
     {
       "tryb": "gemGrab",
-      "mapa_poprzednia": "Gem Fort",
-      "mapa_aktualna": "Hard Rock Mine",
-      "koniec_aktualnego_slotu": "2026-07-19T00:00:00Z"
+      "mapa_poprzednia": "Hard Rock Mine",
+      "mapa_aktualna": "Ancestral Roots",
+      "koniec_aktualnego_slotu": "2026-07-20T00:00:00Z"
     },
     {
       "tryb": "hotZone",
@@ -86,10 +86,10 @@
       "koniec_aktualnego_slotu": "2026-07-19T04:00:00Z"
     },
     {
-      "tryb": "knockout5V5",
-      "mapa_poprzednia": "Crescendo",
-      "mapa_aktualna": "Journey of a Thousand Steps",
-      "koniec_aktualnego_slotu": "2026-07-19T00:00:00Z"
+      "tryb": "airHockey",
+      "mapa_poprzednia": "Journey of a Thousand Steps",
+      "mapa_aktualna": "Bouncy Bowl",
+      "koniec_aktualnego_slotu": "2026-07-19T02:00:00Z"
     }
   ]
 }
