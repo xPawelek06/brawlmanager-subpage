@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-07-19T02:15:10Z",
+  "aktualizowano": "2026-07-19T04:15:10Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -80,16 +80,16 @@
       "koniec_aktualnego_slotu": "2026-07-19T12:00:00Z"
     },
     {
-      "tryb": "basketBrawl",
-      "mapa_poprzednia": "Palette Hangout",
-      "mapa_aktualna": "Triple-Double",
-      "koniec_aktualnego_slotu": "2026-07-19T04:00:00Z"
+      "tryb": "deathmatch",
+      "mapa_poprzednia": "Triple-Double",
+      "mapa_aktualna": "WALKING ON HOT SAND",
+      "koniec_aktualnego_slotu": "2026-07-20T04:00:00Z"
     },
     {
-      "tryb": "airHockey",
-      "mapa_poprzednia": "Bouncy Bowl",
-      "mapa_aktualna": "Below Zero",
-      "koniec_aktualnego_slotu": "2026-07-19T04:00:00Z"
+      "tryb": "hotZone",
+      "mapa_poprzednia": "Below Zero",
+      "mapa_aktualna": "Open Business",
+      "koniec_aktualnego_slotu": "2026-07-19T06:00:00Z"
     }
   ]
 }
