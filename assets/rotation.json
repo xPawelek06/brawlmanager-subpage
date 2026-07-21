@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-07-20T22:15:10Z",
+  "aktualizowano": "2026-07-21T00:15:10Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -15,9 +15,9 @@
     },
     {
       "tryb": "gemGrab",
-      "mapa_poprzednia": "Ancestral Roots",
-      "mapa_aktualna": "Bottom Two",
-      "koniec_aktualnego_slotu": "2026-07-21T00:00:00Z"
+      "mapa_poprzednia": "Bottom Two",
+      "mapa_aktualna": "Picturesque",
+      "koniec_aktualnego_slotu": "2026-07-22T00:00:00Z"
     },
     {
       "tryb": "hotZone",
@@ -86,10 +86,10 @@
       "koniec_aktualnego_slotu": "2026-07-21T04:00:00Z"
     },
     {
-      "tryb": "knockout5V5",
-      "mapa_poprzednia": "Crescendo",
-      "mapa_aktualna": "Journey of a Thousand Steps",
-      "koniec_aktualnego_slotu": "2026-07-21T00:00:00Z"
+      "tryb": "airHockey",
+      "mapa_poprzednia": "Journey of a Thousand Steps",
+      "mapa_aktualna": "Bouncy Bowl",
+      "koniec_aktualnego_slotu": "2026-07-21T02:00:00Z"
     }
   ]
 }
