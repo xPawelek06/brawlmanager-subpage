@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-07-21T10:15:10Z",
+  "aktualizowano": "2026-07-21T12:15:10Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -74,10 +74,10 @@
       "koniec_aktualnego_slotu": "2026-07-21T14:00:00Z"
     },
     {
-      "tryb": "deathmatch5v5",
-      "mapa_poprzednia": "Siberian Stand Off",
-      "mapa_aktualna": "Icy ice park",
-      "koniec_aktualnego_slotu": "2026-07-21T12:00:00Z"
+      "tryb": "knockout5V5",
+      "mapa_poprzednia": "Icy ice park",
+      "mapa_aktualna": "Journey of a Thousand Steps",
+      "koniec_aktualnego_slotu": "2026-07-22T12:00:00Z"
     },
     {
       "tryb": "deathmatch",
@@ -86,10 +86,10 @@
       "koniec_aktualnego_slotu": "2026-07-22T04:00:00Z"
     },
     {
-      "tryb": "soloShowdown",
-      "mapa_poprzednia": "Flying Fantasies",
-      "mapa_aktualna": "Makeshift Scaffolding",
-      "koniec_aktualnego_slotu": "2026-07-21T12:00:00Z"
+      "tryb": "brawlBall",
+      "mapa_poprzednia": "Makeshift Scaffolding",
+      "mapa_aktualna": "Backyard Bowl",
+      "koniec_aktualnego_slotu": "2026-07-21T14:00:00Z"
     }
   ]
 }
