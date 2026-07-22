@@ -181,6 +181,45 @@ code, .mono {
   cursor: pointer;
 }
 
+/* ---------- LANG SWITCH (PL/EN) ---------- */
+/* Cichy, neutralny segmented control - żadnego akcentowego koloru, żeby nie
+   konkurował wzrokiem z .btn-primary ("Dodaj do Discorda") tuż obok, zgodnie z
+   zasadą "jeden akcent, użyty oszczędnie". Ten sam język wizualny co pigułki
+   .command-nav (var(--panel)/var(--border-strong), radius 999px). */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: var(--panel);
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  padding: 3px;
+  flex-shrink: 0;
+}
+
+.lang-switch-btn {
+  border: none;
+  background: transparent;
+  color: var(--text-faint);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 5px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.lang-switch-btn:hover {
+  color: var(--text);
+}
+
+.lang-switch-btn.is-active {
+  background: var(--panel-2);
+  color: var(--text);
+  box-shadow: inset 0 0 0 1px var(--border-strong);
+}
+
 /* ---------- BUTTONS ---------- */
 
 .btn {
@@ -749,12 +788,31 @@ footer.site-footer {
     display: none;
   }
 
+  .nav-cta {
+    gap: 8px;
+  }
+
   section {
     padding: 64px 0;
   }
 
   .hero {
     padding: 56px 0 56px;
+  }
+}
+
+/* Belka nawigacji robi się ciasna poniżej ~400px (lang-switch + przycisk
+   Discorda + hamburger razem) - lekko kurczymy przycisk CTA i przełącznik
+   języka, zamiast chować którykolwiek z nich. */
+@media (max-width: 400px) {
+  .nav-cta .btn.btn-small {
+    padding: 7px 10px;
+    font-size: 0.78rem;
+  }
+
+  .lang-switch-btn {
+    padding: 4px 8px;
+    font-size: 0.68rem;
   }
 }
 
@@ -852,12 +910,76 @@ footer.site-footer {
   z-index: 40;
 }
 
+/* Zwijana belka pigułek (2026-07-22) - .command-nav-header (etykieta + strzałka)
+   zostaje ZAWSZE widoczna (poza animowanym .command-nav-collapsible), więc pasek
+   po zwinięciu ściąga się do samego cienkiego nagłówka zamiast znikać całkowicie. */
+.command-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 32px;
+  padding: 0 4px;
+}
+
+.command-nav-header-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.command-nav-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  background: var(--panel);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+.command-nav-toggle-btn:hover,
+.command-nav-toggle-btn:focus-visible {
+  color: var(--text);
+  background: var(--panel-2);
+  border-color: var(--border-strong);
+  outline: none;
+}
+
+.command-nav-toggle-icon {
+  display: inline-block;
+  font-size: 0.7rem;
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+
+/* Strzałka obraca się 180° zamiast podmiany glifu - jeden mniej ruchomy
+   element do synchronizowania ze stanem aria-expanded. */
+.command-nav-toggle-btn[aria-expanded="false"] .command-nav-toggle-icon {
+  transform: rotate(180deg);
+}
+
+/* max-height animowany z JS (patrz script.js) na WYLICZONY scrollHeight, nie stałą
+   wartość - inaczej przy różnej liczbie zawiniętych wierszy (różne szerokości
+   ekranu) albo tranzycja byłaby za wolna/za szybka względem realnej wysokości. */
+.command-nav-collapsible {
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
 .command-nav {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   justify-content: center;
-  margin: 32px 0 8px;
+  margin: 10px 0 8px;
   padding: 10px 12px;
   background: rgba(11, 14, 26, 0.85);
   backdrop-filter: blur(14px);

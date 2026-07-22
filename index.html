@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrawlManager — bot Discord dla liderów klanów Brawl Stars</title>
-    <meta name="description" content="BrawlManager automatyzuje weryfikację członków, role, raporty i statystyki klanu Brawl Stars na Discordzie. Dodaj bota za darmo, Premium odblokowuje więcej.">
+    <title data-i18n="home.meta_title">BrawlManager — bot Discord dla liderów klanów Brawl Stars</title>
+    <meta name="description" content="BrawlManager automatyzuje weryfikację członków, role, raporty i statystyki klanu Brawl Stars na Discordzie. Dodaj bota za darmo, Premium odblokowuje więcej." data-i18n-attr="content:home.meta_description">
     <link rel="icon" type="image/png" href="/assets/logo.png">
     <link rel="stylesheet" href="/assets/style.css">
 </head>
@@ -14,21 +14,29 @@
 <header class="navbar">
     <div class="navbar-inner">
         <a href="/" class="brand">
-            <img src="/assets/logo.png" alt="Logo BrawlManager" class="brand-mark">
+            <img src="/assets/logo.png" alt="Logo BrawlManager" class="brand-mark" data-i18n-attr="alt:common.logo_alt">
             BrawlManager
         </a>
 
         <nav>
             <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/Komendy/">Komendy</a></li>
-                <li><a href="/Mapy/">Mapy</a></li>
+                <li><a href="/" data-i18n="common.nav_home">Home</a></li>
+                <li><a href="/Komendy/" data-i18n="common.nav_komendy">Komendy</a></li>
+                <li><a href="/Mapy/" data-i18n="common.nav_mapy">Mapy</a></li>
             </ul>
         </nav>
 
         <div class="nav-cta">
-            <a href="https://discord.com/oauth2/authorize?client_id=1506378216108195851" class="btn btn-primary btn-small" target="_blank" rel="noopener">Dodaj do Discorda</a>
-            <button class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false">☰</button>
+            <!-- Przełącznik PL/EN (2026-07-22) - wybór trzyma się w localStorage
+                 (assets/i18n.js), więc przechodzi między Home/Komendy/Mapy zamiast
+                 resetować się przy każdej nawigacji. Neutralny styl (nie akcentowy
+                 kolor), żeby nie konkurował z przyciskiem "Dodaj do Discorda" obok. -->
+            <div class="lang-switch" role="group" data-i18n-attr="aria-label:common.lang_switch_aria">
+                <button type="button" class="lang-switch-btn" data-lang-btn="pl">PL</button>
+                <button type="button" class="lang-switch-btn" data-lang-btn="en">EN</button>
+            </div>
+            <a href="https://discord.com/oauth2/authorize?client_id=1506378216108195851" class="btn btn-primary btn-small" target="_blank" rel="noopener" data-i18n="common.nav_add_discord">Dodaj do Discorda</a>
+            <button class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false" data-i18n-attr="aria-label:common.nav_toggle_aria">☰</button>
         </div>
     </div>
 </header>
@@ -38,16 +46,16 @@
     <!-- ============ 1. HERO ============ -->
     <section class="hero">
         <div class="container">
-            <div class="eyebrow">🎮 Bot Discord dla klanów Brawl Stars</div>
-            <h1>Weryfikacja, raporty i statystyki klanu w jednym miejscu</h1>
-            <p class="tagline">
+            <div class="eyebrow" data-i18n="home.hero_eyebrow">🎮 Bot Discord dla klanów Brawl Stars</div>
+            <h1 data-i18n="home.hero_title">Weryfikacja, raporty i statystyki klanu w jednym miejscu</h1>
+            <p class="tagline" data-i18n="home.hero_tagline">
                 BrawlManager sam sprawdza puchary, nadaje role zgodne z rangą w klanie i wysyła
                 cykliczne raporty aktywności — Ty tylko czytasz wyniki.
             </p>
 
             <div class="hero-actions">
-                <a href="https://discord.com/oauth2/authorize?client_id=1506378216108195851" class="btn btn-primary" target="_blank" rel="noopener">➕ Dodaj do Discorda</a>
-                <a href="https://discord.gg/ARd5PM8VBQ" class="btn btn-secondary" target="_blank" rel="noopener">
+                <a href="https://discord.com/oauth2/authorize?client_id=1506378216108195851" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="home.hero_cta_primary">➕ Dodaj do Discorda</a>
+                <a href="https://discord.gg/ARd5PM8VBQ" class="btn btn-secondary" target="_blank" rel="noopener" data-i18n="home.hero_cta_secondary">
                     💬 Dołącz do serwera wsparcia
                 </a>
             </div>
@@ -58,8 +66,8 @@
     <section id="funkcje">
         <div class="container">
             <div class="section-head">
-                <h2 class="section-title">Wszystko, czego potrzebuje lider klanu</h2>
-                <p class="section-lede">
+                <h2 class="section-title" data-i18n="home.features_title">Wszystko, czego potrzebuje lider klanu</h2>
+                <p class="section-lede" data-i18n="home.features_lede">
                     Jedna konfiguracja, a bot sam pilnuje weryfikacji, ról i porządku w klanie.
                 </p>
             </div>
@@ -67,8 +75,8 @@
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">🛡️</div>
-                    <h3>Weryfikacja i role wg rangi</h3>
-                    <p>
+                    <h3 data-i18n="home.feature1_title">Weryfikacja i role wg rangi</h3>
+                    <p data-i18n="home.feature1_body">
                         Członek wpisuje swój tag z gry, a bot sam sprawdza próg pucharowy i przynależność
                         do klanu, po czym nadaje właściwą rolę Discord i ujednolica pseudonim.
                     </p>
@@ -76,8 +84,8 @@
 
                 <div class="feature-card">
                     <div class="feature-icon">📊</div>
-                    <h3>Raporty tygodniowe i miesięczne</h3>
-                    <p>
+                    <h3 data-i18n="home.feature2_title">Raporty tygodniowe i miesięczne</h3>
+                    <p data-i18n="home.feature2_body">
                         Automatyczne podsumowania aktywności klanu trafiają na wybrany kanał —
                         bez ręcznego liczenia, kto zagrał, a kto nie.
                     </p>
@@ -85,8 +93,8 @@
 
                 <div class="feature-card">
                     <div class="feature-icon">📈</div>
-                    <h3>Statystyki gracza i klanu</h3>
-                    <p>
+                    <h3 data-i18n="home.feature3_title">Statystyki gracza i klanu</h3>
+                    <p data-i18n="home.feature3_body">
                         Karta gracza, ranking top 10 klanu, pozycja w rankingu, osobisty cel pucharowy,
                         odznaki i pojedynki 1:1 między członkami — jedną komendą, bez wchodzenia w grę.
                     </p>
@@ -94,8 +102,8 @@
 
                 <div class="feature-card">
                     <div class="feature-icon">🎴</div>
-                    <h3>Wizualna siatka brawlerów</h3>
-                    <p>
+                    <h3 data-i18n="home.feature4_title">Wizualna siatka brawlerów</h3>
+                    <p data-i18n="home.feature4_body">
                         <code>/brawlerzy</code> generuje obraz całej kolekcji gracza — odblokowani brawlerzy
                         na kolorowo z rangą lub poziomem mocy, zablokowani wyszarzeni. Darmowe.
                     </p>
@@ -103,8 +111,8 @@
 
                 <div class="feature-card">
                     <div class="feature-icon">🗺️</div>
-                    <h3>Powiadomienia o rotacji map</h3>
-                    <p>
+                    <h3 data-i18n="home.feature5_title">Powiadomienia o rotacji map</h3>
+                    <p data-i18n="home.feature5_body">
                         Bot informuje Twój serwer, gdy tylko zmieni się mapa albo tryb gry w aktualnej
                         rotacji Brawl Stars — zero ręcznego sprawdzania.
                     </p>
@@ -112,8 +120,8 @@
 
                 <div class="feature-card">
                     <div class="feature-icon">🎨</div>
-                    <h3>Personalizacja</h3>
-                    <p>
+                    <h3 data-i18n="home.feature6_title">Personalizacja</h3>
+                    <p data-i18n="home.feature6_body">
                         Ustaw własny kolor embedów bota, osobno dla każdej komendy — tak, żeby wyglądał
                         jak Twój bot, a nie generyczne narzędzie.
                     </p>
@@ -121,8 +129,8 @@
 
                 <div class="feature-card">
                     <div class="feature-icon">🌐</div>
-                    <h3>Bot po polsku i angielsku</h3>
-                    <p>
+                    <h3 data-i18n="home.feature7_title">Bot po polsku i angielsku</h3>
+                    <p data-i18n="home.feature7_body">
                         Wszystkie komendy i odpowiedzi bota działają w dwóch językach — admin wybiera jeden
                         (<code>/ustaw_jezyk</code>) dla całego serwera.
                     </p>
@@ -135,157 +143,164 @@
     <section id="komendy" class="alt">
         <div class="container">
             <div class="section-head">
-                <h2 class="section-title">Komendy</h2>
-                <p class="section-lede">
+                <h2 class="section-title" data-i18n="home.commands_title">Komendy</h2>
+                <p class="section-lede" data-i18n="home.commands_lede">
                     Wszystko dostępne przez slash-komendy (<code>/</code>) na Discordzie.
                 </p>
             </div>
 
             <div class="commands-grid">
                 <div class="commands-col">
-                    <h3>Dla członków klanu</h3>
+                    <h3 data-i18n="home.commands_col1_title">Dla członków klanu</h3>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code>/sprawdz_puchary [tag_gracza]</code>
-                            <p>Sprawdza, czy spełniasz próg pucharowy tego serwera i czy należysz do właściwego klanu.</p>
+                            <code data-i18n="home.cmd_sprawdz_puchary_code">/sprawdz_puchary [tag_gracza]</code>
+                            <p data-i18n="home.cmd_sprawdz_puchary_desc">Sprawdza, czy spełniasz próg pucharowy tego serwera i czy należysz do właściwego klanu.</p>
                         </div>
                     </div>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code>/profil_bs [tag_gracza]</code>
-                            <p>Karta gracza: poziom, rekordowe trofea, zwycięstwa i top 3 brawlery. Premium dorzuca progres od pierwszego dnia śledzenia.</p>
+                            <code data-i18n="home.cmd_profil_bs_code">/profil_bs [tag_gracza]</code>
+                            <p data-i18n="home.cmd_profil_bs_desc">Karta gracza: poziom, rekordowe trofea, zwycięstwa i top 3 brawlery. Premium dorzuca progres od pierwszego dnia śledzenia.</p>
                         </div>
                     </div>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code>/ranking_klanu</code>
-                            <p>Pokazuje pierwszą dziesiątkę klanu posortowaną wg trofeów.</p>
+                            <code data-i18n="home.cmd_ranking_klanu_code">/ranking_klanu</code>
+                            <p data-i18n="home.cmd_ranking_klanu_desc">Pokazuje pierwszą dziesiątkę klanu posortowaną wg trofeów.</p>
                         </div>
                     </div>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code>/brawlerzy [tag_gracza]</code>
-                            <p>Graficzna siatka wszystkich brawlerów gracza — odblokowani kolorowo (z rangą lub poziomem mocy), zablokowani wyszarzeni. Sortowanie: ranga / moc / rzadkość / trofea. Darmowe.</p>
+                            <code data-i18n="home.cmd_brawlerzy_code">/brawlerzy [tag_gracza]</code>
+                            <p data-i18n="home.cmd_brawlerzy_desc">Graficzna siatka wszystkich brawlerów gracza — odblokowani kolorowo (z rangą lub poziomem mocy), zablokowani wyszarzeni. Sortowanie: ranga / moc / rzadkość / trofea. Darmowe.</p>
                         </div>
                     </div>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code>/historia_pucharow [zakres] [tag_gracza]</code>
-                            <p>Trend trofeów dowolnego gracza z klanu z ostatnich 7 lub 30 dni — sparkline w embedzie plus prawdziwy wykres liniowy (obraz).</p>
+                            <code data-i18n="home.cmd_historia_pucharow_code">/historia_pucharow [zakres] [tag_gracza]</code>
+                            <p data-i18n="home.cmd_historia_pucharow_desc">Trend trofeów dowolnego gracza z klanu z ostatnich 7 lub 30 dni — sparkline w embedzie plus prawdziwy wykres liniowy (obraz).</p>
                         </div>
                     </div>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code>/moja_pozycja [tag_gracza]</code>
-                            <p>Twoja aktualna pozycja w rankingu klanu i dystans do osoby wyżej. Premium dorzuca prognozę, za ile dni ją wyprzedzisz.</p>
+                            <code data-i18n="home.cmd_moja_pozycja_code">/moja_pozycja [tag_gracza]</code>
+                            <p data-i18n="home.cmd_moja_pozycja_desc">Twoja aktualna pozycja w rankingu klanu i dystans do osoby wyżej. Premium dorzuca prognozę, za ile dni ją wyprzedzisz.</p>
                         </div>
                     </div>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code>/moj_cel [tag_gracza] [cel_puchary]</code>
-                            <p>Ustawia osobisty cel pucharowy i pokazuje pasek postępu. Premium dorzuca prognozę w widełkach (optymistyczna / pesymistyczna) na bazie Twojego najlepszego i najgorszego tygodnia.</p>
+                            <code data-i18n="home.cmd_moj_cel_code">/moj_cel [tag_gracza] [cel_puchary]</code>
+                            <p data-i18n="home.cmd_moj_cel_desc">Ustawia osobisty cel pucharowy i pokazuje pasek postępu. Premium dorzuca prognozę w widełkach (optymistyczna / pesymistyczna) na bazie Twojego najlepszego i najgorszego tygodnia.</p>
                         </div>
                     </div>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code>/moje_osiagniecia [tag_gracza]</code>
-                            <p>Odznaki i osiągnięcia gracza w klanie — serie, rekordy, kolekcja brawlerów. Całkowicie darmowe.</p>
+                            <code data-i18n="home.cmd_moje_osiagniecia_code">/moje_osiagniecia [tag_gracza]</code>
+                            <p data-i18n="home.cmd_moje_osiagniecia_desc">Odznaki i osiągnięcia gracza w klanie — serie, rekordy, kolekcja brawlerów. Całkowicie darmowe.</p>
                         </div>
                     </div>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code>/pojedynek [tag_gracza_1] [tag_gracza_2]</code>
-                            <p>Porównanie 1:1 dwóch graczy klanu — trofea i przyrost tygodnia. Premium dorzuca porównanie kolekcji brawlerów i wspólny wykres trendu obu graczy.</p>
+                            <code data-i18n="home.cmd_pojedynek_code">/pojedynek [tag_gracza_1] [tag_gracza_2]</code>
+                            <p data-i18n="home.cmd_pojedynek_desc">Porównanie 1:1 dwóch graczy klanu — trofea i przyrost tygodnia. Premium dorzuca porównanie kolekcji brawlerów i wspólny wykres trendu obu graczy.</p>
                         </div>
                     </div>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code>/support</code>
-                            <p>Krótkie info o bocie i przycisk-link do serwera wsparcia.</p>
+                            <code data-i18n="home.cmd_rotacja_map_code">/rotacja_map</code>
+                            <p data-i18n="home.cmd_rotacja_map_desc">Pokazuje aktualną rotację map i trybów gry na żądanie — to samo, co bot wysyła automatycznie na kanał powiadomień.</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code data-i18n="home.cmd_support_code">/support</code>
+                            <p data-i18n="home.cmd_support_desc">Krótkie info o bocie i przycisk-link do serwera wsparcia.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="commands-col">
-                    <h3>Dla adminów / liderów serwera</h3>
+                    <h3 data-i18n="home.commands_col2_title">Dla adminów / liderów serwera</h3>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code>/ustaw_klan [tag]</code>
-                            <p>Powiązuje ten serwer Discord z konkretnym klanem Brawl Stars.</p>
+                            <code data-i18n="home.cmd_ustaw_klan_code">/ustaw_klan [tag]</code>
+                            <p data-i18n="home.cmd_ustaw_klan_desc">Powiązuje ten serwer Discord z konkretnym klanem Brawl Stars.</p>
                         </div>
                     </div>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code>/ustaw_prog_pucharow [puchary]</code>
-                            <p>Ustawia minimalny próg pucharowy wymagany na tym serwerze.</p>
+                            <code data-i18n="home.cmd_ustaw_prog_pucharow_code">/ustaw_prog_pucharow [puchary]</code>
+                            <p data-i18n="home.cmd_ustaw_prog_pucharow_desc">Ustawia minimalny próg pucharowy wymagany na tym serwerze.</p>
                         </div>
                     </div>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code>/ustaw_role_rang [ranga] [rola]</code>
-                            <p>Dopasowuje nazwę roli Discord do konkretnej rangi klanowej (member/senior/vice/prezes).</p>
+                            <code data-i18n="home.cmd_ustaw_role_rang_code">/ustaw_role_rang [ranga] [rola]</code>
+                            <p data-i18n="home.cmd_ustaw_role_rang_desc">Dopasowuje nazwę roli Discord do konkretnej rangi klanowej (member/senior/vice/prezes).</p>
                         </div>
                     </div>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code>/ustaw_kanal_raportow [kanał]</code>
-                            <p>Ustawia kanał, na który trafiają automatyczne raporty tygodniowe i miesięczne.</p>
+                            <code data-i18n="home.cmd_ustaw_kanal_raportow_code">/ustaw_kanal_raportow [kanał]</code>
+                            <p data-i18n="home.cmd_ustaw_kanal_raportow_desc">Ustawia kanał, na który trafiają automatyczne raporty tygodniowe i miesięczne.</p>
                         </div>
                     </div>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code>/ustaw_kanal_rotacji [kanał]</code>
-                            <p>Ustawia kanał powiadomień o zmianie mapy w rotacji Brawl Stars.</p>
+                            <code data-i18n="home.cmd_ustaw_kanal_rotacji_code">/ustaw_kanal_rotacji [kanał]</code>
+                            <p data-i18n="home.cmd_ustaw_kanal_rotacji_desc">Ustawia kanał powiadomień o zmianie mapy w rotacji Brawl Stars.</p>
                         </div>
                     </div>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code>/ustaw_harmonogram_raportow [dzień] [godzina]</code>
-                            <p>Ustala dzień tygodnia i godzinę, o której wysyłany jest automatyczny raport tygodniowy.</p>
+                            <code data-i18n="home.cmd_ustaw_harmonogram_raportow_code">/ustaw_harmonogram_raportow [dzień] [godzina]</code>
+                            <p data-i18n="home.cmd_ustaw_harmonogram_raportow_desc">Ustala dzień tygodnia i godzinę, o której wysyłany jest automatyczny raport tygodniowy.</p>
                         </div>
                     </div>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code>/panel_weryfikacji</code>
-                            <p>Wysyła panel z przyciskiem, dzięki któremu członkowie sami się zweryfikują.</p>
+                            <code data-i18n="home.cmd_panel_weryfikacji_code">/panel_weryfikacji</code>
+                            <p data-i18n="home.cmd_panel_weryfikacji_desc">Wysyła panel z przyciskiem, dzięki któremu członkowie sami się zweryfikują.</p>
                         </div>
                     </div>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code>/czystka_klanu</code>
-                            <p>Lista członków klanu, którzy są poniżej ustawionego progu pucharowego.</p>
+                            <code data-i18n="home.cmd_czystka_klanu_code">/czystka_klanu</code>
+                            <p data-i18n="home.cmd_czystka_klanu_desc">Lista członków klanu, którzy są poniżej ustawionego progu pucharowego.</p>
                         </div>
                     </div>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code>/ustaw_wyglad</code>
-                            <p>Zmienia kolor wszystkich embedów. Premium umożliwia ustawienie osobnego koloru dla każdej pojedynczej komendy.</p>
+                            <code data-i18n="home.cmd_ustaw_wyglad_code">/ustaw_wyglad</code>
+                            <p data-i18n="home.cmd_ustaw_wyglad_desc">Zmienia kolor wszystkich embedów. Premium umożliwia ustawienie osobnego koloru dla każdej pojedynczej komendy.</p>
                         </div>
                     </div>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code>/ustaw_jezyk</code>
-                            <p>Ustawia język odpowiedzi bota na tym serwerze — polski albo angielski.</p>
+                            <code data-i18n="home.cmd_ustaw_jezyk_code">/ustaw_jezyk</code>
+                            <p data-i18n="home.cmd_ustaw_jezyk_desc">Ustawia język odpowiedzi bota na tym serwerze — polski albo angielski.</p>
                         </div>
                     </div>
                 </div>
@@ -298,21 +313,21 @@
         <div class="container">
             <div class="rotation-layout">
                 <div class="rotation-copy">
-                    <div class="eyebrow">🗺️ Zawsze na bieżąco</div>
-                    <h2 class="section-title">Powiadomienia o rotacji map</h2>
-                    <p>
+                    <div class="eyebrow" data-i18n="home.rotation_eyebrow">🗺️ Zawsze na bieżąco</div>
+                    <h2 class="section-title" data-i18n="home.rotation_title">Powiadomienia o rotacji map</h2>
+                    <p data-i18n="home.rotation_body">
                         Brawl Stars regularnie zmienia mapy i tryby gry dostępne w rotacji. BrawlManager
                         pilnuje tego za Ciebie — gdy tylko coś się zmieni, bot wysyła wiadomość na wybrany
                         kanał Twojego serwera.
                     </p>
                     <ul class="rotation-points">
-                        <li><span class="dot">1</span> Skonfiguruj kanał jedną komendą (<code>/ustaw_kanal_rotacji</code>) — reszta dzieje się automatycznie.</li>
-                        <li><span class="dot">2</span> Powiadomienie pojawia się tylko wtedy, gdy mapa albo tryb faktycznie się zmienią — zero spamu.</li>
+                        <li><span class="dot">1</span> <span data-i18n="home.rotation_point1">Skonfiguruj kanał jedną komendą (<code>/ustaw_kanal_rotacji</code>) — reszta dzieje się automatycznie.</span></li>
+                        <li><span class="dot">2</span> <span data-i18n="home.rotation_point2">Powiadomienie pojawia się tylko wtedy, gdy mapa albo tryb faktycznie się zmienią — zero spamu.</span></li>
                     </ul>
                 </div>
 
                 <div class="rotation-screenshot-card">
-                    <img src="/assets/rotacja-powiadomienie-discord.png" alt="Prawdziwe powiadomienie BrawlManagera o zmianie rotacji map na kanale Discorda" class="command-screenshot rotation-screenshot">
+                    <img src="/assets/rotacja-powiadomienie-discord.png" alt="Prawdziwe powiadomienie BrawlManagera o zmianie rotacji map na kanale Discorda" class="command-screenshot rotation-screenshot" data-i18n-attr="alt:home.rotation_screenshot_alt">
                 </div>
             </div>
         </div>
@@ -323,7 +338,7 @@
         <div class="container">
             <div class="section-head">
                 <h2 class="section-title">Free vs Premium</h2>
-                <p class="section-lede">
+                <p class="section-lede" data-i18n="home.premium_lede">
                     Darmowa wersja wystarcza, żeby prowadzić klan porządnie. Premium dorzuca głębsze
                     analizy i personalizację.
                 </p>
@@ -333,15 +348,15 @@
                 <table class="premium-table">
                     <thead>
                         <tr>
-                            <th>Funkcja</th>
+                            <th data-i18n="home.premium_th_feature">Funkcja</th>
                             <th>Free</th>
                             <th class="col-premium">Premium</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="feature-name">Raporty klanowe<span>tygodniowe / miesięczne</span></td>
-                            <td>
+                            <td class="feature-name" data-i18n="home.premium_row1_name">Raporty klanowe<span>tygodniowe / miesięczne</span></td>
+                            <td data-i18n="home.premium_row1_free">
                                 <ul>
                                     <li>Próg klanowy — kto go nie spełnia</li>
                                     <li>Całkowity progres klanu, Top 3 tygodnia</li>
@@ -349,7 +364,7 @@
                                     <li>Podium i wyróżnienia miesiąca, najlepszy dzień klanu</li>
                                 </ul>
                             </td>
-                            <td>
+                            <td data-i18n="home.premium_row1_premium">
                                 <ul>
                                     <li>Wszystko z Free, plus:</li>
                                     <li>Wykres PNG trendu klanu + pełny ranking wszystkich monitorowanych</li>
@@ -360,9 +375,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="feature-name">Historia progresu gracza<span><code>/historia_pucharow</code></span></td>
+                            <td class="feature-name" data-i18n="home.premium_row2_name">Historia progresu gracza<span><code>/historia_pucharow</code></span></td>
                             <td>—</td>
-                            <td>
+                            <td data-i18n="home.premium_row2_premium">
                                 <ul>
                                     <li>Trend trofeów dowolnego gracza z klanu (7 lub 30 dni)</li>
                                     <li>Prawdziwy wykres liniowy, nie tylko sparkline</li>
@@ -372,14 +387,14 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="feature-name">Pojedynek graczy<span><code>/pojedynek</code></span></td>
-                            <td>
+                            <td class="feature-name" data-i18n="home.premium_row3_name">Pojedynek graczy<span><code>/pojedynek</code></span></td>
+                            <td data-i18n="home.premium_row3_free">
                                 <ul>
                                     <li>Aktualne trofea obu graczy i kto prowadzi</li>
                                     <li>Przyrost z ostatniego tygodnia</li>
                                 </ul>
                             </td>
-                            <td>
+                            <td data-i18n="home.premium_row3_premium">
                                 <ul>
                                     <li>Porównanie kolekcji brawlerów obu graczy</li>
                                     <li>Wspólny wykres trendu obu graczy</li>
@@ -387,14 +402,14 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="feature-name">Cel i pozycja w klanie<span><code>/moj_cel</code>, <code>/moja_pozycja</code></span></td>
-                            <td>
+                            <td class="feature-name" data-i18n="home.premium_row4_name">Cel i pozycja w klanie<span><code>/moj_cel</code>, <code>/moja_pozycja</code></span></td>
+                            <td data-i18n="home.premium_row4_free">
                                 <ul>
                                     <li>Pasek postępu do własnego celu pucharowego</li>
                                     <li>Aktualna pozycja w rankingu klanu</li>
                                 </ul>
                             </td>
-                            <td>
+                            <td data-i18n="home.premium_row4_premium">
                                 <ul>
                                     <li>Prognoza w widełkach (najlepszy / najgorszy tydzień)</li>
                                     <li>Prognoza, za ile dni wyprzedzisz osobę przed sobą</li>
@@ -402,13 +417,13 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="feature-name">Personalizacja kolorów<span><code>/ustaw_wyglad</code></span></td>
-                            <td>
+                            <td class="feature-name" data-i18n="home.premium_row5_name">Personalizacja kolorów<span><code>/ustaw_wyglad</code></span></td>
+                            <td data-i18n="home.premium_row5_free">
                                 <ul>
                                     <li>Jeden wspólny kolor embedów dla całego bota</li>
                                 </ul>
                             </td>
-                            <td>
+                            <td data-i18n="home.premium_row5_premium">
                                 <ul>
                                     <li>Osobny kolor embedów dla każdej komendy z osobna</li>
                                 </ul>
@@ -419,12 +434,12 @@
             </div>
 
             <div class="premium-cta">
-                <h3 class="premium-cta-title">Kup Premium już teraz!</h3>
-                <p class="premium-cta-lede">
+                <h3 class="premium-cta-title" data-i18n="home.premium_cta_title">Kup Premium już teraz!</h3>
+                <p class="premium-cta-lede" data-i18n="home.premium_cta_lede">
                     Płatność obsługuje bezpośrednio Discord (Server Subscriptions) — bez zakładania konta na
                     tej stronie, bez osobnego checkoutu.
                 </p>
-                <a href="https://discord.com/application-directory/1506378216108195851/store/1520086638728839178" class="btn btn-primary">💎 Kup Premium na Discordzie</a>
+                <a href="https://discord.com/application-directory/1506378216108195851/store/1520086638728839178" class="btn btn-primary" data-i18n="home.premium_cta_button">💎 Kup Premium na Discordzie</a>
             </div>
         </div>
     </section>
@@ -433,8 +448,8 @@
     <section id="start">
         <div class="container">
             <div class="section-head">
-                <h2 class="section-title">Szybki start</h2>
-                <p class="section-lede">
+                <h2 class="section-title" data-i18n="home.start_title">Szybki start</h2>
+                <p class="section-lede" data-i18n="home.start_lede">
                     Pięć komend i klan jest w pełni skonfigurowany.
                 </p>
             </div>
@@ -442,28 +457,28 @@
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <code>/ustaw_klan</code>
-                    <p>Powiąż serwer z tagiem Twojego klanu Brawl Stars.</p>
+                    <code data-i18n="home.cmd_ustaw_klan_code_bare">/ustaw_klan</code>
+                    <p data-i18n="home.step1_body">Powiąż serwer z tagiem Twojego klanu Brawl Stars.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <code>/ustaw_prog_pucharow</code>
-                    <p>Ustaw minimalny wymagany próg pucharowy.</p>
+                    <code data-i18n="home.cmd_ustaw_prog_pucharow_code_bare">/ustaw_prog_pucharow</code>
+                    <p data-i18n="home.step2_body">Ustaw minimalny wymagany próg pucharowy.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <code>/ustaw_role_rang</code>
-                    <p>Dopasuj nazwy ról Discord do rang klanowych.</p>
+                    <code data-i18n="home.cmd_ustaw_role_rang_code_bare">/ustaw_role_rang</code>
+                    <p data-i18n="home.step3_body">Dopasuj nazwy ról Discord do rang klanowych.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">4</div>
-                    <code>/ustaw_kanal_raportow</code>
-                    <p>Wskaż kanał na automatyczne raporty.</p>
+                    <code data-i18n="home.cmd_ustaw_kanal_raportow_code_bare">/ustaw_kanal_raportow</code>
+                    <p data-i18n="home.step4_body">Wskaż kanał na automatyczne raporty.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">5</div>
-                    <code>/panel_weryfikacji</code>
-                    <p>Wyślij panel weryfikacji — reszta dzieje się sama.</p>
+                    <code data-i18n="home.cmd_panel_weryfikacji_code_bare">/panel_weryfikacji</code>
+                    <p data-i18n="home.step5_body">Wyślij panel weryfikacji — reszta dzieje się sama.</p>
                 </div>
             </div>
         </div>
@@ -472,11 +487,11 @@
     <!-- ============ CTA BAND ============ -->
     <section class="cta-band alt">
         <div class="container">
-            <h2>Gotowy, żeby uporządkować klan?</h2>
-            <p>Dodaj BrawlManager do swojego serwera Discord — konfiguracja zajmuje kilka minut.</p>
+            <h2 data-i18n="home.cta_band_title">Gotowy, żeby uporządkować klan?</h2>
+            <p data-i18n="home.cta_band_body">Dodaj BrawlManager do swojego serwera Discord — konfiguracja zajmuje kilka minut.</p>
             <div class="cta-actions">
-                <a href="https://discord.com/oauth2/authorize?client_id=1506378216108195851" class="btn btn-primary" target="_blank" rel="noopener">➕ Dodaj do Discorda</a>
-                <a href="https://discord.gg/ARd5PM8VBQ" class="btn btn-secondary" target="_blank" rel="noopener">
+                <a href="https://discord.com/oauth2/authorize?client_id=1506378216108195851" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="home.hero_cta_primary">➕ Dodaj do Discorda</a>
+                <a href="https://discord.gg/ARd5PM8VBQ" class="btn btn-secondary" target="_blank" rel="noopener" data-i18n="home.cta_band_secondary">
                     💬 Serwer wsparcia
                 </a>
             </div>
@@ -490,20 +505,294 @@
     <div class="container">
         <div class="footer-inner">
             <div class="footer-brand">
-                <img src="/assets/logo.png" alt="Logo BrawlManager" class="brand-mark">
+                <img src="/assets/logo.png" alt="Logo BrawlManager" class="brand-mark" data-i18n-attr="alt:common.logo_alt">
                 BrawlManager
             </div>
 
             <ul class="footer-links">
-                <li><a href="/privacy.html">Polityka prywatności</a></li>
-                <li><a href="/tos.html">Regulamin</a></li>
-                <li><a href="https://discord.gg/ARd5PM8VBQ" target="_blank" rel="noopener">Serwer wsparcia</a></li>
+                <li><a href="/privacy.html" data-i18n="common.footer_privacy">Polityka prywatności</a></li>
+                <li><a href="/tos.html" data-i18n="common.footer_tos">Regulamin</a></li>
+                <li><a href="https://discord.gg/ARd5PM8VBQ" target="_blank" rel="noopener" data-i18n="common.footer_support">Serwer wsparcia</a></li>
             </ul>
         </div>
-        <p class="footer-copy">&copy; <span data-year>2026</span> BrawlManagerTeam. Wszelkie prawa zastrzeżone.</p>
+        <p class="footer-copy">&copy; <span data-year>2026</span> <span data-i18n="common.footer_copy_suffix">BrawlManagerTeam. Wszelkie prawa zastrzeżone.</span></p>
     </div>
 </footer>
 
 <script src="/assets/script.js"></script>
+<script src="/assets/i18n.js"></script>
+<script>
+  // Słownik treści specyficznych dla strony głównej - scalany w BM_I18N.init()
+  // ze wspólnym słownikiem COMMON (navbar/stopka) z assets/i18n.js. Angielskie
+  // nazwy komend/parametrów NIE są zgadywane - przepisane wprost z
+  // src/services/translations.py w repo bota (Discord Bot - BS), bo to one
+  // faktycznie widzi użytkownik z angielskim klientem Discorda.
+  BM_I18N.init({
+    "home.meta_title": {
+      pl: "BrawlManager — bot Discord dla liderów klanów Brawl Stars",
+      en: "BrawlManager — Discord bot for Brawl Stars clan leaders",
+    },
+    "home.meta_description": {
+      pl: "BrawlManager automatyzuje weryfikację członków, role, raporty i statystyki klanu Brawl Stars na Discordzie. Dodaj bota za darmo, Premium odblokowuje więcej.",
+      en: "BrawlManager automates member verification, roles, reports and stats for your Brawl Stars clan on Discord. Add the bot for free, Premium unlocks more.",
+    },
+    "home.hero_eyebrow": { pl: "🎮 Bot Discord dla klanów Brawl Stars", en: "🎮 Discord bot for Brawl Stars clans" },
+    "home.hero_title": { pl: "Weryfikacja, raporty i statystyki klanu w jednym miejscu", en: "Clan verification, reports and stats in one place" },
+    "home.hero_tagline": {
+      pl: "BrawlManager sam sprawdza puchary, nadaje role zgodne z rangą w klanie i wysyła cykliczne raporty aktywności — Ty tylko czytasz wyniki.",
+      en: "BrawlManager checks trophies, assigns roles that match clan rank, and sends recurring activity reports — you just read the results.",
+    },
+    "home.hero_cta_primary": { pl: "➕ Dodaj do Discorda", en: "➕ Add to Discord" },
+    "home.hero_cta_secondary": { pl: "💬 Dołącz do serwera wsparcia", en: "💬 Join the support server" },
+
+    "home.features_title": { pl: "Wszystko, czego potrzebuje lider klanu", en: "Everything a clan leader needs" },
+    "home.features_lede": {
+      pl: "Jedna konfiguracja, a bot sam pilnuje weryfikacji, ról i porządku w klanie.",
+      en: "Configure it once, and the bot handles verification, roles and clan order on its own.",
+    },
+    "home.feature1_title": { pl: "Weryfikacja i role wg rangi", en: "Verification and rank-based roles" },
+    "home.feature1_body": {
+      pl: "Członek wpisuje swój tag z gry, a bot sam sprawdza próg pucharowy i przynależność do klanu, po czym nadaje właściwą rolę Discord i ujednolica pseudonim.",
+      en: "A member enters their in-game tag, and the bot checks the trophy threshold and clan membership itself, then assigns the right Discord role and standardizes their nickname.",
+    },
+    "home.feature2_title": { pl: "Raporty tygodniowe i miesięczne", en: "Weekly and monthly reports" },
+    "home.feature2_body": {
+      pl: "Automatyczne podsumowania aktywności klanu trafiają na wybrany kanał — bez ręcznego liczenia, kto zagrał, a kto nie.",
+      en: "Automatic clan activity summaries land in a channel of your choice — no manual counting of who played and who didn't.",
+    },
+    "home.feature3_title": { pl: "Statystyki gracza i klanu", en: "Player and clan statistics" },
+    "home.feature3_body": {
+      pl: "Karta gracza, ranking top 10 klanu, pozycja w rankingu, osobisty cel pucharowy, odznaki i pojedynki 1:1 między członkami — jedną komendą, bez wchodzenia w grę.",
+      en: "Player card, clan top 10, ranking position, personal trophy goal, badges, and 1:1 duels between members — with one command, no need to open the game.",
+    },
+    "home.feature4_title": { pl: "Wizualna siatka brawlerów", en: "Visual brawler grid" },
+    "home.feature4_body": {
+      pl: "<code>/brawlerzy</code> generuje obraz całej kolekcji gracza — odblokowani brawlerzy na kolorowo z rangą lub poziomem mocy, zablokowani wyszarzeni. Darmowe.",
+      en: "<code>/brawlers</code> generates an image of a player's whole collection — unlocked brawlers shown in color with rank or power level, locked ones grayed out. Free.",
+    },
+    "home.feature5_title": { pl: "Powiadomienia o rotacji map", en: "Map rotation notifications" },
+    "home.feature5_body": {
+      pl: "Bot informuje Twój serwer, gdy tylko zmieni się mapa albo tryb gry w aktualnej rotacji Brawl Stars — zero ręcznego sprawdzania.",
+      en: "The bot tells your server the moment a map or mode changes in the current Brawl Stars rotation — zero manual checking.",
+    },
+    "home.feature6_title": { pl: "Personalizacja", en: "Customization" },
+    "home.feature6_body": {
+      pl: "Ustaw własny kolor embedów bota, osobno dla każdej komendy — tak, żeby wyglądał jak Twój bot, a nie generyczne narzędzie.",
+      en: "Set a custom embed color for the bot, per command if you like — so it feels like your bot, not a generic tool.",
+    },
+    "home.feature7_title": { pl: "Bot po polsku i angielsku", en: "Bot in Polish and English" },
+    "home.feature7_body": {
+      pl: "Wszystkie komendy i odpowiedzi bota działają w dwóch językach — admin wybiera jeden (<code>/ustaw_jezyk</code>) dla całego serwera.",
+      en: "Every command and response works in two languages — the admin picks one (<code>/set_language</code>) for the whole server.",
+    },
+
+    "home.commands_title": { pl: "Komendy", en: "Commands" },
+    "home.commands_lede": {
+      pl: "Wszystko dostępne przez slash-komendy (<code>/</code>) na Discordzie.",
+      en: "Everything is available through slash commands (<code>/</code>) on Discord.",
+    },
+    "home.commands_col1_title": { pl: "Dla członków klanu", en: "For clan members" },
+    "home.commands_col2_title": { pl: "Dla adminów / liderów serwera", en: "For admins / server leaders" },
+
+    "home.cmd_sprawdz_puchary_code": { pl: "/sprawdz_puchary [tag_gracza]", en: "/check_trophies [player_tag]" },
+    "home.cmd_sprawdz_puchary_desc": {
+      pl: "Sprawdza, czy spełniasz próg pucharowy tego serwera i czy należysz do właściwego klanu.",
+      en: "Checks whether you meet this server's trophy threshold and belong to the right clan.",
+    },
+    "home.cmd_profil_bs_code": { pl: "/profil_bs [tag_gracza]", en: "/bs_profile [player_tag]" },
+    "home.cmd_profil_bs_desc": {
+      pl: "Karta gracza: poziom, rekordowe trofea, zwycięstwa i top 3 brawlery. Premium dorzuca progres od pierwszego dnia śledzenia.",
+      en: "Player card: level, record trophies, wins and top 3 brawlers. Premium adds progress since the first day of tracking.",
+    },
+    "home.cmd_ranking_klanu_code": { pl: "/ranking_klanu", en: "/clan_top" },
+    "home.cmd_ranking_klanu_desc": {
+      pl: "Pokazuje pierwszą dziesiątkę klanu posortowaną wg trofeów.",
+      en: "Shows the clan's top 10 members sorted by trophies.",
+    },
+    "home.cmd_brawlerzy_code": { pl: "/brawlerzy [tag_gracza]", en: "/brawlers [player_tag]" },
+    "home.cmd_brawlerzy_desc": {
+      pl: "Graficzna siatka wszystkich brawlerów gracza — odblokowani kolorowo (z rangą lub poziomem mocy), zablokowani wyszarzeni. Sortowanie: ranga / moc / rzadkość / trofea. Darmowe.",
+      en: "A visual grid of all of a player's brawlers — unlocked ones shown in color (with rank or power level), locked ones grayed out. Sortable by rank / power level / rarity / trophies. Free.",
+    },
+    "home.cmd_historia_pucharow_code": { pl: "/historia_pucharow [zakres] [tag_gracza]", en: "/trophy_history [range] [player_tag]" },
+    "home.cmd_historia_pucharow_desc": {
+      pl: "Trend trofeów dowolnego gracza z klanu z ostatnich 7 lub 30 dni — sparkline w embedzie plus prawdziwy wykres liniowy (obraz).",
+      en: "Trophy trend for any clan member over the last 7 or 30 days — a sparkline in the embed plus a real line chart (image).",
+    },
+    "home.cmd_moja_pozycja_code": { pl: "/moja_pozycja [tag_gracza]", en: "/my_rank [player_tag]" },
+    "home.cmd_moja_pozycja_desc": {
+      pl: "Twoja aktualna pozycja w rankingu klanu i dystans do osoby wyżej. Premium dorzuca prognozę, za ile dni ją wyprzedzisz.",
+      en: "Your current position in the clan ranking and the gap to the player above you. Premium adds a forecast for how many days until you overtake them.",
+    },
+    "home.cmd_moj_cel_code": { pl: "/moj_cel [tag_gracza] [cel_puchary]", en: "/my_goal [player_tag] [goal_trophies]" },
+    "home.cmd_moj_cel_desc": {
+      pl: "Ustawia osobisty cel pucharowy i pokazuje pasek postępu. Premium dorzuca prognozę w widełkach (optymistyczna / pesymistyczna) na bazie Twojego najlepszego i najgorszego tygodnia.",
+      en: "Sets a personal trophy goal and shows a progress bar. Premium adds a forecast range (optimistic / pessimistic) based on your best and worst week.",
+    },
+    "home.cmd_moje_osiagniecia_code": { pl: "/moje_osiagniecia [tag_gracza]", en: "/my_achievements [player_tag]" },
+    "home.cmd_moje_osiagniecia_desc": {
+      pl: "Odznaki i osiągnięcia gracza w klanie — serie, rekordy, kolekcja brawlerów. Całkowicie darmowe.",
+      en: "Badges and achievements for a player in the clan — streaks, records, brawler collection. Completely free.",
+    },
+    "home.cmd_pojedynek_code": { pl: "/pojedynek [tag_gracza_1] [tag_gracza_2]", en: "/duel [player_tag_1] [player_tag_2]" },
+    "home.cmd_pojedynek_desc": {
+      pl: "Porównanie 1:1 dwóch graczy klanu — trofea i przyrost tygodnia. Premium dorzuca porównanie kolekcji brawlerów i wspólny wykres trendu obu graczy.",
+      en: "1:1 comparison of two clan members — trophies and weekly gain. Premium adds a brawler collection comparison and a shared trend chart for both players.",
+    },
+    "home.cmd_rotacja_map_code": { pl: "/rotacja_map", en: "/map_rotation" },
+    "home.cmd_rotacja_map_desc": {
+      pl: "Pokazuje aktualną rotację map i trybów gry na żądanie — to samo, co bot wysyła automatycznie na kanał powiadomień.",
+      en: "Shows the current map and mode rotation on demand — the same info the bot posts automatically to the notification channel.",
+    },
+    "home.cmd_support_code": { pl: "/support", en: "/support" },
+    "home.cmd_support_desc": {
+      pl: "Krótkie info o bocie i przycisk-link do serwera wsparcia.",
+      en: "Quick info about the bot and a button linking to the support server.",
+    },
+
+    "home.cmd_ustaw_klan_code": { pl: "/ustaw_klan [tag]", en: "/set_clan [tag]" },
+    "home.cmd_ustaw_klan_desc": {
+      pl: "Powiązuje ten serwer Discord z konkretnym klanem Brawl Stars.",
+      en: "Links this Discord server to a specific Brawl Stars clan.",
+    },
+    "home.cmd_ustaw_prog_pucharow_code": { pl: "/ustaw_prog_pucharow [puchary]", en: "/set_trophy_threshold [trophies]" },
+    "home.cmd_ustaw_prog_pucharow_desc": {
+      pl: "Ustawia minimalny próg pucharowy wymagany na tym serwerze.",
+      en: "Sets the minimum trophy threshold required on this server.",
+    },
+    "home.cmd_ustaw_role_rang_code": { pl: "/ustaw_role_rang [ranga] [rola]", en: "/set_rank_role [rank] [role]" },
+    "home.cmd_ustaw_role_rang_desc": {
+      pl: "Dopasowuje nazwę roli Discord do konkretnej rangi klanowej (member/senior/vice/prezes).",
+      en: "Maps a Discord role to a specific clan rank (member/senior/vice president/president).",
+    },
+    "home.cmd_ustaw_kanal_raportow_code": { pl: "/ustaw_kanal_raportow [kanał]", en: "/set_report_channel [channel]" },
+    "home.cmd_ustaw_kanal_raportow_desc": {
+      pl: "Ustawia kanał, na który trafiają automatyczne raporty tygodniowe i miesięczne.",
+      en: "Sets the channel that receives automatic weekly and monthly reports.",
+    },
+    "home.cmd_ustaw_kanal_rotacji_code": { pl: "/ustaw_kanal_rotacji [kanał]", en: "/set_rotation_channel [channel]" },
+    "home.cmd_ustaw_kanal_rotacji_desc": {
+      pl: "Ustawia kanał powiadomień o zmianie mapy w rotacji Brawl Stars.",
+      en: "Sets the channel for Brawl Stars map rotation change notifications.",
+    },
+    "home.cmd_ustaw_harmonogram_raportow_code": { pl: "/ustaw_harmonogram_raportow [dzień] [godzina]", en: "/set_report_schedule [day] [hour]" },
+    "home.cmd_ustaw_harmonogram_raportow_desc": {
+      pl: "Ustala dzień tygodnia i godzinę, o której wysyłany jest automatyczny raport tygodniowy.",
+      en: "Sets the day of the week and hour when the automatic weekly report is sent.",
+    },
+    "home.cmd_panel_weryfikacji_code": { pl: "/panel_weryfikacji", en: "/verification_panel" },
+    "home.cmd_panel_weryfikacji_desc": {
+      pl: "Wysyła panel z przyciskiem, dzięki któremu członkowie sami się zweryfikują.",
+      en: "Sends a panel with a button that lets members verify themselves.",
+    },
+    "home.cmd_czystka_klanu_code": { pl: "/czystka_klanu", en: "/clan_cleanup" },
+    "home.cmd_czystka_klanu_desc": {
+      pl: "Lista członków klanu, którzy są poniżej ustawionego progu pucharowego.",
+      en: "Lists clan members who are below the configured trophy threshold.",
+    },
+    "home.cmd_ustaw_wyglad_code": { pl: "/ustaw_wyglad", en: "/set_appearance" },
+    "home.cmd_ustaw_wyglad_desc": {
+      pl: "Zmienia kolor wszystkich embedów. Premium umożliwia ustawienie osobnego koloru dla każdej pojedynczej komendy.",
+      en: "Changes the color of all embeds. Premium lets you set a separate color for each individual command.",
+    },
+    "home.cmd_ustaw_jezyk_code": { pl: "/ustaw_jezyk", en: "/set_language" },
+    "home.cmd_ustaw_jezyk_desc": {
+      pl: "Ustawia język odpowiedzi bota na tym serwerze — polski albo angielski.",
+      en: "Sets the bot's response language on this server — Polish or English.",
+    },
+
+    "home.rotation_eyebrow": { pl: "🗺️ Zawsze na bieżąco", en: "🗺️ Always up to date" },
+    "home.rotation_title": { pl: "Powiadomienia o rotacji map", en: "Map rotation notifications" },
+    "home.rotation_body": {
+      pl: "Brawl Stars regularnie zmienia mapy i tryby gry dostępne w rotacji. BrawlManager pilnuje tego za Ciebie — gdy tylko coś się zmieni, bot wysyła wiadomość na wybrany kanał Twojego serwera.",
+      en: "Brawl Stars regularly changes the maps and modes available in rotation. BrawlManager keeps track for you — the moment something changes, the bot sends a message to your server's chosen channel.",
+    },
+    "home.rotation_point1": {
+      pl: "Skonfiguruj kanał jedną komendą (<code>/ustaw_kanal_rotacji</code>) — reszta dzieje się automatycznie.",
+      en: "Set up a channel with one command (<code>/set_rotation_channel</code>) — the rest happens automatically.",
+    },
+    "home.rotation_point2": {
+      pl: "Powiadomienie pojawia się tylko wtedy, gdy mapa albo tryb faktycznie się zmienią — zero spamu.",
+      en: "A notification only appears when the map or mode actually changes — zero spam.",
+    },
+    "home.rotation_screenshot_alt": {
+      pl: "Prawdziwe powiadomienie BrawlManagera o zmianie rotacji map na kanale Discorda",
+      en: "Real BrawlManager notification about a map rotation change in a Discord channel",
+    },
+
+    "home.premium_lede": {
+      pl: "Darmowa wersja wystarcza, żeby prowadzić klan porządnie. Premium dorzuca głębsze analizy i personalizację.",
+      en: "The free version is enough to run a clan properly. Premium adds deeper analytics and personalization.",
+    },
+    "home.premium_th_feature": { pl: "Funkcja", en: "Feature" },
+    "home.premium_row1_name": { pl: "Raporty klanowe<span>tygodniowe / miesięczne</span>", en: "Clan reports<span>weekly / monthly</span>" },
+    "home.premium_row1_free": {
+      pl: "<ul><li>Próg klanowy — kto go nie spełnia</li><li>Całkowity progres klanu, Top 3 tygodnia</li><li>Lista mniej aktywnych członków</li><li>Podium i wyróżnienia miesiąca, najlepszy dzień klanu</li></ul>",
+      en: "<ul><li>Clan trophy threshold — who doesn't meet it</li><li>Total clan progress, Top 3 of the week</li><li>List of less active members</li><li>Monthly podium and honorable mentions, clan's best day</li></ul>",
+    },
+    "home.premium_row1_premium": {
+      pl: "<ul><li>Wszystko z Free, plus:</li><li>Wykres PNG trendu klanu + pełny ranking wszystkich monitorowanych</li><li>Średni przyrost, zaangażowanie, MVP — z porównaniem do poprzedniego okresu</li><li>Prognoza pucharów na kolejne 30 dni</li><li>Miesiąc w liczbach i najbardziej stabilny gracz</li></ul>",
+      en: "<ul><li>Everything from Free, plus:</li><li>PNG chart of the clan trend + full ranking of everyone tracked</li><li>Average gain, engagement, MVP — compared to the previous period</li><li>Trophy forecast for the next 30 days</li><li>\"Month in numbers\" and the most consistent player</li></ul>",
+    },
+    "home.premium_row2_name": { pl: "Historia progresu gracza<span><code>/historia_pucharow</code></span>", en: "Player progress history<span><code>/trophy_history</code></span>" },
+    "home.premium_row2_premium": {
+      pl: "<ul><li>Trend trofeów dowolnego gracza z klanu (7 lub 30 dni)</li><li>Prawdziwy wykres liniowy, nie tylko sparkline</li><li>Prognoza (ETA), za ile dni osiągnie próg klanowy</li><li>Pozycja gracza w klanie w danym oknie czasowym</li></ul>",
+      en: "<ul><li>Trophy trend for any clan member (7 or 30 days)</li><li>A real line chart, not just a sparkline</li><li>Forecast (ETA) for hitting the clan threshold</li><li>The player's position in the clan over that time window</li></ul>",
+    },
+    "home.premium_row3_name": { pl: "Pojedynek graczy<span><code>/pojedynek</code></span>", en: "Player duel<span><code>/duel</code></span>" },
+    "home.premium_row3_free": {
+      pl: "<ul><li>Aktualne trofea obu graczy i kto prowadzi</li><li>Przyrost z ostatniego tygodnia</li></ul>",
+      en: "<ul><li>Current trophies for both players and who's leading</li><li>Gain from the last week</li></ul>",
+    },
+    "home.premium_row3_premium": {
+      pl: "<ul><li>Porównanie kolekcji brawlerów obu graczy</li><li>Wspólny wykres trendu obu graczy</li></ul>",
+      en: "<ul><li>Comparison of both players' brawler collections</li><li>A shared trend chart for both players</li></ul>",
+    },
+    "home.premium_row4_name": { pl: "Cel i pozycja w klanie<span><code>/moj_cel</code>, <code>/moja_pozycja</code></span>", en: "Goal and clan position<span><code>/my_goal</code>, <code>/my_rank</code></span>" },
+    "home.premium_row4_free": {
+      pl: "<ul><li>Pasek postępu do własnego celu pucharowego</li><li>Aktualna pozycja w rankingu klanu</li></ul>",
+      en: "<ul><li>Progress bar toward your own trophy goal</li><li>Current position in the clan ranking</li></ul>",
+    },
+    "home.premium_row4_premium": {
+      pl: "<ul><li>Prognoza w widełkach (najlepszy / najgorszy tydzień)</li><li>Prognoza, za ile dni wyprzedzisz osobę przed sobą</li></ul>",
+      en: "<ul><li>Forecast range (best / worst week)</li><li>Forecast for how many days until you overtake the player above you</li></ul>",
+    },
+    "home.premium_row5_name": { pl: "Personalizacja kolorów<span><code>/ustaw_wyglad</code></span>", en: "Color personalization<span><code>/set_appearance</code></span>" },
+    "home.premium_row5_free": {
+      pl: "<ul><li>Jeden wspólny kolor embedów dla całego bota</li></ul>",
+      en: "<ul><li>One shared embed color for the whole bot</li></ul>",
+    },
+    "home.premium_row5_premium": {
+      pl: "<ul><li>Osobny kolor embedów dla każdej komendy z osobna</li></ul>",
+      en: "<ul><li>A separate embed color for every individual command</li></ul>",
+    },
+    "home.premium_cta_title": { pl: "Kup Premium już teraz!", en: "Get Premium now!" },
+    "home.premium_cta_lede": {
+      pl: "Płatność obsługuje bezpośrednio Discord (Server Subscriptions) — bez zakładania konta na tej stronie, bez osobnego checkoutu.",
+      en: "Payment is handled directly by Discord (Server Subscriptions) — no account needed on this site, no separate checkout.",
+    },
+    "home.premium_cta_button": { pl: "💎 Kup Premium na Discordzie", en: "💎 Get Premium on Discord" },
+
+    "home.start_title": { pl: "Szybki start", en: "Quick start" },
+    "home.start_lede": { pl: "Pięć komend i klan jest w pełni skonfigurowany.", en: "Five commands and your clan is fully configured." },
+    "home.cmd_ustaw_klan_code_bare": { pl: "/ustaw_klan", en: "/set_clan" },
+    "home.step1_body": { pl: "Powiąż serwer z tagiem Twojego klanu Brawl Stars.", en: "Link the server with your Brawl Stars clan tag." },
+    "home.cmd_ustaw_prog_pucharow_code_bare": { pl: "/ustaw_prog_pucharow", en: "/set_trophy_threshold" },
+    "home.step2_body": { pl: "Ustaw minimalny wymagany próg pucharowy.", en: "Set the minimum required trophy threshold." },
+    "home.cmd_ustaw_role_rang_code_bare": { pl: "/ustaw_role_rang", en: "/set_rank_role" },
+    "home.step3_body": { pl: "Dopasuj nazwy ról Discord do rang klanowych.", en: "Map Discord role names to clan ranks." },
+    "home.cmd_ustaw_kanal_raportow_code_bare": { pl: "/ustaw_kanal_raportow", en: "/set_report_channel" },
+    "home.step4_body": { pl: "Wskaż kanał na automatyczne raporty.", en: "Choose a channel for automatic reports." },
+    "home.cmd_panel_weryfikacji_code_bare": { pl: "/panel_weryfikacji", en: "/verification_panel" },
+    "home.step5_body": { pl: "Wyślij panel weryfikacji — reszta dzieje się sama.", en: "Send the verification panel — the rest happens on its own." },
+
+    "home.cta_band_title": { pl: "Gotowy, żeby uporządkować klan?", en: "Ready to get your clan organized?" },
+    "home.cta_band_body": {
+      pl: "Dodaj BrawlManager do swojego serwera Discord — konfiguracja zajmuje kilka minut.",
+      en: "Add BrawlManager to your Discord server — setup takes just a few minutes.",
+    },
+    "home.cta_band_secondary": { pl: "💬 Serwer wsparcia", en: "💬 Support server" },
+  });
+</script>
 </body>
 </html>

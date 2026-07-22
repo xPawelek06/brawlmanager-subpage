@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wszystkie komendy z wizualizacją — BrawlManager</title>
-    <meta name="description" content="Pełna lista komend BrawlManagera (dla członków i adminów) z dokładną wizualizacją, jak wygląda odpowiedź bota na Discordzie.">
+    <title data-i18n="komendy.meta_title">Wszystkie komendy z wizualizacją — BrawlManager</title>
+    <meta name="description" content="Pełna lista komend BrawlManagera (dla członków i adminów) z dokładną wizualizacją, jak wygląda odpowiedź bota na Discordzie." data-i18n-attr="content:komendy.meta_description">
     <link rel="icon" type="image/png" href="/assets/logo.png">
     <link rel="stylesheet" href="/assets/style.css">
 </head>
@@ -14,21 +14,25 @@
 <header class="navbar">
     <div class="navbar-inner">
         <a href="/" class="brand">
-            <img src="/assets/logo.png" alt="Logo BrawlManager" class="brand-mark">
+            <img src="/assets/logo.png" alt="Logo BrawlManager" class="brand-mark" data-i18n-attr="alt:common.logo_alt">
             BrawlManager
         </a>
 
         <nav>
             <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/Komendy/">Komendy</a></li>
-                <li><a href="/Mapy/">Mapy</a></li>
+                <li><a href="/" data-i18n="common.nav_home">Home</a></li>
+                <li><a href="/Komendy/" data-i18n="common.nav_komendy">Komendy</a></li>
+                <li><a href="/Mapy/" data-i18n="common.nav_mapy">Mapy</a></li>
             </ul>
         </nav>
 
         <div class="nav-cta">
-            <a href="https://discord.com/oauth2/authorize?client_id=1506378216108195851" class="btn btn-primary btn-small" target="_blank" rel="noopener">Dodaj do Discorda</a>
-            <button class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false">☰</button>
+            <div class="lang-switch" role="group" data-i18n-attr="aria-label:common.lang_switch_aria">
+                <button type="button" class="lang-switch-btn" data-lang-btn="pl">PL</button>
+                <button type="button" class="lang-switch-btn" data-lang-btn="en">EN</button>
+            </div>
+            <a href="https://discord.com/oauth2/authorize?client_id=1506378216108195851" class="btn btn-primary btn-small" target="_blank" rel="noopener" data-i18n="common.nav_add_discord">Dodaj do Discorda</a>
+            <button class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false" data-i18n-attr="aria-label:common.nav_toggle_aria">☰</button>
         </div>
     </div>
 </header>
@@ -38,9 +42,9 @@
     <!-- ============ HERO ============ -->
     <section class="page-hero">
         <div class="container">
-            <div class="eyebrow">🖥️ Realny wygląd na Discordzie</div>
-            <h1>Wszystkie komendy — dokładnie tak, jak je zobaczysz</h1>
-            <p>
+            <div class="eyebrow" data-i18n="komendy.hero_eyebrow">🖥️ Realny wygląd na Discordzie</div>
+            <h1 data-i18n="komendy.hero_title">Wszystkie komendy — dokładnie tak, jak je zobaczysz</h1>
+            <p data-i18n="komendy.hero_body">
                 Znajdziesz tu opis każdej komendy bota. Realne zrzuty ekranu z Discorda są w trakcie
                 odświeżania po dużym redesignie komend (07-2026) — część sekcji ma na razie sam opis,
                 oznaczoną „📸 Zrzuty ekranu wkrótce”.
@@ -51,7 +55,7 @@
     <div class="container">
         <div class="info-note">
             <span>📸</span>
-            <span>
+            <span data-i18n="komendy.info_note_body">
                 <strong>Zrzuty ekranu są chwilowo wstrzymane.</strong> Po dużym redesignie komend
                 (embedy, lokalizacja PL/EN, nowe komendy) stare screeny pokazywały nieaktualny wygląd —
                 usunęliśmy je, dopóki nie nagramy nowych. Do tego czasu każda komenda ma sam, aktualny opis.
@@ -65,6 +69,18 @@
          itself, and how this was actually verified with a live scroll test). -->
     <div class="command-nav-stick-area">
     <div class="container command-nav-container">
+        <!-- Zwijana belka (2026-07-22): nagłówek z etykietą + strzałką zostaje
+             ZAWSZE widoczny (poza .command-nav-collapsible), więc po zwinięciu
+             belka ściąga się do tego cienkiego paska zamiast znikać całkowicie.
+             Domyślnie rozwinięta (aria-expanded="true"); JS niżej animuje
+             max-height na wyliczonym scrollHeight, nie stałej wartości. -->
+        <div class="command-nav-header">
+            <span class="command-nav-header-label" data-i18n="komendy.nav_label">Skocz do komendy</span>
+            <button type="button" class="command-nav-toggle-btn" id="commandNavToggle" aria-expanded="true" aria-controls="commandNavCollapsible" data-i18n-attr="aria-label:komendy.nav_toggle_aria">
+                <span class="command-nav-toggle-icon" aria-hidden="true">▲</span>
+            </button>
+        </div>
+        <div class="command-nav-collapsible" id="commandNavCollapsible">
         <div class="command-nav">
             <a href="#sprawdz_puchary">/sprawdz_puchary</a>
             <a href="#profil_bs">/profil_bs</a>
@@ -75,6 +91,7 @@
             <a href="#moje_osiagniecia">/moje_osiagniecia</a>
             <a href="#pojedynek">/pojedynek</a>
             <a href="#historia_pucharow">/historia_pucharow</a>
+            <a href="#rotacja_map">/rotacja_map</a>
             <a href="#support">/support</a>
             <a href="#ustaw_klan">/ustaw_klan</a>
             <a href="#ustaw_prog_pucharow">/ustaw_prog_pucharow</a>
@@ -87,29 +104,27 @@
             <a href="#ustaw_wyglad">/ustaw_wyglad</a>
             <a href="#ustaw_jezyk">/ustaw_jezyk</a>
         </div>
+        </div>
     </div>
 
     <!-- ============ DLA CZŁONKÓW KLANU ============ -->
     <section class="alt">
         <div class="container">
             <div class="section-head">
-                <h2 class="section-title">Dla członków klanu</h2>
-                <p class="section-lede">Komendy, z których korzysta każdy zweryfikowany członek.</p>
+                <h2 class="section-title" data-i18n="komendy.members_title">Dla członków klanu</h2>
+                <p class="section-lede" data-i18n="komendy.members_lede">Komendy, z których korzysta każdy zweryfikowany członek.</p>
             </div>
 
             <div class="command-showcase">
 
                 <!-- /sprawdz_puchary -->
-                <!-- Stare zrzuty ekranu (oblicz-*.png) usunięte 2026-07-22 - pokazywały
-                     wygląd sprzed redesignu embedów/i18n z 07-18/07-21, więc byłyby
-                     mylące. Do uzupełnienia świeżym screenem. -->
                 <div class="command-block command-block--text-only" id="sprawdz_puchary">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/sprawdz_puchary [tag_gracza]</code> <span class="badge badge-pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p>Sprawdza, czy gracz spełnia próg pucharowy tego serwera i czy należy do przypisanego klanu.</p>
+                        <div class="command-tag"><code data-i18n="komendy.sprawdz_puchary_code">/sprawdz_puchary [tag_gracza]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
+                        <p data-i18n="komendy.sprawdz_puchary_desc">Sprawdza, czy gracz spełnia próg pucharowy tego serwera i czy należy do przypisanego klanu.</p>
                         <ul>
-                            <li>Kolor embeda: zielony, gdy próg spełniony — ciemnoczerwony, gdy nie</li>
-                            <li>Osobne pole na przynależność do klanu (jeśli serwer ma ustawiony tag klanu)</li>
+                            <li data-i18n="komendy.sprawdz_puchary_li1">Kolor embeda: zielony, gdy próg spełniony — ciemnoczerwony, gdy nie</li>
+                            <li data-i18n="komendy.sprawdz_puchary_li2">Osobne pole na przynależność do klanu (jeśli serwer ma ustawiony tag klanu)</li>
                         </ul>
                     </div>
                 </div>
@@ -117,16 +132,16 @@
                 <!-- /profil_bs -->
                 <div class="command-block command-block--text-only" id="profil_bs">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/profil_bs [tag_gracza]</code> <span class="badge badge-partial">🔒 częściowo Premium</span> <span class="badge badge-pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p>Karta gracza: poziom, rekordowe trofea, zwycięstwa i top 3 brawlery. Premium dorzuca dodatkowe pole z progresem od pierwszego dnia śledzenia historii.</p>
+                        <div class="command-tag"><code data-i18n="komendy.profil_bs_code">/profil_bs [tag_gracza]</code> <span class="badge badge-partial" data-i18n="common.badge_partial_premium">🔒 częściowo Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
+                        <p data-i18n="komendy.profil_bs_desc">Karta gracza: poziom, rekordowe trofea, zwycięstwa i top 3 brawlery. Premium dorzuca dodatkowe pole z progresem od pierwszego dnia śledzenia historii.</p>
                     </div>
                 </div>
 
                 <!-- /brawlerzy -->
                 <div class="command-block command-block--text-only" id="brawlerzy">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/brawlerzy [tag_gracza]</code> <span class="badge badge-new">🆕 Nowość</span></div>
-                        <p>
+                        <div class="command-tag"><code data-i18n="komendy.brawlerzy_code">/brawlerzy [tag_gracza]</code> <span class="badge badge-new" data-i18n="common.badge_new">🆕 Nowość</span></div>
+                        <p data-i18n="komendy.brawlerzy_desc">
                             Generuje obraz siatki wszystkich brawlerów w grze — odblokowani przez gracza kolorowo
                             (z odznaką rangi albo poziomem mocy w rogu), zablokowani wyszarzeni z ikoną kłódki.
                             Menu pod obrazkiem pozwala przesortować siatkę wg rangi, poziomu mocy, rzadkości albo
@@ -138,22 +153,19 @@
                 <!-- /ranking_klanu -->
                 <div class="command-block command-block--text-only" id="ranking_klanu">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/ranking_klanu</code> <span class="badge badge-pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p>Pokazuje pierwszą dziesiątkę klanu posortowaną wg trofeów, wg tagu klanu skonfigurowanego przez admina (<code>/ustaw_klan</code>).</p>
+                        <div class="command-tag"><code data-i18n="komendy.ranking_klanu_code">/ranking_klanu</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
+                        <p data-i18n="komendy.ranking_klanu_desc">Pokazuje pierwszą dziesiątkę klanu posortowaną wg trofeów, wg tagu klanu skonfigurowanego przez admina (<code>/ustaw_klan</code>).</p>
                     </div>
                 </div>
 
                 <!-- /moja_pozycja -->
-                <!-- Zrzuty ekranu jeszcze nie istnieją dla tej komendy (dodana 2026-07-20/21,
-                     po ostatniej sesji screenshotów) - blok tekstowy na całą szerokość
-                     (.command-block--text-only), do uzupełnienia realnym screenem później. -->
                 <div class="command-block command-block--text-only" id="moja_pozycja">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/moja_pozycja [tag_gracza]</code> <span class="badge badge-partial">🔒 częściowo Premium</span></div>
-                        <p>Twoja aktualna pozycja w rankingu klanu wg aktualnych trofeów i dystans do osoby bezpośrednio wyżej.</p>
+                        <div class="command-tag"><code data-i18n="komendy.moja_pozycja_code">/moja_pozycja [tag_gracza]</code> <span class="badge badge-partial" data-i18n="common.badge_partial_premium">🔒 częściowo Premium</span></div>
+                        <p data-i18n="komendy.moja_pozycja_desc">Twoja aktualna pozycja w rankingu klanu wg aktualnych trofeów i dystans do osoby bezpośrednio wyżej.</p>
                         <ul>
-                            <li>Premium: prognoza, za ile dni wyprzedzisz osobę przed sobą (na bazie tempa z ostatnich 30 dni)</li>
-                            <li>Premium: przycisk do samodzielnego ustawienia liczby dni prognozy</li>
+                            <li data-i18n="komendy.moja_pozycja_li1">Premium: prognoza, za ile dni wyprzedzisz osobę przed sobą (na bazie tempa z ostatnich 30 dni)</li>
+                            <li data-i18n="komendy.moja_pozycja_li2">Premium: przycisk do samodzielnego ustawienia liczby dni prognozy</li>
                         </ul>
                     </div>
                 </div>
@@ -161,11 +173,11 @@
                 <!-- /moj_cel -->
                 <div class="command-block command-block--text-only" id="moj_cel">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/moj_cel [tag_gracza] [cel_puchary]</code> <span class="badge badge-partial">🔒 częściowo Premium</span></div>
-                        <p>Ustawia Twój osobisty cel pucharowy i pokazuje pasek postępu (kolor paska/embeda zależny od % ukończenia) oraz zmianę od wczoraj.</p>
+                        <div class="command-tag"><code data-i18n="komendy.moj_cel_code">/moj_cel [tag_gracza] [cel_puchary]</code> <span class="badge badge-partial" data-i18n="common.badge_partial_premium">🔒 częściowo Premium</span></div>
+                        <p data-i18n="komendy.moj_cel_desc">Ustawia Twój osobisty cel pucharowy i pokazuje pasek postępu (kolor paska/embeda zależny od % ukończenia) oraz zmianę od wczoraj.</p>
                         <ul>
-                            <li>Premium: prognoza dotarcia do celu w widełkach — osobno z Twojego najlepszego i najgorszego tygodnia</li>
-                            <li>Premium: pole „Najlepszy dzień w tym okresie”</li>
+                            <li data-i18n="komendy.moj_cel_li1">Premium: prognoza dotarcia do celu w widełkach — osobno z Twojego najlepszego i najgorszego tygodnia</li>
+                            <li data-i18n="komendy.moj_cel_li2">Premium: pole „Najlepszy dzień w tym okresie”</li>
                         </ul>
                     </div>
                 </div>
@@ -173,19 +185,19 @@
                 <!-- /moje_osiagniecia -->
                 <div class="command-block command-block--text-only" id="moje_osiagniecia">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/moje_osiagniecia [tag_gracza]</code> <span class="badge badge-new">🆕 Nowość</span></div>
-                        <p>Odznaki i osiągnięcia gracza w klanie, liczone automatycznie z historii bota — m.in. najdłuższa seria na plusie, rekordowy dzień, staż w klanie, % ukończenia kolekcji brawlerów, najlepszy tydzień i kamienie milowe rekordu trofeów. Całkowicie darmowe.</p>
+                        <div class="command-tag"><code data-i18n="komendy.moje_osiagniecia_code">/moje_osiagniecia [tag_gracza]</code> <span class="badge badge-new" data-i18n="common.badge_new">🆕 Nowość</span></div>
+                        <p data-i18n="komendy.moje_osiagniecia_desc">Odznaki i osiągnięcia gracza w klanie, liczone automatycznie z historii bota — m.in. najdłuższa seria na plusie, rekordowy dzień, staż w klanie, % ukończenia kolekcji brawlerów, najlepszy tydzień i kamienie milowe rekordu trofeów. Całkowicie darmowe.</p>
                     </div>
                 </div>
 
                 <!-- /pojedynek -->
                 <div class="command-block command-block--text-only" id="pojedynek">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/pojedynek [tag_gracza_1] [tag_gracza_2]</code> <span class="badge badge-partial">🔒 częściowo Premium</span></div>
-                        <p>Porównanie 1:1 dwóch graczy klanu — aktualne trofea, kto prowadzi i przyrost z ostatniego tygodnia każdego z nich.</p>
+                        <div class="command-tag"><code data-i18n="komendy.pojedynek_code">/pojedynek [tag_gracza_1] [tag_gracza_2]</code> <span class="badge badge-partial" data-i18n="common.badge_partial_premium">🔒 częściowo Premium</span></div>
+                        <p data-i18n="komendy.pojedynek_desc">Porównanie 1:1 dwóch graczy klanu — aktualne trofea, kto prowadzi i przyrost z ostatniego tygodnia każdego z nich.</p>
                         <ul>
-                            <li>Premium: porównanie kolekcji brawlerów obu graczy (wg rzadkości)</li>
-                            <li>Premium: wspólny wykres trendu trofeów obu graczy (30 dni)</li>
+                            <li data-i18n="komendy.pojedynek_li1">Premium: porównanie kolekcji brawlerów obu graczy (wg rzadkości)</li>
+                            <li data-i18n="komendy.pojedynek_li2">Premium: wspólny wykres trendu trofeów obu graczy (30 dni)</li>
                         </ul>
                     </div>
                 </div>
@@ -193,16 +205,24 @@
                 <!-- /historia_pucharow -->
                 <div class="command-block command-block--text-only" id="historia_pucharow">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/historia_pucharow [zakres_dni] [tag_gracza]</code> <span class="badge">🔒 Premium</span> <span class="badge badge-pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p>Trend trofeów dowolnego gracza z klanu z ostatnich 7 lub 30 dni — tekstowy sparkline w embedzie plus prawdziwy wykres liniowy PNG. Dorzuca też prognozę osiągnięcia progu klanowego i pozycję gracza w klanie w tym oknie czasowym.</p>
+                        <div class="command-tag"><code data-i18n="komendy.historia_pucharow_code">/historia_pucharow [zakres_dni] [tag_gracza]</code> <span class="badge" data-i18n="common.badge_premium">🔒 Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
+                        <p data-i18n="komendy.historia_pucharow_desc">Trend trofeów dowolnego gracza z klanu z ostatnich 7 lub 30 dni — tekstowy sparkline w embedzie plus prawdziwy wykres liniowy PNG. Dorzuca też prognozę osiągnięcia progu klanowego i pozycję gracza w klanie w tym oknie czasowym.</p>
+                    </div>
+                </div>
+
+                <!-- /rotacja_map -->
+                <div class="command-block command-block--text-only" id="rotacja_map">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code data-i18n="komendy.rotacja_map_code">/rotacja_map</code></div>
+                        <p data-i18n="komendy.rotacja_map_desc">Pokazuje na żądanie aktualną rotację map i trybów gry Brawl Stars — ta sama tabela, co na <a href="/Mapy/">stronie z mapami</a>, tylko wprost na Discordzie.</p>
                     </div>
                 </div>
 
                 <!-- /support -->
                 <div class="command-block command-block--text-only" id="support">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/support</code> <span class="badge badge-pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p>Krótkie info o bocie, pierwsze kroki dla admina i przycisk-link do serwera wsparcia.</p>
+                        <div class="command-tag"><code data-i18n="komendy.support_code">/support</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
+                        <p data-i18n="komendy.support_desc">Krótkie info o bocie, pierwsze kroki dla admina i przycisk-link do serwera wsparcia.</p>
                     </div>
                 </div>
 
@@ -214,8 +234,8 @@
     <section>
         <div class="container">
             <div class="section-head">
-                <h2 class="section-title">Dla adminów / liderów serwera</h2>
-                <p class="section-lede">Konfiguracja klanu, progu, ról, kanałów i wyglądu bota.</p>
+                <h2 class="section-title" data-i18n="komendy.admins_title">Dla adminów / liderów serwera</h2>
+                <p class="section-lede" data-i18n="komendy.admins_lede">Konfiguracja klanu, progu, ról, kanałów i wyglądu bota.</p>
             </div>
 
             <div class="command-showcase">
@@ -223,80 +243,80 @@
                 <!-- /ustaw_klan -->
                 <div class="command-block command-block--text-only" id="ustaw_klan">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/ustaw_klan [nowy_tag_klanu]</code> <span class="badge badge-pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p>Powiązuje ten serwer Discord z konkretnym klanem Brawl Stars i od razu zapisuje pierwszy punkt historii pucharów wszystkich jego członków.</p>
+                        <div class="command-tag"><code data-i18n="komendy.ustaw_klan_code">/ustaw_klan [nowy_tag_klanu]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
+                        <p data-i18n="komendy.ustaw_klan_desc">Powiązuje ten serwer Discord z konkretnym klanem Brawl Stars i od razu zapisuje pierwszy punkt historii pucharów wszystkich jego członków.</p>
                     </div>
                 </div>
 
                 <!-- /ustaw_prog_pucharow -->
                 <div class="command-block command-block--text-only" id="ustaw_prog_pucharow">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/ustaw_prog_pucharow [nowe_puchary]</code> <span class="badge badge-pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p>Ustawia minimalny próg pucharowy wymagany na tym serwerze — używany przez <code>/sprawdz_puchary</code>, panel weryfikacji i <code>/czystka_klanu</code>.</p>
+                        <div class="command-tag"><code data-i18n="komendy.ustaw_prog_pucharow_code">/ustaw_prog_pucharow [nowe_puchary]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
+                        <p data-i18n="komendy.ustaw_prog_pucharow_desc">Ustawia minimalny próg pucharowy wymagany na tym serwerze — używany przez <code>/sprawdz_puchary</code>, panel weryfikacji i <code>/czystka_klanu</code>.</p>
                     </div>
                 </div>
 
                 <!-- /ustaw_role_rang -->
                 <div class="command-block command-block--text-only" id="ustaw_role_rang">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/ustaw_role_rang [ranga_z_gry] [nowa_nazwa_discord]</code> <span class="badge badge-pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p>Dopasowuje nazwę roli Discord do konkretnej rangi klanowej (member / senior / vicePresident / president). Odpowiedź widoczna tylko dla admina.</p>
+                        <div class="command-tag"><code data-i18n="komendy.ustaw_role_rang_code">/ustaw_role_rang [ranga_z_gry] [nowa_nazwa_discord]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
+                        <p data-i18n="komendy.ustaw_role_rang_desc">Dopasowuje nazwę roli Discord do konkretnej rangi klanowej (member / senior / vicePresident / president). Odpowiedź widoczna tylko dla admina.</p>
                     </div>
                 </div>
 
                 <!-- /ustaw_kanal_raportow -->
                 <div class="command-block command-block--text-only" id="ustaw_kanal_raportow">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/ustaw_kanal_raportow [kanal]</code> <span class="badge badge-pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p>Ustawia kanał, na który trafiają automatyczne raporty tygodniowe i miesięczne. Bot sam sprawdza, czy ma uprawnienia do pisania i linkowania embedów na wybranym kanale.</p>
+                        <div class="command-tag"><code data-i18n="komendy.ustaw_kanal_raportow_code">/ustaw_kanal_raportow [kanal]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
+                        <p data-i18n="komendy.ustaw_kanal_raportow_desc">Ustawia kanał, na który trafiają automatyczne raporty tygodniowe i miesięczne. Bot sam sprawdza, czy ma uprawnienia do pisania i linkowania embedów na wybranym kanale.</p>
                     </div>
                 </div>
 
                 <!-- /ustaw_kanal_rotacji -->
                 <div class="command-block command-block--text-only" id="ustaw_kanal_rotacji">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/ustaw_kanal_rotacji [kanal]</code> <span class="badge badge-pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p>Ustawia kanał powiadomień o zmianie mapy w rotacji Brawl Stars (funkcja darmowa, opt-in).</p>
+                        <div class="command-tag"><code data-i18n="komendy.ustaw_kanal_rotacji_code">/ustaw_kanal_rotacji [kanal]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
+                        <p data-i18n="komendy.ustaw_kanal_rotacji_desc">Ustawia kanał powiadomień o zmianie mapy w rotacji Brawl Stars (funkcja darmowa, opt-in).</p>
                     </div>
                 </div>
 
                 <!-- /ustaw_harmonogram_raportow -->
                 <div class="command-block command-block--text-only" id="ustaw_harmonogram_raportow">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/ustaw_harmonogram_raportow [dzien] [godzina]</code> <span class="badge badge-pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p>Ustala dzień tygodnia i godzinę, o której wysyłany jest automatyczny raport tygodniowy.</p>
+                        <div class="command-tag"><code data-i18n="komendy.ustaw_harmonogram_raportow_code">/ustaw_harmonogram_raportow [dzien] [godzina]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
+                        <p data-i18n="komendy.ustaw_harmonogram_raportow_desc">Ustala dzień tygodnia i godzinę, o której wysyłany jest automatyczny raport tygodniowy.</p>
                     </div>
                 </div>
 
                 <!-- /panel_weryfikacji -->
                 <div class="command-block command-block--text-only" id="panel_weryfikacji">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/panel_weryfikacji</code> <span class="badge badge-pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p>Wysyła panel z przyciskiem, dzięki któremu członkowie sami się zweryfikują (otwiera formularz na tag z gry).</p>
+                        <div class="command-tag"><code data-i18n="komendy.panel_weryfikacji_code">/panel_weryfikacji</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
+                        <p data-i18n="komendy.panel_weryfikacji_desc">Wysyła panel z przyciskiem, dzięki któremu członkowie sami się zweryfikują (otwiera formularz na tag z gry).</p>
                     </div>
                 </div>
 
                 <!-- /czystka_klanu -->
                 <div class="command-block command-block--text-only" id="czystka_klanu">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/czystka_klanu</code> <span class="badge badge-pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p>Lista członków klanu, którzy są poniżej ustawionego progu pucharowego — gotowa do przejrzenia przed ewentualnym wyrzuceniem z klanu w grze.</p>
+                        <div class="command-tag"><code data-i18n="komendy.czystka_klanu_code">/czystka_klanu</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
+                        <p data-i18n="komendy.czystka_klanu_desc">Lista członków klanu, którzy są poniżej ustawionego progu pucharowego — gotowa do przejrzenia przed ewentualnym wyrzuceniem z klanu w grze.</p>
                     </div>
                 </div>
 
                 <!-- /ustaw_wyglad -->
                 <div class="command-block command-block--text-only" id="ustaw_wyglad">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/ustaw_wyglad [komenda]</code> <span class="badge badge-partial">🔒 częściowo Premium</span> <span class="badge badge-pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p>Kolor embedów bota. W wersji darmowej wystarczy wywołać komendę bez żadnych parametrów — kolor obejmie wszystkie embedy naraz. W Premium można dodatkowo wybrać (z podpowiadanej listy) jedną z kilkunastu pojedynczych komend bota i ustawić dla niej osobny kolor. Otwiera listę wyboru z 16 kolorami.</p>
+                        <div class="command-tag"><code data-i18n="komendy.ustaw_wyglad_code">/ustaw_wyglad [komenda]</code> <span class="badge badge-partial" data-i18n="common.badge_partial_premium">🔒 częściowo Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
+                        <p data-i18n="komendy.ustaw_wyglad_desc">Kolor embedów bota. W wersji darmowej wystarczy wywołać komendę bez żadnych parametrów — kolor obejmie wszystkie embedy naraz. W Premium można dodatkowo wybrać (z podpowiadanej listy) jedną z kilkunastu pojedynczych komend bota i ustawić dla niej osobny kolor. Otwiera listę wyboru z 16 kolorami.</p>
                     </div>
                 </div>
 
                 <!-- /ustaw_jezyk -->
                 <div class="command-block command-block--text-only" id="ustaw_jezyk">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code>/ustaw_jezyk [jezyk]</code> <span class="badge badge-new">🆕 Nowość</span></div>
-                        <p>Ustawia język odpowiedzi bota na tym serwerze — polski albo angielski (domyślnie polski). Wszystkie nazwy i opisy komend mają też natywną angielską lokalizację Discorda, niezależną od tego ustawienia.</p>
+                        <div class="command-tag"><code data-i18n="komendy.ustaw_jezyk_code">/ustaw_jezyk [jezyk]</code> <span class="badge badge-new" data-i18n="common.badge_new">🆕 Nowość</span></div>
+                        <p data-i18n="komendy.ustaw_jezyk_desc">Ustawia język odpowiedzi bota na tym serwerze — polski albo angielski (domyślnie polski). Wszystkie nazwy i opisy komend mają też natywną angielską lokalizację Discorda, niezależną od tego ustawienia.</p>
                     </div>
                 </div>
 
@@ -305,7 +325,7 @@
     </section>
 
     <div class="container">
-        <a href="/#komendy" class="back-link">← Wróć do strony głównej</a>
+        <a href="/#komendy" class="back-link" data-i18n="common.back_home">← Wróć do strony głównej</a>
     </div>
     </div>
 
@@ -320,7 +340,7 @@
          wspólnym kontenerze; wydzielanie tego do assets/script.js niosłoby ryzyko
          regresji na już działającym rotacja-map.html bez realnej korzyści. -->
     <div id="command-lightbox" class="command-lightbox" hidden>
-        <button type="button" class="command-lightbox-close" aria-label="Zamknij podgląd zrzutu ekranu">✕</button>
+        <button type="button" class="command-lightbox-close" aria-label="Zamknij podgląd zrzutu ekranu" data-i18n-attr="aria-label:komendy.lightbox_close_aria">✕</button>
         <div class="command-lightbox-inner">
             <img id="command-lightbox-img" src="" alt="">
             <p id="command-lightbox-caption" class="command-lightbox-caption"></p>
@@ -334,21 +354,22 @@
     <div class="container">
         <div class="footer-inner">
             <div class="footer-brand">
-                <img src="/assets/logo.png" alt="Logo BrawlManager" class="brand-mark">
+                <img src="/assets/logo.png" alt="Logo BrawlManager" class="brand-mark" data-i18n-attr="alt:common.logo_alt">
                 BrawlManager
             </div>
 
             <ul class="footer-links">
-                <li><a href="/privacy.html">Polityka prywatności</a></li>
-                <li><a href="/tos.html">Regulamin</a></li>
-                <li><a href="https://discord.gg/ARd5PM8VBQ" target="_blank" rel="noopener">Serwer wsparcia</a></li>
+                <li><a href="/privacy.html" data-i18n="common.footer_privacy">Polityka prywatności</a></li>
+                <li><a href="/tos.html" data-i18n="common.footer_tos">Regulamin</a></li>
+                <li><a href="https://discord.gg/ARd5PM8VBQ" target="_blank" rel="noopener" data-i18n="common.footer_support">Serwer wsparcia</a></li>
             </ul>
         </div>
-        <p class="footer-copy">&copy; <span data-year>2026</span> BrawlManagerTeam. Wszelkie prawa zastrzeżone.</p>
+        <p class="footer-copy">&copy; <span data-year>2026</span> <span data-i18n="common.footer_copy_suffix">BrawlManagerTeam. Wszelkie prawa zastrzeżone.</span></p>
     </div>
 </footer>
 
 <script src="/assets/script.js"></script>
+<script src="/assets/i18n.js"></script>
 <script>
   // Lightbox powiększenia screenshotu komendy - patrz komentarz przy
   // #command-lightbox wyżej po uzasadnienie, czemu to osobna implementacja,
@@ -401,6 +422,237 @@
       if (event.key === "Escape" && !lightboxEl.hidden) closeLightbox();
     });
   })();
+
+  // Zwijana belka pigułek komend (2026-07-22) - domyślnie rozwinięta. max-height
+  // animowany na WYLICZONY scrollHeight (nie stałą wartość) w obie strony, bo
+  // liczba wierszy zawiniętych pigułek zależy od szerokości ekranu - przy stałej
+  // wartości tranzycja byłaby źle zsynchronizowana z realną wysokością (patrz
+  // komentarz w style.css przy .command-nav-collapsible).
+  (function () {
+    const toggleBtn = document.getElementById("commandNavToggle");
+    const collapsible = document.getElementById("commandNavCollapsible");
+    if (!toggleBtn || !collapsible) return;
+
+    function setExpanded(expanded) {
+      if (expanded) {
+        const targetHeight = collapsible.scrollHeight;
+        collapsible.style.maxHeight = targetHeight + "px";
+        // Po zakończeniu tranzycji zdejmij sztywną wysokość - inaczej zmiana
+        // liczby wierszy przy resize okna zostałaby uwięziona w starej wartości.
+        const clearFixedHeight = (event) => {
+          if (event.propertyName !== "max-height") return;
+          collapsible.style.maxHeight = "none";
+          collapsible.removeEventListener("transitionend", clearFixedHeight);
+        };
+        collapsible.addEventListener("transitionend", clearFixedHeight);
+      } else {
+        // Trzeba jawnie ustawić AKTUALNĄ wysokość przed przejściem do 0 -
+        // z "none" przeglądarka nie ma punktu startowego do animowania.
+        collapsible.style.maxHeight = collapsible.scrollHeight + "px";
+        // Wymuszony reflow, żeby powyższa wartość "zarejestrowała się" jako
+        // punkt startowy zanim ustawimy docelowe 0px w tej samej klatce.
+        void collapsible.offsetHeight;
+        collapsible.style.maxHeight = "0px";
+      }
+      toggleBtn.setAttribute("aria-expanded", expanded ? "true" : "false");
+    }
+
+    toggleBtn.addEventListener("click", () => {
+      const isExpanded = toggleBtn.getAttribute("aria-expanded") === "true";
+      setExpanded(!isExpanded);
+    });
+  })();
+</script>
+<script>
+  BM_I18N.init({
+    "komendy.meta_title": {
+      pl: "Wszystkie komendy z wizualizacją — BrawlManager",
+      en: "All commands with visuals — BrawlManager",
+    },
+    "komendy.meta_description": {
+      pl: "Pełna lista komend BrawlManagera (dla członków i adminów) z dokładną wizualizacją, jak wygląda odpowiedź bota na Discordzie.",
+      en: "Full list of BrawlManager commands (for members and admins), with an accurate look at how the bot responds on Discord.",
+    },
+    "komendy.hero_eyebrow": { pl: "🖥️ Realny wygląd na Discordzie", en: "🖥️ The real look on Discord" },
+    "komendy.hero_title": { pl: "Wszystkie komendy — dokładnie tak, jak je zobaczysz", en: "Every command — exactly as you'll see it" },
+    "komendy.hero_body": {
+      pl: "Znajdziesz tu opis każdej komendy bota. Realne zrzuty ekranu z Discorda są w trakcie odświeżania po dużym redesignie komend (07-2026) — część sekcji ma na razie sam opis, oznaczoną „📸 Zrzuty ekranu wkrótce”.",
+      en: "You'll find a description of every bot command here. Real Discord screenshots are being refreshed after a big command redesign (07-2026) — some sections currently show just a description, marked \"📸 Screenshots coming soon\".",
+    },
+    "komendy.info_note_body": {
+      pl: "<strong>Zrzuty ekranu są chwilowo wstrzymane.</strong> Po dużym redesignie komend (embedy, lokalizacja PL/EN, nowe komendy) stare screeny pokazywały nieaktualny wygląd — usunęliśmy je, dopóki nie nagramy nowych. Do tego czasu każda komenda ma sam, aktualny opis.",
+      en: "<strong>Screenshots are temporarily paused.</strong> After a big command redesign (embeds, PL/EN localization, new commands) the old screenshots showed an outdated look — we removed them until we record new ones. Until then, every command just has an up-to-date description.",
+    },
+    "komendy.nav_label": { pl: "Skocz do komendy", en: "Jump to a command" },
+    "komendy.nav_toggle_aria": { pl: "Zwiń lub rozwiń listę komend", en: "Collapse or expand the command list" },
+
+    "komendy.members_title": { pl: "Dla członków klanu", en: "For clan members" },
+    "komendy.members_lede": { pl: "Komendy, z których korzysta każdy zweryfikowany członek.", en: "Commands every verified member uses." },
+    "komendy.admins_title": { pl: "Dla adminów / liderów serwera", en: "For admins / server leaders" },
+    "komendy.admins_lede": {
+      pl: "Konfiguracja klanu, progu, ról, kanałów i wyglądu bota.",
+      en: "Clan, threshold, role, channel and bot appearance configuration.",
+    },
+    "komendy.lightbox_close_aria": { pl: "Zamknij podgląd zrzutu ekranu", en: "Close screenshot preview" },
+
+    "komendy.sprawdz_puchary_code": { pl: "/sprawdz_puchary [tag_gracza]", en: "/check_trophies [player_tag]" },
+    "komendy.sprawdz_puchary_desc": {
+      pl: "Sprawdza, czy gracz spełnia próg pucharowy tego serwera i czy należy do przypisanego klanu.",
+      en: "Checks whether a player meets this server's trophy threshold and belongs to the linked clan.",
+    },
+    "komendy.sprawdz_puchary_li1": {
+      pl: "Kolor embeda: zielony, gdy próg spełniony — ciemnoczerwony, gdy nie",
+      en: "Embed color: green when the threshold is met — dark red when it isn't",
+    },
+    "komendy.sprawdz_puchary_li2": {
+      pl: "Osobne pole na przynależność do klanu (jeśli serwer ma ustawiony tag klanu)",
+      en: "A separate field for clan membership (if the server has a clan tag configured)",
+    },
+
+    "komendy.profil_bs_code": { pl: "/profil_bs [tag_gracza]", en: "/bs_profile [player_tag]" },
+    "komendy.profil_bs_desc": {
+      pl: "Karta gracza: poziom, rekordowe trofea, zwycięstwa i top 3 brawlery. Premium dorzuca dodatkowe pole z progresem od pierwszego dnia śledzenia historii.",
+      en: "Player card: level, record trophies, wins, and top 3 brawlers. Premium adds an extra field showing progress since the first day of tracked history.",
+    },
+
+    "komendy.brawlerzy_code": { pl: "/brawlerzy [tag_gracza]", en: "/brawlers [player_tag]" },
+    "komendy.brawlerzy_desc": {
+      pl: "Generuje obraz siatki wszystkich brawlerów w grze — odblokowani przez gracza kolorowo (z odznaką rangi albo poziomem mocy w rogu), zablokowani wyszarzeni z ikoną kłódki. Menu pod obrazkiem pozwala przesortować siatkę wg rangi, poziomu mocy, rzadkości albo najwyższych trofeów. Całkowicie darmowe.",
+      en: "Generates an image grid of every brawler in the game — the ones the player has unlocked shown in color (with a rank badge or power level in the corner), locked ones grayed out with a lock icon. A menu under the image lets you re-sort the grid by rank, power level, rarity, or highest trophies. Completely free.",
+    },
+
+    "komendy.ranking_klanu_code": { pl: "/ranking_klanu", en: "/clan_top" },
+    "komendy.ranking_klanu_desc": {
+      pl: "Pokazuje pierwszą dziesiątkę klanu posortowaną wg trofeów, wg tagu klanu skonfigurowanego przez admina (<code>/ustaw_klan</code>).",
+      en: "Shows the clan's top 10 sorted by trophies, based on the clan tag configured by the admin (<code>/set_clan</code>).",
+    },
+
+    "komendy.moja_pozycja_code": { pl: "/moja_pozycja [tag_gracza]", en: "/my_rank [player_tag]" },
+    "komendy.moja_pozycja_desc": {
+      pl: "Twoja aktualna pozycja w rankingu klanu wg aktualnych trofeów i dystans do osoby bezpośrednio wyżej.",
+      en: "Your current position in the clan ranking by current trophies, and the gap to the player directly above you.",
+    },
+    "komendy.moja_pozycja_li1": {
+      pl: "Premium: prognoza, za ile dni wyprzedzisz osobę przed sobą (na bazie tempa z ostatnich 30 dni)",
+      en: "Premium: a forecast for how many days until you overtake the player above you (based on your pace over the last 30 days)",
+    },
+    "komendy.moja_pozycja_li2": {
+      pl: "Premium: przycisk do samodzielnego ustawienia liczby dni prognozy",
+      en: "Premium: a button to set your own custom number of forecast days",
+    },
+
+    "komendy.moj_cel_code": { pl: "/moj_cel [tag_gracza] [cel_puchary]", en: "/my_goal [player_tag] [goal_trophies]" },
+    "komendy.moj_cel_desc": {
+      pl: "Ustawia Twój osobisty cel pucharowy i pokazuje pasek postępu (kolor paska/embeda zależny od % ukończenia) oraz zmianę od wczoraj.",
+      en: "Sets your personal trophy goal and shows a progress bar (bar/embed color depends on % completion) plus the change since yesterday.",
+    },
+    "komendy.moj_cel_li1": {
+      pl: "Premium: prognoza dotarcia do celu w widełkach — osobno z Twojego najlepszego i najgorszego tygodnia",
+      en: "Premium: a forecast range for reaching your goal — separately from your best and worst week",
+    },
+    "komendy.moj_cel_li2": {
+      pl: "Premium: pole „Najlepszy dzień w tym okresie”",
+      en: "Premium: a \"Best day in this period\" field",
+    },
+
+    "komendy.moje_osiagniecia_code": { pl: "/moje_osiagniecia [tag_gracza]", en: "/my_achievements [player_tag]" },
+    "komendy.moje_osiagniecia_desc": {
+      pl: "Odznaki i osiągnięcia gracza w klanie, liczone automatycznie z historii bota — m.in. najdłuższa seria na plusie, rekordowy dzień, staż w klanie, % ukończenia kolekcji brawlerów, najlepszy tydzień i kamienie milowe rekordu trofeów. Całkowicie darmowe.",
+      en: "A player's badges and achievements in the clan, calculated automatically from the bot's history — including longest positive streak, record day, time in the clan, brawler collection completion %, best week, and trophy record milestones. Completely free.",
+    },
+
+    "komendy.pojedynek_code": { pl: "/pojedynek [tag_gracza_1] [tag_gracza_2]", en: "/duel [player_tag_1] [player_tag_2]" },
+    "komendy.pojedynek_desc": {
+      pl: "Porównanie 1:1 dwóch graczy klanu — aktualne trofea, kto prowadzi i przyrost z ostatniego tygodnia każdego z nich.",
+      en: "A 1:1 comparison of two clan members — current trophies, who's leading, and each player's gain from the last week.",
+    },
+    "komendy.pojedynek_li1": {
+      pl: "Premium: porównanie kolekcji brawlerów obu graczy (wg rzadkości)",
+      en: "Premium: a comparison of both players' brawler collections (by rarity)",
+    },
+    "komendy.pojedynek_li2": {
+      pl: "Premium: wspólny wykres trendu trofeów obu graczy (30 dni)",
+      en: "Premium: a shared 30-day trophy trend chart for both players",
+    },
+
+    "komendy.historia_pucharow_code": { pl: "/historia_pucharow [zakres_dni] [tag_gracza]", en: "/trophy_history [day_range] [player_tag]" },
+    "komendy.historia_pucharow_desc": {
+      pl: "Trend trofeów dowolnego gracza z klanu z ostatnich 7 lub 30 dni — tekstowy sparkline w embedzie plus prawdziwy wykres liniowy PNG. Dorzuca też prognozę osiągnięcia progu klanowego i pozycję gracza w klanie w tym oknie czasowym.",
+      en: "Trophy trend for any clan member over the last 7 or 30 days — a text sparkline in the embed plus a real PNG line chart. Also adds a forecast for hitting the clan threshold and the player's position in the clan over that time window.",
+    },
+
+    "komendy.rotacja_map_code": { pl: "/rotacja_map", en: "/map_rotation" },
+    "komendy.rotacja_map_desc": {
+      pl: 'Pokazuje na żądanie aktualną rotację map i trybów gry Brawl Stars — ta sama tabela, co na <a href="/Mapy/">stronie z mapami</a>, tylko wprost na Discordzie.',
+      en: 'Shows the current Brawl Stars map and mode rotation on demand — the same table as on the <a href="/Mapy/">maps page</a>, just directly on Discord.',
+    },
+
+    "komendy.support_code": { pl: "/support", en: "/support" },
+    "komendy.support_desc": {
+      pl: "Krótkie info o bocie, pierwsze kroki dla admina i przycisk-link do serwera wsparcia.",
+      en: "Quick info about the bot, first steps for admins, and a button linking to the support server.",
+    },
+
+    "komendy.ustaw_klan_code": { pl: "/ustaw_klan [nowy_tag_klanu]", en: "/set_clan [clan_tag]" },
+    "komendy.ustaw_klan_desc": {
+      pl: "Powiązuje ten serwer Discord z konkretnym klanem Brawl Stars i od razu zapisuje pierwszy punkt historii pucharów wszystkich jego członków.",
+      en: "Links this Discord server to a specific Brawl Stars clan and immediately saves the first trophy history point for all its members.",
+    },
+
+    "komendy.ustaw_prog_pucharow_code": { pl: "/ustaw_prog_pucharow [nowe_puchary]", en: "/set_trophy_threshold [new_trophy_count]" },
+    "komendy.ustaw_prog_pucharow_desc": {
+      pl: "Ustawia minimalny próg pucharowy wymagany na tym serwerze — używany przez <code>/sprawdz_puchary</code>, panel weryfikacji i <code>/czystka_klanu</code>.",
+      en: "Sets the minimum trophy threshold required on this server — used by <code>/check_trophies</code>, the verification panel, and <code>/clan_cleanup</code>.",
+    },
+
+    "komendy.ustaw_role_rang_code": { pl: "/ustaw_role_rang [ranga_z_gry] [nowa_nazwa_discord]", en: "/set_rank_role [game_rank] [discord_role]" },
+    "komendy.ustaw_role_rang_desc": {
+      pl: "Dopasowuje nazwę roli Discord do konkretnej rangi klanowej (member / senior / vicePresident / president). Odpowiedź widoczna tylko dla admina.",
+      en: "Maps a Discord role name to a specific clan rank (member / senior / vicePresident / president). The response is only visible to the admin.",
+    },
+
+    "komendy.ustaw_kanal_raportow_code": { pl: "/ustaw_kanal_raportow [kanal]", en: "/set_report_channel [channel]" },
+    "komendy.ustaw_kanal_raportow_desc": {
+      pl: "Ustawia kanał, na który trafiają automatyczne raporty tygodniowe i miesięczne. Bot sam sprawdza, czy ma uprawnienia do pisania i linkowania embedów na wybranym kanale.",
+      en: "Sets the channel that receives automatic weekly and monthly reports. The bot checks on its own whether it has permission to post and embed links in the chosen channel.",
+    },
+
+    "komendy.ustaw_kanal_rotacji_code": { pl: "/ustaw_kanal_rotacji [kanal]", en: "/set_rotation_channel [channel]" },
+    "komendy.ustaw_kanal_rotacji_desc": {
+      pl: "Ustawia kanał powiadomień o zmianie mapy w rotacji Brawl Stars (funkcja darmowa, opt-in).",
+      en: "Sets the channel for Brawl Stars map rotation change notifications (a free, opt-in feature).",
+    },
+
+    "komendy.ustaw_harmonogram_raportow_code": { pl: "/ustaw_harmonogram_raportow [dzien] [godzina]", en: "/set_report_schedule [day] [hour]" },
+    "komendy.ustaw_harmonogram_raportow_desc": {
+      pl: "Ustala dzień tygodnia i godzinę, o której wysyłany jest automatyczny raport tygodniowy.",
+      en: "Sets the day of the week and hour when the automatic weekly report is sent.",
+    },
+
+    "komendy.panel_weryfikacji_code": { pl: "/panel_weryfikacji", en: "/verification_panel" },
+    "komendy.panel_weryfikacji_desc": {
+      pl: "Wysyła panel z przyciskiem, dzięki któremu członkowie sami się zweryfikują (otwiera formularz na tag z gry).",
+      en: "Sends a panel with a button that lets members verify themselves (opens a form for their in-game tag).",
+    },
+
+    "komendy.czystka_klanu_code": { pl: "/czystka_klanu", en: "/clan_cleanup" },
+    "komendy.czystka_klanu_desc": {
+      pl: "Lista członków klanu, którzy są poniżej ustawionego progu pucharowego — gotowa do przejrzenia przed ewentualnym wyrzuceniem z klanu w grze.",
+      en: "A list of clan members who are below the configured trophy threshold — ready to review before removing anyone from the clan in-game.",
+    },
+
+    "komendy.ustaw_wyglad_code": { pl: "/ustaw_wyglad [komenda]", en: "/set_appearance [command]" },
+    "komendy.ustaw_wyglad_desc": {
+      pl: "Kolor embedów bota. W wersji darmowej wystarczy wywołać komendę bez żadnych parametrów — kolor obejmie wszystkie embedy naraz. W Premium można dodatkowo wybrać (z podpowiadanej listy) jedną z kilkunastu pojedynczych komend bota i ustawić dla niej osobny kolor. Otwiera listę wyboru z 16 kolorami.",
+      en: "The bot's embed color. In the free version, just run the command with no parameters — the color applies to every embed at once. Premium lets you additionally pick (from an autocomplete list) one of over a dozen individual bot commands and set a separate color for it. Opens a picker with 16 colors.",
+    },
+
+    "komendy.ustaw_jezyk_code": { pl: "/ustaw_jezyk [jezyk]", en: "/set_language [language]" },
+    "komendy.ustaw_jezyk_desc": {
+      pl: "Ustawia język odpowiedzi bota na tym serwerze — polski albo angielski (domyślnie polski). Wszystkie nazwy i opisy komend mają też natywną angielską lokalizację Discorda, niezależną od tego ustawienia.",
+      en: "Sets the bot's response language on this server — Polish or English (Polish by default). Every command name and description also has native English Discord localization, independent of this setting.",
+    },
+  });
 </script>
 </body>
 </html>
