@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-07-22T06:12:11Z",
+  "aktualizowano": "2026-07-22T08:12:10Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Match 1123581321",
-      "mapa_aktualna": "Sunny Soccer",
-      "koniec_aktualnego_slotu": "2026-07-22T08:00:00Z"
+      "mapa_poprzednia": "Sunny Soccer",
+      "mapa_aktualna": "Super Beach",
+      "koniec_aktualnego_slotu": "2026-07-23T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -44,10 +44,10 @@
       "koniec_aktualnego_slotu": "2026-07-23T08:00:00Z"
     },
     {
-      "tryb": "brawlBall",
-      "mapa_poprzednia": "Dueling Beetles",
-      "mapa_aktualna": "Backyard Bowl",
-      "koniec_aktualnego_slotu": "2026-07-22T08:00:00Z"
+      "tryb": "airHockey",
+      "mapa_poprzednia": "Backyard Bowl",
+      "mapa_aktualna": "Super Center",
+      "koniec_aktualnego_slotu": "2026-07-24T08:00:00Z"
     },
     {
       "tryb": "tagTeam",
@@ -86,10 +86,10 @@
       "koniec_aktualnego_slotu": "2026-07-23T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-07-22T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-07-22T10:00:00Z"
     }
   ]
 }
