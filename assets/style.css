@@ -363,6 +363,12 @@ section.alt {
   color: #c4b5fd;
 }
 
+.badge-new {
+  background: rgba(52, 211, 153, 0.14);
+  border-color: rgba(52, 211, 153, 0.4);
+  color: var(--green);
+}
+
 /* ---------- COMMANDS ---------- */
 
 .commands-grid {
@@ -985,6 +991,14 @@ footer.site-footer {
   .command-block {
     grid-template-columns: 1fr;
   }
+}
+
+/* Text-only command block (no screenshot yet available) - copy spans the full
+   width instead of leaving the screenshot column empty. Used for commands
+   added after the last screenshot pass (see brawlmanager-zmiany.md, 2026-07-20/21
+   round) until real Discord screenshots exist for them. */
+.command-block--text-only {
+  grid-template-columns: 1fr;
 }
 
 /* ---------- COMMAND LIGHTBOX (komendy.html) ----------

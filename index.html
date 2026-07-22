@@ -87,8 +87,17 @@
                     <div class="feature-icon">📈</div>
                     <h3>Statystyki gracza i klanu</h3>
                     <p>
-                        Karta gracza, ranking top 10 klanu i kalkulator progu pucharowego —
-                        jedną komendą, bez wchodzenia w grę.
+                        Karta gracza, ranking top 10 klanu, pozycja w rankingu, osobisty cel pucharowy,
+                        odznaki i pojedynki 1:1 między członkami — jedną komendą, bez wchodzenia w grę.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎴</div>
+                    <h3>Wizualna siatka brawlerów</h3>
+                    <p>
+                        <code>/brawlerzy</code> generuje obraz całej kolekcji gracza — odblokowani brawlerzy
+                        na kolorowo z rangą lub poziomem mocy, zablokowani wyszarzeni. Darmowe.
                     </p>
                 </div>
 
@@ -107,6 +116,15 @@
                     <p>
                         Ustaw własny kolor embedów bota, osobno dla każdej komendy — tak, żeby wyglądał
                         jak Twój bot, a nie generyczne narzędzie.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Bot po polsku i angielsku</h3>
+                    <p>
+                        Wszystkie komendy i odpowiedzi bota działają w dwóch językach — admin wybiera jeden
+                        (<code>/ustaw_jezyk</code>) dla całego serwera.
                     </p>
                 </div>
             </div>
@@ -150,8 +168,43 @@
 
                     <div class="command-item">
                         <div class="command-main">
+                            <code>/brawlerzy [tag_gracza]</code>
+                            <p>Graficzna siatka wszystkich brawlerów gracza — odblokowani kolorowo (z rangą lub poziomem mocy), zablokowani wyszarzeni. Sortowanie: ranga / moc / rzadkość / trofea. Darmowe.</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
                             <code>/historia_pucharow [zakres] [tag_gracza]</code>
-                            <p>Trend trofeów dowolnego gracza z klanu z ostatnich 7 lub 30 dni, wraz z wykresem tekstowym.</p>
+                            <p>Trend trofeów dowolnego gracza z klanu z ostatnich 7 lub 30 dni — sparkline w embedzie plus prawdziwy wykres liniowy (obraz).</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code>/moja_pozycja [tag_gracza]</code>
+                            <p>Twoja aktualna pozycja w rankingu klanu i dystans do osoby wyżej. Premium dorzuca prognozę, za ile dni ją wyprzedzisz.</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code>/moj_cel [tag_gracza] [cel_puchary]</code>
+                            <p>Ustawia osobisty cel pucharowy i pokazuje pasek postępu. Premium dorzuca prognozę w widełkach (optymistyczna / pesymistyczna) na bazie Twojego najlepszego i najgorszego tygodnia.</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code>/moje_osiagniecia [tag_gracza]</code>
+                            <p>Odznaki i osiągnięcia gracza w klanie — serie, rekordy, kolekcja brawlerów. Całkowicie darmowe.</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code>/pojedynek [tag_gracza_1] [tag_gracza_2]</code>
+                            <p>Porównanie 1:1 dwóch graczy klanu — trofea i przyrost tygodnia. Premium dorzuca porównanie kolekcji brawlerów i wspólny wykres trendu obu graczy.</p>
                         </div>
                     </div>
 
@@ -225,7 +278,14 @@
                     <div class="command-item">
                         <div class="command-main">
                             <code>/ustaw_wyglad</code>
-                            <p>Zmienia kolor wszystkich embedów. Premium umożliwia ustawienie różnych kolorów dla każdej komendy.</p>
+                            <p>Zmienia kolor wszystkich embedów. Premium umożliwia ustawienie osobnego koloru dla każdej pojedynczej komendy.</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code>/ustaw_jezyk</code>
+                            <p>Ustawia język odpowiedzi bota na tym serwerze — polski albo angielski.</p>
                         </div>
                     </div>
                 </div>
@@ -284,16 +344,18 @@
                             <td>
                                 <ul>
                                     <li>Próg klanowy — kto go nie spełnia</li>
+                                    <li>Całkowity progres klanu, Top 3 tygodnia</li>
                                     <li>Lista mniej aktywnych członków</li>
+                                    <li>Podium i wyróżnienia miesiąca, najlepszy dzień klanu</li>
                                 </ul>
                             </td>
                             <td>
                                 <ul>
                                     <li>Wszystko z Free, plus:</li>
-                                    <li>Całkowity progres klanu</li>
-                                    <li>Średni przyrost na członka</li>
-                                    <li>Wskaźnik zaangażowania składu</li>
-                                    <li>MVP tygodnia / miesiąca i najsłabszy wynik</li>
+                                    <li>Wykres PNG trendu klanu + pełny ranking wszystkich monitorowanych</li>
+                                    <li>Średni przyrost, zaangażowanie, MVP — z porównaniem do poprzedniego okresu</li>
+                                    <li>Prognoza pucharów na kolejne 30 dni</li>
+                                    <li>Miesiąc w liczbach i najbardziej stabilny gracz</li>
                                 </ul>
                             </td>
                         </tr>
@@ -302,8 +364,40 @@
                             <td>—</td>
                             <td>
                                 <ul>
-                                    <li>Trend trofeów dowolnego gracza z klanu</li>
-                                    <li>Zakres 7 lub 30 dni</li>
+                                    <li>Trend trofeów dowolnego gracza z klanu (7 lub 30 dni)</li>
+                                    <li>Prawdziwy wykres liniowy, nie tylko sparkline</li>
+                                    <li>Prognoza (ETA), za ile dni osiągnie próg klanowy</li>
+                                    <li>Pozycja gracza w klanie w danym oknie czasowym</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Pojedynek graczy<span><code>/pojedynek</code></span></td>
+                            <td>
+                                <ul>
+                                    <li>Aktualne trofea obu graczy i kto prowadzi</li>
+                                    <li>Przyrost z ostatniego tygodnia</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Porównanie kolekcji brawlerów obu graczy</li>
+                                    <li>Wspólny wykres trendu obu graczy</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Cel i pozycja w klanie<span><code>/moj_cel</code>, <code>/moja_pozycja</code></span></td>
+                            <td>
+                                <ul>
+                                    <li>Pasek postępu do własnego celu pucharowego</li>
+                                    <li>Aktualna pozycja w rankingu klanu</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Prognoza w widełkach (najlepszy / najgorszy tydzień)</li>
+                                    <li>Prognoza, za ile dni wyprzedzisz osobę przed sobą</li>
                                 </ul>
                             </td>
                         </tr>

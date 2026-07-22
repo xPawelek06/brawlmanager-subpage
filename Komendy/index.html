@@ -66,7 +66,12 @@
         <div class="command-nav">
             <a href="#sprawdz_puchary">/sprawdz_puchary</a>
             <a href="#profil_bs">/profil_bs</a>
+            <a href="#brawlerzy">/brawlerzy</a>
             <a href="#ranking_klanu">/ranking_klanu</a>
+            <a href="#moja_pozycja">/moja_pozycja</a>
+            <a href="#moj_cel">/moj_cel</a>
+            <a href="#moje_osiagniecia">/moje_osiagniecia</a>
+            <a href="#pojedynek">/pojedynek</a>
             <a href="#historia_pucharow">/historia_pucharow</a>
             <a href="#support">/support</a>
             <a href="#ustaw_klan">/ustaw_klan</a>
@@ -78,6 +83,7 @@
             <a href="#panel_weryfikacji">/panel_weryfikacji</a>
             <a href="#czystka_klanu">/czystka_klanu</a>
             <a href="#ustaw_wyglad">/ustaw_wyglad</a>
+            <a href="#ustaw_jezyk">/ustaw_jezyk</a>
         </div>
     </div>
 
@@ -128,6 +134,19 @@
                     </div>
                 </div>
 
+                <!-- /brawlerzy -->
+                <div class="command-block command-block--text-only" id="brawlerzy">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code>/brawlerzy [tag_gracza]</code> <span class="badge badge-new">🆕 Nowość</span></div>
+                        <p>
+                            Generuje obraz siatki wszystkich brawlerów w grze — odblokowani przez gracza kolorowo
+                            (z odznaką rangi albo poziomem mocy w rogu), zablokowani wyszarzeni z ikoną kłódki.
+                            Menu pod obrazkiem pozwala przesortować siatkę wg rangi, poziomu mocy, rzadkości albo
+                            najwyższych trofeów. Całkowicie darmowe.
+                        </p>
+                    </div>
+                </div>
+
                 <!-- /ranking_klanu -->
                 <div class="command-block" id="ranking_klanu">
                     <div class="command-block-copy">
@@ -140,11 +159,58 @@
                     </div>
                 </div>
 
+                <!-- /moja_pozycja -->
+                <!-- Zrzuty ekranu jeszcze nie istnieją dla tej komendy (dodana 2026-07-20/21,
+                     po ostatniej sesji screenshotów) - blok tekstowy na całą szerokość
+                     (.command-block--text-only), do uzupełnienia realnym screenem później. -->
+                <div class="command-block command-block--text-only" id="moja_pozycja">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code>/moja_pozycja [tag_gracza]</code> <span class="badge badge-partial">🔒 częściowo Premium</span></div>
+                        <p>Twoja aktualna pozycja w rankingu klanu wg aktualnych trofeów i dystans do osoby bezpośrednio wyżej.</p>
+                        <ul>
+                            <li>Premium: prognoza, za ile dni wyprzedzisz osobę przed sobą (na bazie tempa z ostatnich 30 dni)</li>
+                            <li>Premium: przycisk do samodzielnego ustawienia liczby dni prognozy</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- /moj_cel -->
+                <div class="command-block command-block--text-only" id="moj_cel">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code>/moj_cel [tag_gracza] [cel_puchary]</code> <span class="badge badge-partial">🔒 częściowo Premium</span></div>
+                        <p>Ustawia Twój osobisty cel pucharowy i pokazuje pasek postępu (kolor paska/embeda zależny od % ukończenia) oraz zmianę od wczoraj.</p>
+                        <ul>
+                            <li>Premium: prognoza dotarcia do celu w widełkach — osobno z Twojego najlepszego i najgorszego tygodnia</li>
+                            <li>Premium: pole „Najlepszy dzień w tym okresie”</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- /moje_osiagniecia -->
+                <div class="command-block command-block--text-only" id="moje_osiagniecia">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code>/moje_osiagniecia [tag_gracza]</code> <span class="badge badge-new">🆕 Nowość</span></div>
+                        <p>Odznaki i osiągnięcia gracza w klanie, liczone automatycznie z historii bota — m.in. najdłuższa seria na plusie, rekordowy dzień, staż w klanie, % ukończenia kolekcji brawlerów, najlepszy tydzień i kamienie milowe rekordu trofeów. Całkowicie darmowe.</p>
+                    </div>
+                </div>
+
+                <!-- /pojedynek -->
+                <div class="command-block command-block--text-only" id="pojedynek">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code>/pojedynek [tag_gracza_1] [tag_gracza_2]</code> <span class="badge badge-partial">🔒 częściowo Premium</span></div>
+                        <p>Porównanie 1:1 dwóch graczy klanu — aktualne trofea, kto prowadzi i przyrost z ostatniego tygodnia każdego z nich.</p>
+                        <ul>
+                            <li>Premium: porównanie kolekcji brawlerów obu graczy (wg rzadkości)</li>
+                            <li>Premium: wspólny wykres trendu trofeów obu graczy (30 dni)</li>
+                        </ul>
+                    </div>
+                </div>
+
                 <!-- /historia_pucharow -->
                 <div class="command-block" id="historia_pucharow">
                     <div class="command-block-copy">
                         <div class="command-tag"><code>/historia_pucharow [zakres_dni] [tag_gracza]</code> <span class="badge">🔒 Premium</span></div>
-                        <p>Trend trofeów dowolnego gracza z klanu z ostatnich 7 lub 30 dni, z tekstowym wykresem (sparkline).</p>
+                        <p>Trend trofeów dowolnego gracza z klanu z ostatnich 7 lub 30 dni — tekstowy sparkline w embedzie plus prawdziwy wykres liniowy PNG. Dorzuca też prognozę osiągnięcia progu klanowego i pozycję gracza w klanie w tym oknie czasowym.</p>
                     </div>
                     <div class="command-screenshot-group">
                         <div class="command-screenshot-item">
@@ -310,6 +376,14 @@
                             <img src="/assets/screenshots/ustaw_wyglad-dropdown.png" alt="Lista wyboru koloru embedów po wywołaniu /ustaw_wyglad" class="command-screenshot command-screenshot-usage" role="button" tabindex="0">
                             <img src="/assets/screenshots/ustaw_wyglad-premium-wynik.png" alt="Wynik komendy /ustaw_wyglad na Discordzie, wariant Premium — zmiana koloru tylko komendy /profil" class="command-screenshot" role="button" tabindex="0">
                         </div>
+                    </div>
+                </div>
+
+                <!-- /ustaw_jezyk -->
+                <div class="command-block command-block--text-only" id="ustaw_jezyk">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code>/ustaw_jezyk [jezyk]</code> <span class="badge badge-new">🆕 Nowość</span></div>
+                        <p>Ustawia język odpowiedzi bota na tym serwerze — polski albo angielski (domyślnie polski). Wszystkie nazwy i opisy komend mają też natywną angielską lokalizację Discorda, niezależną od tego ustawienia.</p>
                     </div>
                 </div>
 
