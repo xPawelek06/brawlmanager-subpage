@@ -369,6 +369,15 @@ section.alt {
   color: var(--green);
 }
 
+/* Marks a command-block whose Discord screenshots are stale (pre-redesign UI)
+   and were pulled pending a fresh capture - see .command-block--text-only,
+   used together on the same blocks (2026-07-22 screenshot removal pass). */
+.badge-pending {
+  background: rgba(148, 163, 184, 0.14);
+  border-color: rgba(148, 163, 184, 0.35);
+  color: var(--text-faint);
+}
+
 /* ---------- COMMANDS ---------- */
 
 .commands-grid {
