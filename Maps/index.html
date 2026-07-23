@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brawl Stars Map Rotation — BrawlManager</title>
+    <meta name="description" content="Full list of Brawl Stars game modes with the last and current map in rotation — data from Supercell's official API, kept updated by BrawlManager.">
+    <link rel="icon" type="image/png" href="/assets/logo.png">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<!-- English URL for the Mapy page - same markup/dictionary/logic as /Mapy/,
+     both imported from assets/mapy-page.js (see the comment at the top of
+     that file for why this isn't a duplicated copy). -->
+<script src="/assets/script.js"></script>
+<script src="/assets/i18n.js"></script>
+<script src="/assets/mapy-page.js"></script>
+<script>
+  BM_MAPY_PAGE.mount({
+    forcedLang: "en",
+    urlPair: { pl: "/Mapy/", en: "/Maps/" },
+  });
+</script>
+</body>
+</html>

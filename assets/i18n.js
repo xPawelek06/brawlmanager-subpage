@@ -4,21 +4,41 @@
 // (podwójna liczba plików do ręcznego utrzymania w wiecznej synchronizacji)
 // używamy jednego zestawu stron z atrybutem `data-i18n="klucz"` na elementach
 // tekstowych - JS podmienia `innerHTML` wg wybranego języka. Wybór języka jest
-// trzymany w localStorage (ten sam origin dla Home/Komendy/Mapy), więc
-// PRZECHODZI między podstronami zamiast resetować się przy każdej nawigacji.
+// trzymany w localStorage (ten sam origin dla Home/Komendy/Mapy/tos/privacy),
+// więc PRZECHODZI między podstronami zamiast resetować się przy każdej nawigacji.
 //
-// Użycie w każdej z 3 stron (na końcu body, po script.js):
+// Użycie na stronach z toggle "w miejscu" (Home, tos, privacy - jeden URL,
+// przełącznik tylko podmienia tekst, na końcu body po script.js):
 //   <script src="/assets/i18n.js"></script>
 //   <script>BM_I18N.init(PAGE_DICT);</script>
 // gdzie PAGE_DICT to obiekt { "klucz": { pl: "...", en: "..." }, ... } z treścią
 // specyficzną dla tej strony - łączony ze wspólnym słownikiem COMMON (nav,
 // stopka, wspólne przyciski) zdefiniowanym tutaj.
 //
+// Komendy/Mapy (2026-07-23) mają REALNE, osobno nawigowalne URL-e per język
+// (/Komendy/ <-> /Commands/, /Mapy/ <-> /Maps/ - patrz assets/komendy-page.js
+// i assets/mapy-page.js). Te strony wołają init() z drugim argumentem opts:
+//   BM_I18N.init(PAGE_DICT, {
+//     forcedLang: "pl" | "en",              // ta strona ZAWSZE pokazuje ten
+//                                            // język, niezależnie od localStorage
+//                                            // (URL jest źródłem prawdy) - i
+//                                            // od razu nadpisuje localStorage,
+//                                            // żeby dalsza nawigacja (np. Home)
+//                                            // poszła w tym samym języku.
+//     urlPair: { pl: "/Komendy/", en: "/Commands/" }, // gdzie nawigować po
+//                                            // kliknięciu PL/EN na TEJ stronie
+//                                            // (zamiast przełączania w miejscu).
+//   });
+//
 // Atrybuty:
 //   data-i18n="klucz"              -> ustawia innerHTML elementu (może zawierać
 //                                      zaufany, ręcznie pisany markup np. <code>)
 //   data-i18n-attr="attr:klucz"     -> ustawia atrybut zamiast innerHTML (aria-label,
 //                                      meta content, alt...). Kilka par oddzielone "|".
+//   data-i18n-href="komendy"/"mapy" -> ustawia href linku nawigacyjnego wg NAV_LINKS
+//                                      niżej, tak żeby link "Komendy"/"Mapy" w navbarze
+//                                      prowadził od razu do wersji w aktualnym języku
+//                                      (PL -> /Komendy//Mapy/, EN -> /Commands//Maps/).
 //   data-lang-btn="pl"/"en"         -> przycisk przełącznika języka w navbarze.
 
 (function () {
@@ -49,6 +69,15 @@
     "common.badge_new": { pl: "🆕 Nowość", en: "🆕 New" },
     "common.badge_pending": { pl: "📸 Zrzuty ekranu wkrótce", en: "📸 Screenshots coming soon" },
     "common.back_home": { pl: "← Wróć do strony głównej", en: "← Back to homepage" },
+  };
+
+  // Pary URL per język dla stron, które mają REALNIE osobne, nawigowalne adresy
+  // (patrz komentarz u góry pliku). Używane przez data-i18n-href w navbarze -
+  // Home/tos/privacy nie mają takiej pary, więc ich linki do Komendy/Mapy po
+  // prostu wskazują na wersję odpowiadającą aktualnie wybranemu językowi.
+  const NAV_LINKS = {
+    komendy: { pl: "/Komendy/", en: "/Commands/" },
+    mapy: { pl: "/Mapy/", en: "/Maps/" },
   };
 
   function getLang() {
@@ -106,18 +135,31 @@
       btn.setAttribute("aria-pressed", isActive ? "true" : "false");
     });
 
+    document.querySelectorAll("[data-i18n-href]").forEach((el) => {
+      const pair = NAV_LINKS[el.getAttribute("data-i18n-href")];
+      if (pair) el.setAttribute("href", pair[lang]);
+    });
+
     // Pozwala stronom z własną logiką JS (np. Mapy/ - tabela rotacji budowana
     // dynamicznie z fetchowanych danych, poza zasięgiem data-i18n) przerenderować
     // się po zmianie języka bez przeładowania strony.
     document.dispatchEvent(new CustomEvent("bm:lang-applied", { detail: { lang } }));
   }
 
-  function wireLangSwitch(dict) {
+  // urlPair (opcjonalny) - gdy strona ma REALNIE osobne URL-e per język
+  // (Komendy/Commands, Mapy/Maps), klik PL/EN NAWIGUJE do adresu siostrzanego
+  // zamiast przełączać treść w miejscu. Bez urlPair zachowanie jest identyczne
+  // jak wcześniej (Home/tos/privacy - toggle w miejscu, bez przeładowania).
+  function wireLangSwitch(dict, urlPair) {
     document.querySelectorAll("[data-lang-btn]").forEach((btn) => {
       btn.addEventListener("click", () => {
         const lang = btn.getAttribute("data-lang-btn");
         if (lang === getLang()) return;
         setLang(lang);
+        if (urlPair && urlPair[lang]) {
+          window.location.href = urlPair[lang];
+          return;
+        }
         applyAll(dict);
       });
     });
@@ -132,10 +174,19 @@
     t: function (key) {
       return this._dict ? lookup(this._dict, key) : null;
     },
-    init: function (pageDict) {
+    // opts (opcjonalny): { forcedLang, urlPair } - patrz komentarz u góry pliku.
+    // forcedLang nadpisuje localStorage PRZED renderem (URL wygrywa nad
+    // zapamiętanym wyborem na stronach z osobnym adresem per język) i od razu
+    // zapisuje wybór, żeby dalsza nawigacja (np. klik "Home") poszła w tym
+    // samym języku.
+    init: function (pageDict, opts) {
+      opts = opts || {};
+      if (opts.forcedLang === "pl" || opts.forcedLang === "en") {
+        setLang(opts.forcedLang);
+      }
       this._dict = Object.assign({}, COMMON, pageDict || {});
       applyAll(this._dict);
-      wireLangSwitch(this._dict);
+      wireLangSwitch(this._dict, opts.urlPair || null);
     },
   };
 })();
