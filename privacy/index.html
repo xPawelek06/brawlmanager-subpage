@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Polityka Prywatności (Privacy Policy) – BrawlManager</title>
+    <link rel="icon" type="image/png" href="/assets/logo.png">
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm 15mm;
+            background-color: #ffffff;
+            @bottom-right {
+                content: counter(page);
+                font-family: 'Arial', sans-serif;
+                font-size: 9pt;
+                color: #718096;
+            }
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #2d3748;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            font-size: 10.5pt;
+        }
+        h1 {
+            font-size: 20pt;
+            color: #1a365d;
+            margin-top: 0;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .subtitle {
+            font-size: 11pt;
+            color: #4a5568;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 15px;
+        }
+        h2 {
+            font-size: 13pt;
+            color: #2b6cb0;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            border-left: 4px solid #3182ce;
+            padding-left: 10px;
+            page-break-after: avoid;
+        }
+        p, li {
+            margin-bottom: 8px;
+            text-align: justify;
+        }
+        ul {
+            margin-top: 5px;
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        .highlight-box {
+            background-color: #f7fafc;
+            border: 1px solid #e2e8f0;
+            padding: 12px;
+            border-radius: 6px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-size: 10pt;
+        }
+        .highlight-box strong {
+            color: #2c5282;
+        }
+        .translation-note {
+            background-color: #fffaf0;
+            border: 1px solid #feebc8;
+            padding: 10px 12px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            font-size: 9.5pt;
+            font-style: italic;
+            color: #7b341e;
+        }
+        .top-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 18px;
+        }
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-family: 'Arial', sans-serif;
+            font-size: 10pt;
+            font-weight: 600;
+            color: #2b6cb0;
+            text-decoration: none;
+        }
+        .back-home:hover {
+            text-decoration: underline;
+        }
+        /* Ten sam wizualny język co segmented control w navbarze głównej
+           strony (assets/style.css .lang-switch), ale kolory wpisane wprost
+           (ten dokument jest celowo samodzielny, bez zależności od
+           zmiennych motywu/dark mode strony głównej). */
+        .lang-switch {
+            display: inline-flex;
+            align-items: center;
+            gap: 2px;
+            background: #f7fafc;
+            border: 1px solid #cbd5e0;
+            border-radius: 999px;
+            padding: 3px;
+            flex-shrink: 0;
+        }
+        .lang-switch-btn {
+            border: none;
+            background: transparent;
+            color: #718096;
+            font-family: 'Arial', sans-serif;
+            font-size: 9pt;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            padding: 5px 12px;
+            border-radius: 999px;
+            cursor: pointer;
+        }
+        .lang-switch-btn:hover {
+            color: #2d3748;
+        }
+        .lang-switch-btn.is-active {
+            background: #ffffff;
+            color: #1a365d;
+            box-shadow: inset 0 0 0 1px #cbd5e0;
+        }
+        @media print {
+            .back-home, .lang-switch {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <a href="/" class="back-home" data-tos-t="back">← Powrót do strony głównej</a>
+        <div class="lang-switch" role="group" aria-label="Język dokumentu / Document language">
+            <button type="button" class="lang-switch-btn" data-lang-btn="pl">PL</button>
+            <button type="button" class="lang-switch-btn" data-lang-btn="en">EN</button>
+        </div>
+    </div>
+
+    <!-- ===================== PL ===================== -->
+    <div data-lang-block="pl">
+
+        <h1>Polityka Prywatności</h1>
+        <div class="subtitle">Privacy Policy – Aplikacja BrawlManager | Data aktualizacji: 25 czerwca 2026 r.</div>
+
+        <p>Niniejsza Polityka Prywatności określa zasady gromadzenia, przetwarzania i ochrony danych użytkowników korzystających z bota Discord <strong>BrawlManager</strong>. Dbamy o transparentność, dlatego zbieramy tylko te informacje, które są absolutnie niezbędne do działania bota.</p>
+
+        <h2>§1. Jakie dane przetwarzamy?</h2>
+        <p>Bot przetwarza wyłącznie publicznie dostępne dane oraz dane techniczne platformy Discord i gry Brawl Stars:</p>
+        <ul>
+            <li><strong>Dane z platformy Discord:</strong> Identyfikator użytkownika (User ID), identyfikator serwera (Guild ID), nazwy ról oraz identyfikatory kanałów tekstowych niezbędne do wysyłania logów i raportów.</li>
+            <li><strong>Dane z API Brawl Stars (Supercell):</strong> Unikalny tag gracza (#TAG), nazwa profilu w grze, statystyki pucharów, poziom doświadczenia oraz nazwa i dane Twojego klubu/klanu.</li>
+        </ul>
+
+        <h2>§2. Cel przetwarzania danych</h2>
+        <p>Zebrane dane są wykorzystywane wyłącznie do prawidłowego realizowania funkcji bota:</p>
+        <ul>
+            <li>Automatyczna weryfikacja graczy i nadawanie odpowiednich ról na serwerze Discord na podstawie ich pucharów w Brawl Stars.</li>
+            <li>Generowanie dziennych/tygodniowych raportów aktywności członków klubu w bazie danych PostgreSQL.</li>
+            <li>Wyświetlanie statystyk klubowych i indywidualnych na życzenie użytkownika.</li>
+        </ul>
+
+        <h2>§3. Przechowywanie i ochrona danych</h2>
+        <p>1. Dane takie jak powiązanie Discord ID z tagiem Brawl Stars są bezpiecznie przechowywane w naszej relacyjnej bazie danych PostgreSQL hostowanej na zabezpieczonym serwerze VPS.</p>
+        <p>2. Nie przechowujemy, nie żądamy i nie mamy dostępu do żadnych haseł, adresów e-mail ani prywatnych danych dostępowych do kont Discord lub Supercell ID.</p>
+
+        <h2>§4. Udostępnianie danych</h2>
+        <p>Nigdy nie sprzedajemy, nie handlujemy ani nie udostępniamy zebranych identyfikatorów żadnym firmom zewnętrznym. Wszystkie dane służą wyłącznie wewnętrznym funkcjom aplikacji BrawlManager.</p>
+
+        <h2>§5. Prawa użytkownika</h2>
+        <p>Każdy użytkownik ma pełne prawo do wglądu w swoje dane oraz ich całkowitego usunięcia z bazy bota. Można to zrobić automatycznie poprzez opuszczenie serwera.</p>
+
+        <div class="highlight-box">
+            <strong>Akceptacja Polityki:</strong><br>
+            Dodając bota BrawlManager do swojego serwera lub przechodząc proces weryfikacji gracza, wyrażasz zgodę na przetwarzanie danych określonych w niniejszym dokumencie.
+        </div>
+
+    </div>
+
+    <!-- ===================== EN ===================== -->
+    <div data-lang-block="en" hidden>
+
+        <div class="translation-note">
+            Note: this is an English translation of the original Polish-language Privacy Policy, provided for
+            convenience only and not as legal advice. Data protection terms used here are intended in their
+            general sense; the original document is governed by Polish law and applicable EU data protection
+            regulation (GDPR). In case of any discrepancy or dispute, the original Polish version prevails.
+        </div>
+
+        <h1>Privacy Policy</h1>
+        <div class="subtitle">Privacy Policy – BrawlManager Application | Last updated: June 25, 2026</div>
+
+        <p>This Privacy Policy sets out the rules for collecting, processing, and protecting the data of users of the <strong>BrawlManager</strong> Discord bot. We care about transparency, so we only collect information that is strictly necessary for the Bot to function.</p>
+
+        <h2>§1. What data do we process?</h2>
+        <p>The Bot processes only publicly available data and technical data from the Discord platform and the Brawl Stars game:</p>
+        <ul>
+            <li><strong>Data from the Discord platform:</strong> User ID, server (Guild) ID, role names, and text channel identifiers needed to send logs and reports.</li>
+            <li><strong>Data from the Brawl Stars API (Supercell):</strong> Unique player tag (#TAG), in-game profile name, trophy statistics, experience level, and the name and data of your club/clan.</li>
+        </ul>
+
+        <h2>§2. Purpose of data processing</h2>
+        <p>The collected data is used solely to properly deliver the Bot's functions:</p>
+        <ul>
+            <li>Automatic player verification and assignment of appropriate roles on the Discord server based on their Brawl Stars trophies.</li>
+            <li>Generating daily/weekly club member activity reports in a PostgreSQL database.</li>
+            <li>Displaying club and individual statistics at the user's request.</li>
+        </ul>
+
+        <h2>§3. Data storage and protection</h2>
+        <p>1. Data such as the link between a Discord ID and a Brawl Stars tag is securely stored in our relational PostgreSQL database, hosted on a secured VPS server.</p>
+        <p>2. We do not store, request, or have access to any passwords, e-mail addresses, or private login credentials for Discord or Supercell ID accounts.</p>
+
+        <h2>§4. Data sharing</h2>
+        <p>We never sell, trade, or share the collected identifiers with any third-party companies. All data is used exclusively for the internal functions of the BrawlManager application.</p>
+
+        <h2>§5. User rights</h2>
+        <p>Every user has the full right to access their data and to have it completely deleted from the Bot's database. This can be done automatically by leaving the server.</p>
+
+        <div class="highlight-box">
+            <strong>Acceptance of the Policy:</strong><br>
+            By adding the BrawlManager bot to your server or going through the player verification process, you consent to the processing of the data described in this document.
+        </div>
+
+    </div>
+
+    <script>
+        (function () {
+            "use strict";
+            var STORAGE_KEY = "bm_lang";
+            var TITLES = {
+                pl: "Polityka Prywatności (Privacy Policy) – BrawlManager",
+                en: "Privacy Policy – BrawlManager"
+            };
+            var BACK_LABELS = {
+                pl: "← Powrót do strony głównej",
+                en: "← Back to homepage"
+            };
+
+            function getLang() {
+                try {
+                    var stored = localStorage.getItem(STORAGE_KEY);
+                    if (stored === "pl" || stored === "en") return stored;
+                } catch (e) { /* localStorage niedostępny - spadamy na domyślny PL */ }
+                return "pl";
+            }
+
+            function setLang(lang) {
+                try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) { /* jw. */ }
+            }
+
+            function apply(lang) {
+                document.documentElement.lang = lang;
+                document.title = TITLES[lang];
+                document.querySelectorAll("[data-lang-block]").forEach(function (el) {
+                    el.hidden = el.getAttribute("data-lang-block") !== lang;
+                });
+                document.querySelectorAll("[data-lang-btn]").forEach(function (btn) {
+                    var active = btn.getAttribute("data-lang-btn") === lang;
+                    btn.classList.toggle("is-active", active);
+                    btn.setAttribute("aria-pressed", active ? "true" : "false");
+                });
+                var backLink = document.querySelector("[data-tos-t='back']");
+                if (backLink) backLink.textContent = BACK_LABELS[lang];
+            }
+
+            document.querySelectorAll("[data-lang-btn]").forEach(function (btn) {
+                btn.addEventListener("click", function () {
+                    var lang = btn.getAttribute("data-lang-btn");
+                    setLang(lang);
+                    apply(lang);
+                });
+            });
+
+            apply(getLang());
+        })();
+    </script>
+
+</body>
+</html>
