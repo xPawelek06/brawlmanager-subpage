@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-07-27T06:12:10Z",
+  "aktualizowano": "2026-07-27T08:12:10Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Sneaky Fields",
-      "mapa_aktualna": "Backyard Bowl",
-      "koniec_aktualnego_slotu": "2026-07-27T08:00:00Z"
+      "mapa_poprzednia": "Backyard Bowl",
+      "mapa_aktualna": "Spiraling Out",
+      "koniec_aktualnego_slotu": "2026-07-28T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -38,10 +38,10 @@
       "koniec_aktualnego_slotu": "2026-07-28T02:00:00Z"
     },
     {
-      "tryb": "knockout",
-      "mapa_poprzednia": "Safety Center",
-      "mapa_aktualna": "Split Difference",
-      "koniec_aktualnego_slotu": "2026-07-27T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Split Difference",
+      "mapa_aktualna": "Starfruit Supernova",
+      "koniec_aktualnego_slotu": "2026-07-29T08:00:00Z"
     },
     {
       "tryb": "basketBrawl",
@@ -54,36 +54,6 @@
       "mapa_poprzednia": "The Great Mighty Lou",
       "mapa_aktualna": "Supercut",
       "koniec_aktualnego_slotu": "2026-07-27T16:00:00Z"
-    },
-    {
-      "tryb": "bounty",
-      "mapa_poprzednia": null,
-      "mapa_aktualna": "Layer Cake",
-      "koniec_aktualnego_slotu": "2026-07-27T08:00:00Z"
-    },
-    {
-      "tryb": "hotZone",
-      "mapa_poprzednia": null,
-      "mapa_aktualna": "Ring of Fire",
-      "koniec_aktualnego_slotu": "2026-07-27T08:00:00Z"
-    },
-    {
-      "tryb": "knockout",
-      "mapa_poprzednia": null,
-      "mapa_aktualna": "New Horizons",
-      "koniec_aktualnego_slotu": "2026-07-27T08:00:00Z"
-    },
-    {
-      "tryb": "brawlBall",
-      "mapa_poprzednia": null,
-      "mapa_aktualna": "Pinball Dreams",
-      "koniec_aktualnego_slotu": "2026-07-27T08:00:00Z"
-    },
-    {
-      "tryb": "heist",
-      "mapa_poprzednia": null,
-      "mapa_aktualna": "Kaboom Canyon",
-      "koniec_aktualnego_slotu": "2026-07-27T08:00:00Z"
     },
     {
       "tryb": "airHockey",
@@ -116,10 +86,10 @@
       "koniec_aktualnego_slotu": "2026-07-28T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-07-27T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-07-27T10:00:00Z"
     }
   ]
 }
