@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-07-28T08:12:10Z",
+  "aktualizowano": "2026-07-28T08:27:10Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -44,9 +44,9 @@
       "koniec_aktualnego_slotu": "2026-07-29T08:00:00Z"
     },
     {
-      "tryb": "brawlBall",
-      "mapa_poprzednia": "Ball Hog",
-      "mapa_aktualna": "Sneaky Fields",
+      "tryb": "coopCooking",
+      "mapa_poprzednia": "Sneaky Fields",
+      "mapa_aktualna": "Wok & Roll",
       "koniec_aktualnego_slotu": "2026-07-30T08:00:00Z"
     },
     {
