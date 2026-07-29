@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-07-29T18:08:14Z",
+  "aktualizowano": "2026-07-29T20:08:14Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -9,9 +9,9 @@
     },
     {
       "tryb": "soloShowdown",
-      "mapa_poprzednia": "Gated Community",
-      "mapa_aktualna": "Cavern Churn",
-      "koniec_aktualnego_slotu": "2026-07-29T20:00:00Z"
+      "mapa_poprzednia": "Cavern Churn",
+      "mapa_aktualna": "Starfruit Supernova",
+      "koniec_aktualnego_slotu": "2026-07-30T20:00:00Z"
     },
     {
       "tryb": "gemGrab",
@@ -27,9 +27,9 @@
     },
     {
       "tryb": "duoShowdown",
-      "mapa_poprzednia": "Gated Community",
-      "mapa_aktualna": "Cavern Churn",
-      "koniec_aktualnego_slotu": "2026-07-29T20:00:00Z"
+      "mapa_poprzednia": "Cavern Churn",
+      "mapa_aktualna": "Starfruit Supernova",
+      "koniec_aktualnego_slotu": "2026-07-30T20:00:00Z"
     },
     {
       "tryb": "knockout",
@@ -81,9 +81,9 @@
     },
     {
       "tryb": "trioShowdown",
-      "mapa_poprzednia": "Gated Community",
-      "mapa_aktualna": "Cavern Churn",
-      "koniec_aktualnego_slotu": "2026-07-29T20:00:00Z"
+      "mapa_poprzednia": "Cavern Churn",
+      "mapa_aktualna": "Starfruit Supernova",
+      "koniec_aktualnego_slotu": "2026-07-30T20:00:00Z"
     },
     {
       "tryb": "brawlArena",
@@ -104,10 +104,10 @@
       "koniec_aktualnego_slotu": "2026-07-30T04:00:00Z"
     },
     {
-      "tryb": "knockout",
-      "mapa_poprzednia": "New Perspective",
-      "mapa_aktualna": "Healthy Middle Ground",
-      "koniec_aktualnego_slotu": "2026-07-29T20:00:00Z"
+      "tryb": "knockout5V5",
+      "mapa_poprzednia": "Healthy Middle Ground",
+      "mapa_aktualna": "Crescendo",
+      "koniec_aktualnego_slotu": "2026-07-29T22:00:00Z"
     }
   ]
 }
