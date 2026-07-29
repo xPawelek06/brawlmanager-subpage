@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-07-29T06:12:10Z",
+  "aktualizowano": "2026-07-29T08:12:10Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Spiraling Out",
-      "mapa_aktualna": "Beach Ball",
-      "koniec_aktualnego_slotu": "2026-07-29T08:00:00Z"
+      "mapa_poprzednia": "Beach Ball",
+      "mapa_aktualna": "Pinball Dreams",
+      "koniec_aktualnego_slotu": "2026-07-30T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -38,10 +38,10 @@
       "koniec_aktualnego_slotu": "2026-07-30T02:00:00Z"
     },
     {
-      "tryb": "soloShowdown",
-      "mapa_poprzednia": "Split Difference",
-      "mapa_aktualna": "Starfruit Supernova",
-      "koniec_aktualnego_slotu": "2026-07-29T08:00:00Z"
+      "tryb": "bounty",
+      "mapa_poprzednia": "Starfruit Supernova",
+      "mapa_aktualna": "Dry Season",
+      "koniec_aktualnego_slotu": "2026-07-31T08:00:00Z"
     },
     {
       "tryb": "coopCooking",
@@ -54,6 +54,24 @@
       "mapa_poprzednia": "Shrouding Serpent",
       "mapa_aktualna": "Hideout",
       "koniec_aktualnego_slotu": "2026-07-29T16:00:00Z"
+    },
+    {
+      "tryb": "brawlBall",
+      "mapa_poprzednia": "Layer Cake",
+      "mapa_aktualna": "Grass Knot",
+      "koniec_aktualnego_slotu": "2026-08-06T08:00:00Z"
+    },
+    {
+      "tryb": "knockout",
+      "mapa_poprzednia": "Ring of Fire",
+      "mapa_aktualna": "Flaring Phoenix",
+      "koniec_aktualnego_slotu": "2026-08-06T08:00:00Z"
+    },
+    {
+      "tryb": "bounty",
+      "mapa_poprzednia": "New Horizons",
+      "mapa_aktualna": "Shooting Star",
+      "koniec_aktualnego_slotu": "2026-08-06T08:00:00Z"
     },
     {
       "tryb": "airHockey",
@@ -86,10 +104,10 @@
       "koniec_aktualnego_slotu": "2026-07-30T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-07-29T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-07-29T10:00:00Z"
     }
   ]
 }
