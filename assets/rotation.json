@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-07-30T06:05:52Z",
+  "aktualizowano": "2026-07-30T08:05:52Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Beach Ball",
-      "mapa_aktualna": "Pinball Dreams",
-      "koniec_aktualnego_slotu": "2026-07-30T08:00:00Z"
+      "mapa_poprzednia": "Pinball Dreams",
+      "mapa_aktualna": "Pinhole Punt",
+      "koniec_aktualnego_slotu": "2026-07-31T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -44,10 +44,10 @@
       "koniec_aktualnego_slotu": "2026-07-31T08:00:00Z"
     },
     {
-      "tryb": "coopCooking",
-      "mapa_poprzednia": "Sneaky Fields",
-      "mapa_aktualna": "Wok & Roll",
-      "koniec_aktualnego_slotu": "2026-07-30T08:00:00Z"
+      "tryb": "brawlArena",
+      "mapa_poprzednia": "Wok & Roll",
+      "mapa_aktualna": "Mirage Arena",
+      "koniec_aktualnego_slotu": "2026-08-01T08:00:00Z"
     },
     {
       "tryb": "tagTeam",
@@ -104,10 +104,10 @@
       "koniec_aktualnego_slotu": "2026-07-31T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-07-30T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-07-30T10:00:00Z"
     }
   ]
 }
