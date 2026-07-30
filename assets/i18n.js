@@ -66,7 +66,6 @@
     },
     "common.badge_premium": { pl: "🔒 Premium", en: "🔒 Premium" },
     "common.badge_partial_premium": { pl: "🔒 częściowo Premium", en: "🔒 partially Premium" },
-    "common.badge_new": { pl: "🆕 Nowość", en: "🆕 New" },
     "common.badge_pending": { pl: "📸 Zrzuty ekranu wkrótce", en: "📸 Screenshots coming soon" },
     "common.back_home": { pl: "← Wróć do strony głównej", en: "← Back to homepage" },
   };

@@ -54,9 +54,8 @@
             <div class="eyebrow" data-i18n="komendy.hero_eyebrow">🖥️ Realny wygląd na Discordzie</div>
             <h1 data-i18n="komendy.hero_title">Wszystkie komendy — dokładnie tak, jak je zobaczysz</h1>
             <p data-i18n="komendy.hero_body">
-                Znajdziesz tu opis każdej komendy bota z realnymi zrzutami ekranu z Discorda. Wersja
-                angielska zrzutów jest w przygotowaniu — do tego czasu angielskie sekcje mają na razie
-                sam opis, oznaczony „📸 Zrzuty ekranu wkrótce”.
+                Znajdziesz tu opis każdej komendy wraz z zrzutami ekranu z Discorda. Komenda w wersji
+                free i premium pokazane są w obu wariantach.
             </p>
         </div>
     </section>
@@ -93,27 +92,27 @@
         </div>
         <div class="command-nav-collapsible" id="commandNavCollapsible">
         <div class="command-nav">
-            <a href="#sprawdz_puchary">/sprawdz_puchary</a>
-            <a href="#profil_bs">/profil_bs</a>
-            <a href="#brawlerzy">/brawlerzy</a>
-            <a href="#ranking_klanu">/ranking_klanu</a>
-            <a href="#moja_pozycja">/moja_pozycja</a>
-            <a href="#moj_cel">/moj_cel</a>
-            <a href="#moje_osiagniecia">/moje_osiagniecia</a>
-            <a href="#pojedynek">/pojedynek</a>
-            <a href="#historia_pucharow">/historia_pucharow</a>
-            <a href="#rotacja_map">/rotacja_map</a>
-            <a href="#support">/support</a>
-            <a href="#ustaw_klan">/ustaw_klan</a>
-            <a href="#ustaw_prog_pucharow">/ustaw_prog_pucharow</a>
-            <a href="#ustaw_role_rang">/ustaw_role_rang</a>
-            <a href="#ustaw_kanal_raportow">/ustaw_kanal_raportow</a>
-            <a href="#ustaw_kanal_rotacji">/ustaw_kanal_rotacji</a>
-            <a href="#ustaw_harmonogram_raportow">/ustaw_harmonogram_raportow</a>
-            <a href="#panel_weryfikacji">/panel_weryfikacji</a>
-            <a href="#czystka_klanu">/czystka_klanu</a>
-            <a href="#ustaw_wyglad">/ustaw_wyglad</a>
-            <a href="#ustaw_jezyk">/ustaw_jezyk</a>
+            <a href="#sprawdz_puchary" data-i18n="komendy.sprawdz_puchary_nav">/sprawdz_puchary</a>
+            <a href="#profil_bs" data-i18n="komendy.profil_bs_nav">/profil_bs</a>
+            <a href="#brawlerzy" data-i18n="komendy.brawlerzy_nav">/brawlerzy</a>
+            <a href="#ranking_klanu" data-i18n="komendy.ranking_klanu_nav">/ranking_klanu</a>
+            <a href="#moja_pozycja" data-i18n="komendy.moja_pozycja_nav">/moja_pozycja</a>
+            <a href="#moj_cel" data-i18n="komendy.moj_cel_nav">/moj_cel</a>
+            <a href="#moje_osiagniecia" data-i18n="komendy.moje_osiagniecia_nav">/moje_osiagniecia</a>
+            <a href="#pojedynek" data-i18n="komendy.pojedynek_nav">/pojedynek</a>
+            <a href="#historia_pucharow" data-i18n="komendy.historia_pucharow_nav">/historia_pucharow</a>
+            <a href="#rotacja_map" data-i18n="komendy.rotacja_map_nav">/rotacja_map</a>
+            <a href="#support" data-i18n="komendy.support_nav">/support</a>
+            <a href="#ustaw_klan" data-i18n="komendy.ustaw_klan_nav">/ustaw_klan</a>
+            <a href="#ustaw_prog_pucharow" data-i18n="komendy.ustaw_prog_pucharow_nav">/ustaw_prog_pucharow</a>
+            <a href="#ustaw_role_rang" data-i18n="komendy.ustaw_role_rang_nav">/ustaw_role_rang</a>
+            <a href="#ustaw_kanal_raportow" data-i18n="komendy.ustaw_kanal_raportow_nav">/ustaw_kanal_raportow</a>
+            <a href="#ustaw_kanal_rotacji" data-i18n="komendy.ustaw_kanal_rotacji_nav">/ustaw_kanal_rotacji</a>
+            <a href="#ustaw_harmonogram_raportow" data-i18n="komendy.ustaw_harmonogram_raportow_nav">/ustaw_harmonogram_raportow</a>
+            <a href="#panel_weryfikacji" data-i18n="komendy.panel_weryfikacji_nav">/panel_weryfikacji</a>
+            <a href="#czystka_klanu" data-i18n="komendy.czystka_klanu_nav">/czystka_klanu</a>
+            <a href="#ustaw_wyglad" data-i18n="komendy.ustaw_wyglad_nav">/ustaw_wyglad</a>
+            <a href="#ustaw_jezyk" data-i18n="komendy.ustaw_jezyk_nav">/ustaw_jezyk</a>
         </div>
         </div>
     </div>
@@ -168,7 +167,7 @@
                 <!-- /brawlerzy -->
                 <div class="command-block command-block--text-only" id="brawlerzy" data-has-shots="1">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code data-i18n="komendy.brawlerzy_code">/brawlerzy [tag_gracza]</code> <span class="badge badge-new" data-i18n="common.badge_new">🆕 Nowość</span></div>
+                        <div class="command-tag"><code data-i18n="komendy.brawlerzy_code">/brawlerzy [tag_gracza]</code></div>
                         <p data-i18n="komendy.brawlerzy_desc">
                             Generuje obraz siatki wszystkich brawlerów w grze — odblokowani przez gracza kolorowo
                             (z odznaką rangi albo poziomem mocy w rogu), zablokowani wyszarzeni z ikoną kłódki.
@@ -247,7 +246,7 @@
                 <!-- /moje_osiagniecia -->
                 <div class="command-block command-block--text-only" id="moje_osiagniecia" data-has-shots="1">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code data-i18n="komendy.moje_osiagniecia_code">/moje_osiagniecia [tag_gracza]</code> <span class="badge badge-new" data-i18n="common.badge_new">🆕 Nowość</span></div>
+                        <div class="command-tag"><code data-i18n="komendy.moje_osiagniecia_code">/moje_osiagniecia [tag_gracza]</code></div>
                         <p data-i18n="komendy.moje_osiagniecia_desc">Odznaki i osiągnięcia gracza w klanie, liczone automatycznie z historii bota — m.in. najdłuższa seria na plusie, rekordowy dzień, staż w klanie, % ukończenia kolekcji brawlerów, najlepszy tydzień i kamienie milowe rekordu trofeów. Całkowicie darmowe.</p>
                     </div>
                     <div class="command-block-shots" hidden>
@@ -472,7 +471,7 @@
                 <!-- /ustaw_jezyk -->
                 <div class="command-block command-block--text-only" id="ustaw_jezyk" data-has-shots="1">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code data-i18n="komendy.ustaw_jezyk_code">/ustaw_jezyk [jezyk]</code> <span class="badge badge-new" data-i18n="common.badge_new">🆕 Nowość</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
+                        <div class="command-tag"><code data-i18n="komendy.ustaw_jezyk_code">/ustaw_jezyk [jezyk]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.ustaw_jezyk_desc">Ustawia język odpowiedzi bota na tym serwerze — polski albo angielski (domyślnie polski). Wszystkie nazwy i opisy komend mają też natywną angielską lokalizację Discorda, niezależną od tego ustawienia.</p>
                     </div>
                     <div class="command-block-shots" hidden>
@@ -542,7 +541,7 @@
     "komendy.hero_eyebrow": { pl: "🖥️ Realny wygląd na Discordzie", en: "🖥️ The real look on Discord" },
     "komendy.hero_title": { pl: "Wszystkie komendy — dokładnie tak, jak je zobaczysz", en: "Every command — exactly as you'll see it" },
     "komendy.hero_body": {
-      pl: "Znajdziesz tu opis każdej komendy bota z realnymi zrzutami ekranu z Discorda. Wersja angielska zrzutów jest w przygotowaniu — do tego czasu angielskie sekcje mają na razie sam opis, oznaczony „📸 Zrzuty ekranu wkrótce”.",
+      pl: "Znajdziesz tu opis każdej komendy wraz z zrzutami ekranu z Discorda. Komenda w wersji free i premium pokazane są w obu wariantach.",
       en: "You'll find a description of every bot command here, with real Discord screenshots. English-language screenshots are still being recorded — until then, English sections just show a description, marked \"📸 Screenshots coming soon\".",
     },
     "komendy.info_note_body": {
@@ -562,6 +561,7 @@
     "komendy.lightbox_close_aria": { pl: "Zamknij podgląd zrzutu ekranu", en: "Close screenshot preview" },
 
     "komendy.sprawdz_puchary_code": { pl: "/sprawdz_puchary [tag_gracza]", en: "/check_trophies [player_tag]" },
+    "komendy.sprawdz_puchary_nav": { pl: "/sprawdz_puchary", en: "/check_trophies" },
     "komendy.sprawdz_puchary_desc": {
       pl: "Sprawdza, czy gracz spełnia próg pucharowy tego serwera i czy należy do przypisanego klanu.",
       en: "Checks whether a player meets this server's trophy threshold and belongs to the linked clan.",
@@ -576,24 +576,28 @@
     },
 
     "komendy.profil_bs_code": { pl: "/profil_bs [tag_gracza]", en: "/bs_profile [player_tag]" },
+    "komendy.profil_bs_nav": { pl: "/profil_bs", en: "/bs_profile" },
     "komendy.profil_bs_desc": {
       pl: "Karta gracza: poziom, rekordowe trofea, zwycięstwa i top 3 brawlery. Premium dorzuca dodatkowe pole z progresem od pierwszego dnia śledzenia historii.",
       en: "Player card: level, record trophies, wins, and top 3 brawlers. Premium adds an extra field showing progress since the first day of tracked history.",
     },
 
     "komendy.brawlerzy_code": { pl: "/brawlerzy [tag_gracza]", en: "/brawlers [player_tag]" },
+    "komendy.brawlerzy_nav": { pl: "/brawlerzy", en: "/brawlers" },
     "komendy.brawlerzy_desc": {
       pl: "Generuje obraz siatki wszystkich brawlerów w grze — odblokowani przez gracza kolorowo (z odznaką rangi albo poziomem mocy w rogu), zablokowani wyszarzeni z ikoną kłódki. Menu pod obrazkiem pozwala przesortować siatkę wg rangi, poziomu mocy, rzadkości albo najwyższych trofeów. Całkowicie darmowe.",
       en: "Generates an image grid of every brawler in the game — the ones the player has unlocked shown in color (with a rank badge or power level in the corner), locked ones grayed out with a lock icon. A menu under the image lets you re-sort the grid by rank, power level, rarity, or highest trophies. Completely free.",
     },
 
     "komendy.ranking_klanu_code": { pl: "/ranking_klanu", en: "/clan_top" },
+    "komendy.ranking_klanu_nav": { pl: "/ranking_klanu", en: "/clan_top" },
     "komendy.ranking_klanu_desc": {
       pl: "Pokazuje pierwszą dziesiątkę klanu posortowaną wg trofeów, wg tagu klanu skonfigurowanego przez admina (<code>/ustaw_klan</code>).",
       en: "Shows the clan's top 10 sorted by trophies, based on the clan tag configured by the admin (<code>/set_clan</code>).",
     },
 
     "komendy.moja_pozycja_code": { pl: "/moja_pozycja [tag_gracza]", en: "/my_rank [player_tag]" },
+    "komendy.moja_pozycja_nav": { pl: "/moja_pozycja", en: "/my_rank" },
     "komendy.moja_pozycja_desc": {
       pl: "Twoja aktualna pozycja w rankingu klanu wg aktualnych trofeów i dystans do osoby bezpośrednio wyżej.",
       en: "Your current position in the clan ranking by current trophies, and the gap to the player directly above you.",
@@ -608,6 +612,7 @@
     },
 
     "komendy.moj_cel_code": { pl: "/moj_cel [tag_gracza] [cel_puchary]", en: "/my_goal [player_tag] [goal_trophies]" },
+    "komendy.moj_cel_nav": { pl: "/moj_cel", en: "/my_goal" },
     "komendy.moj_cel_desc": {
       pl: "Ustawia Twój osobisty cel pucharowy i pokazuje pasek postępu (kolor paska/embeda zależny od % ukończenia) oraz zmianę od wczoraj.",
       en: "Sets your personal trophy goal and shows a progress bar (bar/embed color depends on % completion) plus the change since yesterday.",
@@ -622,12 +627,14 @@
     },
 
     "komendy.moje_osiagniecia_code": { pl: "/moje_osiagniecia [tag_gracza]", en: "/my_achievements [player_tag]" },
+    "komendy.moje_osiagniecia_nav": { pl: "/moje_osiagniecia", en: "/my_achievements" },
     "komendy.moje_osiagniecia_desc": {
       pl: "Odznaki i osiągnięcia gracza w klanie, liczone automatycznie z historii bota — m.in. najdłuższa seria na plusie, rekordowy dzień, staż w klanie, % ukończenia kolekcji brawlerów, najlepszy tydzień i kamienie milowe rekordu trofeów. Całkowicie darmowe.",
       en: "A player's badges and achievements in the clan, calculated automatically from the bot's history — including longest positive streak, record day, time in the clan, brawler collection completion %, best week, and trophy record milestones. Completely free.",
     },
 
     "komendy.pojedynek_code": { pl: "/pojedynek [tag_gracza_1] [tag_gracza_2]", en: "/duel [player_tag_1] [player_tag_2]" },
+    "komendy.pojedynek_nav": { pl: "/pojedynek", en: "/duel" },
     "komendy.pojedynek_desc": {
       pl: "Porównanie 1:1 dwóch graczy klanu — aktualne trofea, kto prowadzi i przyrost z ostatniego tygodnia każdego z nich.",
       en: "A 1:1 comparison of two clan members — current trophies, who's leading, and each player's gain from the last week.",
@@ -642,78 +649,91 @@
     },
 
     "komendy.historia_pucharow_code": { pl: "/historia_pucharow [zakres_dni] [tag_gracza]", en: "/trophy_history [day_range] [player_tag]" },
+    "komendy.historia_pucharow_nav": { pl: "/historia_pucharow", en: "/trophy_history" },
     "komendy.historia_pucharow_desc": {
       pl: "Trend trofeów dowolnego gracza z klanu z ostatnich 7 lub 30 dni — tekstowy sparkline w embedzie plus prawdziwy wykres liniowy PNG. Dorzuca też prognozę osiągnięcia progu klanowego i pozycję gracza w klanie w tym oknie czasowym.",
       en: "Trophy trend for any clan member over the last 7 or 30 days — a text sparkline in the embed plus a real PNG line chart. Also adds a forecast for hitting the clan threshold and the player's position in the clan over that time window.",
     },
 
     "komendy.rotacja_map_code": { pl: "/rotacja_map", en: "/map_rotation" },
+    "komendy.rotacja_map_nav": { pl: "/rotacja_map", en: "/map_rotation" },
     "komendy.rotacja_map_desc": {
       pl: 'Pokazuje na żądanie aktualną rotację map i trybów gry Brawl Stars — ta sama tabela, co na <a href="/Mapy/">stronie z mapami</a>, tylko wprost na Discordzie.',
       en: 'Shows the current Brawl Stars map and mode rotation on demand — the same table as on the <a href="/Mapy/">maps page</a>, just directly on Discord.',
     },
 
     "komendy.support_code": { pl: "/support", en: "/support" },
+    "komendy.support_nav": { pl: "/support", en: "/support" },
     "komendy.support_desc": {
       pl: "Krótkie info o bocie, pierwsze kroki dla admina i przycisk-link do serwera wsparcia.",
       en: "Quick info about the bot, first steps for admins, and a button linking to the support server.",
     },
 
     "komendy.ustaw_klan_code": { pl: "/ustaw_klan [nowy_tag_klanu]", en: "/set_clan [clan_tag]" },
+    "komendy.ustaw_klan_nav": { pl: "/ustaw_klan", en: "/set_clan" },
     "komendy.ustaw_klan_desc": {
       pl: "Powiązuje ten serwer Discord z konkretnym klanem Brawl Stars i od razu zapisuje pierwszy punkt historii pucharów wszystkich jego członków.",
       en: "Links this Discord server to a specific Brawl Stars clan and immediately saves the first trophy history point for all its members.",
     },
 
     "komendy.ustaw_prog_pucharow_code": { pl: "/ustaw_prog_pucharow [nowe_puchary]", en: "/set_trophy_threshold [new_trophy_count]" },
+    "komendy.ustaw_prog_pucharow_nav": { pl: "/ustaw_prog_pucharow", en: "/set_trophy_threshold" },
     "komendy.ustaw_prog_pucharow_desc": {
       pl: "Ustawia minimalny próg pucharowy wymagany na tym serwerze — używany przez <code>/sprawdz_puchary</code>, panel weryfikacji i <code>/czystka_klanu</code>.",
       en: "Sets the minimum trophy threshold required on this server — used by <code>/check_trophies</code>, the verification panel, and <code>/clan_cleanup</code>.",
     },
 
     "komendy.ustaw_role_rang_code": { pl: "/ustaw_role_rang [ranga_z_gry] [nowa_nazwa_discord]", en: "/set_rank_role [game_rank] [discord_role]" },
+    "komendy.ustaw_role_rang_nav": { pl: "/ustaw_role_rang", en: "/set_rank_role" },
     "komendy.ustaw_role_rang_desc": {
       pl: "Dopasowuje nazwę roli Discord do konkretnej rangi klanowej (member / senior / vicePresident / president). Odpowiedź widoczna tylko dla admina.",
       en: "Maps a Discord role name to a specific clan rank (member / senior / vicePresident / president). The response is only visible to the admin.",
     },
 
     "komendy.ustaw_kanal_raportow_code": { pl: "/ustaw_kanal_raportow [kanal]", en: "/set_report_channel [channel]" },
+    "komendy.ustaw_kanal_raportow_nav": { pl: "/ustaw_kanal_raportow", en: "/set_report_channel" },
     "komendy.ustaw_kanal_raportow_desc": {
       pl: "Ustawia kanał, na który trafiają automatyczne raporty tygodniowe i miesięczne. Bot sam sprawdza, czy ma uprawnienia do pisania i linkowania embedów na wybranym kanale.",
       en: "Sets the channel that receives automatic weekly and monthly reports. The bot checks on its own whether it has permission to post and embed links in the chosen channel.",
     },
 
     "komendy.ustaw_kanal_rotacji_code": { pl: "/ustaw_kanal_rotacji [kanal]", en: "/set_rotation_channel [channel]" },
+    "komendy.ustaw_kanal_rotacji_nav": { pl: "/ustaw_kanal_rotacji", en: "/set_rotation_channel" },
     "komendy.ustaw_kanal_rotacji_desc": {
       pl: "Ustawia kanał powiadomień o zmianie mapy w rotacji Brawl Stars (funkcja darmowa, opt-in).",
       en: "Sets the channel for Brawl Stars map rotation change notifications (a free, opt-in feature).",
     },
 
     "komendy.ustaw_harmonogram_raportow_code": { pl: "/ustaw_harmonogram_raportow [dzien] [godzina]", en: "/set_report_schedule [day] [hour]" },
+    "komendy.ustaw_harmonogram_raportow_nav": { pl: "/ustaw_harmonogram_raportow", en: "/set_report_schedule" },
     "komendy.ustaw_harmonogram_raportow_desc": {
       pl: "Ustala dzień tygodnia i godzinę, o której wysyłany jest automatyczny raport tygodniowy.",
       en: "Sets the day of the week and hour when the automatic weekly report is sent.",
     },
 
     "komendy.panel_weryfikacji_code": { pl: "/panel_weryfikacji", en: "/verification_panel" },
+    "komendy.panel_weryfikacji_nav": { pl: "/panel_weryfikacji", en: "/verification_panel" },
     "komendy.panel_weryfikacji_desc": {
       pl: "Wysyła panel z przyciskiem, dzięki któremu członkowie sami się zweryfikują (otwiera formularz na tag z gry).",
       en: "Sends a panel with a button that lets members verify themselves (opens a form for their in-game tag).",
     },
 
     "komendy.czystka_klanu_code": { pl: "/czystka_klanu", en: "/clan_cleanup" },
+    "komendy.czystka_klanu_nav": { pl: "/czystka_klanu", en: "/clan_cleanup" },
     "komendy.czystka_klanu_desc": {
       pl: "Lista członków klanu, którzy są poniżej ustawionego progu pucharowego — gotowa do przejrzenia przed ewentualnym wyrzuceniem z klanu w grze.",
       en: "A list of clan members who are below the configured trophy threshold — ready to review before removing anyone from the clan in-game.",
     },
 
     "komendy.ustaw_wyglad_code": { pl: "/ustaw_wyglad [komenda]", en: "/set_appearance [command]" },
+    "komendy.ustaw_wyglad_nav": { pl: "/ustaw_wyglad", en: "/set_appearance" },
     "komendy.ustaw_wyglad_desc": {
       pl: "Kolor embedów bota. W wersji darmowej wystarczy wywołać komendę bez żadnych parametrów — kolor obejmie wszystkie embedy naraz. W Premium można dodatkowo wybrać (z podpowiadanej listy) jedną z kilkunastu pojedynczych komend bota i ustawić dla niej osobny kolor. Otwiera listę wyboru z 16 kolorami.",
       en: "The bot's embed color. In the free version, just run the command with no parameters — the color applies to every embed at once. Premium lets you additionally pick (from an autocomplete list) one of over a dozen individual bot commands and set a separate color for it. Opens a picker with 16 colors.",
     },
 
     "komendy.ustaw_jezyk_code": { pl: "/ustaw_jezyk [jezyk]", en: "/set_language [language]" },
+    "komendy.ustaw_jezyk_nav": { pl: "/ustaw_jezyk", en: "/set_language" },
     "komendy.ustaw_jezyk_desc": {
       pl: "Ustawia język odpowiedzi bota na tym serwerze — polski albo angielski (domyślnie polski). Wszystkie nazwy i opisy komend mają też natywną angielską lokalizację Discorda, niezależną od tego ustawienia.",
       en: "Sets the bot's response language on this server — Polish or English (Polish by default). Every command name and description also has native English Discord localization, independent of this setting.",

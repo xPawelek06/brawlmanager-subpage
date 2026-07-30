@@ -402,12 +402,6 @@ section.alt {
   color: #c4b5fd;
 }
 
-.badge-new {
-  background: rgba(52, 211, 153, 0.14);
-  border-color: rgba(52, 211, 153, 0.4);
-  color: var(--green);
-}
-
 /* Marks a command-block whose Discord screenshots are stale (pre-redesign UI)
    and were pulled pending a fresh capture - see .command-block--text-only,
    used together on the same blocks (2026-07-22 screenshot removal pass). */
