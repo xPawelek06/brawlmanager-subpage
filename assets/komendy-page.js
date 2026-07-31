@@ -165,7 +165,7 @@
                 </div>
 
                 <!-- /brawlerzy -->
-                <div class="command-block command-block--text-only" id="brawlerzy" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="brawlerzy" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.brawlerzy_code">/brawlerzy [tag_gracza]</code></div>
                         <p data-i18n="komendy.brawlerzy_desc">
@@ -176,8 +176,8 @@
                         </p>
                     </div>
                     <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/brawlerzy-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.brawlerzy_shot_usage_alt">
-                        <img src="/assets/screenshots/brawlerzy-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.brawlerzy_shot_result_alt">
+                        <img src="/assets/screenshots/brawlerzy-uzycie.png" data-src-en="/assets/screenshots/brawlerzy-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.brawlerzy_shot_usage_alt">
+                        <img src="/assets/screenshots/brawlerzy-wynik.png" data-src-en="/assets/screenshots/brawlerzy-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.brawlerzy_shot_result_alt">
                     </div>
                 </div>
 
@@ -452,9 +452,6 @@
                 </div>
 
                 <!-- /ustaw_wyglad -->
-                <!-- EN brakuje wariantu Premium (kolor per-komenda) - data-en-skip="1" na
-                     .command-screenshot-group ukrywa oba jego .command-screenshot-item
-                     (usage+wynik) razem, analogicznie do czystka_klanu wyżej. -->
                 <div class="command-block command-block--text-only" id="ustaw_wyglad" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_wyglad_code">/ustaw_wyglad [komenda]</code> <span class="badge badge-partial" data-i18n="common.badge_partial_premium">🔒 częściowo Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
@@ -464,14 +461,14 @@
                         <img src="/assets/screenshots/ustaw_wyglad-non-premium-uzycie.png" data-src-en="/assets/screenshots/ustaw_wyglad-non-premium-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_wyglad_shot_usage_alt">
                         <img src="/assets/screenshots/ustaw_wyglad-dropdown.png" data-src-en="/assets/screenshots/ustaw_wyglad-dropdown-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_wyglad_shot_dropdown_alt">
                         <img src="/assets/screenshots/ustaw_wyglad-non-premium-wynik.png" data-src-en="/assets/screenshots/ustaw_wyglad-non-premium-wynik-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_wyglad_shot_result_alt">
-                        <div class="command-screenshot-group" data-en-skip="1">
+                        <div class="command-screenshot-group">
                             <div class="command-screenshot-item">
                                 <p class="command-screenshot-caption" data-i18n="komendy.ustaw_wyglad_shot_premium_usage_caption">Premium: wybór jednej komendy — użycie</p>
-                                <img src="/assets/screenshots/ustaw_wyglad-premium-uzycie.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ustaw_wyglad_shot_premium_usage_alt">
+                                <img src="/assets/screenshots/ustaw_wyglad-premium-uzycie.png" data-src-en="/assets/screenshots/ustaw_wyglad-premium-uzycie-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ustaw_wyglad_shot_premium_usage_alt">
                             </div>
                             <div class="command-screenshot-item">
                                 <p class="command-screenshot-caption" data-i18n="komendy.ustaw_wyglad_shot_premium_result_caption">Premium: kolor tylko tej komendy — wynik</p>
-                                <img src="/assets/screenshots/ustaw_wyglad-premium-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ustaw_wyglad_shot_premium_result_alt">
+                                <img src="/assets/screenshots/ustaw_wyglad-premium-wynik.png" data-src-en="/assets/screenshots/ustaw_wyglad-premium-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ustaw_wyglad_shot_premium_result_alt">
                             </div>
                         </div>
                     </div>
@@ -551,7 +548,7 @@
     "komendy.hero_title": { pl: "Wszystkie komendy — dokładnie tak, jak je zobaczysz", en: "Every command — exactly as you'll see it" },
     "komendy.hero_body": {
       pl: "Znajdziesz tu opis każdej komendy wraz z zrzutami ekranu z Discorda. Komenda w wersji free i premium pokazane są w obu wariantach.",
-      en: "You'll find a description of every bot command here, with real Discord screenshots. English-language screenshots are still being recorded — until then, English sections just show a description, marked \"📸 Screenshots coming soon\".",
+      en: "You'll find a description of every command here, along with real Discord screenshots. Commands are shown in both their free and Premium versions.",
     },
     "komendy.info_note_body": {
       pl: "<strong>Zrzuty ekranu są chwilowo wstrzymane.</strong> Po dużym redesignie komend (embedy, lokalizacja PL/EN, nowe komendy) stare screeny pokazywały nieaktualny wygląd — usunęliśmy je, dopóki nie nagramy nowych. Do tego czasu każda komenda ma sam, aktualny opis.",
@@ -856,14 +853,13 @@
   //
   // EN (`[data-has-shots-en]`): druga, osobna runda zrzutów (2026-07-30,
   // dostarczona przez Pawła, mapa plik->komenda w
-  // C:\Users\x\Desktop\mozg\.claude\komendy.md). 20 z 21 komend ma ten atrybut -
-  // /brawlerzy jest jedynym wyjątkiem (zero zrzutów w tej paczce), więc zostaje
-  // bez atrybutu i dalej pokazuje "coming soon" w OBU językach. Każdy <img>,
-  // który ma angielski odpowiednik, niesie `data-src-en` z jego ścieżką - branch
-  // EN podmienia `img.src` na tę wartość. Dwa miejsca nie mają kompletu
-  // wariantów po angielsku (opisane w komendy.md, świadomie zaakceptowana luka):
-  // /czystka_klanu brakuje wariantu "wszyscy spełniają próg" (tylko "niespelnia"
-  // dostarczone), /ustaw_wyglad brakuje wariantu Premium (kolor per-komenda).
+  // C:\Users\x\Desktop\mozg\.claude\komendy.md), dociągnięta 2026-07-31 dwoma
+  // brakującymi kompletami (/brawlerzy, wariant Premium /ustaw_wyglad) - teraz
+  // 21 z 21 komend ma ten atrybut. Każdy <img>, który ma angielski odpowiednik,
+  // niesie `data-src-en` z jego ścieżką - branch EN podmienia `img.src` na tę
+  // wartość. Jedno miejsce nadal nie ma kompletu wariantów po angielsku
+  // (opisane w komendy.md, świadomie zaakceptowana luka): /czystka_klanu
+  // brakuje wariantu "wszyscy spełniają próg" (tylko "niespelnia" dostarczone).
   // Elementy bez angielskiego odpowiednika niosą `data-en-skip="1")` - branch EN
   // je chowa (patrz uzasadnienie inline style.display przy pendingBadge niżej -
   // ten sam problem author-CSS-vs-UA-hidden dotyczy .command-screenshot-group,
