@@ -52,7 +52,7 @@
     <section class="page-hero">
         <div class="container">
             <div class="eyebrow" data-i18n="komendy.hero_eyebrow">🖥️ Realny wygląd na Discordzie</div>
-            <h1 data-i18n="komendy.hero_title">Wszystkie komendy — dokładnie tak, jak je zobaczysz</h1>
+            <h1 data-i18n="komendy.hero_title">Wszystkie komendy - dokładnie tak, jak je zobaczysz</h1>
             <p data-i18n="komendy.hero_body">
                 Znajdziesz tu opis każdej komendy wraz z zrzutami ekranu z Discorda. Komenda w wersji
                 free i premium pokazane są w obu wariantach.
@@ -67,7 +67,7 @@
             <span>📸</span>
             <span data-i18n="komendy.info_note_body">
                 <strong>Zrzuty ekranu są chwilowo wstrzymane.</strong> Po dużym redesignie komend
-                (embedy, lokalizacja PL/EN, nowe komendy) stare screeny pokazywały nieaktualny wygląd —
+                (embedy, lokalizacja PL/EN, nowe komendy) stare screeny pokazywały nieaktualny wygląd -
                 usunęliśmy je, dopóki nie nagramy nowych. Do tego czasu każda komenda ma sam, aktualny opis.
             </span>
         </div>
@@ -132,10 +132,6 @@
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.sprawdz_puchary_code">/sprawdz_puchary [tag_gracza]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.sprawdz_puchary_desc">Sprawdza, czy gracz spełnia próg pucharowy tego serwera i czy należy do przypisanego klanu.</p>
-                        <ul>
-                            <li data-i18n="komendy.sprawdz_puchary_li1">Kolor embeda: zielony, gdy próg spełniony — ciemnoczerwony, gdy nie</li>
-                            <li data-i18n="komendy.sprawdz_puchary_li2">Osobne pole na przynależność do klanu (jeśli serwer ma ustawiony tag klanu)</li>
-                        </ul>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/sprawdz_puchary-uzycie.png" data-src-en="/assets/screenshots/sprawdz_puchary-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.sprawdz_puchary_shot_usage_alt">
@@ -169,7 +165,7 @@
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.brawlerzy_code">/brawlerzy [tag_gracza]</code></div>
                         <p data-i18n="komendy.brawlerzy_desc">
-                            Generuje obraz siatki wszystkich brawlerów w grze — odblokowani przez gracza kolorowo
+                            Generuje obraz siatki wszystkich brawlerów w grze - odblokowani przez gracza kolorowo
                             (z odznaką rangi albo poziomem mocy w rogu), zablokowani wyszarzeni z ikoną kłódki.
                             Menu pod obrazkiem pozwala przesortować siatkę wg rangi, poziomu mocy, rzadkości albo
                             najwyższych trofeów.
@@ -222,9 +218,9 @@
                 <div class="command-block command-block--text-only" id="moj_cel" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.moj_cel_code">/moj_cel [tag_gracza] [cel_puchary]</code> <span class="badge badge-partial" data-i18n="common.badge_partial_premium">🔒 częściowo Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.moj_cel_desc">Ustawia Twój osobisty cel pucharowy i pokazuje pasek postępu (kolor paska/embeda zależny od % ukończenia) oraz zmianę od wczoraj.</p>
+                        <p data-i18n="komendy.moj_cel_desc">Ustawia Twój osobisty cel pucharowy i pokazuje pasek postępu oraz zmianę od wczoraj.</p>
                         <ul>
-                            <li data-i18n="komendy.moj_cel_li1">Premium: prognoza dotarcia do celu w widełkach — osobno z Twojego najlepszego i najgorszego tygodnia</li>
+                            <li data-i18n="komendy.moj_cel_li1">Premium: prognoza dotarcia do celu w widełkach - osobno z Twojego najlepszego i najgorszego tygodnia</li>
                             <li data-i18n="komendy.moj_cel_li2">Premium: pole „Najlepszy dzień w tym okresie”</li>
                         </ul>
                     </div>
@@ -247,7 +243,7 @@
                 <div class="command-block command-block--text-only" id="moje_osiagniecia" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.moje_osiagniecia_code">/moje_osiagniecia [tag_gracza]</code></div>
-                        <p data-i18n="komendy.moje_osiagniecia_desc">Odznaki i osiągnięcia gracza w klanie, liczone automatycznie z historii bota — m.in. najdłuższa seria na plusie, rekordowy dzień, staż w klanie, % ukończenia kolekcji brawlerów, najlepszy tydzień i kamienie milowe rekordu trofeów.</p>
+                        <p data-i18n="komendy.moje_osiagniecia_desc">Odznaki i osiągnięcia gracza w klanie, liczone automatycznie z historii bota - m.in. najdłuższa seria na plusie, rekordowy dzień, staż w klanie, % ukończenia kolekcji brawlerów, najlepszy tydzień i kamienie milowe rekordu trofeów.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/moje_osiagniecia-uzycie.png" data-src-en="/assets/screenshots/moje_osiagniecia-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.moje_osiagniecia_shot_usage_alt">
@@ -259,7 +255,7 @@
                 <div class="command-block command-block--text-only" id="pojedynek" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.pojedynek_code">/pojedynek [tag_gracza_1] [tag_gracza_2]</code> <span class="badge badge-partial" data-i18n="common.badge_partial_premium">🔒 częściowo Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.pojedynek_desc">Porównanie 1:1 dwóch graczy klanu — aktualne trofea, kto prowadzi i przyrost z ostatniego tygodnia każdego z nich.</p>
+                        <p data-i18n="komendy.pojedynek_desc">Porównanie 1:1 dwóch graczy klanu - aktualne trofea, kto prowadzi i przyrost z ostatniego tygodnia każdego z nich.</p>
                         <ul>
                             <li data-i18n="komendy.pojedynek_li1">Premium: porównanie kolekcji brawlerów obu graczy (wg rzadkości)</li>
                             <li data-i18n="komendy.pojedynek_li2">Premium: wspólny wykres trendu trofeów obu graczy (30 dni)</li>
@@ -284,7 +280,7 @@
                 <div class="command-block command-block--text-only" id="historia_pucharow" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.historia_pucharow_code">/historia_pucharow [zakres_dni] [tag_gracza]</code> <span class="badge" data-i18n="common.badge_premium">🔒 Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.historia_pucharow_desc">Trend trofeów dowolnego gracza z klanu z ostatnich 7 lub 30 dni — tekstowy sparkline w embedzie plus prawdziwy wykres liniowy PNG. Dorzuca też prognozę osiągnięcia progu klanowego i pozycję gracza w klanie w tym oknie czasowym.</p>
+                        <p data-i18n="komendy.historia_pucharow_desc">Trend trofeów dowolnego gracza z klanu z ostatnich 7 lub 30 dni - tekstowy sparkline w embedzie plus prawdziwy wykres liniowy PNG. Dorzuca też prognozę osiągnięcia progu klanowego i pozycję gracza w klanie w tym oknie czasowym.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <div class="command-screenshot-group">
@@ -306,7 +302,7 @@
                 <div class="command-block command-block--text-only" id="rotacja_map" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.rotacja_map_code">/rotacja_map</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.rotacja_map_desc">Pokazuje na żądanie aktualną rotację map i trybów gry Brawl Stars — ta sama tabela, co na <a href="/Mapy/">stronie z mapami</a>, tylko wprost na Discordzie.</p>
+                        <p data-i18n="komendy.rotacja_map_desc">Pokazuje na żądanie aktualną rotację map i trybów gry Brawl Stars - ta sama tabela, co na <a href="/Mapy/">stronie z mapami</a>, tylko wprost na Discordzie.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/rotacja_map-uzycie.png" data-src-en="/assets/screenshots/rotacja_map-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.rotacja_map_shot_usage_alt">
@@ -356,7 +352,7 @@
                 <div class="command-block command-block--text-only" id="ustaw_prog_pucharow" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_prog_pucharow_code">/ustaw_prog_pucharow [nowe_puchary]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.ustaw_prog_pucharow_desc">Ustawia minimalny próg pucharowy wymagany na tym serwerze — używany przez <code>/sprawdz_puchary</code>, panel weryfikacji i <code>/czystka_klanu</code>.</p>
+                        <p data-i18n="komendy.ustaw_prog_pucharow_desc">Ustawia minimalny próg pucharowy wymagany na tym serwerze - używany przez <code>/sprawdz_puchary</code>, panel weryfikacji i <code>/czystka_klanu</code>.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/ustaw_prog_pucharow-uzycie.png" data-src-en="/assets/screenshots/ustaw_prog_pucharow-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_prog_pucharow_shot_usage_alt">
@@ -392,7 +388,7 @@
                 <div class="command-block command-block--text-only" id="ustaw_kanal_rotacji" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_kanal_rotacji_code">/ustaw_kanal_rotacji [kanal]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.ustaw_kanal_rotacji_desc">Ustawia kanał powiadomień o zmianie mapy w rotacji Brawl Stars (funkcja darmowa, opt-in).</p>
+                        <p data-i18n="komendy.ustaw_kanal_rotacji_desc">Ustawia kanał powiadomień o zmianie mapy w rotacji Brawl Stars.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/ustaw_kanal_rotacji-uzycie.png" data-src-en="/assets/screenshots/ustaw_kanal_rotacji-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_kanal_rotacji_shot_usage_alt">
@@ -434,7 +430,7 @@
                 <div class="command-block command-block--text-only" id="czystka_klanu" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.czystka_klanu_code">/czystka_klanu</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.czystka_klanu_desc">Lista członków klanu, którzy są poniżej ustawionego progu pucharowego — gotowa do przejrzenia przed ewentualnym wyrzuceniem z klanu w grze.</p>
+                        <p data-i18n="komendy.czystka_klanu_desc">Lista członków klanu, którzy są poniżej ustawionego progu pucharowego - gotowa do przejrzenia przed ewentualnym wyrzuceniem z klanu w grze.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/czystka_klanu-uzycie.png" data-src-en="/assets/screenshots/czystka_klanu-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.czystka_klanu_shot_usage_alt">
@@ -455,7 +451,7 @@
                 <div class="command-block command-block--text-only" id="ustaw_wyglad" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_wyglad_code">/ustaw_wyglad [komenda]</code> <span class="badge badge-partial" data-i18n="common.badge_partial_premium">🔒 częściowo Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.ustaw_wyglad_desc">Kolor embedów bota. W wersji darmowej wystarczy wywołać komendę bez żadnych parametrów — kolor obejmie wszystkie embedy naraz. W Premium można dodatkowo wybrać (z podpowiadanej listy) jedną z kilkunastu pojedynczych komend bota i ustawić dla niej osobny kolor. Otwiera listę wyboru z 16 kolorami.</p>
+                        <p data-i18n="komendy.ustaw_wyglad_desc">Kolor embedów bota. W wersji darmowej wystarczy wywołać komendę bez żadnych parametrów - kolor obejmie wszystkie embedy naraz. W Premium można dodatkowo wybrać (z podpowiadanej listy) jedną z kilkunastu pojedynczych komend bota i ustawić dla niej osobny kolor. Otwiera listę wyboru z 16 kolorami.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/ustaw_wyglad-non-premium-uzycie.png" data-src-en="/assets/screenshots/ustaw_wyglad-non-premium-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_wyglad_shot_usage_alt">
@@ -463,11 +459,11 @@
                         <img src="/assets/screenshots/ustaw_wyglad-non-premium-wynik.png" data-src-en="/assets/screenshots/ustaw_wyglad-non-premium-wynik-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_wyglad_shot_result_alt">
                         <div class="command-screenshot-group">
                             <div class="command-screenshot-item">
-                                <p class="command-screenshot-caption" data-i18n="komendy.ustaw_wyglad_shot_premium_usage_caption">Premium: wybór jednej komendy — użycie</p>
+                                <p class="command-screenshot-caption" data-i18n="komendy.ustaw_wyglad_shot_premium_usage_caption">Premium: wybór jednej komendy - użycie</p>
                                 <img src="/assets/screenshots/ustaw_wyglad-premium-uzycie.png" data-src-en="/assets/screenshots/ustaw_wyglad-premium-uzycie-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ustaw_wyglad_shot_premium_usage_alt">
                             </div>
                             <div class="command-screenshot-item">
-                                <p class="command-screenshot-caption" data-i18n="komendy.ustaw_wyglad_shot_premium_result_caption">Premium: kolor tylko tej komendy — wynik</p>
+                                <p class="command-screenshot-caption" data-i18n="komendy.ustaw_wyglad_shot_premium_result_caption">Premium: kolor tylko tej komendy - wynik</p>
                                 <img src="/assets/screenshots/ustaw_wyglad-premium-wynik.png" data-src-en="/assets/screenshots/ustaw_wyglad-premium-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ustaw_wyglad_shot_premium_result_alt">
                             </div>
                         </div>
@@ -478,7 +474,7 @@
                 <div class="command-block command-block--text-only" id="ustaw_jezyk" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_jezyk_code">/ustaw_jezyk [jezyk]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.ustaw_jezyk_desc">Ustawia język odpowiedzi bota na tym serwerze — polski albo angielski (domyślnie polski). Wszystkie nazwy i opisy komend mają też natywną angielską lokalizację Discorda, niezależną od tego ustawienia.</p>
+                        <p data-i18n="komendy.ustaw_jezyk_desc">Ustawia język odpowiedzi bota na tym serwerze - polski albo angielski (domyślnie polski). Wszystkie nazwy i opisy komend mają też natywną angielską lokalizację Discorda, niezależną od tego ustawienia.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/ustaw_jezyk-uzycie.png" data-src-en="/assets/screenshots/ustaw_jezyk-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_jezyk_shot_usage_alt">
@@ -537,22 +533,22 @@
 
   const DICT = {
     "komendy.meta_title": {
-      pl: "Wszystkie komendy z wizualizacją — BrawlManager",
-      en: "All commands with visuals — BrawlManager",
+      pl: "Wszystkie komendy z wizualizacją - BrawlManager",
+      en: "All commands with visuals - BrawlManager",
     },
     "komendy.meta_description": {
       pl: "Pełna lista komend BrawlManagera (dla członków i adminów) z dokładną wizualizacją, jak wygląda odpowiedź bota na Discordzie.",
       en: "Full list of BrawlManager commands (for members and admins), with an accurate look at how the bot responds on Discord.",
     },
     "komendy.hero_eyebrow": { pl: "🖥️ Realny wygląd na Discordzie", en: "🖥️ The real look on Discord" },
-    "komendy.hero_title": { pl: "Wszystkie komendy — dokładnie tak, jak je zobaczysz", en: "Every command — exactly as you'll see it" },
+    "komendy.hero_title": { pl: "Wszystkie komendy - dokładnie tak, jak je zobaczysz", en: "Every command - exactly as you'll see it" },
     "komendy.hero_body": {
       pl: "Znajdziesz tu opis każdej komendy wraz z zrzutami ekranu z Discorda. Komenda w wersji free i premium pokazane są w obu wariantach.",
       en: "You'll find a description of every command here, along with real Discord screenshots. Commands are shown in both their free and Premium versions.",
     },
     "komendy.info_note_body": {
-      pl: "<strong>Zrzuty ekranu są chwilowo wstrzymane.</strong> Po dużym redesignie komend (embedy, lokalizacja PL/EN, nowe komendy) stare screeny pokazywały nieaktualny wygląd — usunęliśmy je, dopóki nie nagramy nowych. Do tego czasu każda komenda ma sam, aktualny opis.",
-      en: "<strong>Screenshots are temporarily paused.</strong> After a big command redesign (embeds, PL/EN localization, new commands) the old screenshots showed an outdated look — we removed them until we record new ones. Until then, every command just has an up-to-date description.",
+      pl: "<strong>Zrzuty ekranu są chwilowo wstrzymane.</strong> Po dużym redesignie komend (embedy, lokalizacja PL/EN, nowe komendy) stare screeny pokazywały nieaktualny wygląd - usunęliśmy je, dopóki nie nagramy nowych. Do tego czasu każda komenda ma sam, aktualny opis.",
+      en: "<strong>Screenshots are temporarily paused.</strong> After a big command redesign (embeds, PL/EN localization, new commands) the old screenshots showed an outdated look - we removed them until we record new ones. Until then, every command just has an up-to-date description.",
     },
     "komendy.nav_label": { pl: "Skocz do komendy", en: "Jump to a command" },
     "komendy.nav_toggle_aria": { pl: "Zwiń lub rozwiń listę komend", en: "Collapse or expand the command list" },
@@ -572,15 +568,6 @@
       pl: "Sprawdza, czy gracz spełnia próg pucharowy tego serwera i czy należy do przypisanego klanu.",
       en: "Checks whether a player meets this server's trophy threshold and belongs to the linked clan.",
     },
-    "komendy.sprawdz_puchary_li1": {
-      pl: "Kolor embeda: zielony, gdy próg spełniony — ciemnoczerwony, gdy nie",
-      en: "Embed color: green when the threshold is met — dark red when it isn't",
-    },
-    "komendy.sprawdz_puchary_li2": {
-      pl: "Osobne pole na przynależność do klanu (jeśli serwer ma ustawiony tag klanu)",
-      en: "A separate field for clan membership (if the server has a clan tag configured)",
-    },
-
     "komendy.profil_bs_code": { pl: "/profil_bs [tag_gracza]", en: "/bs_profile [player_tag]" },
     "komendy.profil_bs_nav": { pl: "/profil_bs", en: "/bs_profile" },
     "komendy.profil_bs_desc": {
@@ -591,8 +578,8 @@
     "komendy.brawlerzy_code": { pl: "/brawlerzy [tag_gracza]", en: "/brawlers [player_tag]" },
     "komendy.brawlerzy_nav": { pl: "/brawlerzy", en: "/brawlers" },
     "komendy.brawlerzy_desc": {
-      pl: "Generuje obraz siatki wszystkich brawlerów w grze — odblokowani przez gracza kolorowo (z odznaką rangi albo poziomem mocy w rogu), zablokowani wyszarzeni z ikoną kłódki. Menu pod obrazkiem pozwala przesortować siatkę wg rangi, poziomu mocy, rzadkości albo najwyższych trofeów.",
-      en: "Generates an image grid of every brawler in the game — the ones the player has unlocked shown in color (with a rank badge or power level in the corner), locked ones grayed out with a lock icon. A menu under the image lets you re-sort the grid by rank, power level, rarity, or highest trophies.",
+      pl: "Generuje obraz siatki wszystkich brawlerów w grze - odblokowani przez gracza kolorowo (z odznaką rangi albo poziomem mocy w rogu), zablokowani wyszarzeni z ikoną kłódki. Menu pod obrazkiem pozwala przesortować siatkę wg rangi, poziomu mocy, rzadkości albo najwyższych trofeów.",
+      en: "Generates an image grid of every brawler in the game - the ones the player has unlocked shown in color (with a rank badge or power level in the corner), locked ones grayed out with a lock icon. A menu under the image lets you re-sort the grid by rank, power level, rarity, or highest trophies.",
     },
 
     "komendy.ranking_klanu_code": { pl: "/ranking_klanu", en: "/clan_top" },
@@ -620,12 +607,12 @@
     "komendy.moj_cel_code": { pl: "/moj_cel [tag_gracza] [cel_puchary]", en: "/my_goal [player_tag] [goal_trophies]" },
     "komendy.moj_cel_nav": { pl: "/moj_cel", en: "/my_goal" },
     "komendy.moj_cel_desc": {
-      pl: "Ustawia Twój osobisty cel pucharowy i pokazuje pasek postępu (kolor paska/embeda zależny od % ukończenia) oraz zmianę od wczoraj.",
-      en: "Sets your personal trophy goal and shows a progress bar (bar/embed color depends on % completion) plus the change since yesterday.",
+      pl: "Ustawia Twój osobisty cel pucharowy i pokazuje pasek postępu oraz zmianę od wczoraj.",
+      en: "Sets your personal trophy goal and shows a progress bar plus the change since yesterday.",
     },
     "komendy.moj_cel_li1": {
-      pl: "Premium: prognoza dotarcia do celu w widełkach — osobno z Twojego najlepszego i najgorszego tygodnia",
-      en: "Premium: a forecast range for reaching your goal — separately from your best and worst week",
+      pl: "Premium: prognoza dotarcia do celu w widełkach - osobno z Twojego najlepszego i najgorszego tygodnia",
+      en: "Premium: a forecast range for reaching your goal - separately from your best and worst week",
     },
     "komendy.moj_cel_li2": {
       pl: "Premium: pole „Najlepszy dzień w tym okresie”",
@@ -635,15 +622,15 @@
     "komendy.moje_osiagniecia_code": { pl: "/moje_osiagniecia [tag_gracza]", en: "/my_achievements [player_tag]" },
     "komendy.moje_osiagniecia_nav": { pl: "/moje_osiagniecia", en: "/my_achievements" },
     "komendy.moje_osiagniecia_desc": {
-      pl: "Odznaki i osiągnięcia gracza w klanie, liczone automatycznie z historii bota — m.in. najdłuższa seria na plusie, rekordowy dzień, staż w klanie, % ukończenia kolekcji brawlerów, najlepszy tydzień i kamienie milowe rekordu trofeów.",
-      en: "A player's badges and achievements in the clan, calculated automatically from the bot's history — including longest positive streak, record day, time in the clan, brawler collection completion %, best week, and trophy record milestones.",
+      pl: "Odznaki i osiągnięcia gracza w klanie, liczone automatycznie z historii bota - m.in. najdłuższa seria na plusie, rekordowy dzień, staż w klanie, % ukończenia kolekcji brawlerów, najlepszy tydzień i kamienie milowe rekordu trofeów.",
+      en: "A player's badges and achievements in the clan, calculated automatically from the bot's history - including longest positive streak, record day, time in the clan, brawler collection completion %, best week, and trophy record milestones.",
     },
 
     "komendy.pojedynek_code": { pl: "/pojedynek [tag_gracza_1] [tag_gracza_2]", en: "/duel [player_tag_1] [player_tag_2]" },
     "komendy.pojedynek_nav": { pl: "/pojedynek", en: "/duel" },
     "komendy.pojedynek_desc": {
-      pl: "Porównanie 1:1 dwóch graczy klanu — aktualne trofea, kto prowadzi i przyrost z ostatniego tygodnia każdego z nich.",
-      en: "A 1:1 comparison of two clan members — current trophies, who's leading, and each player's gain from the last week.",
+      pl: "Porównanie 1:1 dwóch graczy klanu - aktualne trofea, kto prowadzi i przyrost z ostatniego tygodnia każdego z nich.",
+      en: "A 1:1 comparison of two clan members - current trophies, who's leading, and each player's gain from the last week.",
     },
     "komendy.pojedynek_li1": {
       pl: "Premium: porównanie kolekcji brawlerów obu graczy (wg rzadkości)",
@@ -657,15 +644,15 @@
     "komendy.historia_pucharow_code": { pl: "/historia_pucharow [zakres_dni] [tag_gracza]", en: "/trophy_history [day_range] [player_tag]" },
     "komendy.historia_pucharow_nav": { pl: "/historia_pucharow", en: "/trophy_history" },
     "komendy.historia_pucharow_desc": {
-      pl: "Trend trofeów dowolnego gracza z klanu z ostatnich 7 lub 30 dni — tekstowy sparkline w embedzie plus prawdziwy wykres liniowy PNG. Dorzuca też prognozę osiągnięcia progu klanowego i pozycję gracza w klanie w tym oknie czasowym.",
-      en: "Trophy trend for any clan member over the last 7 or 30 days — a text sparkline in the embed plus a real PNG line chart. Also adds a forecast for hitting the clan threshold and the player's position in the clan over that time window.",
+      pl: "Trend trofeów dowolnego gracza z klanu z ostatnich 7 lub 30 dni - tekstowy sparkline w embedzie plus prawdziwy wykres liniowy PNG. Dorzuca też prognozę osiągnięcia progu klanowego i pozycję gracza w klanie w tym oknie czasowym.",
+      en: "Trophy trend for any clan member over the last 7 or 30 days - a text sparkline in the embed plus a real PNG line chart. Also adds a forecast for hitting the clan threshold and the player's position in the clan over that time window.",
     },
 
     "komendy.rotacja_map_code": { pl: "/rotacja_map", en: "/map_rotation" },
     "komendy.rotacja_map_nav": { pl: "/rotacja_map", en: "/map_rotation" },
     "komendy.rotacja_map_desc": {
-      pl: 'Pokazuje na żądanie aktualną rotację map i trybów gry Brawl Stars — ta sama tabela, co na <a href="/Mapy/">stronie z mapami</a>, tylko wprost na Discordzie.',
-      en: 'Shows the current Brawl Stars map and mode rotation on demand — the same table as on the <a href="/Mapy/">maps page</a>, just directly on Discord.',
+      pl: 'Pokazuje na żądanie aktualną rotację map i trybów gry Brawl Stars - ta sama tabela, co na <a href="/Mapy/">stronie z mapami</a>, tylko wprost na Discordzie.',
+      en: 'Shows the current Brawl Stars map and mode rotation on demand - the same table as on the <a href="/Mapy/">maps page</a>, just directly on Discord.',
     },
 
     "komendy.support_code": { pl: "/support", en: "/support" },
@@ -685,8 +672,8 @@
     "komendy.ustaw_prog_pucharow_code": { pl: "/ustaw_prog_pucharow [nowe_puchary]", en: "/set_trophy_threshold [new_trophy_count]" },
     "komendy.ustaw_prog_pucharow_nav": { pl: "/ustaw_prog_pucharow", en: "/set_trophy_threshold" },
     "komendy.ustaw_prog_pucharow_desc": {
-      pl: "Ustawia minimalny próg pucharowy wymagany na tym serwerze — używany przez <code>/sprawdz_puchary</code>, panel weryfikacji i <code>/czystka_klanu</code>.",
-      en: "Sets the minimum trophy threshold required on this server — used by <code>/check_trophies</code>, the verification panel, and <code>/clan_cleanup</code>.",
+      pl: "Ustawia minimalny próg pucharowy wymagany na tym serwerze - używany przez <code>/sprawdz_puchary</code>, panel weryfikacji i <code>/czystka_klanu</code>.",
+      en: "Sets the minimum trophy threshold required on this server - used by <code>/check_trophies</code>, the verification panel, and <code>/clan_cleanup</code>.",
     },
 
     "komendy.ustaw_role_rang_code": { pl: "/ustaw_role_rang [ranga_z_gry] [nowa_nazwa_discord]", en: "/set_rank_role [game_rank] [discord_role]" },
@@ -706,8 +693,8 @@
     "komendy.ustaw_kanal_rotacji_code": { pl: "/ustaw_kanal_rotacji [kanal]", en: "/set_rotation_channel [channel]" },
     "komendy.ustaw_kanal_rotacji_nav": { pl: "/ustaw_kanal_rotacji", en: "/set_rotation_channel" },
     "komendy.ustaw_kanal_rotacji_desc": {
-      pl: "Ustawia kanał powiadomień o zmianie mapy w rotacji Brawl Stars (funkcja darmowa, opt-in).",
-      en: "Sets the channel for Brawl Stars map rotation change notifications (a free, opt-in feature).",
+      pl: "Ustawia kanał powiadomień o zmianie mapy w rotacji Brawl Stars.",
+      en: "Sets the channel for Brawl Stars map rotation change notifications.",
     },
 
     "komendy.ustaw_harmonogram_raportow_code": { pl: "/ustaw_harmonogram_raportow [dzien] [godzina]", en: "/set_report_schedule [day] [hour]" },
@@ -727,22 +714,22 @@
     "komendy.czystka_klanu_code": { pl: "/czystka_klanu", en: "/clan_cleanup" },
     "komendy.czystka_klanu_nav": { pl: "/czystka_klanu", en: "/clan_cleanup" },
     "komendy.czystka_klanu_desc": {
-      pl: "Lista członków klanu, którzy są poniżej ustawionego progu pucharowego — gotowa do przejrzenia przed ewentualnym wyrzuceniem z klanu w grze.",
-      en: "A list of clan members who are below the configured trophy threshold — ready to review before removing anyone from the clan in-game.",
+      pl: "Lista członków klanu, którzy są poniżej ustawionego progu pucharowego - gotowa do przejrzenia przed ewentualnym wyrzuceniem z klanu w grze.",
+      en: "A list of clan members who are below the configured trophy threshold - ready to review before removing anyone from the clan in-game.",
     },
 
     "komendy.ustaw_wyglad_code": { pl: "/ustaw_wyglad [komenda]", en: "/set_appearance [command]" },
     "komendy.ustaw_wyglad_nav": { pl: "/ustaw_wyglad", en: "/set_appearance" },
     "komendy.ustaw_wyglad_desc": {
-      pl: "Kolor embedów bota. W wersji darmowej wystarczy wywołać komendę bez żadnych parametrów — kolor obejmie wszystkie embedy naraz. W Premium można dodatkowo wybrać (z podpowiadanej listy) jedną z kilkunastu pojedynczych komend bota i ustawić dla niej osobny kolor. Otwiera listę wyboru z 16 kolorami.",
-      en: "The bot's embed color. In the free version, just run the command with no parameters — the color applies to every embed at once. Premium lets you additionally pick (from an autocomplete list) one of over a dozen individual bot commands and set a separate color for it. Opens a picker with 16 colors.",
+      pl: "Kolor embedów bota. W wersji darmowej wystarczy wywołać komendę bez żadnych parametrów - kolor obejmie wszystkie embedy naraz. W Premium można dodatkowo wybrać (z podpowiadanej listy) jedną z kilkunastu pojedynczych komend bota i ustawić dla niej osobny kolor. Otwiera listę wyboru z 16 kolorami.",
+      en: "The bot's embed color. In the free version, just run the command with no parameters - the color applies to every embed at once. Premium lets you additionally pick (from an autocomplete list) one of over a dozen individual bot commands and set a separate color for it. Opens a picker with 16 colors.",
     },
 
     "komendy.ustaw_jezyk_code": { pl: "/ustaw_jezyk [jezyk]", en: "/set_language [language]" },
     "komendy.ustaw_jezyk_nav": { pl: "/ustaw_jezyk", en: "/set_language" },
     "komendy.ustaw_jezyk_desc": {
-      pl: "Ustawia język odpowiedzi bota na tym serwerze — polski albo angielski (domyślnie polski). Wszystkie nazwy i opisy komend mają też natywną angielską lokalizację Discorda, niezależną od tego ustawienia.",
-      en: "Sets the bot's response language on this server — Polish or English (Polish by default). Every command name and description also has native English Discord localization, independent of this setting.",
+      pl: "Ustawia język odpowiedzi bota na tym serwerze - polski albo angielski (domyślnie polski). Wszystkie nazwy i opisy komend mają też natywną angielską lokalizację Discorda, niezależną od tego ustawienia.",
+      en: "Sets the bot's response language on this server - Polish or English (Polish by default). Every command name and description also has native English Discord localization, independent of this setting.",
     },
 
     // ---------- Alt/caption teksty zrzutów ekranu (runda 2026-07-29) ----------
@@ -750,91 +737,91 @@
     // przyszłe angielskie zrzuty, żeby nie trzeba było wracać do i18n przy ich
     // dodawaniu.
     "komendy.sprawdz_puchary_shot_usage_alt": { pl: "Wpisywanie komendy /sprawdz_puchary na Discordzie", en: "Typing the /check_trophies command on Discord" },
-    "komendy.sprawdz_puchary_shot_result_alt": { pl: "Wynik komendy /sprawdz_puchary — kalkulator progu klanowego", en: "Result of /check_trophies — clan threshold calculator" },
+    "komendy.sprawdz_puchary_shot_result_alt": { pl: "Wynik komendy /sprawdz_puchary - kalkulator progu klanowego", en: "Result of /check_trophies - clan threshold calculator" },
 
     "komendy.profil_bs_shot_usage_alt": { pl: "Wpisywanie komendy /profil_bs na Discordzie", en: "Typing the /bs_profile command on Discord" },
     "komendy.profil_bs_shot_free_caption": { pl: "Wersja darmowa", en: "Free version" },
-    "komendy.profil_bs_shot_free_alt": { pl: "Karta gracza z komendy /profil_bs — wersja darmowa", en: "Player card from /bs_profile — free version" },
+    "komendy.profil_bs_shot_free_alt": { pl: "Karta gracza z komendy /profil_bs - wersja darmowa", en: "Player card from /bs_profile - free version" },
     "komendy.profil_bs_shot_premium_caption": { pl: "Premium: progres od pierwszego dnia", en: "Premium: progress since day one" },
-    "komendy.profil_bs_shot_premium_alt": { pl: "Karta gracza z komendy /profil_bs — wersja Premium z progresem", en: "Player card from /bs_profile — Premium version with progress" },
+    "komendy.profil_bs_shot_premium_alt": { pl: "Karta gracza z komendy /profil_bs - wersja Premium z progresem", en: "Player card from /bs_profile - Premium version with progress" },
 
     "komendy.brawlerzy_shot_usage_alt": { pl: "Wpisywanie komendy /brawlerzy na Discordzie", en: "Typing the /brawlers command on Discord" },
-    "komendy.brawlerzy_shot_result_alt": { pl: "Wynik komendy /brawlerzy — siatka odblokowanych brawlerów", en: "Result of /brawlers — grid of unlocked brawlers" },
+    "komendy.brawlerzy_shot_result_alt": { pl: "Wynik komendy /brawlerzy - siatka odblokowanych brawlerów", en: "Result of /brawlers - grid of unlocked brawlers" },
 
     "komendy.ranking_klanu_shot_usage_alt": { pl: "Wpisywanie komendy /ranking_klanu na Discordzie", en: "Typing the /clan_top command on Discord" },
-    "komendy.ranking_klanu_shot_result_alt": { pl: "Wynik komendy /ranking_klanu — top 10 klanu", en: "Result of /clan_top — clan's top 10" },
+    "komendy.ranking_klanu_shot_result_alt": { pl: "Wynik komendy /ranking_klanu - top 10 klanu", en: "Result of /clan_top - clan's top 10" },
 
     "komendy.moja_pozycja_shot_usage_alt": { pl: "Wpisywanie komendy /moja_pozycja na Discordzie", en: "Typing the /my_rank command on Discord" },
     "komendy.moja_pozycja_shot_free_caption": { pl: "Wersja darmowa", en: "Free version" },
-    "komendy.moja_pozycja_shot_free_alt": { pl: "Wynik komendy /moja_pozycja — wersja darmowa", en: "Result of /my_rank — free version" },
+    "komendy.moja_pozycja_shot_free_alt": { pl: "Wynik komendy /moja_pozycja - wersja darmowa", en: "Result of /my_rank - free version" },
     "komendy.moja_pozycja_shot_premium_caption": { pl: "Premium: prognoza wyprzedzenia", en: "Premium: overtake forecast" },
-    "komendy.moja_pozycja_shot_premium_alt": { pl: "Wynik komendy /moja_pozycja — wersja Premium z prognozą", en: "Result of /my_rank — Premium version with forecast" },
+    "komendy.moja_pozycja_shot_premium_alt": { pl: "Wynik komendy /moja_pozycja - wersja Premium z prognozą", en: "Result of /my_rank - Premium version with forecast" },
 
     "komendy.moj_cel_shot_usage_alt": { pl: "Wpisywanie komendy /moj_cel na Discordzie", en: "Typing the /my_goal command on Discord" },
     "komendy.moj_cel_shot_free_caption": { pl: "Wersja darmowa", en: "Free version" },
-    "komendy.moj_cel_shot_free_alt": { pl: "Wynik komendy /moj_cel — wersja darmowa", en: "Result of /my_goal — free version" },
+    "komendy.moj_cel_shot_free_alt": { pl: "Wynik komendy /moj_cel - wersja darmowa", en: "Result of /my_goal - free version" },
     "komendy.moj_cel_shot_premium_caption": { pl: "Premium: prognoza w widełkach", en: "Premium: forecast range" },
-    "komendy.moj_cel_shot_premium_alt": { pl: "Wynik komendy /moj_cel — wersja Premium z prognozą", en: "Result of /my_goal — Premium version with forecast" },
+    "komendy.moj_cel_shot_premium_alt": { pl: "Wynik komendy /moj_cel - wersja Premium z prognozą", en: "Result of /my_goal - Premium version with forecast" },
 
     "komendy.moje_osiagniecia_shot_usage_alt": { pl: "Wpisywanie komendy /moje_osiagniecia na Discordzie", en: "Typing the /my_achievements command on Discord" },
-    "komendy.moje_osiagniecia_shot_result_alt": { pl: "Wynik komendy /moje_osiagniecia — odznaki gracza", en: "Result of /my_achievements — player badges" },
+    "komendy.moje_osiagniecia_shot_result_alt": { pl: "Wynik komendy /moje_osiagniecia - odznaki gracza", en: "Result of /my_achievements - player badges" },
 
     "komendy.pojedynek_shot_usage_alt": { pl: "Wpisywanie komendy /pojedynek na Discordzie", en: "Typing the /duel command on Discord" },
     "komendy.pojedynek_shot_free_caption": { pl: "Wersja darmowa", en: "Free version" },
-    "komendy.pojedynek_shot_free_alt": { pl: "Wynik komendy /pojedynek — wersja darmowa", en: "Result of /duel — free version" },
+    "komendy.pojedynek_shot_free_alt": { pl: "Wynik komendy /pojedynek - wersja darmowa", en: "Result of /duel - free version" },
     "komendy.pojedynek_shot_premium_caption": { pl: "Premium: kolekcja brawlerów + wykres", en: "Premium: brawler collection + chart" },
-    "komendy.pojedynek_shot_premium_alt": { pl: "Wynik komendy /pojedynek — wersja Premium z porównaniem kolekcji", en: "Result of /duel — Premium version with collection comparison" },
+    "komendy.pojedynek_shot_premium_alt": { pl: "Wynik komendy /pojedynek - wersja Premium z porównaniem kolekcji", en: "Result of /duel - Premium version with collection comparison" },
 
     "komendy.historia_pucharow_shot_7d_caption": { pl: "Ostatnie 7 dni", en: "Last 7 days" },
-    "komendy.historia_pucharow_shot_7d_usage_alt": { pl: "Wpisywanie komendy /historia_pucharow — zakres 7 dni", en: "Typing /trophy_history — 7-day range" },
-    "komendy.historia_pucharow_shot_7d_result_alt": { pl: "Wynik komendy /historia_pucharow — trend z ostatnich 7 dni", en: "Result of /trophy_history — 7-day trend" },
+    "komendy.historia_pucharow_shot_7d_usage_alt": { pl: "Wpisywanie komendy /historia_pucharow - zakres 7 dni", en: "Typing /trophy_history - 7-day range" },
+    "komendy.historia_pucharow_shot_7d_result_alt": { pl: "Wynik komendy /historia_pucharow - trend z ostatnich 7 dni", en: "Result of /trophy_history - 7-day trend" },
     "komendy.historia_pucharow_shot_30d_caption": { pl: "Ostatnie 30 dni", en: "Last 30 days" },
-    "komendy.historia_pucharow_shot_30d_usage_alt": { pl: "Wpisywanie komendy /historia_pucharow — zakres 30 dni", en: "Typing /trophy_history — 30-day range" },
-    "komendy.historia_pucharow_shot_30d_result_alt": { pl: "Wynik komendy /historia_pucharow — trend z ostatnich 30 dni", en: "Result of /trophy_history — 30-day trend" },
+    "komendy.historia_pucharow_shot_30d_usage_alt": { pl: "Wpisywanie komendy /historia_pucharow - zakres 30 dni", en: "Typing /trophy_history - 30-day range" },
+    "komendy.historia_pucharow_shot_30d_result_alt": { pl: "Wynik komendy /historia_pucharow - trend z ostatnich 30 dni", en: "Result of /trophy_history - 30-day trend" },
 
     "komendy.rotacja_map_shot_usage_alt": { pl: "Wpisywanie komendy /rotacja_map na Discordzie", en: "Typing the /map_rotation command on Discord" },
-    "komendy.rotacja_map_shot_result_alt": { pl: "Wynik komendy /rotacja_map — aktualna rotacja map", en: "Result of /map_rotation — current map rotation" },
+    "komendy.rotacja_map_shot_result_alt": { pl: "Wynik komendy /rotacja_map - aktualna rotacja map", en: "Result of /map_rotation - current map rotation" },
 
     "komendy.support_shot_usage_alt": { pl: "Wpisywanie komendy /support na Discordzie", en: "Typing the /support command on Discord" },
-    "komendy.support_shot_result_alt": { pl: "Wynik komendy /support — pomoc i pierwsze kroki", en: "Result of /support — help and first steps" },
+    "komendy.support_shot_result_alt": { pl: "Wynik komendy /support - pomoc i pierwsze kroki", en: "Result of /support - help and first steps" },
 
     "komendy.ustaw_klan_shot_usage_alt": { pl: "Wpisywanie komendy /ustaw_klan na Discordzie", en: "Typing the /set_clan command on Discord" },
-    "komendy.ustaw_klan_shot_result_alt": { pl: "Wynik komendy /ustaw_klan — klan powiązany z serwerem", en: "Result of /set_clan — clan linked to the server" },
+    "komendy.ustaw_klan_shot_result_alt": { pl: "Wynik komendy /ustaw_klan - klan powiązany z serwerem", en: "Result of /set_clan - clan linked to the server" },
 
     "komendy.ustaw_prog_pucharow_shot_usage_alt": { pl: "Wpisywanie komendy /ustaw_prog_pucharow na Discordzie", en: "Typing the /set_trophy_threshold command on Discord" },
-    "komendy.ustaw_prog_pucharow_shot_result_alt": { pl: "Wynik komendy /ustaw_prog_pucharow — zaktualizowany próg", en: "Result of /set_trophy_threshold — updated threshold" },
+    "komendy.ustaw_prog_pucharow_shot_result_alt": { pl: "Wynik komendy /ustaw_prog_pucharow - zaktualizowany próg", en: "Result of /set_trophy_threshold - updated threshold" },
 
     "komendy.ustaw_role_rang_shot_usage_alt": { pl: "Wpisywanie komendy /ustaw_role_rang na Discordzie", en: "Typing the /set_rank_role command on Discord" },
-    "komendy.ustaw_role_rang_shot_result_alt": { pl: "Wynik komendy /ustaw_role_rang — rola powiązana z rangą", en: "Result of /set_rank_role — role linked to a rank" },
+    "komendy.ustaw_role_rang_shot_result_alt": { pl: "Wynik komendy /ustaw_role_rang - rola powiązana z rangą", en: "Result of /set_rank_role - role linked to a rank" },
 
     "komendy.ustaw_kanal_raportow_shot_usage_alt": { pl: "Wpisywanie komendy /ustaw_kanal_raportow na Discordzie", en: "Typing the /set_report_channel command on Discord" },
-    "komendy.ustaw_kanal_raportow_shot_result_alt": { pl: "Wynik komendy /ustaw_kanal_raportow — kanał raportów ustawiony", en: "Result of /set_report_channel — report channel set" },
+    "komendy.ustaw_kanal_raportow_shot_result_alt": { pl: "Wynik komendy /ustaw_kanal_raportow - kanał raportów ustawiony", en: "Result of /set_report_channel - report channel set" },
 
     "komendy.ustaw_kanal_rotacji_shot_usage_alt": { pl: "Wpisywanie komendy /ustaw_kanal_rotacji na Discordzie", en: "Typing the /set_rotation_channel command on Discord" },
-    "komendy.ustaw_kanal_rotacji_shot_result_alt": { pl: "Wynik komendy /ustaw_kanal_rotacji — kanał rotacji ustawiony", en: "Result of /set_rotation_channel — rotation channel set" },
+    "komendy.ustaw_kanal_rotacji_shot_result_alt": { pl: "Wynik komendy /ustaw_kanal_rotacji - kanał rotacji ustawiony", en: "Result of /set_rotation_channel - rotation channel set" },
 
     "komendy.ustaw_harmonogram_raportow_shot_usage_alt": { pl: "Wpisywanie komendy /ustaw_harmonogram_raportow na Discordzie", en: "Typing the /set_report_schedule command on Discord" },
-    "komendy.ustaw_harmonogram_raportow_shot_result_alt": { pl: "Wynik komendy /ustaw_harmonogram_raportow — harmonogram ustawiony", en: "Result of /set_report_schedule — schedule set" },
+    "komendy.ustaw_harmonogram_raportow_shot_result_alt": { pl: "Wynik komendy /ustaw_harmonogram_raportow - harmonogram ustawiony", en: "Result of /set_report_schedule - schedule set" },
 
     "komendy.panel_weryfikacji_shot_usage_alt": { pl: "Wpisywanie komendy /panel_weryfikacji na Discordzie", en: "Typing the /verification_panel command on Discord" },
-    "komendy.panel_weryfikacji_shot_result_alt": { pl: "Wynik komendy /panel_weryfikacji — panel z przyciskiem weryfikacji", en: "Result of /verification_panel — panel with a verify button" },
+    "komendy.panel_weryfikacji_shot_result_alt": { pl: "Wynik komendy /panel_weryfikacji - panel z przyciskiem weryfikacji", en: "Result of /verification_panel - panel with a verify button" },
 
     "komendy.czystka_klanu_shot_usage_alt": { pl: "Wpisywanie komendy /czystka_klanu na Discordzie", en: "Typing the /clan_cleanup command on Discord" },
     "komendy.czystka_klanu_shot_spelnia_caption": { pl: "Wszyscy spełniają próg", en: "Everyone meets the threshold" },
-    "komendy.czystka_klanu_shot_spelnia_alt": { pl: "Wynik komendy /czystka_klanu — wszyscy członkowie spełniają próg", en: "Result of /clan_cleanup — every member meets the threshold" },
+    "komendy.czystka_klanu_shot_spelnia_alt": { pl: "Wynik komendy /czystka_klanu - wszyscy członkowie spełniają próg", en: "Result of /clan_cleanup - every member meets the threshold" },
     "komendy.czystka_klanu_shot_niespelnia_caption": { pl: "Część graczy poniżej progu", en: "Some players below the threshold" },
-    "komendy.czystka_klanu_shot_niespelnia_alt": { pl: "Wynik komendy /czystka_klanu — lista graczy poniżej progu", en: "Result of /clan_cleanup — list of players below the threshold" },
+    "komendy.czystka_klanu_shot_niespelnia_alt": { pl: "Wynik komendy /czystka_klanu - lista graczy poniżej progu", en: "Result of /clan_cleanup - list of players below the threshold" },
 
     "komendy.ustaw_wyglad_shot_usage_alt": { pl: "Wpisywanie komendy /ustaw_wyglad na Discordzie (bez parametrów)", en: "Typing the /set_appearance command on Discord (no parameters)" },
     "komendy.ustaw_wyglad_shot_dropdown_alt": { pl: "Lista wyboru koloru embedów (16 kolorów)", en: "Embed color picker (16 colors)" },
-    "komendy.ustaw_wyglad_shot_result_alt": { pl: "Wynik komendy /ustaw_wyglad — globalny kolor zaktualizowany", en: "Result of /set_appearance — global color updated" },
-    "komendy.ustaw_wyglad_shot_premium_usage_caption": { pl: "Premium: wybór jednej komendy — użycie", en: "Premium: picking a single command — usage" },
+    "komendy.ustaw_wyglad_shot_result_alt": { pl: "Wynik komendy /ustaw_wyglad - globalny kolor zaktualizowany", en: "Result of /set_appearance - global color updated" },
+    "komendy.ustaw_wyglad_shot_premium_usage_caption": { pl: "Premium: wybór jednej komendy - użycie", en: "Premium: picking a single command - usage" },
     "komendy.ustaw_wyglad_shot_premium_usage_alt": { pl: "Wpisywanie komendy /ustaw_wyglad z wybraną pojedynczą komendą (Premium)", en: "Typing /set_appearance with a single command selected (Premium)" },
-    "komendy.ustaw_wyglad_shot_premium_result_caption": { pl: "Premium: kolor tylko tej komendy — wynik", en: "Premium: color for just that command — result" },
-    "komendy.ustaw_wyglad_shot_premium_result_alt": { pl: "Wynik komendy /ustaw_wyglad — kolor pojedynczej komendy zaktualizowany (Premium)", en: "Result of /set_appearance — single command's color updated (Premium)" },
+    "komendy.ustaw_wyglad_shot_premium_result_caption": { pl: "Premium: kolor tylko tej komendy - wynik", en: "Premium: color for just that command - result" },
+    "komendy.ustaw_wyglad_shot_premium_result_alt": { pl: "Wynik komendy /ustaw_wyglad - kolor pojedynczej komendy zaktualizowany (Premium)", en: "Result of /set_appearance - single command's color updated (Premium)" },
 
     "komendy.ustaw_jezyk_shot_usage_alt": { pl: "Wpisywanie komendy /ustaw_jezyk na Discordzie", en: "Typing the /set_language command on Discord" },
-    "komendy.ustaw_jezyk_shot_result_alt": { pl: "Wynik komendy /ustaw_jezyk — język bota zaktualizowany", en: "Result of /set_language — bot language updated" },
+    "komendy.ustaw_jezyk_shot_result_alt": { pl: "Wynik komendy /ustaw_jezyk - język bota zaktualizowany", en: "Result of /set_language - bot language updated" },
   };
 
   // Odkrywa realne zrzuty ekranu - runda 2026-07-29 zrobiła to dla PL, runda

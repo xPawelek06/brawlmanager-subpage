@@ -40,7 +40,7 @@
     <section class="page-hero">
         <div class="container">
             <div class="eyebrow" data-i18n="mapy.hero_eyebrow">🗺️ Cała rotacja, jeden rzut oka</div>
-            <h1 data-i18n="mapy.hero_title">Rotacja map Brawl Stars — wszystkie tryby naraz</h1>
+            <h1 data-i18n="mapy.hero_title">Rotacja map Brawl Stars - wszystkie tryby naraz</h1>
             <p data-i18n="mapy.hero_body">
                 Znajdziesz tutaj aktualne rotacje map dla każdego trybu gry!
             </p>
@@ -103,15 +103,15 @@
 
   const DICT = {
     "mapy.meta_title": {
-      pl: "Rotacja map Brawl Stars — BrawlManager",
-      en: "Brawl Stars Map Rotation — BrawlManager",
+      pl: "Rotacja map Brawl Stars - BrawlManager",
+      en: "Brawl Stars Map Rotation - BrawlManager",
     },
     "mapy.meta_description": {
-      pl: "Pełna lista trybów gry Brawl Stars z ostatnią i aktualną mapą w rotacji — dane z oficjalnego API Supercella, aktualizowane przez BrawlManagera.",
-      en: "Full list of Brawl Stars game modes with the last and current map in rotation — data from Supercell's official API, kept updated by BrawlManager.",
+      pl: "Pełna lista trybów gry Brawl Stars z ostatnią i aktualną mapą w rotacji - dane z oficjalnego API Supercella, aktualizowane przez BrawlManagera.",
+      en: "Full list of Brawl Stars game modes with the last and current map in rotation - data from Supercell's official API, kept updated by BrawlManager.",
     },
     "mapy.hero_eyebrow": { pl: "🗺️ Cała rotacja, jeden rzut oka", en: "🗺️ The whole rotation, at a glance" },
-    "mapy.hero_title": { pl: "Rotacja map Brawl Stars — wszystkie tryby naraz", en: "Brawl Stars map rotation — every mode at once" },
+    "mapy.hero_title": { pl: "Rotacja map Brawl Stars - wszystkie tryby naraz", en: "Brawl Stars map rotation - every mode at once" },
     "mapy.hero_body": { pl: "Znajdziesz tutaj aktualne rotacje map dla każdego trybu gry!", en: "Find the current map rotation for every game mode here!" },
     "mapy.th_mode": { pl: "Tryb gry", en: "Game mode" },
     "mapy.th_old_map": { pl: "Ostatnia mapa", en: "Previous map" },
@@ -281,11 +281,11 @@
 
     function formatCountdown(iso) {
       const lang = window.BM_I18N.getLang();
-      if (!iso) return "—";
+      if (!iso) return "-";
       const end = new Date(iso).getTime();
       const now = Date.now();
       const diffMs = end - now;
-      if (isNaN(end)) return "—";
+      if (isNaN(end)) return "-";
       if (diffMs <= 0) return lang === "en" ? "should have changed by now" : "powinno się już zmienić";
       const totalSec = Math.floor(diffMs / 1000);
       const h = Math.floor(totalSec / 3600);
