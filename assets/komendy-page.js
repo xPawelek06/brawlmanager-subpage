@@ -110,8 +110,6 @@
             <a href="#ustaw_kanal_rotacji" data-i18n="komendy.ustaw_kanal_rotacji_nav">/ustaw_kanal_rotacji</a>
             <a href="#ustaw_harmonogram_raportow" data-i18n="komendy.ustaw_harmonogram_raportow_nav">/ustaw_harmonogram_raportow</a>
             <a href="#panel_weryfikacji" data-i18n="komendy.panel_weryfikacji_nav">/panel_weryfikacji</a>
-            <a href="#panel_rekrutacji" data-i18n="komendy.panel_rekrutacji_nav">/panel_rekrutacji</a>
-            <a href="#panel_preferencji" data-i18n="komendy.panel_preferencji_nav">/panel_preferencji</a>
             <a href="#czystka_klanu" data-i18n="komendy.czystka_klanu_nav">/czystka_klanu</a>
             <a href="#ustaw_wyglad" data-i18n="komendy.ustaw_wyglad_nav">/ustaw_wyglad</a>
             <a href="#ustaw_jezyk" data-i18n="komendy.ustaw_jezyk_nav">/ustaw_jezyk</a>
@@ -130,7 +128,7 @@
             <div class="command-showcase">
 
                 <!-- /sprawdz_puchary -->
-                <div class="command-block command-block--text-only" id="sprawdz_puchary" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="sprawdz_puchary" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.sprawdz_puchary_code">/sprawdz_puchary [tag_gracza]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.sprawdz_puchary_desc">Sprawdza, czy gracz spełnia próg pucharowy tego serwera i czy należy do przypisanego klanu.</p>
@@ -140,27 +138,27 @@
                         </ul>
                     </div>
                     <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/sprawdz_puchary-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.sprawdz_puchary_shot_usage_alt">
-                        <img src="/assets/screenshots/sprawdz_puchary-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.sprawdz_puchary_shot_result_alt">
+                        <img src="/assets/screenshots/sprawdz_puchary-uzycie.png" data-src-en="/assets/screenshots/sprawdz_puchary-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.sprawdz_puchary_shot_usage_alt">
+                        <img src="/assets/screenshots/sprawdz_puchary-wynik.png" data-src-en="/assets/screenshots/sprawdz_puchary-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.sprawdz_puchary_shot_result_alt">
                     </div>
                 </div>
 
                 <!-- /profil_bs -->
-                <div class="command-block command-block--text-only" id="profil_bs" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="profil_bs" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.profil_bs_code">/profil_bs [tag_gracza]</code> <span class="badge badge-partial" data-i18n="common.badge_partial_premium">🔒 częściowo Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.profil_bs_desc">Karta gracza: poziom, rekordowe trofea, zwycięstwa i top 3 brawlery. Premium dorzuca dodatkowe pole z progresem od pierwszego dnia śledzenia historii.</p>
                     </div>
                     <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/profil_bs-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.profil_bs_shot_usage_alt">
+                        <img src="/assets/screenshots/profil_bs-uzycie.png" data-src-en="/assets/screenshots/profil_bs-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.profil_bs_shot_usage_alt">
                         <div class="command-screenshot-group">
                             <div class="command-screenshot-item">
                                 <p class="command-screenshot-caption" data-i18n="komendy.profil_bs_shot_free_caption">Wersja darmowa</p>
-                                <img src="/assets/screenshots/profil_bs-non-premium-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.profil_bs_shot_free_alt">
+                                <img src="/assets/screenshots/profil_bs-non-premium-wynik.png" data-src-en="/assets/screenshots/profil_bs-non-premium-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.profil_bs_shot_free_alt">
                             </div>
                             <div class="command-screenshot-item">
                                 <p class="command-screenshot-caption" data-i18n="komendy.profil_bs_shot_premium_caption">Premium: progres od pierwszego dnia</p>
-                                <img src="/assets/screenshots/profil_bs-premium-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.profil_bs_shot_premium_alt">
+                                <img src="/assets/screenshots/profil_bs-premium-wynik.png" data-src-en="/assets/screenshots/profil_bs-premium-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.profil_bs_shot_premium_alt">
                             </div>
                         </div>
                     </div>
@@ -184,19 +182,19 @@
                 </div>
 
                 <!-- /ranking_klanu -->
-                <div class="command-block command-block--text-only" id="ranking_klanu" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="ranking_klanu" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ranking_klanu_code">/ranking_klanu</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.ranking_klanu_desc">Pokazuje pierwszą dziesiątkę klanu posortowaną wg trofeów, wg tagu klanu skonfigurowanego przez admina (<code>/ustaw_klan</code>).</p>
                     </div>
                     <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/ranking_klanu-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ranking_klanu_shot_usage_alt">
-                        <img src="/assets/screenshots/ranking_klanu-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ranking_klanu_shot_result_alt">
+                        <img src="/assets/screenshots/ranking_klanu-uzycie.png" data-src-en="/assets/screenshots/ranking_klanu-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ranking_klanu_shot_usage_alt">
+                        <img src="/assets/screenshots/ranking_klanu-wynik.png" data-src-en="/assets/screenshots/ranking_klanu-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ranking_klanu_shot_result_alt">
                     </div>
                 </div>
 
                 <!-- /moja_pozycja -->
-                <div class="command-block command-block--text-only" id="moja_pozycja" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="moja_pozycja" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.moja_pozycja_code">/moja_pozycja [tag_gracza]</code> <span class="badge badge-partial" data-i18n="common.badge_partial_premium">🔒 częściowo Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.moja_pozycja_desc">Twoja aktualna pozycja w rankingu klanu wg aktualnych trofeów i dystans do osoby bezpośrednio wyżej.</p>
@@ -206,22 +204,22 @@
                         </ul>
                     </div>
                     <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/moja_pozycja-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.moja_pozycja_shot_usage_alt">
+                        <img src="/assets/screenshots/moja_pozycja-uzycie.png" data-src-en="/assets/screenshots/moja_pozycja-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.moja_pozycja_shot_usage_alt">
                         <div class="command-screenshot-group">
                             <div class="command-screenshot-item">
                                 <p class="command-screenshot-caption" data-i18n="komendy.moja_pozycja_shot_free_caption">Wersja darmowa</p>
-                                <img src="/assets/screenshots/moja_pozycja-non-premium-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.moja_pozycja_shot_free_alt">
+                                <img src="/assets/screenshots/moja_pozycja-non-premium-wynik.png" data-src-en="/assets/screenshots/moja_pozycja-non-premium-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.moja_pozycja_shot_free_alt">
                             </div>
                             <div class="command-screenshot-item">
                                 <p class="command-screenshot-caption" data-i18n="komendy.moja_pozycja_shot_premium_caption">Premium: prognoza wyprzedzenia</p>
-                                <img src="/assets/screenshots/moja_pozycja-premium-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.moja_pozycja_shot_premium_alt">
+                                <img src="/assets/screenshots/moja_pozycja-premium-wynik.png" data-src-en="/assets/screenshots/moja_pozycja-premium-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.moja_pozycja_shot_premium_alt">
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- /moj_cel -->
-                <div class="command-block command-block--text-only" id="moj_cel" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="moj_cel" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.moj_cel_code">/moj_cel [tag_gracza] [cel_puchary]</code> <span class="badge badge-partial" data-i18n="common.badge_partial_premium">🔒 częściowo Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.moj_cel_desc">Ustawia Twój osobisty cel pucharowy i pokazuje pasek postępu (kolor paska/embeda zależny od % ukończenia) oraz zmianę od wczoraj.</p>
@@ -231,34 +229,34 @@
                         </ul>
                     </div>
                     <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/moj_cel-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.moj_cel_shot_usage_alt">
+                        <img src="/assets/screenshots/moj_cel-uzycie.png" data-src-en="/assets/screenshots/moj_cel-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.moj_cel_shot_usage_alt">
                         <div class="command-screenshot-group">
                             <div class="command-screenshot-item">
                                 <p class="command-screenshot-caption" data-i18n="komendy.moj_cel_shot_free_caption">Wersja darmowa</p>
-                                <img src="/assets/screenshots/moj_cel-non-premium-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.moj_cel_shot_free_alt">
+                                <img src="/assets/screenshots/moj_cel-non-premium-wynik.png" data-src-en="/assets/screenshots/moj_cel-non-premium-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.moj_cel_shot_free_alt">
                             </div>
                             <div class="command-screenshot-item">
                                 <p class="command-screenshot-caption" data-i18n="komendy.moj_cel_shot_premium_caption">Premium: prognoza w widełkach</p>
-                                <img src="/assets/screenshots/moj_cel-premium-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.moj_cel_shot_premium_alt">
+                                <img src="/assets/screenshots/moj_cel-premium-wynik.png" data-src-en="/assets/screenshots/moj_cel-premium-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.moj_cel_shot_premium_alt">
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- /moje_osiagniecia -->
-                <div class="command-block command-block--text-only" id="moje_osiagniecia" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="moje_osiagniecia" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.moje_osiagniecia_code">/moje_osiagniecia [tag_gracza]</code></div>
                         <p data-i18n="komendy.moje_osiagniecia_desc">Odznaki i osiągnięcia gracza w klanie, liczone automatycznie z historii bota — m.in. najdłuższa seria na plusie, rekordowy dzień, staż w klanie, % ukończenia kolekcji brawlerów, najlepszy tydzień i kamienie milowe rekordu trofeów. Całkowicie darmowe.</p>
                     </div>
                     <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/moje_osiagniecia-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.moje_osiagniecia_shot_usage_alt">
-                        <img src="/assets/screenshots/moje_osiagniecia-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.moje_osiagniecia_shot_result_alt">
+                        <img src="/assets/screenshots/moje_osiagniecia-uzycie.png" data-src-en="/assets/screenshots/moje_osiagniecia-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.moje_osiagniecia_shot_usage_alt">
+                        <img src="/assets/screenshots/moje_osiagniecia-wynik.png" data-src-en="/assets/screenshots/moje_osiagniecia-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.moje_osiagniecia_shot_result_alt">
                     </div>
                 </div>
 
                 <!-- /pojedynek -->
-                <div class="command-block command-block--text-only" id="pojedynek" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="pojedynek" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.pojedynek_code">/pojedynek [tag_gracza_1] [tag_gracza_2]</code> <span class="badge badge-partial" data-i18n="common.badge_partial_premium">🔒 częściowo Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.pojedynek_desc">Porównanie 1:1 dwóch graczy klanu — aktualne trofea, kto prowadzi i przyrost z ostatniego tygodnia każdego z nich.</p>
@@ -268,22 +266,22 @@
                         </ul>
                     </div>
                     <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/pojedynek-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.pojedynek_shot_usage_alt">
+                        <img src="/assets/screenshots/pojedynek-uzycie.png" data-src-en="/assets/screenshots/pojedynek-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.pojedynek_shot_usage_alt">
                         <div class="command-screenshot-group">
                             <div class="command-screenshot-item">
                                 <p class="command-screenshot-caption" data-i18n="komendy.pojedynek_shot_free_caption">Wersja darmowa</p>
-                                <img src="/assets/screenshots/pojedynek-basic-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.pojedynek_shot_free_alt">
+                                <img src="/assets/screenshots/pojedynek-basic-wynik.png" data-src-en="/assets/screenshots/pojedynek-basic-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.pojedynek_shot_free_alt">
                             </div>
                             <div class="command-screenshot-item">
                                 <p class="command-screenshot-caption" data-i18n="komendy.pojedynek_shot_premium_caption">Premium: kolekcja brawlerów + wykres</p>
-                                <img src="/assets/screenshots/pojedynek-premium-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.pojedynek_shot_premium_alt">
+                                <img src="/assets/screenshots/pojedynek-premium-wynik.png" data-src-en="/assets/screenshots/pojedynek-premium-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.pojedynek_shot_premium_alt">
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- /historia_pucharow -->
-                <div class="command-block command-block--text-only" id="historia_pucharow" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="historia_pucharow" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.historia_pucharow_code">/historia_pucharow [zakres_dni] [tag_gracza]</code> <span class="badge" data-i18n="common.badge_premium">🔒 Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.historia_pucharow_desc">Trend trofeów dowolnego gracza z klanu z ostatnich 7 lub 30 dni — tekstowy sparkline w embedzie plus prawdziwy wykres liniowy PNG. Dorzuca też prognozę osiągnięcia progu klanowego i pozycję gracza w klanie w tym oknie czasowym.</p>
@@ -292,39 +290,39 @@
                         <div class="command-screenshot-group">
                             <div class="command-screenshot-item">
                                 <p class="command-screenshot-caption" data-i18n="komendy.historia_pucharow_shot_7d_caption">Ostatnie 7 dni</p>
-                                <img src="/assets/screenshots/historia_pucharow-7d-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.historia_pucharow_shot_7d_usage_alt">
-                                <img src="/assets/screenshots/historia_pucharow-7d-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.historia_pucharow_shot_7d_result_alt">
+                                <img src="/assets/screenshots/historia_pucharow-7d-uzycie.png" data-src-en="/assets/screenshots/historia_pucharow-7d-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.historia_pucharow_shot_7d_usage_alt">
+                                <img src="/assets/screenshots/historia_pucharow-7d-wynik.png" data-src-en="/assets/screenshots/historia_pucharow-7d-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.historia_pucharow_shot_7d_result_alt">
                             </div>
                             <div class="command-screenshot-item">
                                 <p class="command-screenshot-caption" data-i18n="komendy.historia_pucharow_shot_30d_caption">Ostatnie 30 dni</p>
-                                <img src="/assets/screenshots/historia_pucharow-30d-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.historia_pucharow_shot_30d_usage_alt">
-                                <img src="/assets/screenshots/historia_pucharow-30d-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.historia_pucharow_shot_30d_result_alt">
+                                <img src="/assets/screenshots/historia_pucharow-30d-uzycie.png" data-src-en="/assets/screenshots/historia_pucharow-30d-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.historia_pucharow_shot_30d_usage_alt">
+                                <img src="/assets/screenshots/historia_pucharow-30d-wynik.png" data-src-en="/assets/screenshots/historia_pucharow-30d-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.historia_pucharow_shot_30d_result_alt">
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- /rotacja_map -->
-                <div class="command-block command-block--text-only" id="rotacja_map" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="rotacja_map" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.rotacja_map_code">/rotacja_map</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.rotacja_map_desc">Pokazuje na żądanie aktualną rotację map i trybów gry Brawl Stars — ta sama tabela, co na <a href="/Mapy/">stronie z mapami</a>, tylko wprost na Discordzie.</p>
                     </div>
                     <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/rotacja_map-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.rotacja_map_shot_usage_alt">
-                        <img src="/assets/screenshots/rotacja_map-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.rotacja_map_shot_result_alt">
+                        <img src="/assets/screenshots/rotacja_map-uzycie.png" data-src-en="/assets/screenshots/rotacja_map-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.rotacja_map_shot_usage_alt">
+                        <img src="/assets/screenshots/rotacja_map-wynik.png" data-src-en="/assets/screenshots/rotacja_map-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.rotacja_map_shot_result_alt">
                     </div>
                 </div>
 
                 <!-- /support -->
-                <div class="command-block command-block--text-only" id="support" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="support" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.support_code">/support</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.support_desc">Krótkie info o bocie, pierwsze kroki dla admina i przycisk-link do serwera wsparcia.</p>
                     </div>
                     <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/support-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.support_shot_usage_alt">
-                        <img src="/assets/screenshots/support-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.support_shot_result_alt">
+                        <img src="/assets/screenshots/support-uzycie.png" data-src-en="/assets/screenshots/support-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.support_shot_usage_alt">
+                        <img src="/assets/screenshots/support-wynik.png" data-src-en="/assets/screenshots/support-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.support_shot_result_alt">
                     </div>
                 </div>
 
@@ -343,159 +341,130 @@
             <div class="command-showcase">
 
                 <!-- /ustaw_klan -->
-                <div class="command-block command-block--text-only" id="ustaw_klan" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="ustaw_klan" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_klan_code">/ustaw_klan [nowy_tag_klanu]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.ustaw_klan_desc">Powiązuje ten serwer Discord z konkretnym klanem Brawl Stars i od razu zapisuje pierwszy punkt historii pucharów wszystkich jego członków.</p>
                     </div>
                     <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/ustaw_klan-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_klan_shot_usage_alt">
-                        <img src="/assets/screenshots/ustaw_klan-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ustaw_klan_shot_result_alt">
+                        <img src="/assets/screenshots/ustaw_klan-uzycie.png" data-src-en="/assets/screenshots/ustaw_klan-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_klan_shot_usage_alt">
+                        <img src="/assets/screenshots/ustaw_klan-wynik.png" data-src-en="/assets/screenshots/ustaw_klan-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ustaw_klan_shot_result_alt">
                     </div>
                 </div>
 
                 <!-- /ustaw_prog_pucharow -->
-                <div class="command-block command-block--text-only" id="ustaw_prog_pucharow" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="ustaw_prog_pucharow" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_prog_pucharow_code">/ustaw_prog_pucharow [nowe_puchary]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.ustaw_prog_pucharow_desc">Ustawia minimalny próg pucharowy wymagany na tym serwerze — używany przez <code>/sprawdz_puchary</code>, panel weryfikacji i <code>/czystka_klanu</code>.</p>
                     </div>
                     <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/ustaw_prog_pucharow-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_prog_pucharow_shot_usage_alt">
-                        <img src="/assets/screenshots/ustaw_prog_pucharow-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ustaw_prog_pucharow_shot_result_alt">
+                        <img src="/assets/screenshots/ustaw_prog_pucharow-uzycie.png" data-src-en="/assets/screenshots/ustaw_prog_pucharow-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_prog_pucharow_shot_usage_alt">
+                        <img src="/assets/screenshots/ustaw_prog_pucharow-wynik.png" data-src-en="/assets/screenshots/ustaw_prog_pucharow-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ustaw_prog_pucharow_shot_result_alt">
                     </div>
                 </div>
 
                 <!-- /ustaw_role_rang -->
-                <div class="command-block command-block--text-only" id="ustaw_role_rang" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="ustaw_role_rang" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_role_rang_code">/ustaw_role_rang [ranga_z_gry] [nowa_nazwa_discord]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.ustaw_role_rang_desc">Dopasowuje nazwę roli Discord do konkretnej rangi klanowej (member / senior / vicePresident / president). Odpowiedź widoczna tylko dla admina.</p>
                     </div>
                     <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/ustaw_role_rang-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_role_rang_shot_usage_alt">
-                        <img src="/assets/screenshots/ustaw_role_rang-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ustaw_role_rang_shot_result_alt">
+                        <img src="/assets/screenshots/ustaw_role_rang-uzycie.png" data-src-en="/assets/screenshots/ustaw_role_rang-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_role_rang_shot_usage_alt">
+                        <img src="/assets/screenshots/ustaw_role_rang-wynik.png" data-src-en="/assets/screenshots/ustaw_role_rang-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ustaw_role_rang_shot_result_alt">
                     </div>
                 </div>
 
                 <!-- /ustaw_kanal_raportow -->
-                <div class="command-block command-block--text-only" id="ustaw_kanal_raportow" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="ustaw_kanal_raportow" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_kanal_raportow_code">/ustaw_kanal_raportow [kanal]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.ustaw_kanal_raportow_desc">Ustawia kanał, na który trafiają automatyczne raporty tygodniowe i miesięczne. Bot sam sprawdza, czy ma uprawnienia do pisania i linkowania embedów na wybranym kanale.</p>
                     </div>
                     <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/ustaw_kanal_raportow-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_kanal_raportow_shot_usage_alt">
-                        <img src="/assets/screenshots/ustaw_kanal_raportow-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ustaw_kanal_raportow_shot_result_alt">
+                        <img src="/assets/screenshots/ustaw_kanal_raportow-uzycie.png" data-src-en="/assets/screenshots/ustaw_kanal_raportow-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_kanal_raportow_shot_usage_alt">
+                        <img src="/assets/screenshots/ustaw_kanal_raportow-wynik.png" data-src-en="/assets/screenshots/ustaw_kanal_raportow-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ustaw_kanal_raportow_shot_result_alt">
                     </div>
                 </div>
 
                 <!-- /ustaw_kanal_rotacji -->
-                <div class="command-block command-block--text-only" id="ustaw_kanal_rotacji" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="ustaw_kanal_rotacji" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_kanal_rotacji_code">/ustaw_kanal_rotacji [kanal]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.ustaw_kanal_rotacji_desc">Ustawia kanał powiadomień o zmianie mapy w rotacji Brawl Stars (funkcja darmowa, opt-in).</p>
                     </div>
                     <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/ustaw_kanal_rotacji-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_kanal_rotacji_shot_usage_alt">
-                        <img src="/assets/screenshots/ustaw_kanal_rotacji-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ustaw_kanal_rotacji_shot_result_alt">
+                        <img src="/assets/screenshots/ustaw_kanal_rotacji-uzycie.png" data-src-en="/assets/screenshots/ustaw_kanal_rotacji-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_kanal_rotacji_shot_usage_alt">
+                        <img src="/assets/screenshots/ustaw_kanal_rotacji-wynik.png" data-src-en="/assets/screenshots/ustaw_kanal_rotacji-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ustaw_kanal_rotacji_shot_result_alt">
                     </div>
                 </div>
 
                 <!-- /ustaw_harmonogram_raportow -->
-                <div class="command-block command-block--text-only" id="ustaw_harmonogram_raportow" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="ustaw_harmonogram_raportow" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_harmonogram_raportow_code">/ustaw_harmonogram_raportow [dzien] [godzina]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.ustaw_harmonogram_raportow_desc">Ustala dzień tygodnia i godzinę, o której wysyłany jest automatyczny raport tygodniowy.</p>
                     </div>
                     <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/ustaw_harmonogram_raportow-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_harmonogram_raportow_shot_usage_alt">
-                        <img src="/assets/screenshots/ustaw_harmonogram_raportow-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ustaw_harmonogram_raportow_shot_result_alt">
+                        <img src="/assets/screenshots/ustaw_harmonogram_raportow-uzycie.png" data-src-en="/assets/screenshots/ustaw_harmonogram_raportow-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_harmonogram_raportow_shot_usage_alt">
+                        <img src="/assets/screenshots/ustaw_harmonogram_raportow-wynik.png" data-src-en="/assets/screenshots/ustaw_harmonogram_raportow-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ustaw_harmonogram_raportow_shot_result_alt">
                     </div>
                 </div>
 
                 <!-- /panel_weryfikacji -->
-                <div class="command-block command-block--text-only" id="panel_weryfikacji" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="panel_weryfikacji" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.panel_weryfikacji_code">/panel_weryfikacji</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.panel_weryfikacji_desc">Wysyła panel z przyciskiem, dzięki któremu członkowie sami się zweryfikują (otwiera formularz na tag z gry).</p>
                     </div>
                     <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/panel_weryfikacji-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.panel_weryfikacji_shot_usage_alt">
-                        <img src="/assets/screenshots/panel_weryfikacji-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.panel_weryfikacji_shot_result_alt">
-                    </div>
-                </div>
-
-                <!-- /panel_rekrutacji -->
-                <!-- Brak realnych zrzutów (Paweł ich jeszcze nie dostarczył, stan na 2026-07-31) -
-                     celowo BEZ atrybutu data-has-shots="1" na .command-block poniżej, więc
-                     wireScreenshots() (patrz niżej w tym pliku) nigdy go nie dotyka i badge-pending
-                     zostaje widoczny NA STAŁE w obu językach (inaczej niż reszta komend, gdzie badge
-                     znika tylko dla PL po dodaniu zrzutów). Żeby włączyć realne screeny: dorzuć pliki
-                     assets/screenshots/panel_rekrutacji-uzycie.png i
-                     assets/screenshots/panel_rekrutacji-wynik.png, potem dopisz z powrotem atrybut
-                     data-has-shots="1" na command-block poniżej - reszta (schowanie badge'a, odkrycie
-                     .command-block-shots dla PL) zadzieje się automatycznie przez już istniejący
-                     mechanizm wireScreenshots(), bez dalszych zmian w JS. -->
-                <div class="command-block command-block--text-only" id="panel_rekrutacji">
-                    <div class="command-block-copy">
-                        <div class="command-tag"><code data-i18n="komendy.panel_rekrutacji_code">/panel_rekrutacji</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.panel_rekrutacji_desc">Wysyła publiczny, dwujęzyczny (PL/EN) panel rekrutacyjny z dwoma niezależnymi przyciskami-rolami: „Szukam Klubu” (dostęp do kanału, gdzie można ogłosić swoje konto i statystyki) oraz „Lider Klubu” (dostęp do kanału promocji własnego klubu). Ponowne kliknięcie przycisku usuwa rolę.</p>
-                    </div>
-                    <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/panel_rekrutacji-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.panel_rekrutacji_shot_usage_alt">
-                        <img src="/assets/screenshots/panel_rekrutacji-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.panel_rekrutacji_shot_result_alt">
-                    </div>
-                </div>
-
-                <!-- /panel_preferencji -->
-                <!-- Ten sam stan (brak zrzutów, celowo brak data-has-shots="1") i ten sam sposób
-                     włączenia jak przy /panel_rekrutacji wyżej - tu potrzebne pliki
-                     assets/screenshots/panel_preferencji-uzycie.png i
-                     assets/screenshots/panel_preferencji-wynik.png. -->
-                <div class="command-block command-block--text-only" id="panel_preferencji">
-                    <div class="command-block-copy">
-                        <div class="command-tag"><code data-i18n="komendy.panel_preferencji_code">/panel_preferencji</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.panel_preferencji_desc">Wysyła panel preferencji społecznościowych z niezależnymi przyciskami-rolami — dowolna kombinacja naraz, ponowne kliknięcie usuwa rolę: 🔔 Ogłoszenia (ping przy ważnych newsach klubu/bota), 🇵🇱/🇬🇧 język społeczności oraz 🟢🟡🔴 poziom gry (Casual / Ranked / Pro Player).</p>
-                    </div>
-                    <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/panel_preferencji-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.panel_preferencji_shot_usage_alt">
-                        <img src="/assets/screenshots/panel_preferencji-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.panel_preferencji_shot_result_alt">
+                        <img src="/assets/screenshots/panel_weryfikacji-uzycie.png" data-src-en="/assets/screenshots/panel_weryfikacji-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.panel_weryfikacji_shot_usage_alt">
+                        <img src="/assets/screenshots/panel_weryfikacji-wynik.png" data-src-en="/assets/screenshots/panel_weryfikacji-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.panel_weryfikacji_shot_result_alt">
                     </div>
                 </div>
 
                 <!-- /czystka_klanu -->
-                <div class="command-block command-block--text-only" id="czystka_klanu" data-has-shots="1">
+                <!-- EN ma tylko 1 z 2 wariantów wyniku (brak "wszyscy spełniają próg" -
+                     patrz komendy.md, luka znana i zaakceptowana). data-en-skip="1" na
+                     pierwszym .command-screenshot-item (wariant "spelnia") - wireScreenshots("en")
+                     chowa ten konkretny element inline-style'em (patrz uzasadnienie w JS niżej,
+                     dlaczego nie .hidden), więc w EN widać tylko drugi item ("niespelnia"),
+                     bez pustego miejsca w layoucie po prawej. -->
+                <div class="command-block command-block--text-only" id="czystka_klanu" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.czystka_klanu_code">/czystka_klanu</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.czystka_klanu_desc">Lista członków klanu, którzy są poniżej ustawionego progu pucharowego — gotowa do przejrzenia przed ewentualnym wyrzuceniem z klanu w grze.</p>
                     </div>
                     <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/czystka_klanu-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.czystka_klanu_shot_usage_alt">
+                        <img src="/assets/screenshots/czystka_klanu-uzycie.png" data-src-en="/assets/screenshots/czystka_klanu-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.czystka_klanu_shot_usage_alt">
                         <div class="command-screenshot-group">
-                            <div class="command-screenshot-item">
+                            <div class="command-screenshot-item" data-en-skip="1">
                                 <p class="command-screenshot-caption" data-i18n="komendy.czystka_klanu_shot_spelnia_caption">Wszyscy spełniają próg</p>
                                 <img src="/assets/screenshots/czystka_klanu-spelnia.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.czystka_klanu_shot_spelnia_alt">
                             </div>
                             <div class="command-screenshot-item">
                                 <p class="command-screenshot-caption" data-i18n="komendy.czystka_klanu_shot_niespelnia_caption">Część graczy poniżej progu</p>
-                                <img src="/assets/screenshots/czystka_klanu-niespelnia.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.czystka_klanu_shot_niespelnia_alt">
+                                <img src="/assets/screenshots/czystka_klanu-niespelnia.png" data-src-en="/assets/screenshots/czystka_klanu-niespelnia-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.czystka_klanu_shot_niespelnia_alt">
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- /ustaw_wyglad -->
-                <div class="command-block command-block--text-only" id="ustaw_wyglad" data-has-shots="1">
+                <!-- EN brakuje wariantu Premium (kolor per-komenda) - data-en-skip="1" na
+                     .command-screenshot-group ukrywa oba jego .command-screenshot-item
+                     (usage+wynik) razem, analogicznie do czystka_klanu wyżej. -->
+                <div class="command-block command-block--text-only" id="ustaw_wyglad" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_wyglad_code">/ustaw_wyglad [komenda]</code> <span class="badge badge-partial" data-i18n="common.badge_partial_premium">🔒 częściowo Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.ustaw_wyglad_desc">Kolor embedów bota. W wersji darmowej wystarczy wywołać komendę bez żadnych parametrów — kolor obejmie wszystkie embedy naraz. W Premium można dodatkowo wybrać (z podpowiadanej listy) jedną z kilkunastu pojedynczych komend bota i ustawić dla niej osobny kolor. Otwiera listę wyboru z 16 kolorami.</p>
                     </div>
                     <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/ustaw_wyglad-non-premium-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_wyglad_shot_usage_alt">
-                        <img src="/assets/screenshots/ustaw_wyglad-dropdown.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_wyglad_shot_dropdown_alt">
-                        <img src="/assets/screenshots/ustaw_wyglad-non-premium-wynik.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_wyglad_shot_result_alt">
-                        <div class="command-screenshot-group">
+                        <img src="/assets/screenshots/ustaw_wyglad-non-premium-uzycie.png" data-src-en="/assets/screenshots/ustaw_wyglad-non-premium-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_wyglad_shot_usage_alt">
+                        <img src="/assets/screenshots/ustaw_wyglad-dropdown.png" data-src-en="/assets/screenshots/ustaw_wyglad-dropdown-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_wyglad_shot_dropdown_alt">
+                        <img src="/assets/screenshots/ustaw_wyglad-non-premium-wynik.png" data-src-en="/assets/screenshots/ustaw_wyglad-non-premium-wynik-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_wyglad_shot_result_alt">
+                        <div class="command-screenshot-group" data-en-skip="1">
                             <div class="command-screenshot-item">
                                 <p class="command-screenshot-caption" data-i18n="komendy.ustaw_wyglad_shot_premium_usage_caption">Premium: wybór jednej komendy — użycie</p>
                                 <img src="/assets/screenshots/ustaw_wyglad-premium-uzycie.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ustaw_wyglad_shot_premium_usage_alt">
@@ -509,14 +478,14 @@
                 </div>
 
                 <!-- /ustaw_jezyk -->
-                <div class="command-block command-block--text-only" id="ustaw_jezyk" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="ustaw_jezyk" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_jezyk_code">/ustaw_jezyk [jezyk]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.ustaw_jezyk_desc">Ustawia język odpowiedzi bota na tym serwerze — polski albo angielski (domyślnie polski). Wszystkie nazwy i opisy komend mają też natywną angielską lokalizację Discorda, niezależną od tego ustawienia.</p>
                     </div>
                     <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/ustaw_jezyk-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_jezyk_shot_usage_alt">
-                        <img src="/assets/screenshots/ustaw_jezyk-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ustaw_jezyk_shot_result_alt">
+                        <img src="/assets/screenshots/ustaw_jezyk-uzycie.png" data-src-en="/assets/screenshots/ustaw_jezyk-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_jezyk_shot_usage_alt">
+                        <img src="/assets/screenshots/ustaw_jezyk-wynik.png" data-src-en="/assets/screenshots/ustaw_jezyk-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ustaw_jezyk_shot_result_alt">
                     </div>
                 </div>
 
@@ -758,20 +727,6 @@
       en: "Sends a panel with a button that lets members verify themselves (opens a form for their in-game tag).",
     },
 
-    "komendy.panel_rekrutacji_code": { pl: "/panel_rekrutacji", en: "/recruitment_panel" },
-    "komendy.panel_rekrutacji_nav": { pl: "/panel_rekrutacji", en: "/recruitment_panel" },
-    "komendy.panel_rekrutacji_desc": {
-      pl: "Wysyła publiczny, dwujęzyczny (PL/EN) panel rekrutacyjny z dwoma niezależnymi przyciskami-rolami: „Szukam Klubu” (dostęp do kanału, gdzie można ogłosić swoje konto i statystyki) oraz „Lider Klubu” (dostęp do kanału promocji własnego klubu). Ponowne kliknięcie przycisku usuwa rolę.",
-      en: "Sends a public, bilingual (PL/EN) recruitment panel with two independent role buttons: \"Looking for Clan\" (access to a channel where you can post your account and stats) and \"Clan Leader\" (access to a channel where you can promote your own clan). Clicking a button again removes the role.",
-    },
-
-    "komendy.panel_preferencji_code": { pl: "/panel_preferencji", en: "/preferences_panel" },
-    "komendy.panel_preferencji_nav": { pl: "/panel_preferencji", en: "/preferences_panel" },
-    "komendy.panel_preferencji_desc": {
-      pl: "Wysyła panel preferencji społecznościowych z niezależnymi przyciskami-rolami — dowolna kombinacja naraz, ponowne kliknięcie usuwa rolę: 🔔 Ogłoszenia (ping przy ważnych newsach klubu/bota), 🇵🇱/🇬🇧 język społeczności oraz 🟢🟡🔴 poziom gry (Casual / Ranked / Pro Player).",
-      en: "Sends a community preferences panel with independent role buttons — any combination at once, clicking again removes the role: 🔔 Announcements (get pinged for important club/bot news), 🇵🇱/🇬🇧 community language, and 🟢🟡🔴 skill level (Casual / Ranked / Pro Player).",
-    },
-
     "komendy.czystka_klanu_code": { pl: "/czystka_klanu", en: "/clan_cleanup" },
     "komendy.czystka_klanu_nav": { pl: "/czystka_klanu", en: "/clan_cleanup" },
     "komendy.czystka_klanu_desc": {
@@ -867,12 +822,6 @@
     "komendy.panel_weryfikacji_shot_usage_alt": { pl: "Wpisywanie komendy /panel_weryfikacji na Discordzie", en: "Typing the /verification_panel command on Discord" },
     "komendy.panel_weryfikacji_shot_result_alt": { pl: "Wynik komendy /panel_weryfikacji — panel z przyciskiem weryfikacji", en: "Result of /verification_panel — panel with a verify button" },
 
-    "komendy.panel_rekrutacji_shot_usage_alt": { pl: "Wpisywanie komendy /panel_rekrutacji na Discordzie", en: "Typing the /recruitment_panel command on Discord" },
-    "komendy.panel_rekrutacji_shot_result_alt": { pl: "Wynik komendy /panel_rekrutacji — panel rekrutacyjny z przyciskami ról", en: "Result of /recruitment_panel — recruitment panel with role buttons" },
-
-    "komendy.panel_preferencji_shot_usage_alt": { pl: "Wpisywanie komendy /panel_preferencji na Discordzie", en: "Typing the /preferences_panel command on Discord" },
-    "komendy.panel_preferencji_shot_result_alt": { pl: "Wynik komendy /panel_preferencji — panel preferencji społeczności", en: "Result of /preferences_panel — community preferences panel" },
-
     "komendy.czystka_klanu_shot_usage_alt": { pl: "Wpisywanie komendy /czystka_klanu na Discordzie", en: "Typing the /clan_cleanup command on Discord" },
     "komendy.czystka_klanu_shot_spelnia_caption": { pl: "Wszyscy spełniają próg", en: "Everyone meets the threshold" },
     "komendy.czystka_klanu_shot_spelnia_alt": { pl: "Wynik komendy /czystka_klanu — wszyscy członkowie spełniają próg", en: "Result of /clan_cleanup — every member meets the threshold" },
@@ -891,28 +840,43 @@
     "komendy.ustaw_jezyk_shot_result_alt": { pl: "Wynik komendy /ustaw_jezyk — język bota zaktualizowany", en: "Result of /set_language — bot language updated" },
   };
 
-  // Odkrywa realne zrzuty ekranu (runda 2026-07-29) TYLKO dla PL - Paweł robi
-  // angielskie zrzuty osobno (nie są jeszcze gotowe), więc dopóki ich nie ma,
-  // /Commands/ (EN) ma zostać DOKŁADNIE takie jak dziś: command-block--text-only
-  // + badge "📸 Screenshots coming soon". Domyślny markup w TEMPLATE wyżej jest
-  // więc pisany "na sztywno" pod ten EN/pending stan (.command-block-shots ma
-  // atrybut hidden, badge-pending jest widoczny) - dla PL ta funkcja odwraca
-  // oba: chowa badge, odkrywa zrzuty i zdejmuje --text-only, żeby wrócić do
-  // dwukolumnowego układu .command-block (patrz style.css). Analogicznie chowa
-  // baner #komendy-info-note-wrap ("zrzuty wstrzymane"), bo dla PL już nieaktualny.
-  // Selektor "[data-has-shots]" oznacza więc konkretnie "PL ma już realne
-  // zrzuty" - stan 2026-07-31: 21 z 23 komend ma ten atrybut; /panel_rekrutacji
-  // i /panel_preferencji (dodane tego dnia) celowo go NIE mają, bo Paweł jeszcze
-  // nie dostarczył dla nich zrzutów - patrz komentarz przy tych blokach w
-  // TEMPLATE wyżej po instrukcję, jak włączyć zrzuty, gdy będą gotowe.
+  // Odkrywa realne zrzuty ekranu - runda 2026-07-29 zrobiła to dla PL, runda
+  // 2026-07-31 dociągnęła analogiczny branch dla EN. Domyślny markup w TEMPLATE
+  // wyżej jest pisany "na sztywno" pod stan "zero zrzutów" (.command-block-shots
+  // ma atrybut hidden, badge-pending jest widoczny, każdy <img> ma src=PL) - ta
+  // funkcja odwraca to per język: chowa badge, odkrywa zrzuty i zdejmuje
+  // --text-only, żeby wrócić do dwukolumnowego układu .command-block (patrz
+  // style.css). Analogicznie chowa baner #komendy-info-note-wrap ("zrzuty
+  // wstrzymane"), bo dla obu języków jest już w większości nieaktualny.
+  //
+  // PL (`[data-has-shots]`): stan 2026-07-31, 21 z 21 komend ma ten atrybut
+  // (panel_rekrutacji/panel_preferencji, które kiedyś tu były, zostały usunięte
+  // ze strony - to wewnętrzne narzędzia Pawła oparte o twardo zakodowane
+  // ROLE_ID z jego własnego serwera, nie ogólne funkcje bota).
+  //
+  // EN (`[data-has-shots-en]`): druga, osobna runda zrzutów (2026-07-30,
+  // dostarczona przez Pawła, mapa plik->komenda w
+  // C:\Users\x\Desktop\mozg\.claude\komendy.md). 20 z 21 komend ma ten atrybut -
+  // /brawlerzy jest jedynym wyjątkiem (zero zrzutów w tej paczce), więc zostaje
+  // bez atrybutu i dalej pokazuje "coming soon" w OBU językach. Każdy <img>,
+  // który ma angielski odpowiednik, niesie `data-src-en` z jego ścieżką - branch
+  // EN podmienia `img.src` na tę wartość. Dwa miejsca nie mają kompletu
+  // wariantów po angielsku (opisane w komendy.md, świadomie zaakceptowana luka):
+  // /czystka_klanu brakuje wariantu "wszyscy spełniają próg" (tylko "niespelnia"
+  // dostarczone), /ustaw_wyglad brakuje wariantu Premium (kolor per-komenda).
+  // Elementy bez angielskiego odpowiednika niosą `data-en-skip="1")` - branch EN
+  // je chowa (patrz uzasadnienie inline style.display przy pendingBadge niżej -
+  // ten sam problem author-CSS-vs-UA-hidden dotyczy .command-screenshot-group,
+  // które ma `display: flex` w style.css).
   function wireScreenshots(forcedLang) {
     const infoNoteWrap = document.getElementById("komendy-info-note-wrap");
-    if (forcedLang !== "pl") {
+    if (forcedLang !== "pl" && forcedLang !== "en") {
       if (infoNoteWrap) infoNoteWrap.hidden = false;
       return;
     }
     if (infoNoteWrap) infoNoteWrap.hidden = true;
-    document.querySelectorAll(".command-block[data-has-shots]").forEach((block) => {
+    const blockSelector = forcedLang === "pl" ? ".command-block[data-has-shots]" : ".command-block[data-has-shots-en]";
+    document.querySelectorAll(blockSelector).forEach((block) => {
       block.classList.remove("command-block--text-only");
       // .badge sets `display: inline-flex` in style.css - an author-stylesheet
       // rule, which always beats the browser's UA `[hidden]{display:none}`
@@ -925,6 +889,21 @@
       if (pendingBadge) pendingBadge.style.display = "none";
       const shots = block.querySelector(".command-block-shots");
       if (shots) shots.hidden = false;
+
+      if (forcedLang === "en") {
+        // Swap every image that has an English variant to it.
+        block.querySelectorAll("img[data-src-en]").forEach((img) => {
+          img.src = img.dataset.srcEn;
+        });
+        // Hide any sub-element without an English variant (see comment above
+        // the function for the two known gaps). Same inline-style reasoning
+        // as pendingBadge above - .command-screenshot-group has `display: flex`
+        // as an author rule in style.css, so plain `.hidden = true` would not
+        // actually hide it.
+        block.querySelectorAll("[data-en-skip]").forEach((el) => {
+          el.style.display = "none";
+        });
+      }
     });
   }
 
