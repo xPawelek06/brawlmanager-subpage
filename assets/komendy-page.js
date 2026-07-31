@@ -110,6 +110,8 @@
             <a href="#ustaw_kanal_rotacji" data-i18n="komendy.ustaw_kanal_rotacji_nav">/ustaw_kanal_rotacji</a>
             <a href="#ustaw_harmonogram_raportow" data-i18n="komendy.ustaw_harmonogram_raportow_nav">/ustaw_harmonogram_raportow</a>
             <a href="#panel_weryfikacji" data-i18n="komendy.panel_weryfikacji_nav">/panel_weryfikacji</a>
+            <a href="#panel_rekrutacji" data-i18n="komendy.panel_rekrutacji_nav">/panel_rekrutacji</a>
+            <a href="#panel_preferencji" data-i18n="komendy.panel_preferencji_nav">/panel_preferencji</a>
             <a href="#czystka_klanu" data-i18n="komendy.czystka_klanu_nav">/czystka_klanu</a>
             <a href="#ustaw_wyglad" data-i18n="komendy.ustaw_wyglad_nav">/ustaw_wyglad</a>
             <a href="#ustaw_jezyk" data-i18n="komendy.ustaw_jezyk_nav">/ustaw_jezyk</a>
@@ -424,6 +426,44 @@
                     </div>
                 </div>
 
+                <!-- /panel_rekrutacji -->
+                <!-- Brak realnych zrzutów (Paweł ich jeszcze nie dostarczył, stan na 2026-07-31) -
+                     celowo BEZ atrybutu data-has-shots="1" na .command-block poniżej, więc
+                     wireScreenshots() (patrz niżej w tym pliku) nigdy go nie dotyka i badge-pending
+                     zostaje widoczny NA STAŁE w obu językach (inaczej niż reszta komend, gdzie badge
+                     znika tylko dla PL po dodaniu zrzutów). Żeby włączyć realne screeny: dorzuć pliki
+                     assets/screenshots/panel_rekrutacji-uzycie.png i
+                     assets/screenshots/panel_rekrutacji-wynik.png, potem dopisz z powrotem atrybut
+                     data-has-shots="1" na command-block poniżej - reszta (schowanie badge'a, odkrycie
+                     .command-block-shots dla PL) zadzieje się automatycznie przez już istniejący
+                     mechanizm wireScreenshots(), bez dalszych zmian w JS. -->
+                <div class="command-block command-block--text-only" id="panel_rekrutacji">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code data-i18n="komendy.panel_rekrutacji_code">/panel_rekrutacji</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
+                        <p data-i18n="komendy.panel_rekrutacji_desc">Wysyła publiczny, dwujęzyczny (PL/EN) panel rekrutacyjny z dwoma niezależnymi przyciskami-rolami: „Szukam Klubu” (dostęp do kanału, gdzie można ogłosić swoje konto i statystyki) oraz „Lider Klubu” (dostęp do kanału promocji własnego klubu). Ponowne kliknięcie przycisku usuwa rolę.</p>
+                    </div>
+                    <div class="command-block-shots" hidden>
+                        <img src="/assets/screenshots/panel_rekrutacji-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.panel_rekrutacji_shot_usage_alt">
+                        <img src="/assets/screenshots/panel_rekrutacji-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.panel_rekrutacji_shot_result_alt">
+                    </div>
+                </div>
+
+                <!-- /panel_preferencji -->
+                <!-- Ten sam stan (brak zrzutów, celowo brak data-has-shots="1") i ten sam sposób
+                     włączenia jak przy /panel_rekrutacji wyżej - tu potrzebne pliki
+                     assets/screenshots/panel_preferencji-uzycie.png i
+                     assets/screenshots/panel_preferencji-wynik.png. -->
+                <div class="command-block command-block--text-only" id="panel_preferencji">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code data-i18n="komendy.panel_preferencji_code">/panel_preferencji</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
+                        <p data-i18n="komendy.panel_preferencji_desc">Wysyła panel preferencji społecznościowych z niezależnymi przyciskami-rolami — dowolna kombinacja naraz, ponowne kliknięcie usuwa rolę: 🔔 Ogłoszenia (ping przy ważnych newsach klubu/bota), 🇵🇱/🇬🇧 język społeczności oraz 🟢🟡🔴 poziom gry (Casual / Ranked / Pro Player).</p>
+                    </div>
+                    <div class="command-block-shots" hidden>
+                        <img src="/assets/screenshots/panel_preferencji-uzycie.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.panel_preferencji_shot_usage_alt">
+                        <img src="/assets/screenshots/panel_preferencji-wynik.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.panel_preferencji_shot_result_alt">
+                    </div>
+                </div>
+
                 <!-- /czystka_klanu -->
                 <div class="command-block command-block--text-only" id="czystka_klanu" data-has-shots="1">
                     <div class="command-block-copy">
@@ -718,6 +758,20 @@
       en: "Sends a panel with a button that lets members verify themselves (opens a form for their in-game tag).",
     },
 
+    "komendy.panel_rekrutacji_code": { pl: "/panel_rekrutacji", en: "/recruitment_panel" },
+    "komendy.panel_rekrutacji_nav": { pl: "/panel_rekrutacji", en: "/recruitment_panel" },
+    "komendy.panel_rekrutacji_desc": {
+      pl: "Wysyła publiczny, dwujęzyczny (PL/EN) panel rekrutacyjny z dwoma niezależnymi przyciskami-rolami: „Szukam Klubu” (dostęp do kanału, gdzie można ogłosić swoje konto i statystyki) oraz „Lider Klubu” (dostęp do kanału promocji własnego klubu). Ponowne kliknięcie przycisku usuwa rolę.",
+      en: "Sends a public, bilingual (PL/EN) recruitment panel with two independent role buttons: \"Looking for Clan\" (access to a channel where you can post your account and stats) and \"Clan Leader\" (access to a channel where you can promote your own clan). Clicking a button again removes the role.",
+    },
+
+    "komendy.panel_preferencji_code": { pl: "/panel_preferencji", en: "/preferences_panel" },
+    "komendy.panel_preferencji_nav": { pl: "/panel_preferencji", en: "/preferences_panel" },
+    "komendy.panel_preferencji_desc": {
+      pl: "Wysyła panel preferencji społecznościowych z niezależnymi przyciskami-rolami — dowolna kombinacja naraz, ponowne kliknięcie usuwa rolę: 🔔 Ogłoszenia (ping przy ważnych newsach klubu/bota), 🇵🇱/🇬🇧 język społeczności oraz 🟢🟡🔴 poziom gry (Casual / Ranked / Pro Player).",
+      en: "Sends a community preferences panel with independent role buttons — any combination at once, clicking again removes the role: 🔔 Announcements (get pinged for important club/bot news), 🇵🇱/🇬🇧 community language, and 🟢🟡🔴 skill level (Casual / Ranked / Pro Player).",
+    },
+
     "komendy.czystka_klanu_code": { pl: "/czystka_klanu", en: "/clan_cleanup" },
     "komendy.czystka_klanu_nav": { pl: "/czystka_klanu", en: "/clan_cleanup" },
     "komendy.czystka_klanu_desc": {
@@ -813,6 +867,12 @@
     "komendy.panel_weryfikacji_shot_usage_alt": { pl: "Wpisywanie komendy /panel_weryfikacji na Discordzie", en: "Typing the /verification_panel command on Discord" },
     "komendy.panel_weryfikacji_shot_result_alt": { pl: "Wynik komendy /panel_weryfikacji — panel z przyciskiem weryfikacji", en: "Result of /verification_panel — panel with a verify button" },
 
+    "komendy.panel_rekrutacji_shot_usage_alt": { pl: "Wpisywanie komendy /panel_rekrutacji na Discordzie", en: "Typing the /recruitment_panel command on Discord" },
+    "komendy.panel_rekrutacji_shot_result_alt": { pl: "Wynik komendy /panel_rekrutacji — panel rekrutacyjny z przyciskami ról", en: "Result of /recruitment_panel — recruitment panel with role buttons" },
+
+    "komendy.panel_preferencji_shot_usage_alt": { pl: "Wpisywanie komendy /panel_preferencji na Discordzie", en: "Typing the /preferences_panel command on Discord" },
+    "komendy.panel_preferencji_shot_result_alt": { pl: "Wynik komendy /panel_preferencji — panel preferencji społeczności", en: "Result of /preferences_panel — community preferences panel" },
+
     "komendy.czystka_klanu_shot_usage_alt": { pl: "Wpisywanie komendy /czystka_klanu na Discordzie", en: "Typing the /clan_cleanup command on Discord" },
     "komendy.czystka_klanu_shot_spelnia_caption": { pl: "Wszyscy spełniają próg", en: "Everyone meets the threshold" },
     "komendy.czystka_klanu_shot_spelnia_alt": { pl: "Wynik komendy /czystka_klanu — wszyscy członkowie spełniają próg", en: "Result of /clan_cleanup — every member meets the threshold" },
@@ -840,6 +900,11 @@
   // oba: chowa badge, odkrywa zrzuty i zdejmuje --text-only, żeby wrócić do
   // dwukolumnowego układu .command-block (patrz style.css). Analogicznie chowa
   // baner #komendy-info-note-wrap ("zrzuty wstrzymane"), bo dla PL już nieaktualny.
+  // Selektor "[data-has-shots]" oznacza więc konkretnie "PL ma już realne
+  // zrzuty" - stan 2026-07-31: 21 z 23 komend ma ten atrybut; /panel_rekrutacji
+  // i /panel_preferencji (dodane tego dnia) celowo go NIE mają, bo Paweł jeszcze
+  // nie dostarczył dla nich zrzutów - patrz komentarz przy tych blokach w
+  // TEMPLATE wyżej po instrukcję, jak włączyć zrzuty, gdy będą gotowe.
   function wireScreenshots(forcedLang) {
     const infoNoteWrap = document.getElementById("komendy-info-note-wrap");
     if (forcedLang !== "pl") {

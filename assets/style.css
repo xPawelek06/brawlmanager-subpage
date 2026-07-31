@@ -580,6 +580,21 @@ table.premium-table {
   margin-bottom: 4px;
 }
 
+/* Premium column content (bullet lists) in gold, matching the "PREMIUM"
+   header (.col-premium above) - Free column keeps the default text-muted
+   color. The table is always feature-name/Free/Premium (3 cols), so
+   :last-child reliably targets the Premium <td> in every row without
+   needing a dedicated class on each cell. Higher specificity than the
+   ".premium-table td ul" rule above (extra tbody/:last-child) so no
+   !important is needed. */
+.premium-table tbody td:last-child {
+  color: var(--gold);
+}
+
+.premium-table tbody td:last-child ul {
+  color: var(--gold);
+}
+
 .premium-cta {
   margin-top: 28px;
   background: rgba(255, 199, 44, 0.08);
