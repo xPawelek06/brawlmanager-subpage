@@ -172,7 +172,7 @@
                             Generuje obraz siatki wszystkich brawlerów w grze — odblokowani przez gracza kolorowo
                             (z odznaką rangi albo poziomem mocy w rogu), zablokowani wyszarzeni z ikoną kłódki.
                             Menu pod obrazkiem pozwala przesortować siatkę wg rangi, poziomu mocy, rzadkości albo
-                            najwyższych trofeów. Całkowicie darmowe.
+                            najwyższych trofeów.
                         </p>
                     </div>
                     <div class="command-block-shots" hidden>
@@ -247,7 +247,7 @@
                 <div class="command-block command-block--text-only" id="moje_osiagniecia" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.moje_osiagniecia_code">/moje_osiagniecia [tag_gracza]</code></div>
-                        <p data-i18n="komendy.moje_osiagniecia_desc">Odznaki i osiągnięcia gracza w klanie, liczone automatycznie z historii bota — m.in. najdłuższa seria na plusie, rekordowy dzień, staż w klanie, % ukończenia kolekcji brawlerów, najlepszy tydzień i kamienie milowe rekordu trofeów. Całkowicie darmowe.</p>
+                        <p data-i18n="komendy.moje_osiagniecia_desc">Odznaki i osiągnięcia gracza w klanie, liczone automatycznie z historii bota — m.in. najdłuższa seria na plusie, rekordowy dzień, staż w klanie, % ukończenia kolekcji brawlerów, najlepszy tydzień i kamienie milowe rekordu trofeów.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/moje_osiagniecia-uzycie.png" data-src-en="/assets/screenshots/moje_osiagniecia-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.moje_osiagniecia_shot_usage_alt">
@@ -591,8 +591,8 @@
     "komendy.brawlerzy_code": { pl: "/brawlerzy [tag_gracza]", en: "/brawlers [player_tag]" },
     "komendy.brawlerzy_nav": { pl: "/brawlerzy", en: "/brawlers" },
     "komendy.brawlerzy_desc": {
-      pl: "Generuje obraz siatki wszystkich brawlerów w grze — odblokowani przez gracza kolorowo (z odznaką rangi albo poziomem mocy w rogu), zablokowani wyszarzeni z ikoną kłódki. Menu pod obrazkiem pozwala przesortować siatkę wg rangi, poziomu mocy, rzadkości albo najwyższych trofeów. Całkowicie darmowe.",
-      en: "Generates an image grid of every brawler in the game — the ones the player has unlocked shown in color (with a rank badge or power level in the corner), locked ones grayed out with a lock icon. A menu under the image lets you re-sort the grid by rank, power level, rarity, or highest trophies. Completely free.",
+      pl: "Generuje obraz siatki wszystkich brawlerów w grze — odblokowani przez gracza kolorowo (z odznaką rangi albo poziomem mocy w rogu), zablokowani wyszarzeni z ikoną kłódki. Menu pod obrazkiem pozwala przesortować siatkę wg rangi, poziomu mocy, rzadkości albo najwyższych trofeów.",
+      en: "Generates an image grid of every brawler in the game — the ones the player has unlocked shown in color (with a rank badge or power level in the corner), locked ones grayed out with a lock icon. A menu under the image lets you re-sort the grid by rank, power level, rarity, or highest trophies.",
     },
 
     "komendy.ranking_klanu_code": { pl: "/ranking_klanu", en: "/clan_top" },
@@ -635,8 +635,8 @@
     "komendy.moje_osiagniecia_code": { pl: "/moje_osiagniecia [tag_gracza]", en: "/my_achievements [player_tag]" },
     "komendy.moje_osiagniecia_nav": { pl: "/moje_osiagniecia", en: "/my_achievements" },
     "komendy.moje_osiagniecia_desc": {
-      pl: "Odznaki i osiągnięcia gracza w klanie, liczone automatycznie z historii bota — m.in. najdłuższa seria na plusie, rekordowy dzień, staż w klanie, % ukończenia kolekcji brawlerów, najlepszy tydzień i kamienie milowe rekordu trofeów. Całkowicie darmowe.",
-      en: "A player's badges and achievements in the clan, calculated automatically from the bot's history — including longest positive streak, record day, time in the clan, brawler collection completion %, best week, and trophy record milestones. Completely free.",
+      pl: "Odznaki i osiągnięcia gracza w klanie, liczone automatycznie z historii bota — m.in. najdłuższa seria na plusie, rekordowy dzień, staż w klanie, % ukończenia kolekcji brawlerów, najlepszy tydzień i kamienie milowe rekordu trofeów.",
+      en: "A player's badges and achievements in the clan, calculated automatically from the bot's history — including longest positive streak, record day, time in the clan, brawler collection completion %, best week, and trophy record milestones.",
     },
 
     "komendy.pojedynek_code": { pl: "/pojedynek [tag_gracza_1] [tag_gracza_2]", en: "/duel [player_tag_1] [player_tag_2]" },
