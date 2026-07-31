@@ -135,7 +135,11 @@
   // i18n: nazwy trybów PL_NAZWY_TRYBOW są uzywane TYLKO gdy
   // BM_I18N.getLang() === "pl" - dla "en" render() korzysta wprost z
   // angielskiej nazwy zwróconej przez BrawlAPI (hit.name), bez osobnego
-  // słownika tłumaczeń trybów (BrawlAPI i tak jest po angielsku).
+  // słownika tłumaczeń trybów (BrawlAPI i tak jest po angielsku). Dopasowanie
+  // do BrawlAPI (a więc też EN nazwa i ikona) przechodzi przez
+  // resolveModeHit()/MODE_KEY_ALIASES_LOWER niżej - obsługuje przypadki, gdy
+  // Supercell przemianuje surowy klucz trybu, a BrawlAPI nie doda od razu
+  // nowego hasha (patrz historia "duels"/"tagTeam", "wipeout"/"deathmatch").
   function initRotation() {
     const rowsEl = document.getElementById("rotation-rows");
     const statusEl = document.getElementById("rotation-status");
@@ -218,6 +222,7 @@
       trioWipeout: "Batalia z  Tercetem",
       brawlHockey: "Hokejowa Zadyma",
       duels: "Pojedynki",
+      airHockey: "Hokejowa Zadyma",
       // Supercell zmienił nazwę wewnętrzną tego trybu na "tagTeam" w
       // surowym rotation.json (potwierdzone 2026-07-16 na produkcyjnych
       // danych bota - klucz "duels" się tam nie pojawia). Zostawiamy oba
@@ -225,6 +230,14 @@
       tagTeam: "Pojedynki",
       brawlArena: "Arena Zadymy",
       wipeout: "Batalia",
+      // Ten sam wzorzec zmiany klucza wewnętrznego co "duels" -> "tagTeam"
+      // wyżej: Supercell zaczął zwracać "deathmatch" zamiast "wipeout" w
+      // surowym rotation.json (potwierdzone 2026-07-31 - Paweł sprawdził w
+      // grze, to nadal tryb Wipe Out/Batalia). Zostawiamy oba klucze. Patrz
+      // też MODE_KEY_ALIASES_LOWER niżej - to samo przemianowanie trzeba
+      // obsłużyć osobno przy dopasowaniu do katalogu BrawlAPI (nazwa EN +
+      // ikona), bo BrawlAPI nie ma hasha "deathmatch".
+      deathmatch: "Batalia",
       treasureHunt: "Pogoń za Skarbem",
       tokenRun: "Żetonowy Wyścig",
       dodgeBrawl: "Zbijak",
@@ -252,13 +265,43 @@
     );
 
     // Ręczne dopasowania ikon dla trybów, których BrawlAPI (v1/gamemodes) nie
-    // zna pod hashem, jakiego używa Supercell w surowym rotation.json.
+    // zna pod hashem, jakiego używa Supercell w surowym rotation.json. Trzymane
+    // jako fallback obok MODE_KEY_ALIASES_LOWER niżej (ta sama para klucz-cel,
+    // na wypadek gdyby alias kiedyś nie zadziałał).
     const MANUAL_ICON_OVERRIDES_LOWER = new Map([
       ["airhockey", "https://cdn.brawlify.com/game-modes/regular/48000045.png"], // = BrawlAPI "brawlHockey"
       ["tagteam", "https://cdn.brawlify.com/game-modes/regular/48000024.png"], // = BrawlAPI "duels" (Pojedynki)
       ["wipeout", "https://cdn.brawlify.com/game-modes/regular/48000025.png"], // = BrawlAPI "wipeout" (Batalia)
-      ["deathmatch", "https://cdn.brawlify.com/game-modes/regular/48000079.png"], // luka w numeracji BrawlAPI, dopasowanie wizualne, klucz nigdy realnie nie występuje
+      // Poprawione 2026-07-31: poprzednio wskazywało zgadniętą lukę w
+      // numeracji BrawlAPI (48000079). Teraz potwierdzone (patrz
+      // MODE_KEY_ALIASES_LOWER), że "deathmatch" to ten sam tryb co
+      // "wipeout" - ten sam obrazek.
+      ["deathmatch", "https://cdn.brawlify.com/game-modes/regular/48000025.png"], // = BrawlAPI "wipeout" (Batalia)
     ]);
+
+    // Aliasy surowych kluczy trybów, których Supercell w rotation.json używa
+    // inaczej niż BrawlAPI (v1/gamemodes) w swoim katalogu - dopasowuje raw
+    // klucz do scHash, pod jakim BrawlAPI faktycznie ma dane (nazwa EN +
+    // ikona) tego samego trybu. Bez tego EN i ikona pokazują nietrafiony
+    // fallback (humanizeModeKey / brak obrazka), mimo że PL_NAZWY_TRYBOW
+    // wyżej ma już poprawny polski wpis dla obu wariantów klucza.
+    const MODE_KEY_ALIASES_LOWER = new Map([
+      ["tagteam", "duels"], // Pojedynki - Supercell zmienił "duels" -> "tagTeam"
+      ["deathmatch", "wipeout"], // Batalia / Wipe Out - "wipeout" -> "deathmatch" (potwierdzone 2026-07-31)
+    ]);
+
+    // Znajduje wpis z katalogu BrawlAPI dla danego surowego klucza trybu,
+    // próbując najpierw bezpośredniego dopasowania po hashu, a potem aliasu
+    // z MODE_KEY_ALIASES_LOWER (dla kluczy, które Supercell przemianował, a
+    // BrawlAPI jeszcze nie nadążył dodać osobnego hasha).
+    function resolveModeHit(trybKey, modesByHash) {
+      if (!trybKey) return null;
+      const lower = trybKey.toLowerCase();
+      const direct = modesByHash.get(lower);
+      if (direct) return direct;
+      const alias = MODE_KEY_ALIASES_LOWER.get(lower);
+      return (alias && modesByHash.get(alias)) || null;
+    }
 
     // "tagTeam" -> "Tag Team", "airHockey" -> "Air Hockey" itd. - używane
     // tylko gdy trybu nie ma ani w PL_NAZWY_TRYBOW, ani w danych z BrawlAPI.
@@ -324,7 +367,7 @@
 
     function modeCellHtml(trybKey, modesByHash) {
       const lang = window.BM_I18N.getLang();
-      const hit = trybKey ? modesByHash.get(trybKey.toLowerCase()) : null;
+      const hit = resolveModeHit(trybKey, modesByHash);
       const nazwa = lang === "en"
         ? ((hit && hit.name) || humanizeModeKey(trybKey))
         : ((trybKey && PL_NAZWY_TRYBOW_LOWER.get(trybKey.toLowerCase())) || (hit && hit.name) || humanizeModeKey(trybKey));
