@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-08-03T18:21:45Z",
+  "aktualizowano": "2026-08-03T20:21:45Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -9,9 +9,9 @@
     },
     {
       "tryb": "soloShowdown",
-      "mapa_poprzednia": "Flying Fantasies",
-      "mapa_aktualna": "Lilypond Grove",
-      "koniec_aktualnego_slotu": "2026-08-03T20:00:00Z"
+      "mapa_poprzednia": "Lilypond Grove",
+      "mapa_aktualna": "Crossing the Coast",
+      "koniec_aktualnego_slotu": "2026-08-04T20:00:00Z"
     },
     {
       "tryb": "gemGrab",
@@ -27,9 +27,9 @@
     },
     {
       "tryb": "duoShowdown",
-      "mapa_poprzednia": "Flying Fantasies",
-      "mapa_aktualna": "Lilypond Grove",
-      "koniec_aktualnego_slotu": "2026-08-03T20:00:00Z"
+      "mapa_poprzednia": "Lilypond Grove",
+      "mapa_aktualna": "Crossing the Coast",
+      "koniec_aktualnego_slotu": "2026-08-04T20:00:00Z"
     },
     {
       "tryb": "knockout",
@@ -81,9 +81,9 @@
     },
     {
       "tryb": "trioShowdown",
-      "mapa_poprzednia": "Flying Fantasies",
-      "mapa_aktualna": "Lilypond Grove",
-      "koniec_aktualnego_slotu": "2026-08-03T20:00:00Z"
+      "mapa_poprzednia": "Lilypond Grove",
+      "mapa_aktualna": "Crossing the Coast",
+      "koniec_aktualnego_slotu": "2026-08-04T20:00:00Z"
     },
     {
       "tryb": "brawlArena",
@@ -104,10 +104,10 @@
       "koniec_aktualnego_slotu": "2026-08-04T04:00:00Z"
     },
     {
-      "tryb": "knockout",
-      "mapa_poprzednia": "New Perspective",
-      "mapa_aktualna": "Healthy Middle Ground",
-      "koniec_aktualnego_slotu": "2026-08-03T20:00:00Z"
+      "tryb": "knockout5V5",
+      "mapa_poprzednia": "Healthy Middle Ground",
+      "mapa_aktualna": "Crescendo",
+      "koniec_aktualnego_slotu": "2026-08-03T22:00:00Z"
     }
   ]
 }
