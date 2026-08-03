@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-08-03T06:06:45Z",
+  "aktualizowano": "2026-08-03T08:21:45Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Nutmeg",
-      "mapa_aktualna": "Grass Knot",
-      "koniec_aktualnego_slotu": "2026-08-03T08:00:00Z"
+      "mapa_poprzednia": "Grass Knot",
+      "mapa_aktualna": "Match 1123581321",
+      "koniec_aktualnego_slotu": "2026-08-04T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -44,10 +44,10 @@
       "koniec_aktualnego_slotu": "2026-08-04T08:00:00Z"
     },
     {
-      "tryb": "brawlBall",
-      "mapa_poprzednia": "Mirage Arena",
-      "mapa_aktualna": "Sunny Soccer",
-      "koniec_aktualnego_slotu": "2026-08-03T08:00:00Z"
+      "tryb": "deathmatch5v5",
+      "mapa_poprzednia": "Sunny Soccer",
+      "mapa_aktualna": "Frosty tracks",
+      "koniec_aktualnego_slotu": "2026-08-05T08:00:00Z"
     },
     {
       "tryb": "tagTeam",
@@ -104,10 +104,10 @@
       "koniec_aktualnego_slotu": "2026-08-04T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-08-03T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-08-03T10:00:00Z"
     }
   ]
 }
