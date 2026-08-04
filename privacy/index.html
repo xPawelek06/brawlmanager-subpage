@@ -154,34 +154,47 @@
     <div data-lang-block="pl">
 
         <h1>Polityka Prywatności</h1>
-        <div class="subtitle">Privacy Policy – Aplikacja BrawlManager | Data aktualizacji: 25 czerwca 2026 r.</div>
+        <div class="subtitle">Privacy Policy – Aplikacja BrawlManager | Data aktualizacji: 4 sierpnia 2026 r.</div>
 
         <p>Niniejsza Polityka Prywatności określa zasady gromadzenia, przetwarzania i ochrony danych użytkowników korzystających z bota Discord <strong>BrawlManager</strong>. Dbamy o transparentność, dlatego zbieramy tylko te informacje, które są absolutnie niezbędne do działania bota.</p>
 
-        <h2>§1. Jakie dane przetwarzamy?</h2>
+        <h2>§1. Administrator danych</h2>
+        <p>Administratorem danych osobowych przetwarzanych w związku z korzystaniem z bota BrawlManager jest Paweł Łapiński, prowadzący ten projekt jako osoba fizyczna (dalej: „Administrator"). Kontakt w sprawach związanych z ochroną danych osobowych: <strong>brawlmanagerteam@gmail.com</strong> oraz za pośrednictwem dedykowanego kanału na serwerze wsparcia Discord.</p>
+
+        <h2>§2. Jakie dane przetwarzamy?</h2>
         <p>Bot przetwarza wyłącznie publicznie dostępne dane oraz dane techniczne platformy Discord i gry Brawl Stars:</p>
         <ul>
             <li><strong>Dane z platformy Discord:</strong> Identyfikator użytkownika (User ID), identyfikator serwera (Guild ID), nazwy ról oraz identyfikatory kanałów tekstowych niezbędne do wysyłania logów i raportów.</li>
             <li><strong>Dane z API Brawl Stars (Supercell):</strong> Unikalny tag gracza (#TAG), nazwa profilu w grze, statystyki pucharów, poziom doświadczenia oraz nazwa i dane Twojego klubu/klanu.</li>
         </ul>
 
-        <h2>§2. Cel przetwarzania danych</h2>
+        <h2>§3. Cel przetwarzania danych i podstawa prawna</h2>
         <p>Zebrane dane są wykorzystywane wyłącznie do prawidłowego realizowania funkcji bota:</p>
         <ul>
             <li>Automatyczna weryfikacja graczy i nadawanie odpowiednich ról na serwerze Discord na podstawie ich pucharów w Brawl Stars.</li>
             <li>Generowanie dziennych/tygodniowych raportów aktywności członków klubu w bazie danych PostgreSQL.</li>
             <li>Wyświetlanie statystyk klubowych i indywidualnych na życzenie użytkownika.</li>
         </ul>
+        <p>Podstawą prawną przetwarzania jest art. 6 ust. 1 lit. b) RODO — przetwarzanie jest niezbędne do wykonania usługi (funkcji Bota), o którą użytkownik sam wnioskuje, dodając Bota do serwera lub przechodząc proces weryfikacji. Pomocniczo, w zakresie logów technicznych i zabezpieczeń działania Bota, podstawą jest art. 6 ust. 1 lit. f) RODO — prawnie uzasadniony interes Administratora polegający na zapewnieniu bezpiecznego i poprawnego funkcjonowania usługi.</p>
 
-        <h2>§3. Przechowywanie i ochrona danych</h2>
+        <h2>§4. Przechowywanie i ochrona danych</h2>
         <p>1. Dane takie jak powiązanie Discord ID z tagiem Brawl Stars są bezpiecznie przechowywane w naszej relacyjnej bazie danych PostgreSQL hostowanej na zabezpieczonym serwerze VPS.</p>
         <p>2. Nie przechowujemy, nie żądamy i nie mamy dostępu do żadnych haseł, adresów e-mail ani prywatnych danych dostępowych do kont Discord lub Supercell ID.</p>
+        <p>3. Dane związane z weryfikacją gracza (powiązanie Discord ID z tagiem Brawl Stars) są przechowywane przez czas nieokreślony — Bot <strong>nie usuwa ich automatycznie</strong> w momencie opuszczenia serwera przez użytkownika ani usunięcia Bota z serwera przez administratora serwera. Ich usunięcie następuje wyłącznie na wniosek, zgodnie z §6 — taki wniosek jest realizowany w terminie nie dłuższym niż 30 dni od zgłoszenia. Wyjątkiem jest historia zmian liczby pucharów w czasie (wykorzystywana m.in. do wykresu trendu), którą Bot usuwa automatycznie po 90 dniach od zapisu, niezależnie od złożenia wniosku.</p>
 
-        <h2>§4. Udostępnianie danych</h2>
+        <h2>§5. Udostępnianie danych</h2>
         <p>Nigdy nie sprzedajemy, nie handlujemy ani nie udostępniamy zebranych identyfikatorów żadnym firmom zewnętrznym. Wszystkie dane służą wyłącznie wewnętrznym funkcjom aplikacji BrawlManager.</p>
 
-        <h2>§5. Prawa użytkownika</h2>
-        <p>Każdy użytkownik ma pełne prawo do wglądu w swoje dane oraz ich całkowitego usunięcia z bazy bota. Można to zrobić automatycznie poprzez opuszczenie serwera.</p>
+        <h2>§6. Prawa użytkownika</h2>
+        <p>Każdy użytkownik, którego dane przetwarzamy, ma prawo do:</p>
+        <ul>
+            <li>dostępu do swoich danych oraz uzyskania ich kopii,</li>
+            <li>sprostowania (poprawienia) danych, jeśli są nieprawidłowe,</li>
+            <li>całkowitego usunięcia swoich danych z bazy Bota — w tym celu należy zgłosić wniosek do Administratora (patrz dane kontaktowe w §1); Bot nie usuwa danych automatycznie w momencie opuszczenia serwera przez użytkownika (patrz §4 pkt 3),</li>
+            <li>ograniczenia przetwarzania oraz wniesienia sprzeciwu wobec przetwarzania opartego na art. 6 ust. 1 lit. f) RODO,</li>
+            <li>przenoszenia danych, w zakresie w jakim ma to zastosowanie.</li>
+        </ul>
+        <p>Każdemu użytkownikowi przysługuje również prawo wniesienia skargi do organu nadzorczego — Prezesa Urzędu Ochrony Danych Osobowych (ul. Stawki 2, 00-193 Warszawa, <a href="https://uodo.gov.pl">uodo.gov.pl</a>) — jeśli uzna, że przetwarzanie jego danych narusza przepisy RODO.</p>
 
         <div class="highlight-box">
             <strong>Akceptacja Polityki:</strong><br>
@@ -201,34 +214,47 @@
         </div>
 
         <h1>Privacy Policy</h1>
-        <div class="subtitle">Privacy Policy – BrawlManager Application | Last updated: June 25, 2026</div>
+        <div class="subtitle">Privacy Policy – BrawlManager Application | Last updated: August 4, 2026</div>
 
         <p>This Privacy Policy sets out the rules for collecting, processing, and protecting the data of users of the <strong>BrawlManager</strong> Discord bot. We care about transparency, so we only collect information that is strictly necessary for the Bot to function.</p>
 
-        <h2>§1. What data do we process?</h2>
+        <h2>§1. Data Controller</h2>
+        <p>The data controller for personal data processed in connection with the use of the BrawlManager bot is Paweł Łapiński, operating this project as an individual (hereinafter: the "Controller"). Contact regarding data protection matters: <strong>brawlmanagerteam@gmail.com</strong> and via the dedicated channel on the Discord support server.</p>
+
+        <h2>§2. What data do we process?</h2>
         <p>The Bot processes only publicly available data and technical data from the Discord platform and the Brawl Stars game:</p>
         <ul>
             <li><strong>Data from the Discord platform:</strong> User ID, server (Guild) ID, role names, and text channel identifiers needed to send logs and reports.</li>
             <li><strong>Data from the Brawl Stars API (Supercell):</strong> Unique player tag (#TAG), in-game profile name, trophy statistics, experience level, and the name and data of your club/clan.</li>
         </ul>
 
-        <h2>§2. Purpose of data processing</h2>
+        <h2>§3. Purpose of data processing and legal basis</h2>
         <p>The collected data is used solely to properly deliver the Bot's functions:</p>
         <ul>
             <li>Automatic player verification and assignment of appropriate roles on the Discord server based on their Brawl Stars trophies.</li>
             <li>Generating daily/weekly club member activity reports in a PostgreSQL database.</li>
             <li>Displaying club and individual statistics at the user's request.</li>
         </ul>
+        <p>The legal basis for processing is Article 6(1)(b) GDPR — processing is necessary to perform the service (Bot functions) requested by the user by adding the Bot to their server or going through the verification process. Additionally, for technical logs and security purposes, the legal basis is Article 6(1)(f) GDPR — the Controller's legitimate interest in ensuring the safe and correct operation of the service.</p>
 
-        <h2>§3. Data storage and protection</h2>
+        <h2>§4. Data storage and protection</h2>
         <p>1. Data such as the link between a Discord ID and a Brawl Stars tag is securely stored in our relational PostgreSQL database, hosted on a secured VPS server.</p>
         <p>2. We do not store, request, or have access to any passwords, e-mail addresses, or private login credentials for Discord or Supercell ID accounts.</p>
+        <p>3. Data related to player verification (the link between a Discord ID and a Brawl Stars tag) is stored for an indefinite period — the Bot <strong>does not automatically delete it</strong> when a user leaves the server or the server administrator removes the Bot. Deletion only happens upon request, per §6, and is processed within no more than 30 days of the request. The exception is the history of trophy count changes over time (used e.g. for the trend chart), which the Bot automatically deletes after 90 days from when it was recorded, regardless of any request.</p>
 
-        <h2>§4. Data sharing</h2>
+        <h2>§5. Data sharing</h2>
         <p>We never sell, trade, or share the collected identifiers with any third-party companies. All data is used exclusively for the internal functions of the BrawlManager application.</p>
 
-        <h2>§5. User rights</h2>
-        <p>Every user has the full right to access their data and to have it completely deleted from the Bot's database. This can be done automatically by leaving the server.</p>
+        <h2>§6. User rights</h2>
+        <p>Every user whose data we process has the right to:</p>
+        <ul>
+            <li>access their data and obtain a copy of it,</li>
+            <li>rectify (correct) their data if it is inaccurate,</li>
+            <li>have their data completely deleted from the Bot's database — to do so, submit a request to the Controller (see contact details in §1); the Bot does not automatically delete data when a user leaves the server (see §4(3)),</li>
+            <li>restrict processing and object to processing based on Article 6(1)(f) GDPR,</li>
+            <li>data portability, to the extent applicable.</li>
+        </ul>
+        <p>Every user also has the right to lodge a complaint with the supervisory authority — the President of the Personal Data Protection Office (Prezes Urzędu Ochrony Danych Osobowych, ul. Stawki 2, 00-193 Warsaw, Poland, <a href="https://uodo.gov.pl">uodo.gov.pl</a>) — if they believe the processing of their data violates GDPR.</p>
 
         <div class="highlight-box">
             <strong>Acceptance of the Policy:</strong><br>
