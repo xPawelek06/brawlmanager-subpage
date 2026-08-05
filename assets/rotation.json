@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-08-05T14:06:45Z",
+  "aktualizowano": "2026-08-05T16:06:45Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -50,10 +50,10 @@
       "koniec_aktualnego_slotu": "2026-08-06T08:00:00Z"
     },
     {
-      "tryb": "tagTeam",
-      "mapa_poprzednia": "Choral Chambers",
-      "mapa_aktualna": "Search and Destroy",
-      "koniec_aktualnego_slotu": "2026-08-05T16:00:00Z"
+      "tryb": "bounty",
+      "mapa_poprzednia": "Search and Destroy",
+      "mapa_aktualna": "Shooting Star",
+      "koniec_aktualnego_slotu": "2026-08-06T16:00:00Z"
     },
     {
       "tryb": "brawlBall",
@@ -104,10 +104,10 @@
       "koniec_aktualnego_slotu": "2026-08-06T04:00:00Z"
     },
     {
-      "tryb": "brawlBall",
-      "mapa_poprzednia": "Backyard Bowl",
-      "mapa_aktualna": "Beach Ball",
-      "koniec_aktualnego_slotu": "2026-08-05T16:00:00Z"
+      "tryb": "knockout",
+      "mapa_poprzednia": "Beach Ball",
+      "mapa_aktualna": "New Perspective",
+      "koniec_aktualnego_slotu": "2026-08-05T18:00:00Z"
     }
   ]
 }
