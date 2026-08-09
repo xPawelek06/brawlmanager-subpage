@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-08-09T14:06:45Z",
+  "aktualizowano": "2026-08-09T16:06:45Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -44,10 +44,10 @@
       "koniec_aktualnego_slotu": "2026-08-10T08:00:00Z"
     },
     {
-      "tryb": "tagTeam",
-      "mapa_poprzednia": "Tasty Berry",
-      "mapa_aktualna": "The Great Mighty Lou",
-      "koniec_aktualnego_slotu": "2026-08-09T16:00:00Z"
+      "tryb": "bounty",
+      "mapa_poprzednia": "The Great Mighty Lou",
+      "mapa_aktualna": "Supercut",
+      "koniec_aktualnego_slotu": "2026-08-10T16:00:00Z"
     },
     {
       "tryb": "airHockey",
@@ -80,10 +80,10 @@
       "koniec_aktualnego_slotu": "2026-08-10T04:00:00Z"
     },
     {
-      "tryb": "brawlBall",
-      "mapa_poprzednia": "Backyard Bowl",
-      "mapa_aktualna": "Beach Ball",
-      "koniec_aktualnego_slotu": "2026-08-09T16:00:00Z"
+      "tryb": "knockout",
+      "mapa_poprzednia": "Beach Ball",
+      "mapa_aktualna": "New Perspective",
+      "koniec_aktualnego_slotu": "2026-08-09T18:00:00Z"
     }
   ]
 }
