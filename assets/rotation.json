@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-08-11T06:21:45Z",
+  "aktualizowano": "2026-08-11T08:21:45Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Backyard Bowl",
-      "mapa_aktualna": "Spiraling Out",
-      "koniec_aktualnego_slotu": "2026-08-11T08:00:00Z"
+      "mapa_poprzednia": "Spiraling Out",
+      "mapa_aktualna": "Beach Ball",
+      "koniec_aktualnego_slotu": "2026-08-12T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -44,6 +44,12 @@
       "koniec_aktualnego_slotu": "2026-08-12T08:00:00Z"
     },
     {
+      "tryb": "gemGrab",
+      "mapa_poprzednia": "Wall Hugging",
+      "mapa_aktualna": "ATLAS",
+      "koniec_aktualnego_slotu": "2026-08-13T08:00:00Z"
+    },
+    {
       "tryb": "tagTeam",
       "mapa_poprzednia": "Supercut",
       "mapa_aktualna": "Shrouding Serpent",
@@ -80,10 +86,10 @@
       "koniec_aktualnego_slotu": "2026-08-12T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-08-11T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-08-11T10:00:00Z"
     }
   ]
 }
