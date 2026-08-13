@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-08-13T18:06:47Z",
+  "aktualizowano": "2026-08-13T19:06:45Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -44,9 +44,9 @@
       "koniec_aktualnego_slotu": "2026-08-15T08:00:00Z"
     },
     {
-      "tryb": "paintBrawl",
-      "mapa_poprzednia": "ATLAS",
-      "mapa_aktualna": "Greasepaint Grass",
+      "tryb": "hotZone",
+      "mapa_poprzednia": "Greasepaint Grass",
+      "mapa_aktualna": "Playmaker",
       "koniec_aktualnego_slotu": "2026-08-15T08:00:00Z"
     },
     {
