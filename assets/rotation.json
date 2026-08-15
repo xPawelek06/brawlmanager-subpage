@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-08-15T06:06:45Z",
+  "aktualizowano": "2026-08-15T08:06:45Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Pinhole Punt",
-      "mapa_aktualna": "Bustling Business",
-      "koniec_aktualnego_slotu": "2026-08-15T08:00:00Z"
+      "mapa_poprzednia": "Bustling Business",
+      "mapa_aktualna": "Nutmeg",
+      "koniec_aktualnego_slotu": "2026-08-16T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -39,15 +39,15 @@
     },
     {
       "tryb": "mechaVan",
-      "mapa_poprzednia": "Skull Creek",
-      "mapa_aktualna": "Feel the Shock",
-      "koniec_aktualnego_slotu": "2026-08-15T08:00:00Z"
+      "mapa_poprzednia": "Feel the Shock",
+      "mapa_aktualna": "Damage Destructor",
+      "koniec_aktualnego_slotu": "2026-08-17T08:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Greasepaint Grass",
-      "mapa_aktualna": "Playmaker",
-      "koniec_aktualnego_slotu": "2026-08-15T08:00:00Z"
+      "tryb": "knockout",
+      "mapa_poprzednia": "Playmaker",
+      "mapa_aktualna": "Konnakol",
+      "koniec_aktualnego_slotu": "2026-08-17T08:00:00Z"
     },
     {
       "tryb": "tagTeam",
@@ -86,10 +86,10 @@
       "koniec_aktualnego_slotu": "2026-08-16T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-08-15T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-08-15T10:00:00Z"
     }
   ]
 }
