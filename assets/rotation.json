@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-08-17T06:06:45Z",
+  "aktualizowano": "2026-08-17T08:06:46Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Nutmeg",
-      "mapa_aktualna": "Grass Knot",
-      "koniec_aktualnego_slotu": "2026-08-17T08:00:00Z"
+      "mapa_poprzednia": "Grass Knot",
+      "mapa_aktualna": "Match 1123581321",
+      "koniec_aktualnego_slotu": "2026-08-18T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -38,16 +38,22 @@
       "koniec_aktualnego_slotu": "2026-08-18T02:00:00Z"
     },
     {
-      "tryb": "mechaVan",
-      "mapa_poprzednia": "Feel the Shock",
-      "mapa_aktualna": "Damage Destructor",
-      "koniec_aktualnego_slotu": "2026-08-17T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Damage Destructor",
+      "mapa_aktualna": "Skull Creek",
+      "koniec_aktualnego_slotu": "2026-08-18T08:00:00Z"
     },
     {
-      "tryb": "knockout",
-      "mapa_poprzednia": "Playmaker",
-      "mapa_aktualna": "Konnakol",
-      "koniec_aktualnego_slotu": "2026-08-17T08:00:00Z"
+      "tryb": "bounty",
+      "mapa_poprzednia": "Konnakol",
+      "mapa_aktualna": "Wall Hugging",
+      "koniec_aktualnego_slotu": "2026-08-19T08:00:00Z"
+    },
+    {
+      "tryb": "gemGrab5V5",
+      "mapa_poprzednia": "You Gotta Push It",
+      "mapa_aktualna": "Public Transport",
+      "koniec_aktualnego_slotu": "2026-08-18T08:00:00Z"
     },
     {
       "tryb": "tagTeam",
@@ -86,10 +92,10 @@
       "koniec_aktualnego_slotu": "2026-08-18T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-08-17T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-08-17T10:00:00Z"
     }
   ]
 }
