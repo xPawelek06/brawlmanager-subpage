@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-08-20T06:06:46Z",
+  "aktualizowano": "2026-08-20T08:06:46Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Sunny Soccer",
-      "mapa_aktualna": "Super Beach",
-      "koniec_aktualnego_slotu": "2026-08-20T08:00:00Z"
+      "mapa_poprzednia": "Super Beach",
+      "mapa_aktualna": "Deadlock",
+      "koniec_aktualnego_slotu": "2026-08-21T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -44,12 +44,6 @@
       "koniec_aktualnego_slotu": "2026-08-21T08:00:00Z"
     },
     {
-      "tryb": "brawlBall",
-      "mapa_poprzednia": "Public Transport",
-      "mapa_aktualna": "Pinhole Punt",
-      "koniec_aktualnego_slotu": "2026-08-20T08:00:00Z"
-    },
-    {
       "tryb": "bounty",
       "mapa_poprzednia": "Search and Destroy",
       "mapa_aktualna": "Shooting Star",
@@ -86,10 +80,10 @@
       "koniec_aktualnego_slotu": "2026-08-21T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-08-20T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-08-20T10:00:00Z"
     }
   ]
 }
