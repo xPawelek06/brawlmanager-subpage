@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-08-21T06:06:56Z",
+  "aktualizowano": "2026-08-21T08:21:49Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Super Beach",
-      "mapa_aktualna": "Deadlock",
-      "koniec_aktualnego_slotu": "2026-08-21T08:00:00Z"
+      "mapa_poprzednia": "Deadlock",
+      "mapa_aktualna": "Triple Dribble",
+      "koniec_aktualnego_slotu": "2026-08-22T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -38,10 +38,10 @@
       "koniec_aktualnego_slotu": "2026-08-22T02:00:00Z"
     },
     {
-      "tryb": "heist",
-      "mapa_poprzednia": "Wall Hugging",
-      "mapa_aktualna": "Quintillion",
-      "koniec_aktualnego_slotu": "2026-08-21T08:00:00Z"
+      "tryb": "knockout5V5",
+      "mapa_poprzednia": "Quintillion",
+      "mapa_aktualna": "Crescendo",
+      "koniec_aktualnego_slotu": "2026-08-23T08:00:00Z"
     },
     {
       "tryb": "tagTeam",
@@ -80,10 +80,10 @@
       "koniec_aktualnego_slotu": "2026-08-22T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-08-21T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-08-21T10:00:00Z"
     }
   ]
 }
