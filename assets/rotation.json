@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-08-22T18:08:48Z",
+  "aktualizowano": "2026-08-22T20:08:49Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -9,9 +9,9 @@
     },
     {
       "tryb": "soloShowdown",
-      "mapa_poprzednia": "Skull Creek",
-      "mapa_aktualna": "Rice Field",
-      "koniec_aktualnego_slotu": "2026-08-22T20:00:00Z"
+      "mapa_poprzednia": "Rice Field",
+      "mapa_aktualna": "Molten to the Core",
+      "koniec_aktualnego_slotu": "2026-08-23T20:00:00Z"
     },
     {
       "tryb": "gemGrab",
@@ -27,9 +27,9 @@
     },
     {
       "tryb": "duoShowdown",
-      "mapa_poprzednia": "Skull Creek",
-      "mapa_aktualna": "Rice Field",
-      "koniec_aktualnego_slotu": "2026-08-22T20:00:00Z"
+      "mapa_poprzednia": "Rice Field",
+      "mapa_aktualna": "Molten to the Core",
+      "koniec_aktualnego_slotu": "2026-08-23T20:00:00Z"
     },
     {
       "tryb": "knockout",
@@ -57,9 +57,9 @@
     },
     {
       "tryb": "trioShowdown",
-      "mapa_poprzednia": "Skull Creek",
-      "mapa_aktualna": "Rice Field",
-      "koniec_aktualnego_slotu": "2026-08-22T20:00:00Z"
+      "mapa_poprzednia": "Rice Field",
+      "mapa_aktualna": "Molten to the Core",
+      "koniec_aktualnego_slotu": "2026-08-23T20:00:00Z"
     },
     {
       "tryb": "brawlArena",
@@ -80,10 +80,10 @@
       "koniec_aktualnego_slotu": "2026-08-23T04:00:00Z"
     },
     {
-      "tryb": "knockout",
-      "mapa_poprzednia": "New Perspective",
-      "mapa_aktualna": "Healthy Middle Ground",
-      "koniec_aktualnego_slotu": "2026-08-22T20:00:00Z"
+      "tryb": "knockout5V5",
+      "mapa_poprzednia": "Healthy Middle Ground",
+      "mapa_aktualna": "Crescendo",
+      "koniec_aktualnego_slotu": "2026-08-22T22:00:00Z"
     }
   ]
 }
