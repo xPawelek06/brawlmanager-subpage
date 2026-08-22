@@ -105,7 +105,8 @@
             <a href="#support" data-i18n="komendy.support_nav">/support</a>
             <a href="#ustaw_klan" data-i18n="komendy.ustaw_klan_nav">/ustaw_klan</a>
             <a href="#ustaw_prog_pucharow" data-i18n="komendy.ustaw_prog_pucharow_nav">/ustaw_prog_pucharow</a>
-            <a href="#ustaw_role_rang" data-i18n="komendy.ustaw_role_rang_nav">/ustaw_role_rang</a>
+            <a href="#ustaw_role_klanu" data-i18n="komendy.ustaw_role_klanu_nav">/ustaw_role_klanu</a>
+            <a href="#ustaw_role_rangi" data-i18n="komendy.ustaw_role_rangi_nav">/ustaw_role_rangi</a>
             <a href="#ustaw_kanal_raportow" data-i18n="komendy.ustaw_kanal_raportow_nav">/ustaw_kanal_raportow</a>
             <a href="#ustaw_kanal_rotacji" data-i18n="komendy.ustaw_kanal_rotacji_nav">/ustaw_kanal_rotacji</a>
             <a href="#ustaw_harmonogram_raportow" data-i18n="komendy.ustaw_harmonogram_raportow_nav">/ustaw_harmonogram_raportow</a>
@@ -143,7 +144,7 @@
                 <div class="command-block command-block--text-only" id="profil_bs" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.profil_bs_code">/profil_bs [tag_gracza]</code> <span class="badge badge-partial" data-i18n="common.badge_partial_premium">🔒 częściowo Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.profil_bs_desc">Karta gracza: poziom, rekordowe trofea, zwycięstwa i top 3 brawlery. Premium dorzuca dodatkowe pole z progresem od pierwszego dnia śledzenia historii.</p>
+                        <p data-i18n="komendy.profil_bs_desc">Karta gracza: poziom, rekordowe trofea, zwycięstwa, top 3 brawlery oraz Twoja aktualna ranga Ranked. Premium dorzuca dodatkowe pole z progresem od pierwszego dnia śledzenia historii.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/profil_bs-uzycie.png" data-src-en="/assets/screenshots/profil_bs-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.profil_bs_shot_usage_alt">
@@ -360,15 +361,35 @@
                     </div>
                 </div>
 
-                <!-- /ustaw_role_rang -->
-                <div class="command-block command-block--text-only" id="ustaw_role_rang" data-has-shots="1" data-has-shots-en="1">
+                <!-- /ustaw_role_klanu -->
+                <div class="command-block command-block--text-only" id="ustaw_role_klanu" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code data-i18n="komendy.ustaw_role_rang_code">/ustaw_role_rang [ranga_z_gry] [nowa_nazwa_discord]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.ustaw_role_rang_desc">Dopasowuje nazwę roli Discord do konkretnej rangi klanowej (member / senior / vicePresident / president). Odpowiedź widoczna tylko dla admina.</p>
+                        <div class="command-tag"><code data-i18n="komendy.ustaw_role_klanu_code">/ustaw_role_klanu [ranga_z_gry] [nowa_nazwa_discord]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
+                        <p data-i18n="komendy.ustaw_role_klanu_desc">Dopasowuje nazwę roli Discord do konkretnej rangi klanowej (member / senior / vicePresident / president). Odpowiedź widoczna tylko dla admina.</p>
                     </div>
                     <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/ustaw_role_rang-uzycie.png" data-src-en="/assets/screenshots/ustaw_role_rang-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_role_rang_shot_usage_alt">
-                        <img src="/assets/screenshots/ustaw_role_rang-wynik.png" data-src-en="/assets/screenshots/ustaw_role_rang-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ustaw_role_rang_shot_result_alt">
+                        <img src="/assets/screenshots/ustaw_role_rang-uzycie.png" data-src-en="/assets/screenshots/ustaw_role_rang-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_role_klanu_shot_usage_alt">
+                        <img src="/assets/screenshots/ustaw_role_rang-wynik.png" data-src-en="/assets/screenshots/ustaw_role_rang-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ustaw_role_klanu_shot_result_alt">
+                    </div>
+                </div>
+
+                <!-- /ustaw_role_rangi -->
+                <!-- Nowa komenda (2026-08-22), jeszcze BEZ realnych zrzutów ekranu -
+                     celowo BEZ data-has-shots/data-has-shots-en (w odróżnieniu od
+                     wszystkich pozostałych 21 bloków na tej stronie, które je mają):
+                     wireScreenshots() niżej selektuje bloki właśnie po tych atrybutach,
+                     żeby odkryć .command-block-shots i schować badge-pending - bez
+                     realnych plików PNG pod tymi src odkryłoby to złamane obrazki
+                     zamiast działającego "wkrótce". Gdy Paweł doda realne zrzuty,
+                     dopisać oba atrybuty na divie niżej (tak jak mają pozostałe bloki). -->
+                <div class="command-block command-block--text-only" id="ustaw_role_rangi">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code data-i18n="komendy.ustaw_role_rangi_code">/ustaw_role_rangi [prog_rangi] [rola]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
+                        <p data-i18n="komendy.ustaw_role_rangi_desc">Nadaje rolę Discord graczom, którzy osiągną wybrany próg rangi Ranked z gry (np. Diamond i wyżej) - każdy dostaje rolę swojego najwyższego spełnionego progu, nadawaną automatycznie przy weryfikacji. Konfigurację usuwa <code>/usun_role_rangi</code>.</p>
+                    </div>
+                    <div class="command-block-shots" hidden>
+                        <img src="/assets/screenshots/ustaw_role_rangi-uzycie.png" data-src-en="/assets/screenshots/ustaw_role_rangi-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_role_rangi_shot_usage_alt">
+                        <img src="/assets/screenshots/ustaw_role_rangi-wynik.png" data-src-en="/assets/screenshots/ustaw_role_rangi-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.ustaw_role_rangi_shot_result_alt">
                     </div>
                 </div>
 
@@ -571,8 +592,8 @@
     "komendy.profil_bs_code": { pl: "/profil_bs [tag_gracza]", en: "/bs_profile [player_tag]" },
     "komendy.profil_bs_nav": { pl: "/profil_bs", en: "/bs_profile" },
     "komendy.profil_bs_desc": {
-      pl: "Karta gracza: poziom, rekordowe trofea, zwycięstwa i top 3 brawlery. Premium dorzuca dodatkowe pole z progresem od pierwszego dnia śledzenia historii.",
-      en: "Player card: level, record trophies, wins, and top 3 brawlers. Premium adds an extra field showing progress since the first day of tracked history.",
+      pl: "Karta gracza: poziom, rekordowe trofea, zwycięstwa, top 3 brawlery oraz Twoja aktualna ranga Ranked. Premium dorzuca dodatkowe pole z progresem od pierwszego dnia śledzenia historii.",
+      en: "Player card: level, record trophies, wins, top 3 brawlers, and your current Ranked rank. Premium adds an extra field showing progress since the first day of tracked history.",
     },
 
     "komendy.brawlerzy_code": { pl: "/brawlerzy [tag_gracza]", en: "/brawlers [player_tag]" },
@@ -676,11 +697,18 @@
       en: "Sets the minimum trophy threshold required on this server - used by <code>/check_trophies</code>, the verification panel, and <code>/clan_cleanup</code>.",
     },
 
-    "komendy.ustaw_role_rang_code": { pl: "/ustaw_role_rang [ranga_z_gry] [nowa_nazwa_discord]", en: "/set_rank_role [game_rank] [discord_role]" },
-    "komendy.ustaw_role_rang_nav": { pl: "/ustaw_role_rang", en: "/set_rank_role" },
-    "komendy.ustaw_role_rang_desc": {
+    "komendy.ustaw_role_klanu_code": { pl: "/ustaw_role_klanu [ranga_z_gry] [nowa_nazwa_discord]", en: "/set_clan_role [game_rank] [discord_role]" },
+    "komendy.ustaw_role_klanu_nav": { pl: "/ustaw_role_klanu", en: "/set_clan_role" },
+    "komendy.ustaw_role_klanu_desc": {
       pl: "Dopasowuje nazwę roli Discord do konkretnej rangi klanowej (member / senior / vicePresident / president). Odpowiedź widoczna tylko dla admina.",
       en: "Maps a Discord role name to a specific clan rank (member / senior / vicePresident / president). The response is only visible to the admin.",
+    },
+
+    "komendy.ustaw_role_rangi_code": { pl: "/ustaw_role_rangi [prog_rangi] [rola]", en: "/set_ranked_role [rank_threshold] [role]" },
+    "komendy.ustaw_role_rangi_nav": { pl: "/ustaw_role_rangi", en: "/set_ranked_role" },
+    "komendy.ustaw_role_rangi_desc": {
+      pl: "Nadaje rolę Discord graczom, którzy osiągną wybrany próg rangi Ranked z gry (np. Diamond i wyżej) - każdy dostaje rolę swojego najwyższego spełnionego progu, nadawaną automatycznie przy weryfikacji. Konfigurację usuwa <code>/usun_role_rangi</code>.",
+      en: "Grants a Discord role to players who reach a chosen Ranked rank threshold (e.g. Diamond and above) - each player gets the role for their highest reached threshold, assigned automatically during verification. Configuration is removed with <code>/remove_ranked_role</code>.",
     },
 
     "komendy.ustaw_kanal_raportow_code": { pl: "/ustaw_kanal_raportow [kanal]", en: "/set_report_channel [channel]" },
@@ -791,8 +819,11 @@
     "komendy.ustaw_prog_pucharow_shot_usage_alt": { pl: "Wpisywanie komendy /ustaw_prog_pucharow na Discordzie", en: "Typing the /set_trophy_threshold command on Discord" },
     "komendy.ustaw_prog_pucharow_shot_result_alt": { pl: "Wynik komendy /ustaw_prog_pucharow - zaktualizowany próg", en: "Result of /set_trophy_threshold - updated threshold" },
 
-    "komendy.ustaw_role_rang_shot_usage_alt": { pl: "Wpisywanie komendy /ustaw_role_rang na Discordzie", en: "Typing the /set_rank_role command on Discord" },
-    "komendy.ustaw_role_rang_shot_result_alt": { pl: "Wynik komendy /ustaw_role_rang - rola powiązana z rangą", en: "Result of /set_rank_role - role linked to a rank" },
+    "komendy.ustaw_role_klanu_shot_usage_alt": { pl: "Wpisywanie komendy /ustaw_role_klanu na Discordzie", en: "Typing the /set_clan_role command on Discord" },
+    "komendy.ustaw_role_klanu_shot_result_alt": { pl: "Wynik komendy /ustaw_role_klanu - rola powiązana z rangą", en: "Result of /set_clan_role - role linked to a rank" },
+
+    "komendy.ustaw_role_rangi_shot_usage_alt": { pl: "Wpisywanie komendy /ustaw_role_rangi na Discordzie", en: "Typing the /set_ranked_role command on Discord" },
+    "komendy.ustaw_role_rangi_shot_result_alt": { pl: "Wynik komendy /ustaw_role_rangi - rola powiązana z progiem rangi Ranked", en: "Result of /set_ranked_role - role linked to a Ranked rank threshold" },
 
     "komendy.ustaw_kanal_raportow_shot_usage_alt": { pl: "Wpisywanie komendy /ustaw_kanal_raportow na Discordzie", en: "Typing the /set_report_channel command on Discord" },
     "komendy.ustaw_kanal_raportow_shot_result_alt": { pl: "Wynik komendy /ustaw_kanal_raportow - kanał raportów ustawiony", en: "Result of /set_report_channel - report channel set" },

@@ -163,7 +163,7 @@
                     <div class="command-item">
                         <div class="command-main">
                             <code data-i18n="home.cmd_profil_bs_code">/profil_bs [tag_gracza]</code>
-                            <p data-i18n="home.cmd_profil_bs_desc">Karta gracza: poziom, rekordowe trofea, zwycięstwa i top 3 brawlery.</p>
+                            <p data-i18n="home.cmd_profil_bs_desc">Karta gracza: poziom, rekordowe trofea, zwycięstwa, top 3 brawlery i ranga Ranked.</p>
                         </div>
                     </div>
 
@@ -250,8 +250,15 @@
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code data-i18n="home.cmd_ustaw_role_rang_code">/ustaw_role_rang [ranga] [rola]</code>
-                            <p data-i18n="home.cmd_ustaw_role_rang_desc">Dopasowuje nazwę roli Discord do konkretnej rangi klanowej (member/senior/vice/prezes).</p>
+                            <code data-i18n="home.cmd_ustaw_role_klanu_code">/ustaw_role_klanu [ranga] [rola]</code>
+                            <p data-i18n="home.cmd_ustaw_role_klanu_desc">Dopasowuje nazwę roli Discord do konkretnej rangi klanowej (member/senior/vice/prezes).</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code data-i18n="home.cmd_ustaw_role_rangi_code">/ustaw_role_rangi [prog_rangi] [rola]</code>
+                            <p data-i18n="home.cmd_ustaw_role_rangi_desc">Nadaje rolę Discord graczom, którzy osiągną wybrany próg rangi Ranked z gry.</p>
                         </div>
                     </div>
 
@@ -467,7 +474,7 @@
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <code data-i18n="home.cmd_ustaw_role_rang_code_bare">/ustaw_role_rang</code>
+                    <code data-i18n="home.cmd_ustaw_role_klanu_code_bare">/ustaw_role_klanu</code>
                     <p data-i18n="home.step3_body">Dopasuj nazwy ról Discord do rang klanowych.</p>
                 </div>
                 <div class="step">
@@ -601,8 +608,8 @@
     },
     "home.cmd_profil_bs_code": { pl: "/profil_bs [tag_gracza]", en: "/bs_profile [player_tag]" },
     "home.cmd_profil_bs_desc": {
-      pl: "Karta gracza: poziom, rekordowe trofea, zwycięstwa i top 3 brawlery.",
-      en: "Player card: level, record trophies, wins and top 3 brawlers.",
+      pl: "Karta gracza: poziom, rekordowe trofea, zwycięstwa, top 3 brawlery i ranga Ranked.",
+      en: "Player card: level, record trophies, wins, top 3 brawlers, and Ranked rank.",
     },
     "home.cmd_ranking_klanu_code": { pl: "/ranking_klanu", en: "/clan_top" },
     "home.cmd_ranking_klanu_desc": {
@@ -660,10 +667,15 @@
       pl: "Ustawia minimalny próg pucharowy wymagany na tym serwerze.",
       en: "Sets the minimum trophy threshold required on this server.",
     },
-    "home.cmd_ustaw_role_rang_code": { pl: "/ustaw_role_rang [ranga] [rola]", en: "/set_rank_role [rank] [role]" },
-    "home.cmd_ustaw_role_rang_desc": {
+    "home.cmd_ustaw_role_klanu_code": { pl: "/ustaw_role_klanu [ranga] [rola]", en: "/set_clan_role [rank] [role]" },
+    "home.cmd_ustaw_role_klanu_desc": {
       pl: "Dopasowuje nazwę roli Discord do konkretnej rangi klanowej (member/senior/vice/prezes).",
       en: "Maps a Discord role to a specific clan rank (member/senior/vice president/president).",
+    },
+    "home.cmd_ustaw_role_rangi_code": { pl: "/ustaw_role_rangi [prog_rangi] [rola]", en: "/set_ranked_role [rank_threshold] [role]" },
+    "home.cmd_ustaw_role_rangi_desc": {
+      pl: "Nadaje rolę Discord graczom, którzy osiągną wybrany próg rangi Ranked z gry.",
+      en: "Grants a Discord role to players who reach a chosen Ranked rank threshold.",
     },
     "home.cmd_ustaw_kanal_raportow_code": { pl: "/ustaw_kanal_raportow [kanał]", en: "/set_report_channel [channel]" },
     "home.cmd_ustaw_kanal_raportow_desc": {
@@ -779,7 +791,7 @@
     "home.step1_body": { pl: "Powiąż serwer z tagiem Twojego klanu Brawl Stars.", en: "Link the server with your Brawl Stars clan tag." },
     "home.cmd_ustaw_prog_pucharow_code_bare": { pl: "/ustaw_prog_pucharow", en: "/set_trophy_threshold" },
     "home.step2_body": { pl: "Ustaw minimalny wymagany próg pucharowy.", en: "Set the minimum required trophy threshold." },
-    "home.cmd_ustaw_role_rang_code_bare": { pl: "/ustaw_role_rang", en: "/set_rank_role" },
+    "home.cmd_ustaw_role_klanu_code_bare": { pl: "/ustaw_role_klanu", en: "/set_clan_role" },
     "home.step3_body": { pl: "Dopasuj nazwy ról Discord do rang klanowych.", en: "Map Discord role names to clan ranks." },
     "home.cmd_ustaw_kanal_raportow_code_bare": { pl: "/ustaw_kanal_raportow", en: "/set_report_channel" },
     "home.step4_body": { pl: "Wskaż kanał na automatyczne raporty.", en: "Choose a channel for automatic reports." },
