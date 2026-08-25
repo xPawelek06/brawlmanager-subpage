@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-08-25T16:16:39Z",
+  "aktualizowano": "2026-08-25T18:16:39Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -20,10 +20,10 @@
       "koniec_aktualnego_slotu": "2026-08-26T00:00:00Z"
     },
     {
-      "tryb": "heist",
-      "mapa_poprzednia": "Abracadabra",
-      "mapa_aktualna": "Jedna",
-      "koniec_aktualnego_slotu": "2026-08-25T18:00:00Z"
+      "tryb": "hotZone",
+      "mapa_poprzednia": "Jedna",
+      "mapa_aktualna": "In the Liminal",
+      "koniec_aktualnego_slotu": "2026-08-26T18:00:00Z"
     },
     {
       "tryb": "duoShowdown",
@@ -87,9 +87,9 @@
     },
     {
       "tryb": "knockout",
-      "mapa_poprzednia": "Beach Ball",
-      "mapa_aktualna": "New Perspective",
-      "koniec_aktualnego_slotu": "2026-08-25T18:00:00Z"
+      "mapa_poprzednia": "New Perspective",
+      "mapa_aktualna": "Healthy Middle Ground",
+      "koniec_aktualnego_slotu": "2026-08-25T20:00:00Z"
     }
   ]
 }
