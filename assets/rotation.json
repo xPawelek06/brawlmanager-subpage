@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-08-26T02:10:22Z",
+  "aktualizowano": "2026-08-26T06:10:21Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -80,16 +80,16 @@
       "koniec_aktualnego_slotu": "2026-08-26T12:00:00Z"
     },
     {
-      "tryb": "basketBrawl",
-      "mapa_poprzednia": "Solitary Deep Sea Fish",
-      "mapa_aktualna": "Ball Hog",
-      "koniec_aktualnego_slotu": "2026-08-26T04:00:00Z"
+      "tryb": "deathmatch",
+      "mapa_poprzednia": "Ball Hog",
+      "mapa_aktualna": "Palette Hangout",
+      "koniec_aktualnego_slotu": "2026-08-27T04:00:00Z"
     },
     {
-      "tryb": "airHockey",
-      "mapa_poprzednia": "Bouncy Bowl",
-      "mapa_aktualna": "Below Zero",
-      "koniec_aktualnego_slotu": "2026-08-26T04:00:00Z"
+      "tryb": "hotZone",
+      "mapa_poprzednia": "Open Business",
+      "mapa_aktualna": "Dueling Beetles",
+      "koniec_aktualnego_slotu": "2026-08-26T08:00:00Z"
     }
   ]
 }
