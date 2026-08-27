@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-08-27T06:17:49Z",
+  "aktualizowano": "2026-08-27T08:17:55Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Beach Ball",
-      "mapa_aktualna": "Pinball Dreams",
-      "koniec_aktualnego_slotu": "2026-08-27T08:00:00Z"
+      "mapa_poprzednia": "Pinball Dreams",
+      "mapa_aktualna": "Pinhole Punt",
+      "koniec_aktualnego_slotu": "2026-08-28T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -39,15 +39,15 @@
     },
     {
       "tryb": "knockout",
-      "mapa_poprzednia": "Sneaky Fields",
+      "mapa_poprzednia": "Crescendo",
       "mapa_aktualna": "Konnakol",
-      "koniec_aktualnego_slotu": "2026-08-27T08:00:00Z"
+      "koniec_aktualnego_slotu": "2026-08-29T08:00:00Z"
     },
     {
-      "tryb": "soloShowdown",
-      "mapa_poprzednia": "Ghost Point",
-      "mapa_aktualna": "Skull Creek",
-      "koniec_aktualnego_slotu": "2026-08-27T08:00:00Z"
+      "tryb": "cooking",
+      "mapa_poprzednia": "Skull Creek",
+      "mapa_aktualna": "Woktopia",
+      "koniec_aktualnego_slotu": "2026-08-29T08:00:00Z"
     },
     {
       "tryb": "tagTeam",
@@ -86,10 +86,10 @@
       "koniec_aktualnego_slotu": "2026-08-28T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-08-27T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-08-27T10:00:00Z"
     }
   ]
 }
