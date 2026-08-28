@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-08-28T20:31:16Z",
+  "aktualizowano": "2026-08-28T22:16:02Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -87,9 +87,9 @@
     },
     {
       "tryb": "knockout5V5",
-      "mapa_poprzednia": "Beach Ball",
-      "mapa_aktualna": "Crescendo",
-      "koniec_aktualnego_slotu": "2026-08-28T22:00:00Z"
+      "mapa_poprzednia": "Crescendo",
+      "mapa_aktualna": "Journey of a Thousand Steps",
+      "koniec_aktualnego_slotu": "2026-08-29T00:00:00Z"
     }
   ]
 }
