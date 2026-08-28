@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-08-28T12:19:41Z",
+  "aktualizowano": "2026-08-28T20:31:16Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -9,9 +9,9 @@
     },
     {
       "tryb": "soloShowdown",
-      "mapa_poprzednia": "Starfruit Supernova",
-      "mapa_aktualna": "Truth",
-      "koniec_aktualnego_slotu": "2026-08-28T20:00:00Z"
+      "mapa_poprzednia": "Truth",
+      "mapa_aktualna": "Feast or Famine",
+      "koniec_aktualnego_slotu": "2026-08-29T20:00:00Z"
     },
     {
       "tryb": "gemGrab",
@@ -20,16 +20,16 @@
       "koniec_aktualnego_slotu": "2026-08-29T00:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Hot Potato",
-      "mapa_aktualna": "Reach for the Stars",
-      "koniec_aktualnego_slotu": "2026-08-28T18:00:00Z"
+      "tryb": "heist",
+      "mapa_poprzednia": "Reach for the Stars",
+      "mapa_aktualna": "Quintillion",
+      "koniec_aktualnego_slotu": "2026-08-29T18:00:00Z"
     },
     {
       "tryb": "duoShowdown",
-      "mapa_poprzednia": "Starfruit Supernova",
-      "mapa_aktualna": "Truth",
-      "koniec_aktualnego_slotu": "2026-08-28T20:00:00Z"
+      "mapa_poprzednia": "Truth",
+      "mapa_aktualna": "Feast or Famine",
+      "koniec_aktualnego_slotu": "2026-08-29T20:00:00Z"
     },
     {
       "tryb": "knockout",
@@ -50,10 +50,10 @@
       "koniec_aktualnego_slotu": "2026-08-29T08:00:00Z"
     },
     {
-      "tryb": "bounty",
-      "mapa_poprzednia": "Jumpscare Lair",
-      "mapa_aktualna": "Watermelons",
-      "koniec_aktualnego_slotu": "2026-08-28T16:00:00Z"
+      "tryb": "tagTeam",
+      "mapa_poprzednia": "Watermelons",
+      "mapa_aktualna": "Warrior's Way",
+      "koniec_aktualnego_slotu": "2026-08-29T16:00:00Z"
     },
     {
       "tryb": "airHockey",
@@ -63,15 +63,15 @@
     },
     {
       "tryb": "trioShowdown",
-      "mapa_poprzednia": "Starfruit Supernova",
-      "mapa_aktualna": "Truth",
-      "koniec_aktualnego_slotu": "2026-08-28T20:00:00Z"
+      "mapa_poprzednia": "Truth",
+      "mapa_aktualna": "Feast or Famine",
+      "koniec_aktualnego_slotu": "2026-08-29T20:00:00Z"
     },
     {
       "tryb": "brawlArena",
-      "mapa_poprzednia": "Kaiju Lake",
-      "mapa_aktualna": "Crimson Divide",
-      "koniec_aktualnego_slotu": "2026-08-28T14:00:00Z"
+      "mapa_poprzednia": "Crimson Divide",
+      "mapa_aktualna": "Silver Highlands",
+      "koniec_aktualnego_slotu": "2026-08-29T14:00:00Z"
     },
     {
       "tryb": "deathmatch5v5",
@@ -86,10 +86,10 @@
       "koniec_aktualnego_slotu": "2026-08-29T04:00:00Z"
     },
     {
-      "tryb": "brawlBall",
-      "mapa_poprzednia": "Makeshift Scaffolding",
-      "mapa_aktualna": "Backyard Bowl",
-      "koniec_aktualnego_slotu": "2026-08-28T14:00:00Z"
+      "tryb": "knockout5V5",
+      "mapa_poprzednia": "Beach Ball",
+      "mapa_aktualna": "Crescendo",
+      "koniec_aktualnego_slotu": "2026-08-28T22:00:00Z"
     }
   ]
 }
