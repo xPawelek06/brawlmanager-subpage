@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-08-29T06:16:01Z",
+  "aktualizowano": "2026-08-29T08:16:08Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Pinhole Punt",
-      "mapa_aktualna": "Bustling Business",
-      "koniec_aktualnego_slotu": "2026-08-29T08:00:00Z"
+      "mapa_poprzednia": "Bustling Business",
+      "mapa_aktualna": "Nutmeg",
+      "koniec_aktualnego_slotu": "2026-08-30T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -38,16 +38,16 @@
       "koniec_aktualnego_slotu": "2026-08-30T02:00:00Z"
     },
     {
-      "tryb": "knockout",
-      "mapa_poprzednia": "Crescendo",
-      "mapa_aktualna": "Konnakol",
-      "koniec_aktualnego_slotu": "2026-08-29T08:00:00Z"
+      "tryb": "hotZone",
+      "mapa_poprzednia": "Konnakol",
+      "mapa_aktualna": "Golden Bay",
+      "koniec_aktualnego_slotu": "2026-08-31T08:00:00Z"
     },
     {
       "tryb": "cooking",
-      "mapa_poprzednia": "Skull Creek",
-      "mapa_aktualna": "Woktopia",
-      "koniec_aktualnego_slotu": "2026-08-29T08:00:00Z"
+      "mapa_poprzednia": "Woktopia",
+      "mapa_aktualna": "Cloud Kitchen",
+      "koniec_aktualnego_slotu": "2026-08-31T08:00:00Z"
     },
     {
       "tryb": "tagTeam",
@@ -86,10 +86,10 @@
       "koniec_aktualnego_slotu": "2026-08-30T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-08-29T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-08-29T10:00:00Z"
     }
   ]
 }
