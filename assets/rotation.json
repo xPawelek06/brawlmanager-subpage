@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-08-30T06:16:02Z",
+  "aktualizowano": "2026-08-30T08:16:07Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Bustling Business",
-      "mapa_aktualna": "Nutmeg",
-      "koniec_aktualnego_slotu": "2026-08-30T08:00:00Z"
+      "mapa_poprzednia": "Nutmeg",
+      "mapa_aktualna": "Grass Knot",
+      "koniec_aktualnego_slotu": "2026-08-31T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -86,10 +86,10 @@
       "koniec_aktualnego_slotu": "2026-08-31T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-08-30T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-08-30T10:00:00Z"
     }
   ]
 }
