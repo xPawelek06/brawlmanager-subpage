@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-09-01T04:16:08Z",
+  "aktualizowano": "2026-09-01T08:01:32Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -69,27 +69,27 @@
     },
     {
       "tryb": "brawlArena",
-      "mapa_poprzednia": "The Smackdome",
-      "mapa_aktualna": "Arena of Glory",
+      "mapa_poprzednia": "Arena of Glory",
+      "mapa_aktualna": null,
       "koniec_aktualnego_slotu": "2026-09-01T14:00:00Z"
     },
     {
       "tryb": "deathmatch5v5",
-      "mapa_poprzednia": "Insane Streamer",
-      "mapa_aktualna": "Slippery road",
+      "mapa_poprzednia": "Slippery road",
+      "mapa_aktualna": "Island Of Finality",
       "koniec_aktualnego_slotu": "2026-09-01T12:00:00Z"
     },
     {
       "tryb": "deathmatch",
-      "mapa_poprzednia": "Turnover",
-      "mapa_aktualna": "Solitary Deep Sea Fish",
+      "mapa_poprzednia": "Solitary Deep Sea Fish",
+      "mapa_aktualna": "Time Flies",
       "koniec_aktualnego_slotu": "2026-09-02T04:00:00Z"
     },
     {
       "tryb": "hotZone",
-      "mapa_poprzednia": "Below Zero",
-      "mapa_aktualna": "Open Business",
-      "koniec_aktualnego_slotu": "2026-09-01T06:00:00Z"
+      "mapa_poprzednia": "Open Business",
+      "mapa_aktualna": "Dueling Beetles",
+      "koniec_aktualnego_slotu": "2026-09-01T08:00:00Z"
     }
   ]
 }
