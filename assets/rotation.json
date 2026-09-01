@@ -1,17 +1,17 @@
 {
-  "aktualizowano": "2026-09-01T08:01:32Z",
+  "aktualizowano": "2026-09-01T08:16:13Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Grass Knot",
-      "mapa_aktualna": "Match 1123581321",
-      "koniec_aktualnego_slotu": "2026-09-01T08:00:00Z"
+      "mapa_poprzednia": "Match 1123581321",
+      "mapa_aktualna": "Sunny Soccer",
+      "koniec_aktualnego_slotu": "2026-09-02T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
-      "mapa_poprzednia": "Lilypond Grove",
-      "mapa_aktualna": "Skull Creek",
-      "koniec_aktualnego_slotu": "2026-09-01T08:00:00Z"
+      "mapa_poprzednia": "Skull Creek",
+      "mapa_aktualna": "Dune Drift",
+      "koniec_aktualnego_slotu": "2026-09-02T08:00:00Z"
     },
     {
       "tryb": "gemGrab",
@@ -69,8 +69,8 @@
     },
     {
       "tryb": "brawlArena",
-      "mapa_poprzednia": "Arena of Glory",
-      "mapa_aktualna": null,
+      "mapa_poprzednia": null,
+      "mapa_aktualna": "Triple Threat",
       "koniec_aktualnego_slotu": "2026-09-01T14:00:00Z"
     },
     {
@@ -86,10 +86,10 @@
       "koniec_aktualnego_slotu": "2026-09-02T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-09-01T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-09-01T10:00:00Z"
     }
   ]
 }
