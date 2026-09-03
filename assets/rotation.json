@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-09-03T06:01:05Z",
+  "aktualizowano": "2026-09-03T08:01:18Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Sunny Soccer",
-      "mapa_aktualna": "Super Beach",
-      "koniec_aktualnego_slotu": "2026-09-03T08:00:00Z"
+      "mapa_poprzednia": "Super Beach",
+      "mapa_aktualna": "Pump It Up",
+      "koniec_aktualnego_slotu": "2026-09-04T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -38,16 +38,10 @@
       "koniec_aktualnego_slotu": "2026-09-04T02:00:00Z"
     },
     {
-      "tryb": "gemGrab5V5",
-      "mapa_poprzednia": "Skull Creek",
-      "mapa_aktualna": "Public Transport",
-      "koniec_aktualnego_slotu": "2026-09-03T08:00:00Z"
-    },
-    {
-      "tryb": "cooking",
-      "mapa_poprzednia": "Mill & Chill",
-      "mapa_aktualna": "Turbine Terrace",
-      "koniec_aktualnego_slotu": "2026-09-03T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Public Transport",
+      "mapa_aktualna": "Acid Lakes",
+      "koniec_aktualnego_slotu": "2026-09-04T08:00:00Z"
     },
     {
       "tryb": "bounty",
@@ -86,10 +80,10 @@
       "koniec_aktualnego_slotu": "2026-09-04T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-09-03T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-09-03T10:00:00Z"
     }
   ]
 }
