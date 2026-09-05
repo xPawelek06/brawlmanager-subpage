@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-09-05T06:16:07Z",
+  "aktualizowano": "2026-09-05T08:16:20Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Pump It Up",
-      "mapa_aktualna": "Triple Dribble",
-      "koniec_aktualnego_slotu": "2026-09-05T08:00:00Z"
+      "mapa_poprzednia": "Triple Dribble",
+      "mapa_aktualna": "Sneaky Fields",
+      "koniec_aktualnego_slotu": "2026-09-06T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -39,9 +39,9 @@
     },
     {
       "tryb": "soloShowdown",
-      "mapa_poprzednia": "Public Transport",
-      "mapa_aktualna": "Acid Lakes",
-      "koniec_aktualnego_slotu": "2026-09-05T08:00:00Z"
+      "mapa_poprzednia": "Acid Lakes",
+      "mapa_aktualna": "Erratic Blocks",
+      "koniec_aktualnego_slotu": "2026-09-06T08:00:00Z"
     },
     {
       "tryb": "bounty",
@@ -80,10 +80,10 @@
       "koniec_aktualnego_slotu": "2026-09-06T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-09-05T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-09-05T10:00:00Z"
     }
   ]
 }
