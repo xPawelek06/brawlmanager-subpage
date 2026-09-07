@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-09-07T06:16:04Z",
+  "aktualizowano": "2026-09-07T08:16:12Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Sneaky Fields",
-      "mapa_aktualna": "Backyard Bowl",
-      "koniec_aktualnego_slotu": "2026-09-07T08:00:00Z"
+      "mapa_poprzednia": "Backyard Bowl",
+      "mapa_aktualna": "Spiraling Out",
+      "koniec_aktualnego_slotu": "2026-09-08T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -39,9 +39,9 @@
     },
     {
       "tryb": "soloShowdown",
-      "mapa_poprzednia": "Erratic Blocks",
-      "mapa_aktualna": "Hot Maze",
-      "koniec_aktualnego_slotu": "2026-09-07T08:00:00Z"
+      "mapa_poprzednia": "Hot Maze",
+      "mapa_aktualna": "Will of the Wisp",
+      "koniec_aktualnego_slotu": "2026-09-08T08:00:00Z"
     },
     {
       "tryb": "bounty",
@@ -80,10 +80,10 @@
       "koniec_aktualnego_slotu": "2026-09-08T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-09-07T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-09-07T10:00:00Z"
     }
   ]
 }
