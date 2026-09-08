@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-09-07T22:16:08Z",
+  "aktualizowano": "2026-09-08T00:16:22Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -15,9 +15,9 @@
     },
     {
       "tryb": "gemGrab",
-      "mapa_poprzednia": "On a Roll",
-      "mapa_aktualna": "Local Restaurants",
-      "koniec_aktualnego_slotu": "2026-09-08T00:00:00Z"
+      "mapa_poprzednia": "Local Restaurants",
+      "mapa_aktualna": "Double Swoosh",
+      "koniec_aktualnego_slotu": "2026-09-09T00:00:00Z"
     },
     {
       "tryb": "heist",
@@ -80,10 +80,10 @@
       "koniec_aktualnego_slotu": "2026-09-08T04:00:00Z"
     },
     {
-      "tryb": "knockout5V5",
-      "mapa_poprzednia": "Crescendo",
-      "mapa_aktualna": "Journey of a Thousand Steps",
-      "koniec_aktualnego_slotu": "2026-09-08T00:00:00Z"
+      "tryb": "airHockey",
+      "mapa_poprzednia": "Journey of a Thousand Steps",
+      "mapa_aktualna": "Bouncy Bowl",
+      "koniec_aktualnego_slotu": "2026-09-08T02:00:00Z"
     }
   ]
 }
