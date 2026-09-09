@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-09-09T10:16:09Z",
+  "aktualizowano": "2026-09-09T12:16:15Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -68,10 +68,10 @@
       "koniec_aktualnego_slotu": "2026-09-09T14:00:00Z"
     },
     {
-      "tryb": "brawlBall5V5",
-      "mapa_poprzednia": "The Emptiness Machine",
-      "mapa_aktualna": "Insane Streamer",
-      "koniec_aktualnego_slotu": "2026-09-09T12:00:00Z"
+      "tryb": "deathmatch5v5",
+      "mapa_poprzednia": "Insane Streamer",
+      "mapa_aktualna": "Island Of Finality",
+      "koniec_aktualnego_slotu": "2026-09-10T12:00:00Z"
     },
     {
       "tryb": "deathmatch",
@@ -80,10 +80,10 @@
       "koniec_aktualnego_slotu": "2026-09-10T04:00:00Z"
     },
     {
-      "tryb": "soloShowdown",
-      "mapa_poprzednia": "Flying Fantasies",
-      "mapa_aktualna": "Makeshift Scaffolding",
-      "koniec_aktualnego_slotu": "2026-09-09T12:00:00Z"
+      "tryb": "brawlBall",
+      "mapa_poprzednia": "Makeshift Scaffolding",
+      "mapa_aktualna": "Backyard Bowl",
+      "koniec_aktualnego_slotu": "2026-09-09T14:00:00Z"
     }
   ]
 }
