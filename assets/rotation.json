@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-09-09T06:16:08Z",
+  "aktualizowano": "2026-09-09T08:16:28Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Spiraling Out",
-      "mapa_aktualna": "Beach Ball",
-      "koniec_aktualnego_slotu": "2026-09-09T08:00:00Z"
+      "mapa_poprzednia": "Beach Ball",
+      "mapa_aktualna": "Pinball Dreams",
+      "koniec_aktualnego_slotu": "2026-09-10T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -39,9 +39,9 @@
     },
     {
       "tryb": "soloShowdown",
-      "mapa_poprzednia": "Will of the Wisp",
-      "mapa_aktualna": "Doom Shroom",
-      "koniec_aktualnego_slotu": "2026-09-09T08:00:00Z"
+      "mapa_poprzednia": "Doom Shroom",
+      "mapa_aktualna": "Twisting Vines",
+      "koniec_aktualnego_slotu": "2026-09-10T08:00:00Z"
     },
     {
       "tryb": "bounty",
@@ -80,10 +80,10 @@
       "koniec_aktualnego_slotu": "2026-09-10T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-09-09T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-09-09T10:00:00Z"
     }
   ]
 }
