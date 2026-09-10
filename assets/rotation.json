@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-09-10T02:01:09Z",
+  "aktualizowano": "2026-09-10T04:01:09Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -74,16 +74,16 @@
       "koniec_aktualnego_slotu": "2026-09-10T12:00:00Z"
     },
     {
-      "tryb": "deathmatch",
-      "mapa_poprzednia": "Turnover",
-      "mapa_aktualna": "Time Flies",
-      "koniec_aktualnego_slotu": "2026-09-10T04:00:00Z"
+      "tryb": "basketBrawl",
+      "mapa_poprzednia": "Time Flies",
+      "mapa_aktualna": "Ball Hog",
+      "koniec_aktualnego_slotu": "2026-09-11T04:00:00Z"
     },
     {
-      "tryb": "airHockey",
-      "mapa_poprzednia": "Bouncy Bowl",
-      "mapa_aktualna": "Below Zero",
-      "koniec_aktualnego_slotu": "2026-09-10T04:00:00Z"
+      "tryb": "hotZone",
+      "mapa_poprzednia": "Below Zero",
+      "mapa_aktualna": "Open Business",
+      "koniec_aktualnego_slotu": "2026-09-10T06:00:00Z"
     }
   ]
 }
