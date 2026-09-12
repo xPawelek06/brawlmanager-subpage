@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-09-12T10:04:30Z",
+  "aktualizowano": "2026-09-12T12:04:31Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -80,10 +80,10 @@
       "koniec_aktualnego_slotu": "2026-09-12T14:00:00Z"
     },
     {
-      "tryb": "brawlBall5V5",
-      "mapa_poprzednia": "Crescendo",
-      "mapa_aktualna": "Siberian Stand Off",
-      "koniec_aktualnego_slotu": "2026-09-12T12:00:00Z"
+      "tryb": "deathmatch5v5",
+      "mapa_poprzednia": "Siberian Stand Off",
+      "mapa_aktualna": "Hee Hee",
+      "koniec_aktualnego_slotu": "2026-09-13T12:00:00Z"
     },
     {
       "tryb": "basketBrawl",
@@ -92,10 +92,10 @@
       "koniec_aktualnego_slotu": "2026-09-13T04:00:00Z"
     },
     {
-      "tryb": "soloShowdown",
-      "mapa_poprzednia": "Flying Fantasies",
-      "mapa_aktualna": "Makeshift Scaffolding",
-      "koniec_aktualnego_slotu": "2026-09-12T12:00:00Z"
+      "tryb": "brawlBall",
+      "mapa_poprzednia": "Makeshift Scaffolding",
+      "mapa_aktualna": "Backyard Bowl",
+      "koniec_aktualnego_slotu": "2026-09-12T14:00:00Z"
     }
   ]
 }
