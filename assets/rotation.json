@@ -1,89 +1,101 @@
 {
-  "aktualizowano": "2026-08-22T10:06:49Z",
+  "aktualizowano": "2026-09-14T08:12:39Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Triple Dribble",
-      "mapa_aktualna": "Sneaky Fields",
-      "koniec_aktualnego_slotu": "2026-08-23T08:00:00Z"
-    },
-    {
-      "tryb": "soloShowdown",
-      "mapa_poprzednia": "Skull Creek",
-      "mapa_aktualna": "Rice Field",
-      "koniec_aktualnego_slotu": "2026-08-22T20:00:00Z"
-    },
-    {
-      "tryb": "gemGrab",
-      "mapa_poprzednia": "Undermine",
-      "mapa_aktualna": "Whisper Vale",
-      "koniec_aktualnego_slotu": "2026-08-23T00:00:00Z"
-    },
-    {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Photic Doom",
-      "mapa_aktualna": "Golden Bay",
-      "koniec_aktualnego_slotu": "2026-08-22T18:00:00Z"
-    },
-    {
-      "tryb": "duoShowdown",
-      "mapa_poprzednia": "Skull Creek",
-      "mapa_aktualna": "Rice Field",
-      "koniec_aktualnego_slotu": "2026-08-22T20:00:00Z"
-    },
-    {
-      "tryb": "knockout",
-      "mapa_poprzednia": "Double Decker",
-      "mapa_aktualna": "New Perspective",
-      "koniec_aktualnego_slotu": "2026-08-23T02:00:00Z"
-    },
-    {
-      "tryb": "knockout5V5",
-      "mapa_poprzednia": "Quintillion",
-      "mapa_aktualna": "Crescendo",
-      "koniec_aktualnego_slotu": "2026-08-23T08:00:00Z"
-    },
-    {
-      "tryb": "bounty",
-      "mapa_poprzednia": "No Surrender",
-      "mapa_aktualna": "Tasty Berry",
-      "koniec_aktualnego_slotu": "2026-08-22T16:00:00Z"
-    },
-    {
-      "tryb": "airHockey",
-      "mapa_poprzednia": "Slippery Showdown",
-      "mapa_aktualna": "Arabesque",
-      "koniec_aktualnego_slotu": "2026-08-23T10:00:00Z"
-    },
-    {
-      "tryb": "trioShowdown",
-      "mapa_poprzednia": "Skull Creek",
-      "mapa_aktualna": "Rice Field",
-      "koniec_aktualnego_slotu": "2026-08-22T20:00:00Z"
-    },
-    {
-      "tryb": "brawlArena",
-      "mapa_poprzednia": "Crimson Divide",
-      "mapa_aktualna": "Silver Highlands",
-      "koniec_aktualnego_slotu": "2026-08-22T14:00:00Z"
-    },
-    {
-      "tryb": "brawlBall5V5",
-      "mapa_poprzednia": "Rastermind",
-      "mapa_aktualna": "Insane Streamer",
-      "koniec_aktualnego_slotu": "2026-08-22T12:00:00Z"
-    },
-    {
-      "tryb": "deathmatch",
-      "mapa_poprzednia": "Pocket Pass",
-      "mapa_aktualna": "Attrition",
-      "koniec_aktualnego_slotu": "2026-08-23T04:00:00Z"
+      "mapa_poprzednia": "Grass Knot",
+      "mapa_aktualna": "Match 1123581321",
+      "koniec_aktualnego_slotu": "2026-09-15T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
       "mapa_poprzednia": "Flying Fantasies",
-      "mapa_aktualna": "Makeshift Scaffolding",
-      "koniec_aktualnego_slotu": "2026-08-22T12:00:00Z"
+      "mapa_aktualna": "Lilypond Grove",
+      "koniec_aktualnego_slotu": "2026-09-14T20:00:00Z"
+    },
+    {
+      "tryb": "gemGrab",
+      "mapa_poprzednia": "Lilygear Lake",
+      "mapa_aktualna": "Bottom Two",
+      "koniec_aktualnego_slotu": "2026-09-15T00:00:00Z"
+    },
+    {
+      "tryb": "heist",
+      "mapa_poprzednia": "Parallel Plays",
+      "mapa_aktualna": "Photic Doom",
+      "koniec_aktualnego_slotu": "2026-09-14T18:00:00Z"
+    },
+    {
+      "tryb": "duoShowdown",
+      "mapa_poprzednia": "Flying Fantasies",
+      "mapa_aktualna": "Lilypond Grove",
+      "koniec_aktualnego_slotu": "2026-09-14T20:00:00Z"
+    },
+    {
+      "tryb": "knockout",
+      "mapa_poprzednia": "Call of the Water",
+      "mapa_aktualna": "Stroke of Luck",
+      "koniec_aktualnego_slotu": "2026-09-15T02:00:00Z"
+    },
+    {
+      "tryb": "tagTeam",
+      "mapa_poprzednia": "Layer Cake",
+      "mapa_aktualna": "False Sense Of Security",
+      "koniec_aktualnego_slotu": "2026-09-14T16:00:00Z"
+    },
+    {
+      "tryb": "brawlBall",
+      "mapa_poprzednia": "Layer Cake",
+      "mapa_aktualna": "Grass Knot",
+      "koniec_aktualnego_slotu": "2026-09-22T08:00:00Z"
+    },
+    {
+      "tryb": "knockout",
+      "mapa_poprzednia": "Ring of Fire",
+      "mapa_aktualna": "Flaring Phoenix",
+      "koniec_aktualnego_slotu": "2026-09-22T08:00:00Z"
+    },
+    {
+      "tryb": "bounty",
+      "mapa_poprzednia": "New Horizons",
+      "mapa_aktualna": "Shooting Star",
+      "koniec_aktualnego_slotu": "2026-09-22T08:00:00Z"
+    },
+    {
+      "tryb": "airHockey",
+      "mapa_poprzednia": "Cabin Fever",
+      "mapa_aktualna": "Net Presence",
+      "koniec_aktualnego_slotu": "2026-09-14T10:00:00Z"
+    },
+    {
+      "tryb": "trioShowdown",
+      "mapa_poprzednia": "Flying Fantasies",
+      "mapa_aktualna": "Lilypond Grove",
+      "koniec_aktualnego_slotu": "2026-09-14T20:00:00Z"
+    },
+    {
+      "tryb": "brawlArena",
+      "mapa_poprzednia": "Knockout Grounds",
+      "mapa_aktualna": "The Smackdome",
+      "koniec_aktualnego_slotu": "2026-09-14T14:00:00Z"
+    },
+    {
+      "tryb": "knockout5V5",
+      "mapa_poprzednia": "Hee Hee",
+      "mapa_aktualna": "Brawlerverse",
+      "koniec_aktualnego_slotu": "2026-09-14T12:00:00Z"
+    },
+    {
+      "tryb": "basketBrawl",
+      "mapa_poprzednia": "WALKING ON HOT SAND",
+      "mapa_aktualna": "Pocket Pass",
+      "koniec_aktualnego_slotu": "2026-09-15T04:00:00Z"
+    },
+    {
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-09-14T10:00:00Z"
     }
   ]
 }
