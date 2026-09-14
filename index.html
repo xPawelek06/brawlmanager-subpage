@@ -86,8 +86,9 @@
                     <div class="feature-icon">📊</div>
                     <h3 data-i18n="home.feature2_title">Raporty tygodniowe i miesięczne</h3>
                     <p data-i18n="home.feature2_body">
-                        Automatyczne podsumowania aktywności klanu trafiają na wybrany kanał -
-                        bez ręcznego liczenia, kto zagrał, a kto nie.
+                        Automatyczny raport co tydzień (kto zagrał, kto poniżej progu, top 3, MVP) i co miesiąc
+                        (podium, wyróżnienia, najlepszy dzień) trafia sam na wybrany kanał. Premium dorzuca
+                        wykres PNG trendu klanu i prognozę pucharów na kolejne 30 dni.
                     </p>
                 </div>
 
@@ -95,8 +96,9 @@
                     <div class="feature-icon">📈</div>
                     <h3 data-i18n="home.feature3_title">Statystyki gracza i klanu</h3>
                     <p data-i18n="home.feature3_body">
-                        Karta gracza, ranking top 10 klanu, pozycja w rankingu, osobisty cel pucharowy,
-                        odznaki i pojedynki 1:1 między członkami - jedną komendą, bez wchodzenia w grę.
+                        Karta gracza, pełna lista klanu, podsumowanie ostatnich bitew, ranking światowy,
+                        osobisty cel pucharowy, odznaki oraz pojedynki 1:1 - między graczami albo całymi
+                        klanami - jedną komendą, bez wchodzenia w grę.
                     </p>
                 </div>
 
@@ -135,6 +137,16 @@
                         (<code>/ustaw_jezyk</code>) dla całego serwera.
                     </p>
                 </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 data-i18n="home.feature8_title">Wspólny cel klanu</h3>
+                    <p data-i18n="home.feature8_body">
+                        <code>/utworz_cel_klanu</code> ustawia jeden wspólny cel przyrostu trofeów dla całego
+                        klanu, z nagrodą (rola, ogłoszenie) po osiągnięciu - bot sam liczy postęp całego
+                        klanu i ogłasza wynik. Darmowe.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -169,15 +181,29 @@
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code data-i18n="home.cmd_ranking_klanu_code">/ranking_klanu</code>
-                            <p data-i18n="home.cmd_ranking_klanu_desc">Pokazuje pierwszą dziesiątkę klanu posortowaną wg trofeów.</p>
+                            <code data-i18n="home.cmd_brawlerzy_code">/brawlerzy [tag_gracza]</code>
+                            <p data-i18n="home.cmd_brawlerzy_desc">Graficzna siatka wszystkich brawlerów gracza - odblokowani kolorowo (z rangą lub poziomem mocy), zablokowani wyszarzeni. Sortowanie: ranga / moc / rzadkość / trofea.</p>
                         </div>
                     </div>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code data-i18n="home.cmd_brawlerzy_code">/brawlerzy [tag_gracza]</code>
-                            <p data-i18n="home.cmd_brawlerzy_desc">Graficzna siatka wszystkich brawlerów gracza - odblokowani kolorowo (z rangą lub poziomem mocy), zablokowani wyszarzeni. Sortowanie: ranga / moc / rzadkość / trofea.</p>
+                            <code data-i18n="home.cmd_podsumowanie_bitew_code">/podsumowanie_bitew [tag_gracza]</code>
+                            <p data-i18n="home.cmd_podsumowanie_bitew_desc">Wizualna karta ostatnich bitew gracza - wynik, tryb, brawler i puchary/Elo dla każdego meczu z battlelogu.</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code data-i18n="home.cmd_czlonkowie_klanu_code">/czlonkowie_klanu</code>
+                            <p data-i18n="home.cmd_czlonkowie_klanu_desc">Pokazuje WSZYSTKICH członków klanu (trofea, brawlerzy, rola), z paginacją - nie tylko czołówkę.</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code data-i18n="home.cmd_ranking_swiatowy_code">/ranking_swiatowy</code>
+                            <p data-i18n="home.cmd_ranking_swiatowy_desc">Światowy albo krajowy ranking graczy, klubów lub brawlerów - z przyciskami do przełączania widoku.</p>
                         </div>
                     </div>
 
@@ -218,8 +244,36 @@
 
                     <div class="command-item">
                         <div class="command-main">
+                            <code data-i18n="home.cmd_pojedynek_klanow_code">/pojedynek_klanow [tag]</code>
+                            <p data-i18n="home.cmd_pojedynek_klanow_desc">Porównuje klan tego serwera z dowolnym innym klanem - nie musi być skonfigurowany na żadnym serwerze.</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code data-i18n="home.cmd_ranking_kolekcji_code">/ranking_kolekcji</code>
+                            <p data-i18n="home.cmd_ranking_kolekcji_desc">Ranking klanu wg wybranej statystyki (odblokowani brawlerzy, maks. poziom mocy, gadżety, gwiezdne moce, wyposażenie i inne). Premium.</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
                             <code data-i18n="home.cmd_rotacja_map_code">/rotacja_map</code>
                             <p data-i18n="home.cmd_rotacja_map_desc">Pokazuje aktualną rotację map i trybów gry na żądanie - to samo, co bot wysyła automatycznie na kanał powiadomień.</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code data-i18n="home.cmd_zweryfikuj_moj_profil_code">/zweryfikuj_moj_profil [tag_gracza]</code>
+                            <p data-i18n="home.cmd_zweryfikuj_moj_profil_desc">Rejestruje Twój tag do samodzielnego śledzenia historii pucharów, niezależnie od tego, czy serwer ma skonfigurowany klan.</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code data-i18n="home.cmd_moje_podsumowanie_code">/moje_podsumowanie</code>
+                            <p data-i18n="home.cmd_moje_podsumowanie_desc">Podsumowanie Twoich pucharów za tydzień albo miesiąc - tylko w wiadomości prywatnej z botem.</p>
                         </div>
                     </div>
 
@@ -237,28 +291,49 @@
                     <div class="command-item">
                         <div class="command-main">
                             <code data-i18n="home.cmd_ustaw_klan_code">/ustaw_klan [tag]</code>
-                            <p data-i18n="home.cmd_ustaw_klan_desc">Powiązuje ten serwer Discord z konkretnym klanem Brawl Stars.</p>
+                            <p data-i18n="home.cmd_ustaw_klan_desc">Powiązuje ten serwer Discord z konkretnym klanem Brawl Stars - próg pucharowy ustawia się od razu automatycznie, wg wymogu wejścia do klanu w grze.</p>
                         </div>
                     </div>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code data-i18n="home.cmd_ustaw_prog_pucharow_code">/ustaw_prog_pucharow [puchary]</code>
-                            <p data-i18n="home.cmd_ustaw_prog_pucharow_desc">Ustawia minimalny próg pucharowy wymagany na tym serwerze.</p>
+                            <code data-i18n="home.cmd_weryfikacja_klanu_code">/weryfikacja_klanu</code>
+                            <p data-i18n="home.cmd_weryfikacja_klanu_desc">Wysyła panel z przyciskiem, dzięki któremu członkowie klanu sami się zweryfikują i dostaną właściwą rolę.</p>
                         </div>
                     </div>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code data-i18n="home.cmd_ustaw_role_klanu_code">/ustaw_role_klanu [ranga] [rola]</code>
-                            <p data-i18n="home.cmd_ustaw_role_klanu_desc">Dopasowuje nazwę roli Discord do konkretnej rangi klanowej (member/senior/vice/prezes).</p>
+                            <code data-i18n="home.cmd_weryfikacja_gracza_code">/weryfikacja_gracza</code>
+                            <p data-i18n="home.cmd_weryfikacja_gracza_desc">Panel weryfikacji bez wymogu klanu - działa równolegle do weryfikacji klanowej, przydatny na społecznościowych serwerach bez jednego klanu.</p>
                         </div>
                     </div>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code data-i18n="home.cmd_ustaw_role_rangi_code">/ustaw_role_rangi [prog_rangi] [rola]</code>
-                            <p data-i18n="home.cmd_ustaw_role_rangi_desc">Nadaje rolę Discord graczom, którzy osiągną wybrany próg rangi Ranked z gry.</p>
+                            <code data-i18n="home.cmd_ustaw_nazwy_rol_w_klanie_code">/ustaw_nazwy_rol_w_klanie [ranga] [rola]</code>
+                            <p data-i18n="home.cmd_ustaw_nazwy_rol_w_klanie_desc">Dopasowuje nazwę roli Discord do konkretnej rangi klanowej (member/senior/vice/prezes).</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code data-i18n="home.cmd_ustaw_role_za_puchary_code">/ustaw_role_za_puchary [próg] [rola]</code>
+                            <p data-i18n="home.cmd_ustaw_role_za_puchary_desc">Dodaje własne role nadawane po przekroczeniu wybranych progów pucharowych - dowolna liczba progów, niezależnie od progu wejścia do klanu.</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code data-i18n="home.cmd_ustaw_role_za_range_code">/ustaw_role_za_range [prog_rangi] [rola]</code>
+                            <p data-i18n="home.cmd_ustaw_role_za_range_desc">Nadaje rolę Discord graczom, którzy osiągną wybrany próg rangi Ranked z gry.</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code data-i18n="home.cmd_ustaw_role_niezweryfikowanych_code">/ustaw_role_niezweryfikowanych [rola]</code>
+                            <p data-i18n="home.cmd_ustaw_role_niezweryfikowanych_desc">Rola nadawana automatycznie nowym członkom do czasu, aż się zweryfikują.</p>
                         </div>
                     </div>
 
@@ -271,22 +346,22 @@
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code data-i18n="home.cmd_ustaw_kanal_rotacji_code">/ustaw_kanal_rotacji [kanał]</code>
-                            <p data-i18n="home.cmd_ustaw_kanal_rotacji_desc">Ustawia kanał powiadomień o zmianie mapy w rotacji Brawl Stars.</p>
+                            <code data-i18n="home.cmd_ustaw_harmonogram_tygodniowy_code">/ustaw_harmonogram_tygodniowy [dzień] [godzina]</code>
+                            <p data-i18n="home.cmd_ustaw_harmonogram_tygodniowy_desc">Ustala dzień tygodnia i godzinę, o której wysyłany jest automatyczny raport tygodniowy.</p>
                         </div>
                     </div>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code data-i18n="home.cmd_ustaw_harmonogram_raportow_code">/ustaw_harmonogram_raportow [dzień] [godzina]</code>
-                            <p data-i18n="home.cmd_ustaw_harmonogram_raportow_desc">Ustala dzień tygodnia i godzinę, o której wysyłany jest automatyczny raport tygodniowy.</p>
+                            <code data-i18n="home.cmd_ustaw_godzine_raportu_mies_code">/ustaw_godzine_raportu_mies [godzina]</code>
+                            <p data-i18n="home.cmd_ustaw_godzine_raportu_mies_desc">Ustala godzinę automatycznego raportu miesięcznego (zawsze wysyłanego 1. dnia miesiąca).</p>
                         </div>
                     </div>
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code data-i18n="home.cmd_panel_weryfikacji_code">/panel_weryfikacji</code>
-                            <p data-i18n="home.cmd_panel_weryfikacji_desc">Wysyła panel z przyciskiem, dzięki któremu członkowie sami się zweryfikują.</p>
+                            <code data-i18n="home.cmd_ustaw_kanal_rotacji_map_code">/ustaw_kanal_rotacji_map [kanał]</code>
+                            <p data-i18n="home.cmd_ustaw_kanal_rotacji_map_desc">Ustawia kanał powiadomień o zmianie mapy w rotacji Brawl Stars.</p>
                         </div>
                     </div>
 
@@ -294,6 +369,20 @@
                         <div class="command-main">
                             <code data-i18n="home.cmd_czystka_klanu_code">/czystka_klanu</code>
                             <p data-i18n="home.cmd_czystka_klanu_desc">Lista członków klanu, którzy są poniżej ustawionego progu pucharowego.</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code data-i18n="home.cmd_utworz_cel_klanu_code">/utworz_cel_klanu</code>
+                            <p data-i18n="home.cmd_utworz_cel_klanu_desc">Ustawia wspólny cel przyrostu trofeów dla całego klanu, z nagrodą po osiągnięciu (<code>/anuluj_cel_klanu</code> anuluje aktywny cel).</p>
+                        </div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="command-main">
+                            <code data-i18n="home.cmd_ustaw_alert_aktywnosci_code">/ustaw_alert_aktywnosci</code>
+                            <p data-i18n="home.cmd_ustaw_alert_aktywnosci_desc">Natychmiastowe alerty o spadku trofeów, braku aktywności albo zmianie rangi Ranked (Premium).</p>
                         </div>
                     </div>
 
@@ -328,7 +417,7 @@
                         kanał Twojego serwera.
                     </p>
                     <ul class="rotation-points">
-                        <li><span class="dot">1</span> <span data-i18n="home.rotation_point1">Skonfiguruj kanał jedną komendą (<code>/ustaw_kanal_rotacji</code>) - reszta dzieje się automatycznie.</span></li>
+                        <li><span class="dot">1</span> <span data-i18n="home.rotation_point1">Skonfiguruj kanał jedną komendą (<code>/ustaw_kanal_rotacji_map</code>) - reszta dzieje się automatycznie.</span></li>
                         <li><span class="dot">2</span> <span data-i18n="home.rotation_point2">Powiadomienie pojawia się tylko wtedy, gdy mapa albo tryb faktycznie się zmienią - zero spamu.</span></li>
                     </ul>
                 </div>
@@ -465,26 +554,26 @@
                 <div class="step">
                     <div class="step-number">1</div>
                     <code data-i18n="home.cmd_ustaw_klan_code_bare">/ustaw_klan</code>
-                    <p data-i18n="home.step1_body">Powiąż serwer z tagiem Twojego klanu Brawl Stars.</p>
+                    <p data-i18n="home.step1_body">Powiąż serwer z tagiem Twojego klanu - próg pucharowy ustawi się sam.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <code data-i18n="home.cmd_ustaw_prog_pucharow_code_bare">/ustaw_prog_pucharow</code>
-                    <p data-i18n="home.step2_body">Ustaw minimalny wymagany próg pucharowy.</p>
+                    <code data-i18n="home.cmd_ustaw_nazwy_rol_w_klanie_code_bare">/ustaw_nazwy_rol_w_klanie</code>
+                    <p data-i18n="home.step2_body">Dopasuj nazwy ról Discord do rang klanowych.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <code data-i18n="home.cmd_ustaw_role_klanu_code_bare">/ustaw_role_klanu</code>
-                    <p data-i18n="home.step3_body">Dopasuj nazwy ról Discord do rang klanowych.</p>
+                    <code data-i18n="home.cmd_ustaw_kanal_raportow_code_bare">/ustaw_kanal_raportow</code>
+                    <p data-i18n="home.step3_body">Wskaż kanał na automatyczne raporty tygodniowe i miesięczne.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">4</div>
-                    <code data-i18n="home.cmd_ustaw_kanal_raportow_code_bare">/ustaw_kanal_raportow</code>
-                    <p data-i18n="home.step4_body">Wskaż kanał na automatyczne raporty.</p>
+                    <code data-i18n="home.cmd_ustaw_kanal_rotacji_map_code_bare">/ustaw_kanal_rotacji_map</code>
+                    <p data-i18n="home.step4_body">Wskaż kanał powiadomień o zmianie mapy (opcjonalnie).</p>
                 </div>
                 <div class="step">
                     <div class="step-number">5</div>
-                    <code data-i18n="home.cmd_panel_weryfikacji_code_bare">/panel_weryfikacji</code>
+                    <code data-i18n="home.cmd_weryfikacja_klanu_code_bare">/weryfikacja_klanu</code>
                     <p data-i18n="home.step5_body">Wyślij panel weryfikacji - reszta dzieje się sama.</p>
                 </div>
             </div>
@@ -564,13 +653,13 @@
     },
     "home.feature2_title": { pl: "Raporty tygodniowe i miesięczne", en: "Weekly and monthly reports" },
     "home.feature2_body": {
-      pl: "Automatyczne podsumowania aktywności klanu trafiają na wybrany kanał - bez ręcznego liczenia, kto zagrał, a kto nie.",
-      en: "Automatic clan activity summaries land in a channel of your choice - no manual counting of who played and who didn't.",
+      pl: "Automatyczny raport co tydzień (kto zagrał, kto poniżej progu, top 3, MVP) i co miesiąc (podium, wyróżnienia, najlepszy dzień) trafia sam na wybrany kanał. Premium dorzuca wykres PNG trendu klanu i prognozę pucharów na kolejne 30 dni.",
+      en: "An automatic weekly report (who played, who's below the threshold, top 3, MVP) and a monthly one (podium, honorable mentions, best day) land in a channel of your choice on their own. Premium adds a PNG chart of the clan trend and a 30-day trophy forecast.",
     },
     "home.feature3_title": { pl: "Statystyki gracza i klanu", en: "Player and clan statistics" },
     "home.feature3_body": {
-      pl: "Karta gracza, ranking top 10 klanu, pozycja w rankingu, osobisty cel pucharowy, odznaki i pojedynki 1:1 między członkami - jedną komendą, bez wchodzenia w grę.",
-      en: "Player card, clan top 10, ranking position, personal trophy goal, badges, and 1:1 duels between members - with one command, no need to open the game.",
+      pl: "Karta gracza, pełna lista klanu, podsumowanie ostatnich bitew, ranking światowy, osobisty cel pucharowy, odznaki oraz pojedynki 1:1 - między graczami albo całymi klanami - jedną komendą, bez wchodzenia w grę.",
+      en: "Player card, full clan list, recent battle summary, world ranking, personal trophy goal, badges, and 1:1 duels - between players or whole clans - with one command, no need to open the game.",
     },
     "home.feature4_title": { pl: "Wizualna siatka brawlerów", en: "Visual brawler grid" },
     "home.feature4_body": {
@@ -592,6 +681,11 @@
       pl: "Wszystkie komendy i odpowiedzi bota działają w dwóch językach - admin wybiera jeden (<code>/ustaw_jezyk</code>) dla całego serwera.",
       en: "Every command and response works in two languages - the admin picks one (<code>/set_language</code>) for the whole server.",
     },
+    "home.feature8_title": { pl: "Wspólny cel klanu", en: "Shared clan goal" },
+    "home.feature8_body": {
+      pl: "<code>/utworz_cel_klanu</code> ustawia jeden wspólny cel przyrostu trofeów dla całego klanu, z nagrodą (rola, ogłoszenie) po osiągnięciu - bot sam liczy postęp całego klanu i ogłasza wynik. Darmowe.",
+      en: "<code>/create_clan_goal</code> sets one shared trophy-gain goal for the whole clan, with a reward (role, announcement) on success - the bot tracks the whole clan's progress and announces the result on its own. Free.",
+    },
 
     "home.commands_title": { pl: "Komendy", en: "Commands" },
     "home.commands_lede": {
@@ -611,15 +705,25 @@
       pl: "Karta gracza: poziom, rekordowe trofea, zwycięstwa, top 3 brawlery i ranga Ranked.",
       en: "Player card: level, record trophies, wins, top 3 brawlers, and Ranked rank.",
     },
-    "home.cmd_ranking_klanu_code": { pl: "/ranking_klanu", en: "/clan_top" },
-    "home.cmd_ranking_klanu_desc": {
-      pl: "Pokazuje pierwszą dziesiątkę klanu posortowaną wg trofeów.",
-      en: "Shows the clan's top 10 members sorted by trophies.",
-    },
     "home.cmd_brawlerzy_code": { pl: "/brawlerzy [tag_gracza]", en: "/brawlers [player_tag]" },
     "home.cmd_brawlerzy_desc": {
       pl: "Graficzna siatka wszystkich brawlerów gracza - odblokowani kolorowo (z rangą lub poziomem mocy), zablokowani wyszarzeni. Sortowanie: ranga / moc / rzadkość / trofea.",
       en: "A visual grid of all of a player's brawlers - unlocked ones shown in color (with rank or power level), locked ones grayed out. Sortable by rank / power level / rarity / trophies.",
+    },
+    "home.cmd_podsumowanie_bitew_code": { pl: "/podsumowanie_bitew [tag_gracza]", en: "/battle_summary [player_tag]" },
+    "home.cmd_podsumowanie_bitew_desc": {
+      pl: "Wizualna karta ostatnich bitew gracza - wynik, tryb, brawler i puchary/Elo dla każdego meczu z battlelogu.",
+      en: "A visual card of a player's recent battles - result, mode, brawler and trophies/Elo for every match in the battlelog.",
+    },
+    "home.cmd_czlonkowie_klanu_code": { pl: "/czlonkowie_klanu", en: "/clan_members" },
+    "home.cmd_czlonkowie_klanu_desc": {
+      pl: "Pokazuje WSZYSTKICH członków klanu (trofea, brawlerzy, rola), z paginacją - nie tylko czołówkę.",
+      en: "Shows ALL clan members (trophies, brawlers, role), paginated - not just the top of the list.",
+    },
+    "home.cmd_ranking_swiatowy_code": { pl: "/ranking_swiatowy", en: "/world_ranking" },
+    "home.cmd_ranking_swiatowy_desc": {
+      pl: "Światowy albo krajowy ranking graczy, klubów lub brawlerów - z przyciskami do przełączania widoku.",
+      en: "Global or national ranking of players, clubs or brawlers - with buttons to switch the view.",
     },
     "home.cmd_historia_pucharow_code": { pl: "/historia_pucharow [zakres] [tag_gracza]", en: "/trophy_history [range] [player_tag]" },
     "home.cmd_historia_pucharow_desc": {
@@ -646,10 +750,30 @@
       pl: "Porównanie 1:1 dwóch graczy klanu - trofea i przyrost tygodnia.",
       en: "1:1 comparison of two clan members - trophies and weekly gain.",
     },
+    "home.cmd_pojedynek_klanow_code": { pl: "/pojedynek_klanow [tag]", en: "/clan_duel [tag]" },
+    "home.cmd_pojedynek_klanow_desc": {
+      pl: "Porównuje klan tego serwera z dowolnym innym klanem - nie musi być skonfigurowany na żadnym serwerze.",
+      en: "Compares this server's clan with any other clan - it doesn't need to be configured on any server.",
+    },
+    "home.cmd_ranking_kolekcji_code": { pl: "/ranking_kolekcji", en: "/collection_ranking" },
+    "home.cmd_ranking_kolekcji_desc": {
+      pl: "Ranking klanu wg wybranej statystyki (odblokowani brawlerzy, maks. poziom mocy, gadżety, gwiezdne moce, wyposażenie i inne). Premium.",
+      en: "Ranks the clan by a chosen statistic (unlocked brawlers, maxed power level, gadgets, star powers, gear and more). Premium.",
+    },
     "home.cmd_rotacja_map_code": { pl: "/rotacja_map", en: "/map_rotation" },
     "home.cmd_rotacja_map_desc": {
       pl: "Pokazuje aktualną rotację map i trybów gry na żądanie - to samo, co bot wysyła automatycznie na kanał powiadomień.",
       en: "Shows the current map and mode rotation on demand - the same info the bot posts automatically to the notification channel.",
+    },
+    "home.cmd_zweryfikuj_moj_profil_code": { pl: "/zweryfikuj_moj_profil [tag_gracza]", en: "/verify_my_profile [player_tag]" },
+    "home.cmd_zweryfikuj_moj_profil_desc": {
+      pl: "Rejestruje Twój tag do samodzielnego śledzenia historii pucharów, niezależnie od tego, czy serwer ma skonfigurowany klan.",
+      en: "Registers your tag for self-tracking trophy history, regardless of whether the server has a clan configured.",
+    },
+    "home.cmd_moje_podsumowanie_code": { pl: "/moje_podsumowanie", en: "/my_summary" },
+    "home.cmd_moje_podsumowanie_desc": {
+      pl: "Podsumowanie Twoich pucharów za tydzień albo miesiąc - tylko w wiadomości prywatnej z botem.",
+      en: "A summary of your trophies for the past week or month - direct messages with the bot only.",
     },
     "home.cmd_support_code": { pl: "/support", en: "/support" },
     "home.cmd_support_desc": {
@@ -659,48 +783,73 @@
 
     "home.cmd_ustaw_klan_code": { pl: "/ustaw_klan [tag]", en: "/set_clan [tag]" },
     "home.cmd_ustaw_klan_desc": {
-      pl: "Powiązuje ten serwer Discord z konkretnym klanem Brawl Stars.",
-      en: "Links this Discord server to a specific Brawl Stars clan.",
+      pl: "Powiązuje ten serwer Discord z konkretnym klanem Brawl Stars - próg pucharowy ustawia się od razu automatycznie, wg wymogu wejścia do klanu w grze.",
+      en: "Links this Discord server to a specific Brawl Stars clan - the trophy threshold is set automatically right away, based on the clan's in-game entry requirement.",
     },
-    "home.cmd_ustaw_prog_pucharow_code": { pl: "/ustaw_prog_pucharow [puchary]", en: "/set_trophy_threshold [trophies]" },
-    "home.cmd_ustaw_prog_pucharow_desc": {
-      pl: "Ustawia minimalny próg pucharowy wymagany na tym serwerze.",
-      en: "Sets the minimum trophy threshold required on this server.",
+    "home.cmd_weryfikacja_klanu_code": { pl: "/weryfikacja_klanu", en: "/clan_verification" },
+    "home.cmd_weryfikacja_klanu_desc": {
+      pl: "Wysyła panel z przyciskiem, dzięki któremu członkowie klanu sami się zweryfikują i dostaną właściwą rolę.",
+      en: "Sends a panel with a button that lets clan members verify themselves and get the right role.",
     },
-    "home.cmd_ustaw_role_klanu_code": { pl: "/ustaw_role_klanu [ranga] [rola]", en: "/set_clan_role [rank] [role]" },
-    "home.cmd_ustaw_role_klanu_desc": {
+    "home.cmd_weryfikacja_gracza_code": { pl: "/weryfikacja_gracza", en: "/member_verification" },
+    "home.cmd_weryfikacja_gracza_desc": {
+      pl: "Panel weryfikacji bez wymogu klanu - działa równolegle do weryfikacji klanowej, przydatny na społecznościowych serwerach bez jednego klanu.",
+      en: "A verification panel with no clan requirement - runs alongside clan verification, handy for community servers without one single clan.",
+    },
+    "home.cmd_ustaw_nazwy_rol_w_klanie_code": { pl: "/ustaw_nazwy_rol_w_klanie [ranga] [rola]", en: "/set_clan_role [rank] [role]" },
+    "home.cmd_ustaw_nazwy_rol_w_klanie_desc": {
       pl: "Dopasowuje nazwę roli Discord do konkretnej rangi klanowej (member/senior/vice/prezes).",
       en: "Maps a Discord role to a specific clan rank (member/senior/vice president/president).",
     },
-    "home.cmd_ustaw_role_rangi_code": { pl: "/ustaw_role_rangi [prog_rangi] [rola]", en: "/set_ranked_role [rank_threshold] [role]" },
-    "home.cmd_ustaw_role_rangi_desc": {
+    "home.cmd_ustaw_role_za_puchary_code": { pl: "/ustaw_role_za_puchary [próg] [rola]", en: "/set_trophy_role [threshold] [role]" },
+    "home.cmd_ustaw_role_za_puchary_desc": {
+      pl: "Dodaje własne role nadawane po przekroczeniu wybranych progów pucharowych - dowolna liczba progów, niezależnie od progu wejścia do klanu.",
+      en: "Adds custom roles granted when players cross chosen trophy thresholds - any number of thresholds, independent of the clan's entry requirement.",
+    },
+    "home.cmd_ustaw_role_za_range_code": { pl: "/ustaw_role_za_range [prog_rangi] [rola]", en: "/set_ranked_role [rank_threshold] [role]" },
+    "home.cmd_ustaw_role_za_range_desc": {
       pl: "Nadaje rolę Discord graczom, którzy osiągną wybrany próg rangi Ranked z gry.",
       en: "Grants a Discord role to players who reach a chosen Ranked rank threshold.",
+    },
+    "home.cmd_ustaw_role_niezweryfikowanych_code": { pl: "/ustaw_role_niezweryfikowanych [rola]", en: "/set_unverified_role [role]" },
+    "home.cmd_ustaw_role_niezweryfikowanych_desc": {
+      pl: "Rola nadawana automatycznie nowym członkom do czasu, aż się zweryfikują.",
+      en: "A role automatically given to new members until they verify.",
     },
     "home.cmd_ustaw_kanal_raportow_code": { pl: "/ustaw_kanal_raportow [kanał]", en: "/set_report_channel [channel]" },
     "home.cmd_ustaw_kanal_raportow_desc": {
       pl: "Ustawia kanał, na który trafiają automatyczne raporty tygodniowe i miesięczne.",
       en: "Sets the channel that receives automatic weekly and monthly reports.",
     },
-    "home.cmd_ustaw_kanal_rotacji_code": { pl: "/ustaw_kanal_rotacji [kanał]", en: "/set_rotation_channel [channel]" },
-    "home.cmd_ustaw_kanal_rotacji_desc": {
-      pl: "Ustawia kanał powiadomień o zmianie mapy w rotacji Brawl Stars.",
-      en: "Sets the channel for Brawl Stars map rotation change notifications.",
-    },
-    "home.cmd_ustaw_harmonogram_raportow_code": { pl: "/ustaw_harmonogram_raportow [dzień] [godzina]", en: "/set_report_schedule [day] [hour]" },
-    "home.cmd_ustaw_harmonogram_raportow_desc": {
+    "home.cmd_ustaw_harmonogram_tygodniowy_code": { pl: "/ustaw_harmonogram_tygodniowy [dzień] [godzina]", en: "/set_report_schedule [day] [hour]" },
+    "home.cmd_ustaw_harmonogram_tygodniowy_desc": {
       pl: "Ustala dzień tygodnia i godzinę, o której wysyłany jest automatyczny raport tygodniowy.",
       en: "Sets the day of the week and hour when the automatic weekly report is sent.",
     },
-    "home.cmd_panel_weryfikacji_code": { pl: "/panel_weryfikacji", en: "/verification_panel" },
-    "home.cmd_panel_weryfikacji_desc": {
-      pl: "Wysyła panel z przyciskiem, dzięki któremu członkowie sami się zweryfikują.",
-      en: "Sends a panel with a button that lets members verify themselves.",
+    "home.cmd_ustaw_godzine_raportu_mies_code": { pl: "/ustaw_godzine_raportu_mies [godzina]", en: "/set_monthly_report_hour [hour]" },
+    "home.cmd_ustaw_godzine_raportu_mies_desc": {
+      pl: "Ustala godzinę automatycznego raportu miesięcznego (zawsze wysyłanego 1. dnia miesiąca).",
+      en: "Sets the hour for the automatic monthly report (always sent on day 1 of the month).",
+    },
+    "home.cmd_ustaw_kanal_rotacji_map_code": { pl: "/ustaw_kanal_rotacji_map [kanał]", en: "/set_rotation_channel [channel]" },
+    "home.cmd_ustaw_kanal_rotacji_map_desc": {
+      pl: "Ustawia kanał powiadomień o zmianie mapy w rotacji Brawl Stars.",
+      en: "Sets the channel for Brawl Stars map rotation change notifications.",
     },
     "home.cmd_czystka_klanu_code": { pl: "/czystka_klanu", en: "/clan_cleanup" },
     "home.cmd_czystka_klanu_desc": {
       pl: "Lista członków klanu, którzy są poniżej ustawionego progu pucharowego.",
       en: "Lists clan members who are below the configured trophy threshold.",
+    },
+    "home.cmd_utworz_cel_klanu_code": { pl: "/utworz_cel_klanu", en: "/create_clan_goal" },
+    "home.cmd_utworz_cel_klanu_desc": {
+      pl: "Ustawia wspólny cel przyrostu trofeów dla całego klanu, z nagrodą po osiągnięciu (<code>/anuluj_cel_klanu</code> anuluje aktywny cel).",
+      en: "Sets a shared trophy-gain goal for the whole clan, with a reward on success (<code>/cancel_clan_goal</code> cancels an active goal).",
+    },
+    "home.cmd_ustaw_alert_aktywnosci_code": { pl: "/ustaw_alert_aktywnosci", en: "/set_activity_alert" },
+    "home.cmd_ustaw_alert_aktywnosci_desc": {
+      pl: "Natychmiastowe alerty o spadku trofeów, braku aktywności albo zmianie rangi Ranked (Premium).",
+      en: "Instant alerts for trophy drops, inactivity, or Ranked rank changes (Premium).",
     },
     "home.cmd_ustaw_wyglad_code": { pl: "/ustaw_wyglad", en: "/set_appearance" },
     "home.cmd_ustaw_wyglad_desc": {
@@ -720,7 +869,7 @@
       en: "Brawl Stars regularly changes the maps and modes available in rotation. BrawlManager keeps track for you - the moment something changes, the bot sends a message to your server's chosen channel.",
     },
     "home.rotation_point1": {
-      pl: "Skonfiguruj kanał jedną komendą (<code>/ustaw_kanal_rotacji</code>) - reszta dzieje się automatycznie.",
+      pl: "Skonfiguruj kanał jedną komendą (<code>/ustaw_kanal_rotacji_map</code>) - reszta dzieje się automatycznie.",
       en: "Set up a channel with one command (<code>/set_rotation_channel</code>) - the rest happens automatically.",
     },
     "home.rotation_point2": {
@@ -788,14 +937,14 @@
     "home.start_title": { pl: "Szybki start", en: "Quick start" },
     "home.start_lede": { pl: "Pięć komend i klan jest w pełni skonfigurowany.", en: "Five commands and your clan is fully configured." },
     "home.cmd_ustaw_klan_code_bare": { pl: "/ustaw_klan", en: "/set_clan" },
-    "home.step1_body": { pl: "Powiąż serwer z tagiem Twojego klanu Brawl Stars.", en: "Link the server with your Brawl Stars clan tag." },
-    "home.cmd_ustaw_prog_pucharow_code_bare": { pl: "/ustaw_prog_pucharow", en: "/set_trophy_threshold" },
-    "home.step2_body": { pl: "Ustaw minimalny wymagany próg pucharowy.", en: "Set the minimum required trophy threshold." },
-    "home.cmd_ustaw_role_klanu_code_bare": { pl: "/ustaw_role_klanu", en: "/set_clan_role" },
-    "home.step3_body": { pl: "Dopasuj nazwy ról Discord do rang klanowych.", en: "Map Discord role names to clan ranks." },
+    "home.step1_body": { pl: "Powiąż serwer z tagiem Twojego klanu - próg pucharowy ustawi się sam.", en: "Link the server with your clan tag - the trophy threshold sets itself." },
+    "home.cmd_ustaw_nazwy_rol_w_klanie_code_bare": { pl: "/ustaw_nazwy_rol_w_klanie", en: "/set_clan_role" },
+    "home.step2_body": { pl: "Dopasuj nazwy ról Discord do rang klanowych.", en: "Map Discord role names to clan ranks." },
     "home.cmd_ustaw_kanal_raportow_code_bare": { pl: "/ustaw_kanal_raportow", en: "/set_report_channel" },
-    "home.step4_body": { pl: "Wskaż kanał na automatyczne raporty.", en: "Choose a channel for automatic reports." },
-    "home.cmd_panel_weryfikacji_code_bare": { pl: "/panel_weryfikacji", en: "/verification_panel" },
+    "home.step3_body": { pl: "Wskaż kanał na automatyczne raporty tygodniowe i miesięczne.", en: "Choose a channel for automatic weekly and monthly reports." },
+    "home.cmd_ustaw_kanal_rotacji_map_code_bare": { pl: "/ustaw_kanal_rotacji_map", en: "/set_rotation_channel" },
+    "home.step4_body": { pl: "Wskaż kanał powiadomień o zmianie mapy (opcjonalnie).", en: "Choose a channel for map rotation notifications (optional)." },
+    "home.cmd_weryfikacja_klanu_code_bare": { pl: "/weryfikacja_klanu", en: "/clan_verification" },
     "home.step5_body": { pl: "Wyślij panel weryfikacji - reszta dzieje się sama.", en: "Send the verification panel - the rest happens on its own." },
 
     "home.cta_band_title": { pl: "Gotowy, żeby uporządkować klan?", en: "Ready to get your clan organized?" },
