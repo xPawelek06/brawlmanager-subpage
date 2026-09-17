@@ -192,10 +192,11 @@
                 </div>
 
                 <!-- /podsumowanie_bitew -->
-                <!-- Nowa komenda (runda 2026-09-12/13), jeszcze BEZ realnych zrzutów -
-                     celowo BEZ data-has-shots/data-has-shots-en, patrz komentarz przy
-                     /ustaw_role_za_range niżej po pełne uzasadnienie tego wzorca. -->
-                <div class="command-block command-block--text-only" id="podsumowanie_bitew">
+                <!-- Realne zrzuty PL dodane 2026-09-14 (Paweł) - data-has-shots="1".
+                     BEZ data-has-shots-en - angielskie warianty (-en.png) jeszcze nie
+                     istnieją, patrz komentarz przy /ustaw_role_za_range niżej po pełne
+                     uzasadnienie tego wzorca (osobne flagi per język). -->
+                <div class="command-block command-block--text-only" id="podsumowanie_bitew" data-has-shots="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.podsumowanie_bitew_code">/podsumowanie_bitew [tag_gracza]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.podsumowanie_bitew_desc">Wizualna karta ostatnich bitew gracza z okna battlelogu gry - dla każdego meczu pokazuje wynik, brawlera, tryb gry i zmianę pucharów (albo Elo w Ranked). Osobny widok "pion"/"poziom" do wyboru.</p>
@@ -210,11 +211,12 @@
                 <!-- Zastępuje dawną /ranking_klanu (usunięta z bota runda 2026-08-29) -
                      inny widok (WSZYSCY członkowie, paginacja, nie top 10), więc stare
                      zrzuty ranking_klanu-*.png NIE są tu użyte (pokazywałyby nieaktualny
-                     UI) - celowo bez data-has-shots, jak /podsumowanie_bitew wyżej. -->
-                <div class="command-block command-block--text-only" id="czlonkowie_klanu">
+                     UI). Realne, aktualne zrzuty PL dodane 2026-09-14 (Paweł) -
+                     data-has-shots="1", bez -en (jeszcze nie istnieje). -->
+                <div class="command-block command-block--text-only" id="czlonkowie_klanu" data-has-shots="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.czlonkowie_klanu_code">/czlonkowie_klanu</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.czlonkowie_klanu_desc">Pokazuje WSZYSTKICH członków klanu (trofea, brawlerzy, rola klanowa), z paginacją - nie tylko czołówkę jak dawna /ranking_klanu, wg tagu klanu skonfigurowanego przez admina (<code>/ustaw_klan</code>).</p>
+                        <p data-i18n="komendy.czlonkowie_klanu_desc">Pokazuje wszystkich członków klanu z paginacją.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/czlonkowie_klanu-uzycie.png" data-src-en="/assets/screenshots/czlonkowie_klanu-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.czlonkowie_klanu_shot_usage_alt">
@@ -223,10 +225,10 @@
                 </div>
 
                 <!-- /ranking_swiatowy -->
-                <div class="command-block command-block--text-only" id="ranking_swiatowy">
+                <div class="command-block command-block--text-only" id="ranking_swiatowy" data-has-shots="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ranking_swiatowy_code">/ranking_swiatowy</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.ranking_swiatowy_desc">Światowy albo krajowy ranking graczy, klubów lub brawlerów, prosto z oficjalnego API Supercell - przyciski pozwalają przełączać kategorię i kraj bez ponownego wywoływania komendy.</p>
+                        <p data-i18n="komendy.ranking_swiatowy_desc">Ranking pierwszych 100 osób na świecie bądź w danym kraju.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/ranking_swiatowy-uzycie.png" data-src-en="/assets/screenshots/ranking_swiatowy-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ranking_swiatowy_shot_usage_alt">
@@ -238,7 +240,7 @@
                 <div class="command-block command-block--text-only" id="moja_pozycja" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.moja_pozycja_code">/moja_pozycja [tag_gracza]</code> <span class="badge badge-partial" data-i18n="common.badge_partial_premium">🔒 częściowo Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.moja_pozycja_desc">Twoja aktualna pozycja w rankingu klanu wg aktualnych trofeów i dystans do osoby bezpośrednio wyżej.</p>
+                        <p data-i18n="komendy.moja_pozycja_desc">Twoja aktualna pozycja w rankingu klanu wg aktualnych trofeów, wraz z dystansem do sąsiadów w rankingu (osoby przed Tobą i za Tobą).</p>
                         <ul>
                             <li data-i18n="komendy.moja_pozycja_li1">Premium: prognoza, za ile dni wyprzedzisz osobę przed sobą (na bazie tempa z ostatnich 30 dni)</li>
                             <li data-i18n="komendy.moja_pozycja_li2">Premium: przycisk do samodzielnego ustawienia liczby dni prognozy</li>
@@ -262,25 +264,12 @@
                 <!-- /moj_cel -->
                 <div class="command-block command-block--text-only" id="moj_cel" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code data-i18n="komendy.moj_cel_code">/moj_cel [tag_gracza] [cel_puchary]</code> <span class="badge badge-partial" data-i18n="common.badge_partial_premium">🔒 częściowo Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.moj_cel_desc">Ustawia Twój osobisty cel pucharowy i pokazuje pasek postępu oraz zmianę od wczoraj.</p>
-                        <ul>
-                            <li data-i18n="komendy.moj_cel_li1">Premium: prognoza dotarcia do celu w widełkach - osobno z Twojego najlepszego i najgorszego tygodnia</li>
-                            <li data-i18n="komendy.moj_cel_li2">Premium: pole „Najlepszy dzień w tym okresie”</li>
-                        </ul>
+                        <div class="command-tag"><code data-i18n="komendy.moj_cel_code">/moj_cel [tag_gracza] [cel_puchary]</code></div>
+                        <p data-i18n="komendy.moj_cel_desc">Ustawia Twój osobisty cel pucharowy. Przyciskiem „Sprawdź postęp” możesz w każdej chwili na żywo sprawdzić, ile brakuje do celu i czy zdążysz w założonym czasie. Darmowe, bez ograniczeń.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/moj_cel-uzycie.png" data-src-en="/assets/screenshots/moj_cel-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.moj_cel_shot_usage_alt">
-                        <div class="command-screenshot-group">
-                            <div class="command-screenshot-item">
-                                <p class="command-screenshot-caption" data-i18n="komendy.moj_cel_shot_free_caption">Wersja darmowa</p>
-                                <img src="/assets/screenshots/moj_cel-non-premium-wynik.png" data-src-en="/assets/screenshots/moj_cel-non-premium-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.moj_cel_shot_free_alt">
-                            </div>
-                            <div class="command-screenshot-item">
-                                <p class="command-screenshot-caption" data-i18n="komendy.moj_cel_shot_premium_caption">Premium: prognoza w widełkach</p>
-                                <img src="/assets/screenshots/moj_cel-premium-wynik.png" data-src-en="/assets/screenshots/moj_cel-premium-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.moj_cel_shot_premium_alt">
-                            </div>
-                        </div>
+                        <img src="/assets/screenshots/moj_cel-premium-wynik.png" data-src-en="/assets/screenshots/moj_cel-premium-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.moj_cel_shot_premium_alt">
                     </div>
                 </div>
 
@@ -300,9 +289,8 @@
                 <div class="command-block command-block--text-only" id="pojedynek" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.pojedynek_code">/pojedynek [tag_gracza_1] [tag_gracza_2]</code> <span class="badge badge-partial" data-i18n="common.badge_partial_premium">🔒 częściowo Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.pojedynek_desc">Porównanie 1:1 dwóch graczy klanu - aktualne trofea, kto prowadzi i przyrost z ostatniego tygodnia każdego z nich.</p>
+                        <p data-i18n="komendy.pojedynek_desc">Porównanie 1:1 dwóch graczy. Aby komenda poprawnie wyświetlała dane, gracze muszą być zweryfikowani przez bota.</p>
                         <ul>
-                            <li data-i18n="komendy.pojedynek_li1">Premium: porównanie kolekcji brawlerów obu graczy (wg rzadkości)</li>
                             <li data-i18n="komendy.pojedynek_li2">Premium: wspólny wykres trendu trofeów obu graczy (30 dni)</li>
                         </ul>
                     </div>
@@ -322,10 +310,10 @@
                 </div>
 
                 <!-- /pojedynek_klanow -->
-                <div class="command-block command-block--text-only" id="pojedynek_klanow">
+                <div class="command-block command-block--text-only" id="pojedynek_klanow" data-has-shots="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.pojedynek_klanow_code">/pojedynek_klanow [tag]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.pojedynek_klanow_desc">Porównanie klanu tego serwera z dowolnym innym klanem Brawl Stars - drugi klan nie musi być skonfigurowany na żadnym serwerze, wystarczy jego tag (albo podpowiedź z listy znanych botowi klanów).</p>
+                        <p data-i18n="komendy.pojedynek_klanow_desc">Porównanie klanu tego serwera z innym, dowolnym klanem Brawl Stars.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/pojedynek_klanow-uzycie.png" data-src-en="/assets/screenshots/pojedynek_klanow-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.pojedynek_klanow_shot_usage_alt">
@@ -337,7 +325,7 @@
                 <div class="command-block command-block--text-only" id="historia_pucharow" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.historia_pucharow_code">/historia_pucharow [zakres_dni] [tag_gracza]</code> <span class="badge" data-i18n="common.badge_premium">🔒 Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.historia_pucharow_desc">Trend trofeów dowolnego gracza z klanu z ostatnich 7 lub 30 dni - tekstowy sparkline w embedzie plus prawdziwy wykres liniowy PNG. Dorzuca też prognozę osiągnięcia progu klanowego i pozycję gracza w klanie w tym oknie czasowym.</p>
+                        <p data-i18n="komendy.historia_pucharow_desc">Trend pucharów dowolnego gracza z ostatnich 7 lub 30 dni. Aby komenda działała, dany gracz musi być zweryfikowany przez bota przez podany czas.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <div class="command-screenshot-group">
@@ -356,7 +344,7 @@
                 </div>
 
                 <!-- /ranking_kolekcji -->
-                <div class="command-block command-block--text-only" id="ranking_kolekcji">
+                <div class="command-block command-block--text-only" id="ranking_kolekcji" data-has-shots="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ranking_kolekcji_code">/ranking_kolekcji</code> <span class="badge" data-i18n="common.badge_premium">🔒 Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.ranking_kolekcji_desc">Ranking klanu wg wybranej statystyki kolekcji - odblokowani brawlerzy, brawlerzy na maks. poziomie mocy, gadżety, gwiezdne moce, wyposażenie i inne. Menu pod obrazkiem pozwala przełączać statystykę bez ponownego wywoływania komendy.</p>
@@ -380,22 +368,31 @@
                 </div>
 
                 <!-- /zweryfikuj_moj_profil -->
-                <div class="command-block command-block--text-only" id="zweryfikuj_moj_profil">
+                <div class="command-block command-block--text-only" id="zweryfikuj_moj_profil" data-has-shots="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.zweryfikuj_moj_profil_code">/zweryfikuj_moj_profil [tag_gracza]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.zweryfikuj_moj_profil_desc">Rejestruje Twój tag do samodzielnego śledzenia historii pucharów - niezależnie od tego, czy serwer ma w ogóle skonfigurowany klan. Działa też w wiadomości prywatnej z botem.</p>
+                        <p data-i18n="komendy.zweryfikuj_moj_profil_desc">Rejestruje Twój tag niezależnie od przynależenia do danego serwera bądź klanu. Działa również w wiadomości prywatnej z botem.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/zweryfikuj_moj_profil-uzycie.png" data-src-en="/assets/screenshots/zweryfikuj_moj_profil-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.zweryfikuj_moj_profil_shot_usage_alt">
-                        <img src="/assets/screenshots/zweryfikuj_moj_profil-wynik.png" data-src-en="/assets/screenshots/zweryfikuj_moj_profil-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.zweryfikuj_moj_profil_shot_result_alt">
+                        <div class="command-screenshot-group">
+                            <div class="command-screenshot-item">
+                                <p class="command-screenshot-caption" data-i18n="komendy.zweryfikuj_moj_profil_shot_krok1_caption">Krok 1: instrukcja</p>
+                                <img src="/assets/screenshots/zweryfikuj_moj_profil-wynik.png" data-src-en="/assets/screenshots/zweryfikuj_moj_profil-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.zweryfikuj_moj_profil_shot_result_alt">
+                            </div>
+                            <div class="command-screenshot-item">
+                                <p class="command-screenshot-caption" data-i18n="komendy.zweryfikuj_moj_profil_shot_krok2_caption">Krok 2: zweryfikowano</p>
+                                <img src="/assets/screenshots/zweryfikuj_moj_profil-krok2.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.zweryfikuj_moj_profil_shot_krok2_alt">
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- /moje_podsumowanie -->
-                <div class="command-block command-block--text-only" id="moje_podsumowanie">
+                <div class="command-block command-block--text-only" id="moje_podsumowanie" data-has-shots="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.moje_podsumowanie_code">/moje_podsumowanie [okres]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.moje_podsumowanie_desc">Podsumowanie Twoich własnych pucharów za ostatni tydzień albo miesiąc - dostępne wyłącznie w wiadomości prywatnej z botem, niezależnie od tego, ile serwerów z BrawlManagerem współdzielisz.</p>
+                        <p data-i18n="komendy.moje_podsumowanie_desc">Podsumowanie Twoich statystyk z ostatniego tygodnia bądź miesiąca.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/moje_podsumowanie-uzycie.png" data-src-en="/assets/screenshots/moje_podsumowanie-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.moje_podsumowanie_shot_usage_alt">
@@ -433,7 +430,7 @@
                 <div class="command-block command-block--text-only" id="ustaw_klan" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_klan_code">/ustaw_klan [nowy_tag_klanu]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.ustaw_klan_desc">Powiązuje ten serwer Discord z konkretnym klanem Brawl Stars, zapisuje od razu pierwszy punkt historii pucharów wszystkich jego członków i AUTOMATYCZNIE ustawia próg pucharowy serwera na wymóg wejścia do klanu z gry (ręczna zmiana progu nie jest już potrzebna).</p>
+                        <p data-i18n="komendy.ustaw_klan_desc">Powiązuje serwer Discord z konkretnym klanem Brawl Stars. Codziennie zapisuje historię pucharów i statystyk, potrzebnych do innych komend. Próg pucharów ustawiany jest automatycznie według progu z gry.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/ustaw_klan-uzycie.png" data-src-en="/assets/screenshots/ustaw_klan-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_klan_shot_usage_alt">
@@ -458,10 +455,10 @@
                 </div>
 
                 <!-- /weryfikacja_gracza -->
-                <div class="command-block command-block--text-only" id="weryfikacja_gracza">
+                <div class="command-block command-block--text-only" id="weryfikacja_gracza" data-has-shots="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.weryfikacja_gracza_code">/weryfikacja_gracza</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.weryfikacja_gracza_desc">Panel weryfikacji BEZ wymogu klanu - działa równolegle do weryfikacji klanowej, nawet na serwerach z ustawionym klanem. Przydatny na społecznościowych serwerach albo dla graczy spoza Twojego klanu.</p>
+                        <p data-i18n="komendy.weryfikacja_gracza_desc">Panel weryfikacji graczy nieprzynależących do klanu ustawionego na serwerze. Przydatne dla większych serwerów.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/weryfikacja_gracza-uzycie.png" data-src-en="/assets/screenshots/weryfikacja_gracza-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.weryfikacja_gracza_shot_usage_alt">
@@ -470,10 +467,10 @@
                 </div>
 
                 <!-- /ustaw_kanal_weryfikacji -->
-                <div class="command-block command-block--text-only" id="ustaw_kanal_weryfikacji">
+                <div class="command-block command-block--text-only" id="ustaw_kanal_weryfikacji" data-has-shots="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_kanal_weryfikacji_code">/ustaw_kanal_weryfikacji [kanal]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.ustaw_kanal_weryfikacji_desc">Ustawia kanał, na który trafia widoczny log każdej udanej weryfikacji (klanowej albo ogólnej) - żeby reszta serwera widziała, kto właśnie dołączył.</p>
+                        <p data-i18n="komendy.ustaw_kanal_weryfikacji_desc">Ustawia kanał, gdzie trafiają logi udanej weryfikacji klanowej bądź ogólnej.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/ustaw_kanal_weryfikacji-uzycie.png" data-src-en="/assets/screenshots/ustaw_kanal_weryfikacji-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_kanal_weryfikacji_shot_usage_alt">
@@ -482,10 +479,10 @@
                 </div>
 
                 <!-- /ustaw_zmiany_po_weryfikacji -->
-                <div class="command-block command-block--text-only" id="ustaw_zmiany_po_weryfikacji">
+                <div class="command-block command-block--text-only" id="ustaw_zmiany_po_weryfikacji" data-has-shots="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_zmiany_po_weryfikacji_code">/ustaw_zmiany_po_weryfikacji</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.ustaw_zmiany_po_weryfikacji_desc">Ustala, czy weryfikacja zmienia pseudonim gracza na Discordzie - osobno włączasz synchronizację nazwy z grą i osobno prefiks z liczbą pucharów (np. "[35k] Nick").</p>
+                        <p data-i18n="komendy.ustaw_zmiany_po_weryfikacji_desc">Wybierz opcję, którą bot ma zmienić w nicku gracza po udanej weryfikacji (nick z gry lub prefiks przed nickiem, ilość pucharów w tysiącach). Komunikat ostrzegawczy wyskakuje, ponieważ bot samodzielnie nie może zmienić nicku właścicielowi serwera bądź innym graczom, którzy mają rangę powyżej rangi bota.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/ustaw_zmiany_po_weryfikacji-uzycie.png" data-src-en="/assets/screenshots/ustaw_zmiany_po_weryfikacji-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_zmiany_po_weryfikacji_shot_usage_alt">
@@ -500,7 +497,7 @@
                 <div class="command-block command-block--text-only" id="ustaw_nazwy_rol_w_klanie" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_nazwy_rol_w_klanie_code">/ustaw_nazwy_rol_w_klanie [ranga_z_gry] [nowa_nazwa_discord]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.ustaw_nazwy_rol_w_klanie_desc">Dopasowuje nazwę roli Discord do konkretnej rangi klanowej (member / senior / vicePresident / president). Odpowiedź widoczna tylko dla admina.</p>
+                        <p data-i18n="komendy.ustaw_nazwy_rol_w_klanie_desc">Dopasowuje rolę z Discorda do konkretnej rangi klanowej w grze.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/ustaw_role_rang-uzycie.png" data-src-en="/assets/screenshots/ustaw_role_rang-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_nazwy_rol_w_klanie_shot_usage_alt">
@@ -509,10 +506,10 @@
                 </div>
 
                 <!-- /ustaw_role_za_puchary -->
-                <div class="command-block command-block--text-only" id="ustaw_role_za_puchary">
+                <div class="command-block command-block--text-only" id="ustaw_role_za_puchary" data-has-shots="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_role_za_puchary_code">/ustaw_role_za_puchary [prog_pucharow] [rola]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.ustaw_role_za_puchary_desc">Dodaje własną rolę nadawaną graczom po przekroczeniu wybranego progu pucharowego - dowolna liczba progów, niezależnie od progu wejścia do klanu. Każdy dostaje rolę swojego najwyższego spełnionego progu. Konfigurację usuwa <code>/usun_role_za_puchary</code>.</p>
+                        <p data-i18n="komendy.ustaw_role_za_puchary_desc">Ustawia rolę, którą gracz dostanie po przekroczeniu podanego progu pucharowego w grze. Wymóg: gracz musi być zweryfikowany przez bota.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/ustaw_role_za_puchary-uzycie.png" data-src-en="/assets/screenshots/ustaw_role_za_puchary-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_role_za_puchary_shot_usage_alt">
@@ -528,10 +525,10 @@
                      plików PNG pod tymi src odkryłoby to złamane obrazki zamiast
                      działającego "wkrótce". Gdy Paweł doda realne zrzuty, dopisać
                      oba atrybuty na divie niżej. -->
-                <div class="command-block command-block--text-only" id="ustaw_role_za_range">
+                <div class="command-block command-block--text-only" id="ustaw_role_za_range" data-has-shots="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_role_za_range_code">/ustaw_role_za_range [prog_rangi_ranked] [rola]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.ustaw_role_za_range_desc">Nadaje rolę Discord graczom, którzy osiągną wybrany próg rangi Ranked z gry (np. Diamond i wyżej) - każdy dostaje rolę swojego najwyższego spełnionego progu, nadawaną automatycznie przy weryfikacji. Konfigurację usuwa <code>/usun_role_za_range</code>.</p>
+                        <p data-i18n="komendy.ustaw_role_za_range_desc">Ustawia rolę, którą gracz dostanie po wbiciu danej rangi w grze. Wymóg: gracz musi być zweryfikowany przez bota.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/ustaw_role_za_range-uzycie.png" data-src-en="/assets/screenshots/ustaw_role_za_range-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_role_za_range_shot_usage_alt">
@@ -540,10 +537,10 @@
                 </div>
 
                 <!-- /ustaw_role_niezweryfikowanych -->
-                <div class="command-block command-block--text-only" id="ustaw_role_niezweryfikowanych">
+                <div class="command-block command-block--text-only" id="ustaw_role_niezweryfikowanych" data-has-shots="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_role_niezweryfikowanych_code">/ustaw_role_niezweryfikowanych [rola]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.ustaw_role_niezweryfikowanych_desc">Rola nadawana automatycznie nowym członkom od razu po dołączeniu do serwera, aż do momentu, gdy się zweryfikują - ułatwia odróżnienie niezweryfikowanych na pierwszy rzut oka.</p>
+                        <p data-i18n="komendy.ustaw_role_niezweryfikowanych_desc">Ustawia rolę, którą bot automatycznie przydzieli nowej osobie po dołączeniu, jeżeli nie jest jeszcze zweryfikowana.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/ustaw_role_niezweryfikowanych-uzycie.png" data-src-en="/assets/screenshots/ustaw_role_niezweryfikowanych-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_role_niezweryfikowanych_shot_usage_alt">
@@ -555,11 +552,12 @@
                 <div class="command-block command-block--text-only" id="ustaw_kanal_raportow" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_kanal_raportow_code">/ustaw_kanal_raportow [kanal]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.ustaw_kanal_raportow_desc">Ustawia kanał, na który trafiają automatyczne raporty. Bot sam sprawdza, czy ma uprawnienia do pisania i linkowania embedów na wybranym kanale.</p>
+                        <p data-i18n="komendy.ustaw_kanal_raportow_desc">Ustawia kanał, na który trafiają alerty aktywności oraz automatyczne raporty tygodniowe i miesięczne.<br>Raport tygodniowy: można ustawić dzień i godzinę, kiedy ma przychodzić.<br>Raport miesięczny: można ustawić tylko godzinę, przychodzi 1. dnia każdego miesiąca.</p>
                         <ul>
                             <li data-i18n="komendy.ustaw_kanal_raportow_li1">Co tydzień: kto spełnia próg klanowy, całkowity progres klanu, top 3 tygodnia, lista mniej aktywnych członków</li>
                             <li data-i18n="komendy.ustaw_kanal_raportow_li2">Co miesiąc: podium i wyróżnienia, najlepszy dzień klanu, nowi członkowie</li>
                             <li data-i18n="komendy.ustaw_kanal_raportow_li3">Premium: wykres PNG trendu klanu, średni przyrost i zaangażowanie, MVP, prognoza pucharów na 30 dni, „miesiąc w liczbach”</li>
+                            <li data-i18n="komendy.ustaw_kanal_raportow_li4">Ten sam kanał odbiera też alerty aktywności graczy (/ustaw_alert_aktywnosci) i ogłoszenia o celach klanowych (/utworz_cel_klanu)</li>
                         </ul>
                     </div>
                     <div class="command-block-shots" hidden>
@@ -584,7 +582,7 @@
                 </div>
 
                 <!-- /ustaw_godzine_raportu_mies -->
-                <div class="command-block command-block--text-only" id="ustaw_godzine_raportu_mies">
+                <div class="command-block command-block--text-only" id="ustaw_godzine_raportu_mies" data-has-shots="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_godzine_raportu_mies_code">/ustaw_godzine_raportu_mies [godzina]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.ustaw_godzine_raportu_mies_desc">Ustala godzinę automatycznego raportu miesięcznego - dzień jest zawsze stały, 1. dzień miesiąca.</p>
@@ -638,10 +636,10 @@
                 </div>
 
                 <!-- /utworz_cel_klanu -->
-                <div class="command-block command-block--text-only" id="utworz_cel_klanu">
+                <div class="command-block command-block--text-only" id="utworz_cel_klanu" data-has-shots="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.utworz_cel_klanu_code">/utworz_cel_klanu</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.utworz_cel_klanu_desc">Ustawia wspólny cel przyrostu trofeów dla całego klanu, z nagrodą po osiągnięciu (rola, ogłoszenie) - cel i nagrody wybiera się przez formularz i listę wyboru, bez parametrów w samej komendzie. Darmowe. Konfigurację anuluje <code>/anuluj_cel_klanu</code>.</p>
+                        <p data-i18n="komendy.utworz_cel_klanu_desc">Ustawia wspólny cel przyrostu trofeów dla całego klanu, z nagrodą po jego osiągnięciu, wybraną przez lidera.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/utworz_cel_klanu-uzycie.png" data-src-en="/assets/screenshots/utworz_cel_klanu-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.utworz_cel_klanu_shot_usage_alt">
@@ -650,10 +648,10 @@
                 </div>
 
                 <!-- /ustaw_alert_aktywnosci -->
-                <div class="command-block command-block--text-only" id="ustaw_alert_aktywnosci">
+                <div class="command-block command-block--text-only" id="ustaw_alert_aktywnosci" data-has-shots="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_alert_aktywnosci_code">/ustaw_alert_aktywnosci</code> <span class="badge" data-i18n="common.badge_premium">🔒 Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.ustaw_alert_aktywnosci_desc">Natychmiastowe alerty na kanał - o spadku trofeów gracza, o braku aktywności przez wybraną liczbę dni, albo o zmianie rangi Ranked. Typ alertu i progi wybiera się przez menu i formularz.</p>
+                        <p data-i18n="komendy.ustaw_alert_aktywnosci_desc">Wysyła alert, gdy dany gracz straci ustaloną liczbę pucharów, spadnie z rangi, bądź będzie nieaktywny przez ustaloną liczbę dni.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/ustaw_alert_aktywnosci-uzycie.png" data-src-en="/assets/screenshots/ustaw_alert_aktywnosci-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.ustaw_alert_aktywnosci_shot_usage_alt">
@@ -761,8 +759,8 @@
       en: "You'll find a description of every command here, along with real Discord screenshots. Commands are shown in both their free and Premium versions.",
     },
     "komendy.info_note_body": {
-      pl: "<strong>Zrzuty ekranu są chwilowo wstrzymane.</strong> Po dużym redesignie komend (embedy, lokalizacja PL/EN, nowe komendy) stare screeny pokazywały nieaktualny wygląd - usunęliśmy je, dopóki nie nagramy nowych. Do tego czasu każda komenda ma sam, aktualny opis.",
-      en: "<strong>Screenshots are temporarily paused.</strong> After a big command redesign (embeds, PL/EN localization, new commands) the old screenshots showed an outdated look - we removed them until we record new ones. Until then, every command just has an up-to-date description.",
+      pl: "<strong>Aktualizacja zrzutów ekranu w toku.</strong> Wersja angielska czeka jeszcze na nowe screeny, opisy komend są już aktualne.",
+      en: "<strong>Screenshot update coming soon.</strong> The English version is still waiting for new screenshots, but every command description is already up to date.",
     },
     "komendy.nav_label": { pl: "Skocz do komendy", en: "Jump to a command" },
     "komendy.nav_toggle_aria": { pl: "Zwiń lub rozwiń listę komend", en: "Collapse or expand the command list" },
@@ -806,22 +804,22 @@
     "komendy.czlonkowie_klanu_code": { pl: "/czlonkowie_klanu", en: "/clan_members" },
     "komendy.czlonkowie_klanu_nav": { pl: "/czlonkowie_klanu", en: "/clan_members" },
     "komendy.czlonkowie_klanu_desc": {
-      pl: "Pokazuje WSZYSTKICH członków klanu (trofea, brawlerzy, rola klanowa), z paginacją - nie tylko czołówkę jak dawna /ranking_klanu, wg tagu klanu skonfigurowanego przez admina (<code>/ustaw_klan</code>).",
-      en: "Shows ALL clan members (trophies, brawlers, clan role), paginated - not just the top of the list like the old /clan_top, based on the clan tag configured by the admin (<code>/set_clan</code>).",
+      pl: "Pokazuje wszystkich członków klanu z paginacją.",
+      en: "Shows all clan members, paginated.",
     },
 
     "komendy.ranking_swiatowy_code": { pl: "/ranking_swiatowy", en: "/world_ranking" },
     "komendy.ranking_swiatowy_nav": { pl: "/ranking_swiatowy", en: "/world_ranking" },
     "komendy.ranking_swiatowy_desc": {
-      pl: "Światowy albo krajowy ranking graczy, klubów lub brawlerów, prosto z oficjalnego API Supercell - przyciski pozwalają przełączać kategorię i kraj bez ponownego wywoływania komendy.",
-      en: "Global or national ranking of players, clubs or brawlers, straight from Supercell's official API - buttons let you switch category and country without rerunning the command.",
+      pl: "Ranking pierwszych 100 osób na świecie bądź w danym kraju.",
+      en: "Ranking of the top 100 players worldwide or in a chosen country.",
     },
 
     "komendy.moja_pozycja_code": { pl: "/moja_pozycja [tag_gracza]", en: "/my_rank [player_tag]" },
     "komendy.moja_pozycja_nav": { pl: "/moja_pozycja", en: "/my_rank" },
     "komendy.moja_pozycja_desc": {
-      pl: "Twoja aktualna pozycja w rankingu klanu wg aktualnych trofeów i dystans do osoby bezpośrednio wyżej.",
-      en: "Your current position in the clan ranking by current trophies, and the gap to the player directly above you.",
+      pl: "Twoja aktualna pozycja w rankingu klanu wg aktualnych trofeów, wraz z dystansem do sąsiadów w rankingu (osoby przed Tobą i za Tobą).",
+      en: "Your current position in the clan ranking by current trophies, along with the gap to your neighbors in the ranking (the players just above and below you).",
     },
     "komendy.moja_pozycja_li1": {
       pl: "Premium: prognoza, za ile dni wyprzedzisz osobę przed sobą (na bazie tempa z ostatnich 30 dni)",
@@ -835,8 +833,8 @@
     "komendy.moj_cel_code": { pl: "/moj_cel [tag_gracza] [cel_puchary]", en: "/my_goal [player_tag] [goal_trophies]" },
     "komendy.moj_cel_nav": { pl: "/moj_cel", en: "/my_goal" },
     "komendy.moj_cel_desc": {
-      pl: "Ustawia Twój osobisty cel pucharowy i pokazuje pasek postępu oraz zmianę od wczoraj.",
-      en: "Sets your personal trophy goal and shows a progress bar plus the change since yesterday.",
+      pl: "Ustawia Twój osobisty cel pucharowy. Przyciskiem „Sprawdź postęp” możesz w każdej chwili na żywo sprawdzić, ile brakuje do celu i czy zdążysz w założonym czasie. Darmowe, bez ograniczeń.",
+      en: "Sets your personal trophy goal. The \"Check progress\" button lets you check live, at any time, how much you have left and whether you'll make it in the set time. Free, with no limits.",
     },
     "komendy.moj_cel_li1": {
       pl: "Premium: prognoza dotarcia do celu w widełkach - osobno z Twojego najlepszego i najgorszego tygodnia",
@@ -857,8 +855,8 @@
     "komendy.pojedynek_code": { pl: "/pojedynek [tag_gracza_1] [tag_gracza_2]", en: "/duel [player_tag_1] [player_tag_2]" },
     "komendy.pojedynek_nav": { pl: "/pojedynek", en: "/duel" },
     "komendy.pojedynek_desc": {
-      pl: "Porównanie 1:1 dwóch graczy klanu - aktualne trofea, kto prowadzi i przyrost z ostatniego tygodnia każdego z nich.",
-      en: "A 1:1 comparison of two clan members - current trophies, who's leading, and each player's gain from the last week.",
+      pl: "Porównanie 1:1 dwóch graczy. Aby komenda poprawnie wyświetlała dane, gracze muszą być zweryfikowani przez bota.",
+      en: "A 1:1 comparison of two players. For the command to show data correctly, both players must be verified by the bot.",
     },
     "komendy.pojedynek_li1": {
       pl: "Premium: porównanie kolekcji brawlerów obu graczy (wg rzadkości)",
@@ -872,15 +870,15 @@
     "komendy.pojedynek_klanow_code": { pl: "/pojedynek_klanow [tag]", en: "/clan_duel [tag]" },
     "komendy.pojedynek_klanow_nav": { pl: "/pojedynek_klanow", en: "/clan_duel" },
     "komendy.pojedynek_klanow_desc": {
-      pl: "Porównanie klanu tego serwera z dowolnym innym klanem Brawl Stars - drugi klan nie musi być skonfigurowany na żadnym serwerze, wystarczy jego tag (albo podpowiedź z listy znanych botowi klanów).",
-      en: "A comparison of this server's clan with any other Brawl Stars clan - the second clan doesn't need to be configured on any server, just provide its tag (or pick a suggestion from clans the bot already knows).",
+      pl: "Porównanie klanu tego serwera z innym, dowolnym klanem Brawl Stars.",
+      en: "A comparison of this server's clan with any other Brawl Stars clan.",
     },
 
     "komendy.historia_pucharow_code": { pl: "/historia_pucharow [zakres_dni] [tag_gracza]", en: "/trophy_history [day_range] [player_tag]" },
     "komendy.historia_pucharow_nav": { pl: "/historia_pucharow", en: "/trophy_history" },
     "komendy.historia_pucharow_desc": {
-      pl: "Trend trofeów dowolnego gracza z klanu z ostatnich 7 lub 30 dni - tekstowy sparkline w embedzie plus prawdziwy wykres liniowy PNG. Dorzuca też prognozę osiągnięcia progu klanowego i pozycję gracza w klanie w tym oknie czasowym.",
-      en: "Trophy trend for any clan member over the last 7 or 30 days - a text sparkline in the embed plus a real PNG line chart. Also adds a forecast for hitting the clan threshold and the player's position in the clan over that time window.",
+      pl: "Trend pucharów dowolnego gracza z ostatnich 7 lub 30 dni. Aby komenda działała, dany gracz musi być zweryfikowany przez bota przez podany czas.",
+      en: "Trophy trend for any player over the last 7 or 30 days. For the command to work, that player must have been verified by the bot for the requested period.",
     },
 
     "komendy.ranking_kolekcji_code": { pl: "/ranking_kolekcji", en: "/collection_ranking" },
@@ -900,15 +898,15 @@
     "komendy.zweryfikuj_moj_profil_code": { pl: "/zweryfikuj_moj_profil [tag_gracza]", en: "/verify_my_profile [player_tag]" },
     "komendy.zweryfikuj_moj_profil_nav": { pl: "/zweryfikuj_moj_profil", en: "/verify_my_profile" },
     "komendy.zweryfikuj_moj_profil_desc": {
-      pl: "Rejestruje Twój tag do samodzielnego śledzenia historii pucharów - niezależnie od tego, czy serwer ma w ogóle skonfigurowany klan. Działa też w wiadomości prywatnej z botem.",
-      en: "Registers your tag for self-tracking trophy history - regardless of whether the server has a clan configured at all. Also works in a direct message with the bot.",
+      pl: "Rejestruje Twój tag niezależnie od przynależenia do danego serwera bądź klanu. Działa również w wiadomości prywatnej z botem.",
+      en: "Registers your tag independently of any particular server or clan. Also works in a direct message with the bot.",
     },
 
     "komendy.moje_podsumowanie_code": { pl: "/moje_podsumowanie [okres]", en: "/my_summary [period]" },
     "komendy.moje_podsumowanie_nav": { pl: "/moje_podsumowanie", en: "/my_summary" },
     "komendy.moje_podsumowanie_desc": {
-      pl: "Podsumowanie Twoich własnych pucharów za ostatni tydzień albo miesiąc - dostępne wyłącznie w wiadomości prywatnej z botem, niezależnie od tego, ile serwerów z BrawlManagerem współdzielisz.",
-      en: "A summary of your own trophies for the past week or month - available only in a direct message with the bot, regardless of how many BrawlManager servers you share.",
+      pl: "Podsumowanie Twoich statystyk z ostatniego tygodnia bądź miesiąca.",
+      en: "A summary of your stats from the last week or month.",
     },
 
     "komendy.support_code": { pl: "/support", en: "/support" },
@@ -921,8 +919,8 @@
     "komendy.ustaw_klan_code": { pl: "/ustaw_klan [nowy_tag_klanu]", en: "/set_clan [clan_tag]" },
     "komendy.ustaw_klan_nav": { pl: "/ustaw_klan", en: "/set_clan" },
     "komendy.ustaw_klan_desc": {
-      pl: "Powiązuje ten serwer Discord z konkretnym klanem Brawl Stars, zapisuje od razu pierwszy punkt historii pucharów wszystkich jego członków i AUTOMATYCZNIE ustawia próg pucharowy serwera na wymóg wejścia do klanu z gry (ręczna zmiana progu nie jest już potrzebna).",
-      en: "Links this Discord server to a specific Brawl Stars clan, immediately saves the first trophy history point for all its members, and AUTOMATICALLY sets the server's trophy threshold to the clan's in-game entry requirement (no manual threshold step needed).",
+      pl: "Powiązuje serwer Discord z konkretnym klanem Brawl Stars. Codziennie zapisuje historię pucharów i statystyk, potrzebnych do innych komend. Próg pucharów ustawiany jest automatycznie według progu z gry.",
+      en: "Links the Discord server to a specific Brawl Stars clan. Every day it saves a history of trophies and stats needed by other commands. The trophy threshold is set automatically to match the clan's in-game requirement.",
     },
 
     "komendy.weryfikacja_klanu_code": { pl: "/weryfikacja_klanu", en: "/clan_verification" },
@@ -935,57 +933,57 @@
     "komendy.weryfikacja_gracza_code": { pl: "/weryfikacja_gracza", en: "/member_verification" },
     "komendy.weryfikacja_gracza_nav": { pl: "/weryfikacja_gracza", en: "/member_verification" },
     "komendy.weryfikacja_gracza_desc": {
-      pl: "Panel weryfikacji BEZ wymogu klanu - działa równolegle do weryfikacji klanowej, nawet na serwerach z ustawionym klanem. Przydatny na społecznościowych serwerach albo dla graczy spoza Twojego klanu.",
-      en: "A verification panel with NO clan requirement - runs alongside clan verification, even on servers with a clan set up. Useful for community servers or players outside your clan.",
+      pl: "Panel weryfikacji graczy nieprzynależących do klanu ustawionego na serwerze. Przydatne dla większych serwerów.",
+      en: "A verification panel for players who don't belong to the clan configured on the server. Useful for larger servers.",
     },
 
     "komendy.ustaw_kanal_weryfikacji_code": { pl: "/ustaw_kanal_weryfikacji [kanal]", en: "/set_verification_log_channel [channel]" },
     "komendy.ustaw_kanal_weryfikacji_nav": { pl: "/ustaw_kanal_weryfikacji", en: "/set_verification_log_channel" },
     "komendy.ustaw_kanal_weryfikacji_desc": {
-      pl: "Ustawia kanał, na który trafia widoczny log każdej udanej weryfikacji (klanowej albo ogólnej) - żeby reszta serwera widziała, kto właśnie dołączył.",
-      en: "Sets the channel that receives a visible log of every successful verification (clan or general) - so the rest of the server sees who just joined.",
+      pl: "Ustawia kanał, gdzie trafiają logi udanej weryfikacji klanowej bądź ogólnej.",
+      en: "Sets the channel that receives logs of successful clan or general verification.",
     },
 
     "komendy.ustaw_zmiany_po_weryfikacji_code": { pl: "/ustaw_zmiany_po_weryfikacji", en: "/set_verification_nickname" },
     "komendy.ustaw_zmiany_po_weryfikacji_nav": { pl: "/ustaw_zmiany_po_weryfikacji", en: "/set_verification_nickname" },
     "komendy.ustaw_zmiany_po_weryfikacji_desc": {
-      pl: 'Ustala, czy weryfikacja zmienia pseudonim gracza na Discordzie - osobno włączasz synchronizację nazwy z grą i osobno prefiks z liczbą pucharów (np. "[35k] Nick").',
-      en: 'Sets whether verification changes the player\'s Discord nickname - toggle syncing the name with the game and the trophy-count prefix (e.g. "[35k] Nick") independently.',
+      pl: 'Wybierz opcję, którą bot ma zmienić w nicku gracza po udanej weryfikacji (nick z gry lub prefiks przed nickiem, ilość pucharów w tysiącach). Komunikat ostrzegawczy wyskakuje, ponieważ bot samodzielnie nie może zmienić nicku właścicielowi serwera bądź innym graczom, którzy mają rangę powyżej rangi bota.',
+      en: 'Choose what the bot should change in a player\'s nickname after a successful verification (in-game name, or a prefix showing trophies in thousands). A warning message appears because the bot can\'t change the nickname of the server owner or of other members whose role is above the bot\'s own role.',
     },
 
     "komendy.ustaw_nazwy_rol_w_klanie_code": { pl: "/ustaw_nazwy_rol_w_klanie [ranga_z_gry] [nowa_nazwa_discord]", en: "/set_clan_role [game_rank] [discord_role]" },
     "komendy.ustaw_nazwy_rol_w_klanie_nav": { pl: "/ustaw_nazwy_rol_w_klanie", en: "/set_clan_role" },
     "komendy.ustaw_nazwy_rol_w_klanie_desc": {
-      pl: "Dopasowuje nazwę roli Discord do konkretnej rangi klanowej (member / senior / vicePresident / president). Odpowiedź widoczna tylko dla admina.",
-      en: "Maps a Discord role name to a specific clan rank (member / senior / vicePresident / president). The response is only visible to the admin.",
+      pl: "Dopasowuje rolę z Discorda do konkretnej rangi klanowej w grze.",
+      en: "Maps a Discord role to a specific in-game clan rank.",
     },
 
     "komendy.ustaw_role_za_puchary_code": { pl: "/ustaw_role_za_puchary [prog_pucharow] [rola]", en: "/set_trophy_role [trophy_threshold] [role]" },
     "komendy.ustaw_role_za_puchary_nav": { pl: "/ustaw_role_za_puchary", en: "/set_trophy_role" },
     "komendy.ustaw_role_za_puchary_desc": {
-      pl: "Dodaje własną rolę nadawaną graczom po przekroczeniu wybranego progu pucharowego - dowolna liczba progów, niezależnie od progu wejścia do klanu. Każdy dostaje rolę swojego najwyższego spełnionego progu. Konfigurację usuwa <code>/usun_role_za_puchary</code>.",
-      en: "Adds a custom role granted to players who cross a chosen trophy threshold - any number of thresholds, independent of the clan's entry requirement. Each player gets the role for their highest reached threshold. Configuration is removed with <code>/remove_trophy_role</code>.",
+      pl: "Ustawia rolę, którą gracz dostanie po przekroczeniu podanego progu pucharowego w grze. Wymóg: gracz musi być zweryfikowany przez bota.",
+      en: "Sets a role that a player receives after crossing a chosen in-game trophy threshold. Requirement: the player must be verified by the bot.",
     },
 
     "komendy.ustaw_role_za_range_code": { pl: "/ustaw_role_za_range [prog_rangi_ranked] [rola]", en: "/set_ranked_role [ranked_threshold] [role]" },
     "komendy.ustaw_role_za_range_nav": { pl: "/ustaw_role_za_range", en: "/set_ranked_role" },
     "komendy.ustaw_role_za_range_desc": {
-      pl: "Nadaje rolę Discord graczom, którzy osiągną wybrany próg rangi Ranked z gry (np. Diamond i wyżej) - każdy dostaje rolę swojego najwyższego spełnionego progu, nadawaną automatycznie przy weryfikacji. Konfigurację usuwa <code>/usun_role_za_range</code>.",
-      en: "Grants a Discord role to players who reach a chosen Ranked rank threshold (e.g. Diamond and above) - each player gets the role for their highest reached threshold, assigned automatically during verification. Configuration is removed with <code>/remove_ranked_role</code>.",
+      pl: "Ustawia rolę, którą gracz dostanie po wbiciu danej rangi w grze. Wymóg: gracz musi być zweryfikowany przez bota.",
+      en: "Sets a role that a player receives after reaching a chosen in-game rank. Requirement: the player must be verified by the bot.",
     },
 
     "komendy.ustaw_role_niezweryfikowanych_code": { pl: "/ustaw_role_niezweryfikowanych [rola]", en: "/set_unverified_role [role]" },
     "komendy.ustaw_role_niezweryfikowanych_nav": { pl: "/ustaw_role_niezweryfikowanych", en: "/set_unverified_role" },
     "komendy.ustaw_role_niezweryfikowanych_desc": {
-      pl: "Rola nadawana automatycznie nowym członkom od razu po dołączeniu do serwera, aż do momentu, gdy się zweryfikują - ułatwia odróżnienie niezweryfikowanych na pierwszy rzut oka.",
-      en: "A role automatically given to new members as soon as they join the server, until they verify - makes it easy to spot unverified members at a glance.",
+      pl: "Ustawia rolę, którą bot automatycznie przydzieli nowej osobie po dołączeniu, jeżeli nie jest jeszcze zweryfikowana.",
+      en: "Sets the role the bot automatically assigns to a new member upon joining, if they aren't verified yet.",
     },
 
     "komendy.ustaw_kanal_raportow_code": { pl: "/ustaw_kanal_raportow [kanal]", en: "/set_report_channel [channel]" },
     "komendy.ustaw_kanal_raportow_nav": { pl: "/ustaw_kanal_raportow", en: "/set_report_channel" },
     "komendy.ustaw_kanal_raportow_desc": {
-      pl: "Ustawia kanał, na który trafiają automatyczne raporty. Bot sam sprawdza, czy ma uprawnienia do pisania i linkowania embedów na wybranym kanale.",
-      en: "Sets the channel that receives automatic reports. The bot checks on its own whether it has permission to post and embed links in the chosen channel.",
+      pl: "Ustawia kanał, na który trafiają alerty aktywności oraz automatyczne raporty tygodniowe i miesięczne.<br>Raport tygodniowy: można ustawić dzień i godzinę, kiedy ma przychodzić.<br>Raport miesięczny: można ustawić tylko godzinę, przychodzi 1. dnia każdego miesiąca.",
+      en: "Sets the channel that receives activity alerts and automatic weekly and monthly reports.<br>Weekly report: you can set the day and hour it arrives.<br>Monthly report: you can only set the hour, it arrives on the 1st of every month.",
     },
     "komendy.ustaw_kanal_raportow_li1": {
       pl: "Co tydzień: kto spełnia próg klanowy, całkowity progres klanu, top 3 tygodnia, lista mniej aktywnych członków",
@@ -998,6 +996,10 @@
     "komendy.ustaw_kanal_raportow_li3": {
       pl: "Premium: wykres PNG trendu klanu, średni przyrost i zaangażowanie, MVP, prognoza pucharów na 30 dni, „miesiąc w liczbach”",
       en: "Premium: a PNG chart of the clan trend, average gain and engagement, MVP, a 30-day trophy forecast, a \"month in numbers\" summary",
+    },
+    "komendy.ustaw_kanal_raportow_li4": {
+      pl: "Ten sam kanał odbiera też alerty aktywności graczy (/ustaw_alert_aktywnosci) i ogłoszenia o celach klanowych (/utworz_cel_klanu)",
+      en: "The same channel also receives player activity alerts (/set_activity_alert) and clan goal announcements (/create_clan_goal)",
     },
 
     "komendy.ustaw_harmonogram_tygodniowy_code": { pl: "/ustaw_harmonogram_tygodniowy [dzien] [godzina]", en: "/set_report_schedule [day] [hour]" },
@@ -1031,15 +1033,15 @@
     "komendy.utworz_cel_klanu_code": { pl: "/utworz_cel_klanu", en: "/create_clan_goal" },
     "komendy.utworz_cel_klanu_nav": { pl: "/utworz_cel_klanu", en: "/create_clan_goal" },
     "komendy.utworz_cel_klanu_desc": {
-      pl: "Ustawia wspólny cel przyrostu trofeów dla całego klanu, z nagrodą po osiągnięciu (rola, ogłoszenie) - cel i nagrody wybiera się przez formularz i listę wyboru, bez parametrów w samej komendzie. Darmowe. Konfigurację anuluje <code>/anuluj_cel_klanu</code>.",
-      en: "Sets a shared trophy-gain goal for the whole clan, with a reward on success (role, announcement) - the goal and rewards are picked through a form and a select menu, no parameters on the command itself. Free. Configuration is cancelled with <code>/cancel_clan_goal</code>.",
+      pl: "Ustawia wspólny cel przyrostu trofeów dla całego klanu, z nagrodą po jego osiągnięciu, wybraną przez lidera.",
+      en: "Sets a shared trophy-gain goal for the whole clan, with a reward for reaching it, chosen by the leader.",
     },
 
     "komendy.ustaw_alert_aktywnosci_code": { pl: "/ustaw_alert_aktywnosci", en: "/set_activity_alert" },
     "komendy.ustaw_alert_aktywnosci_nav": { pl: "/ustaw_alert_aktywnosci", en: "/set_activity_alert" },
     "komendy.ustaw_alert_aktywnosci_desc": {
-      pl: "Natychmiastowe alerty na kanał - o spadku trofeów gracza, o braku aktywności przez wybraną liczbę dni, albo o zmianie rangi Ranked. Typ alertu i progi wybiera się przez menu i formularz.",
-      en: "Instant channel alerts - for a player's trophy drop, inactivity over a chosen number of days, or a Ranked rank change. The alert type and thresholds are picked through a menu and a form.",
+      pl: "Wysyła alert, gdy dany gracz straci ustaloną liczbę pucharów, spadnie z rangi, bądź będzie nieaktywny przez ustaloną liczbę dni.",
+      en: "Sends an alert when a player loses a set number of trophies, drops in rank, or is inactive for a set number of days.",
     },
 
     "komendy.ustaw_wyglad_code": { pl: "/ustaw_wyglad [komenda]", en: "/set_appearance [command]" },
@@ -1158,6 +1160,9 @@
     "komendy.ranking_kolekcji_shot_result_alt": { pl: "Wynik komendy /ranking_kolekcji - ranking klanu wg kolekcji", en: "Result of /collection_ranking - clan ranking by collection" },
     "komendy.zweryfikuj_moj_profil_shot_usage_alt": { pl: "Wpisywanie komendy /zweryfikuj_moj_profil na Discordzie", en: "Typing the /verify_my_profile command on Discord" },
     "komendy.zweryfikuj_moj_profil_shot_result_alt": { pl: "Wynik komendy /zweryfikuj_moj_profil - tag zarejestrowany do śledzenia", en: "Result of /verify_my_profile - tag registered for tracking" },
+    "komendy.zweryfikuj_moj_profil_shot_krok1_caption": { pl: "Krok 1: instrukcja", en: "Step 1: instructions" },
+    "komendy.zweryfikuj_moj_profil_shot_krok2_caption": { pl: "Krok 2: zweryfikowano", en: "Step 2: verified" },
+    "komendy.zweryfikuj_moj_profil_shot_krok2_alt": { pl: "Potwierdzenie udanej weryfikacji /zweryfikuj_moj_profil", en: "Confirmation of a successful /verify_my_profile verification" },
     "komendy.moje_podsumowanie_shot_usage_alt": { pl: "Wpisywanie komendy /moje_podsumowanie na Discordzie", en: "Typing the /my_summary command on Discord" },
     "komendy.moje_podsumowanie_shot_result_alt": { pl: "Wynik komendy /moje_podsumowanie - podsumowanie pucharów w DM", en: "Result of /my_summary - trophy summary in a DM" },
     "komendy.weryfikacja_gracza_shot_usage_alt": { pl: "Wpisywanie komendy /weryfikacja_gracza na Discordzie", en: "Typing the /member_verification command on Discord" },
@@ -1223,7 +1228,7 @@
       if (infoNoteWrap) infoNoteWrap.hidden = false;
       return;
     }
-    if (infoNoteWrap) infoNoteWrap.hidden = true;
+    if (infoNoteWrap) infoNoteWrap.hidden = (forcedLang !== "en");
     const blockSelector = forcedLang === "pl" ? ".command-block[data-has-shots]" : ".command-block[data-has-shots-en]";
     document.querySelectorAll(blockSelector).forEach((block) => {
       block.classList.remove("command-block--text-only");
