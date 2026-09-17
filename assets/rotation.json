@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-09-17T12:04:30Z",
+  "aktualizowano": "2026-09-17T14:04:30Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -75,9 +75,9 @@
     },
     {
       "tryb": "brawlArena",
-      "mapa_poprzednia": "Mirage Arena",
-      "mapa_aktualna": "Brawler's Rift",
-      "koniec_aktualnego_slotu": "2026-09-17T14:00:00Z"
+      "mapa_poprzednia": "Brawler's Rift",
+      "mapa_aktualna": "Crimson Divide",
+      "koniec_aktualnego_slotu": "2026-09-18T14:00:00Z"
     },
     {
       "tryb": "brawlBall5V5",
@@ -93,9 +93,9 @@
     },
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Makeshift Scaffolding",
-      "mapa_aktualna": "Backyard Bowl",
-      "koniec_aktualnego_slotu": "2026-09-17T14:00:00Z"
+      "mapa_poprzednia": "Backyard Bowl",
+      "mapa_aktualna": "Beach Ball",
+      "koniec_aktualnego_slotu": "2026-09-17T16:00:00Z"
     }
   ]
 }
