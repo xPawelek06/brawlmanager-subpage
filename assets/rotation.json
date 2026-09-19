@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-09-19T18:04:31Z",
+  "aktualizowano": "2026-09-19T20:04:28Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -92,10 +92,10 @@
       "koniec_aktualnego_slotu": "2026-09-20T04:00:00Z"
     },
     {
-      "tryb": "knockout",
-      "mapa_poprzednia": "New Perspective",
-      "mapa_aktualna": "Healthy Middle Ground",
-      "koniec_aktualnego_slotu": "2026-09-19T20:00:00Z"
+      "tryb": "knockout5V5",
+      "mapa_poprzednia": "Healthy Middle Ground",
+      "mapa_aktualna": "Crescendo",
+      "koniec_aktualnego_slotu": "2026-09-19T22:00:00Z"
     }
   ]
 }
