@@ -1,23 +1,23 @@
 {
-  "aktualizowano": "2026-09-20T06:04:29Z",
+  "aktualizowano": "2026-09-20T08:04:47Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Triple Dribble",
-      "mapa_aktualna": "Sneaky Fields",
-      "koniec_aktualnego_slotu": "2026-09-20T08:00:00Z"
+      "mapa_poprzednia": "Sneaky Fields",
+      "mapa_aktualna": "Backyard Bowl",
+      "koniec_aktualnego_slotu": "2026-09-21T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
-      "mapa_poprzednia": "Rice Field",
-      "mapa_aktualna": "Cavern Churn",
-      "koniec_aktualnego_slotu": "2026-09-20T08:00:00Z"
+      "mapa_poprzednia": "Cavern Churn",
+      "mapa_aktualna": "Acid Lakes",
+      "koniec_aktualnego_slotu": "2026-09-21T08:00:00Z"
     },
     {
       "tryb": "gemGrab",
-      "mapa_poprzednia": "Whisper Vale",
-      "mapa_aktualna": "Hard Rock Mine",
-      "koniec_aktualnego_slotu": "2026-09-20T08:00:00Z"
+      "mapa_poprzednia": "Hard Rock Mine",
+      "mapa_aktualna": "Double Swoosh",
+      "koniec_aktualnego_slotu": "2026-09-21T08:00:00Z"
     },
     {
       "tryb": "heist",
@@ -27,15 +27,15 @@
     },
     {
       "tryb": "duoShowdown",
-      "mapa_poprzednia": "Rice Field",
-      "mapa_aktualna": "Cavern Churn",
-      "koniec_aktualnego_slotu": "2026-09-20T08:00:00Z"
+      "mapa_poprzednia": "Cavern Churn",
+      "mapa_aktualna": "Acid Lakes",
+      "koniec_aktualnego_slotu": "2026-09-21T08:00:00Z"
     },
     {
       "tryb": "knockout",
-      "mapa_poprzednia": "New Perspective",
-      "mapa_aktualna": "Goldarm Gulch",
-      "koniec_aktualnego_slotu": "2026-09-20T08:00:00Z"
+      "mapa_poprzednia": "Goldarm Gulch",
+      "mapa_aktualna": "Belle's Rock",
+      "koniec_aktualnego_slotu": "2026-09-21T08:00:00Z"
     },
     {
       "tryb": "tagTeam",
@@ -69,9 +69,9 @@
     },
     {
       "tryb": "trioShowdown",
-      "mapa_poprzednia": "Rice Field",
-      "mapa_aktualna": "Cavern Churn",
-      "koniec_aktualnego_slotu": "2026-09-20T08:00:00Z"
+      "mapa_poprzednia": "Cavern Churn",
+      "mapa_aktualna": "Acid Lakes",
+      "koniec_aktualnego_slotu": "2026-09-21T08:00:00Z"
     },
     {
       "tryb": "brawlArena",
@@ -81,9 +81,9 @@
     },
     {
       "tryb": "brawlBall5V5",
-      "mapa_poprzednia": "Island Of Finality",
-      "mapa_aktualna": "Insane Streamer",
-      "koniec_aktualnego_slotu": "2026-09-20T08:00:00Z"
+      "mapa_poprzednia": "Insane Streamer",
+      "mapa_aktualna": "Siberian Stand Off",
+      "koniec_aktualnego_slotu": "2026-09-21T08:00:00Z"
     },
     {
       "tryb": "basketBrawl",
@@ -92,10 +92,10 @@
       "koniec_aktualnego_slotu": "2026-09-21T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-09-20T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-09-20T10:00:00Z"
     }
   ]
 }
