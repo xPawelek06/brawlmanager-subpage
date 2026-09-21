@@ -192,11 +192,9 @@
                 </div>
 
                 <!-- /podsumowanie_bitew -->
-                <!-- Realne zrzuty PL dodane 2026-09-14 (Paweł) - data-has-shots="1".
-                     BEZ data-has-shots-en - angielskie warianty (-en.png) jeszcze nie
-                     istnieją, patrz komentarz przy /ustaw_role_za_range niżej po pełne
-                     uzasadnienie tego wzorca (osobne flagi per język). -->
-                <div class="command-block command-block--text-only" id="podsumowanie_bitew" data-has-shots="1">
+                <!-- Realne zrzuty PL dodane 2026-09-14 (Paweł), zrzuty EN dodane
+                     2026-09-21 - data-has-shots="1" i data-has-shots-en="1". -->
+                <div class="command-block command-block--text-only" id="podsumowanie_bitew" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.podsumowanie_bitew_code">/podsumowanie_bitew [tag_gracza]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.podsumowanie_bitew_desc">Wizualna karta ostatnich bitew gracza z okna battlelogu gry - dla każdego meczu pokazuje wynik, brawlera, tryb gry i zmianę pucharów (albo Elo w Ranked). Osobny widok "pion"/"poziom" do wyboru.</p>
@@ -211,9 +209,9 @@
                 <!-- Zastępuje dawną /ranking_klanu (usunięta z bota runda 2026-08-29) -
                      inny widok (WSZYSCY członkowie, paginacja, nie top 10), więc stare
                      zrzuty ranking_klanu-*.png NIE są tu użyte (pokazywałyby nieaktualny
-                     UI). Realne, aktualne zrzuty PL dodane 2026-09-14 (Paweł) -
-                     data-has-shots="1", bez -en (jeszcze nie istnieje). -->
-                <div class="command-block command-block--text-only" id="czlonkowie_klanu" data-has-shots="1">
+                     UI). Realne, aktualne zrzuty PL dodane 2026-09-14 (Paweł), zrzuty EN
+                     dodane 2026-09-21 - data-has-shots="1" i data-has-shots-en="1". -->
+                <div class="command-block command-block--text-only" id="czlonkowie_klanu" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.czlonkowie_klanu_code">/czlonkowie_klanu</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.czlonkowie_klanu_desc">Pokazuje wszystkich członków klanu z paginacją.</p>
@@ -225,7 +223,9 @@
                 </div>
 
                 <!-- /ranking_swiatowy -->
-                <div class="command-block command-block--text-only" id="ranking_swiatowy" data-has-shots="1">
+                <!-- Realne zrzuty PL i EN dodane 2026-09-21 - data-has-shots="1" i
+                     data-has-shots-en="1". -->
+                <div class="command-block command-block--text-only" id="ranking_swiatowy" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ranking_swiatowy_code">/ranking_swiatowy</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.ranking_swiatowy_desc">Ranking pierwszych 100 osób na świecie bądź w danym kraju.</p>
