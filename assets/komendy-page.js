@@ -60,8 +60,8 @@
         </div>
     </section>
 
-    <!-- Widoczne TYLKO w EN (patrz wireScreenshots niżej) - w PL wszystkie 21 komend
-         ma już realne zrzuty (runda 2026-07-29), więc ten banner byłby nieaktualny. -->
+    <!-- Od 2026-09-23 ukryty w PL i EN (obie wersje mają komplet zrzutów), widoczny
+         tylko w fallbacku bez wymuszonego języka (patrz wireScreenshots niżej). -->
     <div class="container" id="komendy-info-note-wrap">
         <div class="info-note">
             <span>📸</span>
@@ -310,7 +310,7 @@
                 </div>
 
                 <!-- /pojedynek_klanow -->
-                <div class="command-block command-block--text-only" id="pojedynek_klanow" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="pojedynek_klanow" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.pojedynek_klanow_code">/pojedynek_klanow [tag]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.pojedynek_klanow_desc">Porównanie klanu tego serwera z innym, dowolnym klanem Brawl Stars.</p>
@@ -344,7 +344,7 @@
                 </div>
 
                 <!-- /ranking_kolekcji -->
-                <div class="command-block command-block--text-only" id="ranking_kolekcji" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="ranking_kolekcji" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ranking_kolekcji_code">/ranking_kolekcji</code> <span class="badge" data-i18n="common.badge_premium">🔒 Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.ranking_kolekcji_desc">Ranking klanu wg wybranej statystyki kolekcji - odblokowani brawlerzy, brawlerzy na maks. poziomie mocy, gadżety, gwiezdne moce, wyposażenie i inne. Menu pod obrazkiem pozwala przełączać statystykę bez ponownego wywoływania komendy.</p>
@@ -368,7 +368,7 @@
                 </div>
 
                 <!-- /zweryfikuj_moj_profil -->
-                <div class="command-block command-block--text-only" id="zweryfikuj_moj_profil" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="zweryfikuj_moj_profil" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.zweryfikuj_moj_profil_code">/zweryfikuj_moj_profil [tag_gracza]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.zweryfikuj_moj_profil_desc">Rejestruje Twój tag niezależnie od przynależenia do danego serwera bądź klanu. Działa również w wiadomości prywatnej z botem.</p>
@@ -382,14 +382,14 @@
                             </div>
                             <div class="command-screenshot-item">
                                 <p class="command-screenshot-caption" data-i18n="komendy.zweryfikuj_moj_profil_shot_krok2_caption">Krok 2: zweryfikowano</p>
-                                <img src="/assets/screenshots/zweryfikuj_moj_profil-krok2.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.zweryfikuj_moj_profil_shot_krok2_alt">
+                                <img src="/assets/screenshots/zweryfikuj_moj_profil-krok2.png" data-src-en="/assets/screenshots/zweryfikuj_moj_profil-krok2-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.zweryfikuj_moj_profil_shot_krok2_alt">
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- /moje_podsumowanie -->
-                <div class="command-block command-block--text-only" id="moje_podsumowanie" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="moje_podsumowanie" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.moje_podsumowanie_code">/moje_podsumowanie [okres]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.moje_podsumowanie_desc">Podsumowanie Twoich statystyk z ostatniego tygodnia bądź miesiąca.</p>
@@ -455,7 +455,7 @@
                 </div>
 
                 <!-- /weryfikacja_gracza -->
-                <div class="command-block command-block--text-only" id="weryfikacja_gracza" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="weryfikacja_gracza" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.weryfikacja_gracza_code">/weryfikacja_gracza</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.weryfikacja_gracza_desc">Panel weryfikacji graczy nieprzynależących do klanu ustawionego na serwerze. Przydatne dla większych serwerów.</p>
@@ -467,7 +467,7 @@
                 </div>
 
                 <!-- /ustaw_kanal_weryfikacji -->
-                <div class="command-block command-block--text-only" id="ustaw_kanal_weryfikacji" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="ustaw_kanal_weryfikacji" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_kanal_weryfikacji_code">/ustaw_kanal_weryfikacji [kanal]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.ustaw_kanal_weryfikacji_desc">Ustawia kanał, gdzie trafiają logi udanej weryfikacji klanowej bądź ogólnej.</p>
@@ -479,7 +479,7 @@
                 </div>
 
                 <!-- /ustaw_zmiany_po_weryfikacji -->
-                <div class="command-block command-block--text-only" id="ustaw_zmiany_po_weryfikacji" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="ustaw_zmiany_po_weryfikacji" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_zmiany_po_weryfikacji_code">/ustaw_zmiany_po_weryfikacji</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.ustaw_zmiany_po_weryfikacji_desc">Wybierz opcję, którą bot ma zmienić w nicku gracza po udanej weryfikacji (nick z gry lub prefiks przed nickiem, ilość pucharów w tysiącach). Komunikat ostrzegawczy wyskakuje, ponieważ bot samodzielnie nie może zmienić nicku właścicielowi serwera bądź innym graczom, którzy mają rangę powyżej rangi bota.</p>
@@ -506,7 +506,7 @@
                 </div>
 
                 <!-- /ustaw_role_za_puchary -->
-                <div class="command-block command-block--text-only" id="ustaw_role_za_puchary" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="ustaw_role_za_puchary" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_role_za_puchary_code">/ustaw_role_za_puchary [prog_pucharow] [rola]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.ustaw_role_za_puchary_desc">Ustawia rolę, którą gracz dostanie po przekroczeniu podanego progu pucharowego w grze. Wymóg: gracz musi być zweryfikowany przez bota.</p>
@@ -525,7 +525,7 @@
                      plików PNG pod tymi src odkryłoby to złamane obrazki zamiast
                      działającego "wkrótce". Gdy Paweł doda realne zrzuty, dopisać
                      oba atrybuty na divie niżej. -->
-                <div class="command-block command-block--text-only" id="ustaw_role_za_range" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="ustaw_role_za_range" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_role_za_range_code">/ustaw_role_za_range [prog_rangi_ranked] [rola]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.ustaw_role_za_range_desc">Ustawia rolę, którą gracz dostanie po wbiciu danej rangi w grze. Wymóg: gracz musi być zweryfikowany przez bota.</p>
@@ -537,7 +537,7 @@
                 </div>
 
                 <!-- /ustaw_role_niezweryfikowanych -->
-                <div class="command-block command-block--text-only" id="ustaw_role_niezweryfikowanych" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="ustaw_role_niezweryfikowanych" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_role_niezweryfikowanych_code">/ustaw_role_niezweryfikowanych [rola]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.ustaw_role_niezweryfikowanych_desc">Ustawia rolę, którą bot automatycznie przydzieli nowej osobie po dołączeniu, jeżeli nie jest jeszcze zweryfikowana.</p>
@@ -582,7 +582,7 @@
                 </div>
 
                 <!-- /ustaw_godzine_raportu_mies -->
-                <div class="command-block command-block--text-only" id="ustaw_godzine_raportu_mies" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="ustaw_godzine_raportu_mies" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_godzine_raportu_mies_code">/ustaw_godzine_raportu_mies [godzina]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.ustaw_godzine_raportu_mies_desc">Ustala godzinę automatycznego raportu miesięcznego - dzień jest zawsze stały, 1. dzień miesiąca.</p>
@@ -636,7 +636,7 @@
                 </div>
 
                 <!-- /utworz_cel_klanu -->
-                <div class="command-block command-block--text-only" id="utworz_cel_klanu" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="utworz_cel_klanu" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.utworz_cel_klanu_code">/utworz_cel_klanu</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.utworz_cel_klanu_desc">Ustawia wspólny cel przyrostu trofeów dla całego klanu, z nagrodą po jego osiągnięciu, wybraną przez lidera.</p>
@@ -648,7 +648,7 @@
                 </div>
 
                 <!-- /ustaw_alert_aktywnosci -->
-                <div class="command-block command-block--text-only" id="ustaw_alert_aktywnosci" data-has-shots="1">
+                <div class="command-block command-block--text-only" id="ustaw_alert_aktywnosci" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.ustaw_alert_aktywnosci_code">/ustaw_alert_aktywnosci</code> <span class="badge" data-i18n="common.badge_premium">🔒 Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
                         <p data-i18n="komendy.ustaw_alert_aktywnosci_desc">Wysyła alert, gdy dany gracz straci ustaloną liczbę pucharów, spadnie z rangi, bądź będzie nieaktywny przez ustaloną liczbę dni.</p>
@@ -1228,7 +1228,8 @@
       if (infoNoteWrap) infoNoteWrap.hidden = false;
       return;
     }
-    if (infoNoteWrap) infoNoteWrap.hidden = (forcedLang !== "en");
+    // 2026-09-23: EN ma już zrzuty we wszystkich 35 komendach, banner ukryty w obu językach.
+    if (infoNoteWrap) infoNoteWrap.hidden = true;
     const blockSelector = forcedLang === "pl" ? ".command-block[data-has-shots]" : ".command-block[data-has-shots-en]";
     document.querySelectorAll(blockSelector).forEach((block) => {
       block.classList.remove("command-block--text-only");
