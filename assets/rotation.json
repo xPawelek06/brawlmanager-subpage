@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-09-22T22:20:45Z",
+  "aktualizowano": "2026-09-23T00:20:43Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -74,10 +74,10 @@
       "koniec_aktualnego_slotu": "2026-09-23T04:00:00Z"
     },
     {
-      "tryb": "knockout5V5",
-      "mapa_poprzednia": "Crescendo",
-      "mapa_aktualna": "Journey of a Thousand Steps",
-      "koniec_aktualnego_slotu": "2026-09-23T00:00:00Z"
+      "tryb": "airHockey",
+      "mapa_poprzednia": "Journey of a Thousand Steps",
+      "mapa_aktualna": "Bouncy Bowl",
+      "koniec_aktualnego_slotu": "2026-09-23T02:00:00Z"
     }
   ]
 }
