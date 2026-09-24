@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-09-24T06:23:25Z",
+  "aktualizowano": "2026-09-24T07:23:25Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -39,9 +39,9 @@
     },
     {
       "tryb": "tagTeam",
-      "mapa_poprzednia": "Hideout",
-      "mapa_aktualna": "Jumpscare Lair",
-      "koniec_aktualnego_slotu": "2026-09-24T16:00:00Z"
+      "mapa_poprzednia": "Jumpscare Lair",
+      "mapa_aktualna": "No Surrender",
+      "koniec_aktualnego_slotu": "2026-09-25T08:00:00Z"
     },
     {
       "tryb": "airHockey",
