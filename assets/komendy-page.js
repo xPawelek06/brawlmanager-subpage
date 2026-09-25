@@ -145,12 +145,12 @@
                 <!-- /wymagane_puchary_klanu -->
                 <div class="command-block command-block--text-only" id="wymagane_puchary_klanu" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code data-i18n="komendy.wymagane_puchary_klanu_code">/wymagane_puchary_klanu [tag_gracza]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
+                        <div class="command-tag"><code data-i18n="komendy.wymagane_puchary_klanu_code">/wymagane_puchary_klanu [tag_gracza]</code></div>
                         <p data-i18n="komendy.wymagane_puchary_klanu_desc">Sprawdza, czy gracz spełnia próg pucharowy tego serwera i czy należy do przypisanego klanu.</p>
                     </div>
                     <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/sprawdz_puchary-uzycie.png" data-src-en="/assets/screenshots/sprawdz_puchary-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.wymagane_puchary_klanu_shot_usage_alt">
-                        <img src="/assets/screenshots/sprawdz_puchary-wynik.png" data-src-en="/assets/screenshots/sprawdz_puchary-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.wymagane_puchary_klanu_shot_result_alt">
+                        <img src="/assets/screenshots/wymagane_puchary_klanu-uzycie.png" data-src-en="/assets/screenshots/wymagane_puchary_klanu-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.wymagane_puchary_klanu_shot_usage_alt">
+                        <img src="/assets/screenshots/wymagane_puchary_klanu-wynik.png" data-src-en="/assets/screenshots/wymagane_puchary_klanu-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.wymagane_puchary_klanu_shot_result_alt">
                     </div>
                 </div>
 
@@ -226,7 +226,7 @@
                 <!-- /rekordy_klanu -->
                 <div class="command-block command-block--text-only" id="rekordy_klanu" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code data-i18n="komendy.rekordy_klanu_code">/rekordy_klanu</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
+                        <div class="command-tag"><code data-i18n="komendy.rekordy_klanu_code">/rekordy_klanu</code></div>
                         <p data-i18n="komendy.rekordy_klanu_desc">Galeria sław klanu: top 3 w największym jednodniowym skoku, najdłuższej passie i najlepszym tygodniu, plus najlepszy dzień całego klanu. Ostatnie 90 dni, tylko aktualni członkowie klanu. Darmowe.</p>
                     </div>
                     <div class="command-block-shots" hidden>
@@ -337,8 +337,8 @@
                 <!-- /historia_pucharow -->
                 <div class="command-block command-block--text-only" id="historia_pucharow" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code data-i18n="komendy.historia_pucharow_code">/historia_pucharow [zakres_dni] [tag_gracza]</code> <span class="badge" data-i18n="common.badge_premium">🔒 Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.historia_pucharow_desc">Trend pucharów dowolnego gracza z ostatnich 7 lub 30 dni, albo od początku śledzenia. Aby komenda działała, dany gracz musi być zweryfikowany przez bota przez podany czas.</p>
+                        <div class="command-tag"><code data-i18n="komendy.historia_pucharow_code">/historia_pucharow [zakres_dni] [tag_gracza]</code> <span class="badge" data-i18n="common.badge_premium">🔒 Premium</span></div>
+                        <p data-i18n="komendy.historia_pucharow_desc">Trend pucharów dowolnego gracza z ostatnich 7, 30 dni lub od początku śledzenia. Aby komenda działała, dany gracz musi być zweryfikowany przez bota przez podany czas.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <div class="command-screenshot-group">
@@ -351,6 +351,11 @@
                                 <p class="command-screenshot-caption" data-i18n="komendy.historia_pucharow_shot_30d_caption">Ostatnie 30 dni</p>
                                 <img src="/assets/screenshots/historia_pucharow-30d-uzycie.png" data-src-en="/assets/screenshots/historia_pucharow-30d-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.historia_pucharow_shot_30d_usage_alt">
                                 <img src="/assets/screenshots/historia_pucharow-30d-wynik.png" data-src-en="/assets/screenshots/historia_pucharow-30d-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.historia_pucharow_shot_30d_result_alt">
+                            </div>
+                            <div class="command-screenshot-item">
+                                <p class="command-screenshot-caption" data-i18n="komendy.historia_pucharow_shot_all_caption">Od początku</p>
+                                <img src="/assets/screenshots/historia_pucharow-all-uzycie.png" data-src-en="/assets/screenshots/historia_pucharow-all-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.historia_pucharow_shot_all_usage_alt">
+                                <img src="/assets/screenshots/historia_pucharow-all-wynik.png" data-src-en="/assets/screenshots/historia_pucharow-all-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.historia_pucharow_shot_all_result_alt">
                             </div>
                         </div>
                     </div>
@@ -404,7 +409,7 @@
                 <!-- /moje_podsumowanie -->
                 <div class="command-block command-block--text-only" id="moje_podsumowanie" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code data-i18n="komendy.moje_podsumowanie_code">/moje_podsumowanie [okres]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
+                        <div class="command-tag"><code data-i18n="komendy.moje_podsumowanie_code">/moje_podsumowanie [okres]</code></div>
                         <p data-i18n="komendy.moje_podsumowanie_desc">Podsumowanie Twoich statystyk za wybrany okres: tydzień, miesiąc albo od początku śledzenia (cała zapisana historia). Działa zarówno na serwerze, jak i w wiadomości prywatnej z botem.</p>
                         <ul>
                             <li data-i18n="komendy.moje_podsumowanie_li1">🚀 Tempo na tle innych: dla okresu tydzień/miesiąc procent graczy BrawlManagera, którzy rosną wolniej od Ciebie (widoczne przy odpowiednio dużej bazie porównawczej)</li>
@@ -902,8 +907,8 @@
     "komendy.historia_pucharow_code": { pl: "/historia_pucharow [zakres_dni] [tag_gracza]", en: "/trophy_history [day_range] [player_tag]" },
     "komendy.historia_pucharow_nav": { pl: "/historia_pucharow", en: "/trophy_history" },
     "komendy.historia_pucharow_desc": {
-      pl: "Trend pucharów dowolnego gracza z ostatnich 7 lub 30 dni, albo od początku śledzenia. Aby komenda działała, dany gracz musi być zweryfikowany przez bota przez podany czas.",
-      en: "Trophy trend for any player over the last 7 or 30 days, or since tracking began. For the command to work, that player must have been verified by the bot for the requested period.",
+      pl: "Trend pucharów dowolnego gracza z ostatnich 7, 30 dni lub od początku śledzenia. Aby komenda działała, dany gracz musi być zweryfikowany przez bota przez podany czas.",
+      en: "Trophy trend for any player over the last 7, 30 days or all time. For the command to work, that player must have been verified by the bot for the requested period.",
     },
 
     "komendy.ranking_kolekcji_code": { pl: "/ranking_kolekcji", en: "/collection_ranking" },
@@ -1138,6 +1143,9 @@
     "komendy.historia_pucharow_shot_30d_caption": { pl: "Ostatnie 30 dni", en: "Last 30 days" },
     "komendy.historia_pucharow_shot_30d_usage_alt": { pl: "Wpisywanie komendy /historia_pucharow - zakres 30 dni", en: "Typing /trophy_history - 30-day range" },
     "komendy.historia_pucharow_shot_30d_result_alt": { pl: "Wynik komendy /historia_pucharow - trend z ostatnich 30 dni", en: "Result of /trophy_history - 30-day trend" },
+    "komendy.historia_pucharow_shot_all_caption": { pl: "Od początku", en: "All time" },
+    "komendy.historia_pucharow_shot_all_usage_alt": { pl: "Wpisywanie komendy /historia_pucharow - zakres od początku śledzenia", en: "Typing /trophy_history - all-time range" },
+    "komendy.historia_pucharow_shot_all_result_alt": { pl: "Wynik komendy /historia_pucharow - trend od początku śledzenia", en: "Result of /trophy_history - all-time trend" },
 
     "komendy.rotacja_map_shot_usage_alt": { pl: "Wpisywanie komendy /rotacja_map na Discordzie", en: "Typing the /map_rotation command on Discord" },
     "komendy.rotacja_map_shot_result_alt": { pl: "Wynik komendy /rotacja_map - aktualna rotacja map", en: "Result of /map_rotation - current map rotation" },
@@ -1378,6 +1386,30 @@
     });
   }
 
+  // Sortuje linki w .command-nav alfabetycznie wg aktualnie wyświetlanej nazwy
+  // komendy (ignorując wiodący "/"), żeby łatwo było znaleźć konkretną komendę
+  // w panelu "Skocz do komendy". PL i EN mają różne nazwy komend (np.
+  // /historia_pucharow vs /trophy_history), więc kolejność liczona jest z
+  // przetłumaczonego textContent, nie ze stałej listy - podpięte pod zdarzenie
+  // bm:lang-applied (patrz assets/i18n.js), które applyAll() odpala PO
+  // podmianie tekstu, więc działa poprawnie też, gdyby ta strona kiedyś zaczęła
+  // przełączać język w miejscu zamiast nawigować na URL siostrzany (patrz
+  // wireLangSwitch w i18n.js). Kolejność SEKCJI/bloków komend w
+  // .command-showcase niżej NIE zmienia się, sortowany jest tylko ten
+  // skrócony panel nawigacyjny.
+  function sortCommandNav() {
+    const nav = document.querySelector(".command-nav");
+    if (!nav) return;
+    const lang = window.BM_I18N.getLang();
+    const links = Array.from(nav.querySelectorAll("a"));
+    links.sort((a, b) => {
+      const aText = a.textContent.replace(/^\//, "");
+      const bText = b.textContent.replace(/^\//, "");
+      return aText.localeCompare(bText, lang, { sensitivity: "base" });
+    });
+    links.forEach((link) => nav.appendChild(link));
+  }
+
   window.BM_KOMENDY_PAGE = {
     // opts: { forcedLang: "pl"|"en", urlPair: {pl,en} } - przekazywane wprost do
     // BM_I18N.init(), patrz assets/i18n.js.
@@ -1386,6 +1418,11 @@
       wireScreenshots((opts || {}).forcedLang);
       wireLightbox();
       wireCollapsibleNav();
+      // Zarejestrowane PRZED init() - applyAll() wewnątrz init() odpala
+      // bm:lang-applied synchronicznie, więc listener musi już wisieć, żeby
+      // złapać pierwsze (i na tej stronie jedyne, patrz komentarz przy
+      // sortCommandNav) tłumaczenie.
+      document.addEventListener("bm:lang-applied", sortCommandNav);
       window.BM_I18N.init(DICT, opts);
     },
   };
