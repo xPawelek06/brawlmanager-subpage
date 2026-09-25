@@ -1,23 +1,23 @@
 {
-  "aktualizowano": "2026-09-25T06:15:35Z",
+  "aktualizowano": "2026-09-25T08:14:38Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Pinball Dreams",
-      "mapa_aktualna": "Pinhole Punt",
-      "koniec_aktualnego_slotu": "2026-09-25T08:00:00Z"
+      "mapa_poprzednia": "Pinhole Punt",
+      "mapa_aktualna": "Bustling Business",
+      "koniec_aktualnego_slotu": "2026-09-26T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
-      "mapa_poprzednia": "Acid Lakes",
-      "mapa_aktualna": "Rockwall Brawl",
-      "koniec_aktualnego_slotu": "2026-09-25T08:00:00Z"
+      "mapa_poprzednia": "Rockwall Brawl",
+      "mapa_aktualna": "Cavern Churn",
+      "koniec_aktualnego_slotu": "2026-09-26T08:00:00Z"
     },
     {
       "tryb": "gemGrab",
-      "mapa_poprzednia": "Double Swoosh",
-      "mapa_aktualna": "Undermine",
-      "koniec_aktualnego_slotu": "2026-09-25T08:00:00Z"
+      "mapa_poprzednia": "Undermine",
+      "mapa_aktualna": "Hard Rock Mine",
+      "koniec_aktualnego_slotu": "2026-09-26T08:00:00Z"
     },
     {
       "tryb": "hotZone",
@@ -27,21 +27,21 @@
     },
     {
       "tryb": "duoShowdown",
-      "mapa_poprzednia": "Acid Lakes",
-      "mapa_aktualna": "Rockwall Brawl",
-      "koniec_aktualnego_slotu": "2026-09-25T08:00:00Z"
+      "mapa_poprzednia": "Rockwall Brawl",
+      "mapa_aktualna": "Cavern Churn",
+      "koniec_aktualnego_slotu": "2026-09-26T08:00:00Z"
     },
     {
       "tryb": "knockout",
-      "mapa_poprzednia": "Belle's Rock",
-      "mapa_aktualna": "Out in the Open",
-      "koniec_aktualnego_slotu": "2026-09-25T08:00:00Z"
+      "mapa_poprzednia": "Out in the Open",
+      "mapa_aktualna": "Goldarm Gulch",
+      "koniec_aktualnego_slotu": "2026-09-26T08:00:00Z"
     },
     {
-      "tryb": "tagTeam",
-      "mapa_poprzednia": "Jumpscare Lair",
-      "mapa_aktualna": "No Surrender",
-      "koniec_aktualnego_slotu": "2026-09-25T08:00:00Z"
+      "tryb": "bounty",
+      "mapa_poprzednia": "No Surrender",
+      "mapa_aktualna": "Alchemy",
+      "koniec_aktualnego_slotu": "2026-09-25T16:00:00Z"
     },
     {
       "tryb": "airHockey",
@@ -51,9 +51,9 @@
     },
     {
       "tryb": "trioShowdown",
-      "mapa_poprzednia": "Acid Lakes",
-      "mapa_aktualna": "Rockwall Brawl",
-      "koniec_aktualnego_slotu": "2026-09-25T08:00:00Z"
+      "mapa_poprzednia": "Rockwall Brawl",
+      "mapa_aktualna": "Cavern Churn",
+      "koniec_aktualnego_slotu": "2026-09-26T08:00:00Z"
     },
     {
       "tryb": "brawlArena",
@@ -63,9 +63,9 @@
     },
     {
       "tryb": "brawlBall5V5",
-      "mapa_poprzednia": "Siberian Stand Off",
-      "mapa_aktualna": "Stockpile Stadium",
-      "koniec_aktualnego_slotu": "2026-09-25T08:00:00Z"
+      "mapa_poprzednia": "Stockpile Stadium",
+      "mapa_aktualna": "Insane Streamer",
+      "koniec_aktualnego_slotu": "2026-09-26T08:00:00Z"
     },
     {
       "tryb": "deathmatch",
@@ -74,10 +74,10 @@
       "koniec_aktualnego_slotu": "2026-09-26T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-09-25T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-09-25T10:00:00Z"
     }
   ]
 }
