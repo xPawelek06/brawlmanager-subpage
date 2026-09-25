@@ -92,11 +92,13 @@
         </div>
         <div class="command-nav-collapsible" id="commandNavCollapsible">
         <div class="command-nav">
-            <a href="#sprawdz_puchary" data-i18n="komendy.sprawdz_puchary_nav">/sprawdz_puchary</a>
+            <a href="#wymagane_puchary_klanu" data-i18n="komendy.wymagane_puchary_klanu_nav">/wymagane_puchary_klanu</a>
             <a href="#profil_bs" data-i18n="komendy.profil_bs_nav">/profil_bs</a>
             <a href="#brawlerzy" data-i18n="komendy.brawlerzy_nav">/brawlerzy</a>
             <a href="#podsumowanie_bitew" data-i18n="komendy.podsumowanie_bitew_nav">/podsumowanie_bitew</a>
             <a href="#czlonkowie_klanu" data-i18n="komendy.czlonkowie_klanu_nav">/czlonkowie_klanu</a>
+            <!-- /rekordy_klanu nav link USUNIĘTY STĄD (RUNDA 2026-09-25, partia 2, zlecenie
+                 Pawła punkt 5) - patrz komentarz przy usuniętym command-block niżej. -->
             <a href="#ranking_swiatowy" data-i18n="komendy.ranking_swiatowy_nav">/ranking_swiatowy</a>
             <a href="#moja_pozycja" data-i18n="komendy.moja_pozycja_nav">/moja_pozycja</a>
             <a href="#moj_cel" data-i18n="komendy.moj_cel_nav">/moj_cel</a>
@@ -141,15 +143,15 @@
 
             <div class="command-showcase">
 
-                <!-- /sprawdz_puchary -->
-                <div class="command-block command-block--text-only" id="sprawdz_puchary" data-has-shots="1" data-has-shots-en="1">
+                <!-- /wymagane_puchary_klanu -->
+                <div class="command-block command-block--text-only" id="wymagane_puchary_klanu" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
-                        <div class="command-tag"><code data-i18n="komendy.sprawdz_puchary_code">/sprawdz_puchary [tag_gracza]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.sprawdz_puchary_desc">Sprawdza, czy gracz spełnia próg pucharowy tego serwera i czy należy do przypisanego klanu.</p>
+                        <div class="command-tag"><code data-i18n="komendy.wymagane_puchary_klanu_code">/wymagane_puchary_klanu [tag_gracza]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
+                        <p data-i18n="komendy.wymagane_puchary_klanu_desc">Sprawdza, czy gracz spełnia próg pucharowy tego serwera i czy należy do przypisanego klanu.</p>
                     </div>
                     <div class="command-block-shots" hidden>
-                        <img src="/assets/screenshots/sprawdz_puchary-uzycie.png" data-src-en="/assets/screenshots/sprawdz_puchary-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.sprawdz_puchary_shot_usage_alt">
-                        <img src="/assets/screenshots/sprawdz_puchary-wynik.png" data-src-en="/assets/screenshots/sprawdz_puchary-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.sprawdz_puchary_shot_result_alt">
+                        <img src="/assets/screenshots/sprawdz_puchary-uzycie.png" data-src-en="/assets/screenshots/sprawdz_puchary-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.wymagane_puchary_klanu_shot_usage_alt">
+                        <img src="/assets/screenshots/sprawdz_puchary-wynik.png" data-src-en="/assets/screenshots/sprawdz_puchary-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.wymagane_puchary_klanu_shot_result_alt">
                     </div>
                 </div>
 
@@ -221,6 +223,13 @@
                         <img src="/assets/screenshots/czlonkowie_klanu-wynik.png" data-src-en="/assets/screenshots/czlonkowie_klanu-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.czlonkowie_klanu_shot_result_alt">
                     </div>
                 </div>
+
+                <!-- /rekordy_klanu command-block USUNIĘTY STĄD (RUNDA 2026-09-25, partia 2,
+                     zlecenie Pawła punkt 5) - komenda (dodana tego samego dnia, partia 1) na
+                     razie zawężona wyłącznie do serwera deweloperskiego Pawła (main.py,
+                     test_komendy), więc pokazywanie jej publicznie na stronie byłoby mylące,
+                     jeszcze nie działa u zwykłych użytkowników. Przywróć ten blok (patrz
+                     historia gita tego pliku) przy globalnym udostępnieniu komendy. -->
 
                 <!-- /ranking_swiatowy -->
                 <!-- Realne zrzuty PL i EN dodane 2026-09-21 - data-has-shots="1" i
@@ -774,9 +783,9 @@
     },
     "komendy.lightbox_close_aria": { pl: "Zamknij podgląd zrzutu ekranu", en: "Close screenshot preview" },
 
-    "komendy.sprawdz_puchary_code": { pl: "/sprawdz_puchary [tag_gracza]", en: "/check_trophies [player_tag]" },
-    "komendy.sprawdz_puchary_nav": { pl: "/sprawdz_puchary", en: "/check_trophies" },
-    "komendy.sprawdz_puchary_desc": {
+    "komendy.wymagane_puchary_klanu_code": { pl: "/wymagane_puchary_klanu [tag_gracza]", en: "/clan_trophy_requirement [player_tag]" },
+    "komendy.wymagane_puchary_klanu_nav": { pl: "/wymagane_puchary_klanu", en: "/clan_trophy_requirement" },
+    "komendy.wymagane_puchary_klanu_desc": {
       pl: "Sprawdza, czy gracz spełnia próg pucharowy tego serwera i czy należy do przypisanego klanu.",
       en: "Checks whether a player meets this server's trophy threshold and belongs to the linked clan.",
     },
@@ -803,6 +812,9 @@
 
     "komendy.czlonkowie_klanu_code": { pl: "/czlonkowie_klanu", en: "/clan_members" },
     "komendy.czlonkowie_klanu_nav": { pl: "/czlonkowie_klanu", en: "/clan_members" },
+    // komendy.rekordy_klanu_code / _nav / _desc USUNIĘTE STĄD (RUNDA 2026-09-25, partia 2,
+    // zlecenie Pawła punkt 5) - komenda na razie zawężona do serwera deweloperskiego, patrz
+    // komentarz przy usuniętym command-block wyżej. Przywróć przy globalnym udostępnieniu.
     "komendy.czlonkowie_klanu_desc": {
       pl: "Pokazuje wszystkich członków klanu z paginacją.",
       en: "Shows all clan members, paginated.",
@@ -1062,8 +1074,8 @@
     // Widoczne tylko w PL (patrz wireScreenshots) - EN wersje przygotowane pod
     // przyszłe angielskie zrzuty, żeby nie trzeba było wracać do i18n przy ich
     // dodawaniu.
-    "komendy.sprawdz_puchary_shot_usage_alt": { pl: "Wpisywanie komendy /sprawdz_puchary na Discordzie", en: "Typing the /check_trophies command on Discord" },
-    "komendy.sprawdz_puchary_shot_result_alt": { pl: "Wynik komendy /sprawdz_puchary - kalkulator progu klanowego", en: "Result of /check_trophies - clan threshold calculator" },
+    "komendy.wymagane_puchary_klanu_shot_usage_alt": { pl: "Wpisywanie komendy /wymagane_puchary_klanu na Discordzie", en: "Typing the /clan_trophy_requirement command on Discord" },
+    "komendy.wymagane_puchary_klanu_shot_result_alt": { pl: "Wynik komendy /wymagane_puchary_klanu - kalkulator progu klanowego", en: "Result of /clan_trophy_requirement - clan threshold calculator" },
 
     "komendy.profil_bs_shot_usage_alt": { pl: "Wpisywanie komendy /profil_bs na Discordzie", en: "Typing the /bs_profile command on Discord" },
     "komendy.profil_bs_shot_free_caption": { pl: "Wersja darmowa", en: "Free version" },
@@ -1152,6 +1164,8 @@
     "komendy.podsumowanie_bitew_shot_result_alt": { pl: "Wynik komendy /podsumowanie_bitew - karta ostatnich bitew", en: "Result of /battle_summary - recent battles card" },
     "komendy.czlonkowie_klanu_shot_usage_alt": { pl: "Wpisywanie komendy /czlonkowie_klanu na Discordzie", en: "Typing the /clan_members command on Discord" },
     "komendy.czlonkowie_klanu_shot_result_alt": { pl: "Wynik komendy /czlonkowie_klanu - pełna, paginowana lista klanu", en: "Result of /clan_members - full, paginated clan list" },
+    // komendy.rekordy_klanu_shot_usage_alt / _shot_result_alt USUNIĘTE STĄD (RUNDA
+    // 2026-09-25, partia 2, zlecenie Pawła punkt 5), patrz komentarze wyżej w tym pliku.
     "komendy.ranking_swiatowy_shot_usage_alt": { pl: "Wpisywanie komendy /ranking_swiatowy na Discordzie", en: "Typing the /world_ranking command on Discord" },
     "komendy.ranking_swiatowy_shot_result_alt": { pl: "Wynik komendy /ranking_swiatowy - światowy ranking graczy", en: "Result of /world_ranking - global player ranking" },
     "komendy.pojedynek_klanow_shot_usage_alt": { pl: "Wpisywanie komendy /pojedynek_klanow na Discordzie", en: "Typing the /clan_duel command on Discord" },

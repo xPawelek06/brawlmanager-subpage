@@ -167,8 +167,8 @@
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code data-i18n="home.cmd_sprawdz_puchary_code">/sprawdz_puchary [tag_gracza]</code>
-                            <p data-i18n="home.cmd_sprawdz_puchary_desc">Sprawdza, czy spełniasz próg pucharowy tego serwera i czy należysz do właściwego klanu.</p>
+                            <code data-i18n="home.cmd_wymagane_puchary_klanu_code">/wymagane_puchary_klanu [tag_gracza]</code>
+                            <p data-i18n="home.cmd_wymagane_puchary_klanu_desc">Sprawdza, czy spełniasz próg pucharowy tego serwera i czy należysz do właściwego klanu.</p>
                         </div>
                     </div>
 
@@ -199,6 +199,12 @@
                             <p data-i18n="home.cmd_czlonkowie_klanu_desc">Pokazuje WSZYSTKICH członków klanu (trofea, brawlerzy, rola), z paginacją - nie tylko czołówkę.</p>
                         </div>
                     </div>
+
+                    <!-- /rekordy_klanu USUNIĘTA STĄD (RUNDA 2026-09-25, partia 2, zlecenie
+                         Pawła punkt 5) - komenda na razie zawężona wyłącznie do serwera
+                         deweloperskiego Pawła (patrz main.py, test_komendy), nie działa jeszcze
+                         u zwykłych użytkowników. Przywróć ten blok (patrz historia gita tego
+                         pliku) przy globalnym udostępnieniu komendy. -->
 
                     <div class="command-item">
                         <div class="command-main">
@@ -695,8 +701,8 @@
     "home.commands_col1_title": { pl: "Dla członków klanu", en: "For clan members" },
     "home.commands_col2_title": { pl: "Dla adminów / liderów serwera", en: "For admins / server leaders" },
 
-    "home.cmd_sprawdz_puchary_code": { pl: "/sprawdz_puchary [tag_gracza]", en: "/check_trophies [player_tag]" },
-    "home.cmd_sprawdz_puchary_desc": {
+    "home.cmd_wymagane_puchary_klanu_code": { pl: "/wymagane_puchary_klanu [tag_gracza]", en: "/clan_trophy_requirement [player_tag]" },
+    "home.cmd_wymagane_puchary_klanu_desc": {
       pl: "Sprawdza, czy spełniasz próg pucharowy tego serwera i czy należysz do właściwego klanu.",
       en: "Checks whether you meet this server's trophy threshold and belong to the right clan.",
     },
@@ -720,6 +726,9 @@
       pl: "Pokazuje WSZYSTKICH członków klanu (trofea, brawlerzy, rola), z paginacją - nie tylko czołówkę.",
       en: "Shows ALL clan members (trophies, brawlers, role), paginated - not just the top of the list.",
     },
+    // home.cmd_rekordy_klanu_code / _desc USUNIĘTE STĄD (RUNDA 2026-09-25, partia 2,
+    // zlecenie Pawła punkt 5) - komenda na razie zawężona do serwera deweloperskiego,
+    // patrz komentarz w markupie wyżej (grid komend). Przywróć przy globalnym udostępnieniu.
     "home.cmd_ranking_swiatowy_code": { pl: "/ranking_swiatowy", en: "/world_ranking" },
     "home.cmd_ranking_swiatowy_desc": {
       pl: "Światowy albo krajowy ranking graczy, klubów lub brawlerów - z przyciskami do przełączania widoku.",
