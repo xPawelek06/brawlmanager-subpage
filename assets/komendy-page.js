@@ -97,8 +97,7 @@
             <a href="#brawlerzy" data-i18n="komendy.brawlerzy_nav">/brawlerzy</a>
             <a href="#podsumowanie_bitew" data-i18n="komendy.podsumowanie_bitew_nav">/podsumowanie_bitew</a>
             <a href="#czlonkowie_klanu" data-i18n="komendy.czlonkowie_klanu_nav">/czlonkowie_klanu</a>
-            <!-- /rekordy_klanu nav link USUNIĘTY STĄD (RUNDA 2026-09-25, partia 2, zlecenie
-                 Pawła punkt 5) - patrz komentarz przy usuniętym command-block niżej. -->
+            <a href="#rekordy_klanu" data-i18n="komendy.rekordy_klanu_nav">/rekordy_klanu</a>
             <a href="#ranking_swiatowy" data-i18n="komendy.ranking_swiatowy_nav">/ranking_swiatowy</a>
             <a href="#moja_pozycja" data-i18n="komendy.moja_pozycja_nav">/moja_pozycja</a>
             <a href="#moj_cel" data-i18n="komendy.moj_cel_nav">/moj_cel</a>
@@ -224,12 +223,17 @@
                     </div>
                 </div>
 
-                <!-- /rekordy_klanu command-block USUNIĘTY STĄD (RUNDA 2026-09-25, partia 2,
-                     zlecenie Pawła punkt 5) - komenda (dodana tego samego dnia, partia 1) na
-                     razie zawężona wyłącznie do serwera deweloperskiego Pawła (main.py,
-                     test_komendy), więc pokazywanie jej publicznie na stronie byłoby mylące,
-                     jeszcze nie działa u zwykłych użytkowników. Przywróć ten blok (patrz
-                     historia gita tego pliku) przy globalnym udostępnieniu komendy. -->
+                <!-- /rekordy_klanu -->
+                <div class="command-block command-block--text-only" id="rekordy_klanu" data-has-shots="1" data-has-shots-en="1">
+                    <div class="command-block-copy">
+                        <div class="command-tag"><code data-i18n="komendy.rekordy_klanu_code">/rekordy_klanu</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
+                        <p data-i18n="komendy.rekordy_klanu_desc">Galeria sław klanu: top 3 w największym jednodniowym skoku, najdłuższej passie i najlepszym tygodniu, plus najlepszy dzień całego klanu. Ostatnie 90 dni, tylko aktualni członkowie klanu. Darmowe.</p>
+                    </div>
+                    <div class="command-block-shots" hidden>
+                        <img src="/assets/screenshots/rekordy_klanu-uzycie.png" data-src-en="/assets/screenshots/rekordy_klanu-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.rekordy_klanu_shot_usage_alt">
+                        <img src="/assets/screenshots/rekordy_klanu-wynik.png" data-src-en="/assets/screenshots/rekordy_klanu-wynik-en.png" alt="" class="command-screenshot" data-i18n-attr="alt:komendy.rekordy_klanu_shot_result_alt">
+                    </div>
+                </div>
 
                 <!-- /ranking_swiatowy -->
                 <!-- Realne zrzuty PL i EN dodane 2026-09-21 - data-has-shots="1" i
@@ -334,7 +338,7 @@
                 <div class="command-block command-block--text-only" id="historia_pucharow" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.historia_pucharow_code">/historia_pucharow [zakres_dni] [tag_gracza]</code> <span class="badge" data-i18n="common.badge_premium">🔒 Premium</span> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.historia_pucharow_desc">Trend pucharów dowolnego gracza z ostatnich 7 lub 30 dni. Aby komenda działała, dany gracz musi być zweryfikowany przez bota przez podany czas.</p>
+                        <p data-i18n="komendy.historia_pucharow_desc">Trend pucharów dowolnego gracza z ostatnich 7 lub 30 dni, albo od początku śledzenia. Aby komenda działała, dany gracz musi być zweryfikowany przez bota przez podany czas.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <div class="command-screenshot-group">
@@ -817,12 +821,16 @@
 
     "komendy.czlonkowie_klanu_code": { pl: "/czlonkowie_klanu", en: "/clan_members" },
     "komendy.czlonkowie_klanu_nav": { pl: "/czlonkowie_klanu", en: "/clan_members" },
-    // komendy.rekordy_klanu_code / _nav / _desc USUNIĘTE STĄD (RUNDA 2026-09-25, partia 2,
-    // zlecenie Pawła punkt 5) - komenda na razie zawężona do serwera deweloperskiego, patrz
-    // komentarz przy usuniętym command-block wyżej. Przywróć przy globalnym udostępnieniu.
     "komendy.czlonkowie_klanu_desc": {
       pl: "Pokazuje wszystkich członków klanu z paginacją.",
       en: "Shows all clan members, paginated.",
+    },
+
+    "komendy.rekordy_klanu_code": { pl: "/rekordy_klanu", en: "/clan_records" },
+    "komendy.rekordy_klanu_nav": { pl: "/rekordy_klanu", en: "/clan_records" },
+    "komendy.rekordy_klanu_desc": {
+      pl: "Galeria sław klanu: top 3 w największym jednodniowym skoku, najdłuższej passie i najlepszym tygodniu, plus najlepszy dzień całego klanu. Ostatnie 90 dni, tylko aktualni członkowie klanu. Darmowe.",
+      en: "The clan's hall of fame: top 3 for biggest single-day gain, longest streak and best week, plus the whole clan's best day. Last 90 days, current clan members only. Free.",
     },
 
     "komendy.ranking_swiatowy_code": { pl: "/ranking_swiatowy", en: "/world_ranking" },
@@ -894,8 +902,8 @@
     "komendy.historia_pucharow_code": { pl: "/historia_pucharow [zakres_dni] [tag_gracza]", en: "/trophy_history [day_range] [player_tag]" },
     "komendy.historia_pucharow_nav": { pl: "/historia_pucharow", en: "/trophy_history" },
     "komendy.historia_pucharow_desc": {
-      pl: "Trend pucharów dowolnego gracza z ostatnich 7 lub 30 dni. Aby komenda działała, dany gracz musi być zweryfikowany przez bota przez podany czas.",
-      en: "Trophy trend for any player over the last 7 or 30 days. For the command to work, that player must have been verified by the bot for the requested period.",
+      pl: "Trend pucharów dowolnego gracza z ostatnich 7 lub 30 dni, albo od początku śledzenia. Aby komenda działała, dany gracz musi być zweryfikowany przez bota przez podany czas.",
+      en: "Trophy trend for any player over the last 7 or 30 days, or since tracking began. For the command to work, that player must have been verified by the bot for the requested period.",
     },
 
     "komendy.ranking_kolekcji_code": { pl: "/ranking_kolekcji", en: "/collection_ranking" },
@@ -1181,8 +1189,8 @@
     "komendy.podsumowanie_bitew_shot_result_alt": { pl: "Wynik komendy /podsumowanie_bitew - karta ostatnich bitew", en: "Result of /battle_summary - recent battles card" },
     "komendy.czlonkowie_klanu_shot_usage_alt": { pl: "Wpisywanie komendy /czlonkowie_klanu na Discordzie", en: "Typing the /clan_members command on Discord" },
     "komendy.czlonkowie_klanu_shot_result_alt": { pl: "Wynik komendy /czlonkowie_klanu - pełna, paginowana lista klanu", en: "Result of /clan_members - full, paginated clan list" },
-    // komendy.rekordy_klanu_shot_usage_alt / _shot_result_alt USUNIĘTE STĄD (RUNDA
-    // 2026-09-25, partia 2, zlecenie Pawła punkt 5), patrz komentarze wyżej w tym pliku.
+    "komendy.rekordy_klanu_shot_usage_alt": { pl: "Wpisywanie komendy /rekordy_klanu na Discordzie", en: "Typing the /clan_records command on Discord" },
+    "komendy.rekordy_klanu_shot_result_alt": { pl: "Wynik komendy /rekordy_klanu - galeria sław klanu", en: "Result of /clan_records - the clan's hall of fame" },
     "komendy.ranking_swiatowy_shot_usage_alt": { pl: "Wpisywanie komendy /ranking_swiatowy na Discordzie", en: "Typing the /world_ranking command on Discord" },
     "komendy.ranking_swiatowy_shot_result_alt": { pl: "Wynik komendy /ranking_swiatowy - światowy ranking graczy", en: "Result of /world_ranking - global player ranking" },
     "komendy.pojedynek_klanow_shot_usage_alt": { pl: "Wpisywanie komendy /pojedynek_klanow na Discordzie", en: "Typing the /clan_duel command on Discord" },
