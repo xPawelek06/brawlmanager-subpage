@@ -97,8 +97,9 @@
                     <h3 data-i18n="home.feature3_title">Statystyki gracza i klanu</h3>
                     <p data-i18n="home.feature3_body">
                         Karta gracza, pełna lista klanu, podsumowanie ostatnich bitew, ranking światowy,
-                        osobisty cel pucharowy, odznaki oraz pojedynki 1:1 - między graczami albo całymi
-                        klanami - jedną komendą, bez wchodzenia w grę.
+                        osobisty cel pucharowy, podsumowanie tygodnia/miesiąca z percentylem tempa i passą
+                        dni na plusie, odznaki oraz pojedynki 1:1 (między graczami albo całymi klanami)
+                        jedną komendą, bez wchodzenia w grę.
                     </p>
                 </div>
 
@@ -237,7 +238,7 @@
                     <div class="command-item">
                         <div class="command-main">
                             <code data-i18n="home.cmd_moje_osiagniecia_code">/moje_osiagniecia [tag_gracza]</code>
-                            <p data-i18n="home.cmd_moje_osiagniecia_desc">Odznaki i osiągnięcia gracza w klanie - serie, rekordy, kolekcja brawlerów.</p>
+                            <p data-i18n="home.cmd_moje_osiagniecia_desc">Odznaki i osiągnięcia gracza w klanie: serie, rekordy, staż, passa 7 i 30 dni na plusie, kolekcja brawlerów.</p>
                         </div>
                     </div>
 
@@ -278,8 +279,8 @@
 
                     <div class="command-item">
                         <div class="command-main">
-                            <code data-i18n="home.cmd_moje_podsumowanie_code">/moje_podsumowanie</code>
-                            <p data-i18n="home.cmd_moje_podsumowanie_desc">Podsumowanie Twoich pucharów za tydzień albo miesiąc - tylko w wiadomości prywatnej z botem.</p>
+                            <code data-i18n="home.cmd_moje_podsumowanie_code">/moje_podsumowanie [okres]</code>
+                            <p data-i18n="home.cmd_moje_podsumowanie_desc">Podsumowanie Twoich pucharów za tydzień, miesiąc albo od początku śledzenia, z percentylem tempa i passą dni na plusie.</p>
                         </div>
                     </div>
 
@@ -664,8 +665,8 @@
     },
     "home.feature3_title": { pl: "Statystyki gracza i klanu", en: "Player and clan statistics" },
     "home.feature3_body": {
-      pl: "Karta gracza, pełna lista klanu, podsumowanie ostatnich bitew, ranking światowy, osobisty cel pucharowy, odznaki oraz pojedynki 1:1 - między graczami albo całymi klanami - jedną komendą, bez wchodzenia w grę.",
-      en: "Player card, full clan list, recent battle summary, world ranking, personal trophy goal, badges, and 1:1 duels - between players or whole clans - with one command, no need to open the game.",
+      pl: "Karta gracza, pełna lista klanu, podsumowanie ostatnich bitew, ranking światowy, osobisty cel pucharowy, podsumowanie tygodnia/miesiąca z percentylem tempa i passą dni na plusie, odznaki oraz pojedynki 1:1 (między graczami albo całymi klanami) jedną komendą, bez wchodzenia w grę.",
+      en: "Player card, full clan list, recent battle summary, world ranking, personal trophy goal, a weekly/monthly summary with a pace percentile and current streak, badges, and 1:1 duels (between players or whole clans) with one command, no need to open the game.",
     },
     "home.feature4_title": { pl: "Wizualna siatka brawlerów", en: "Visual brawler grid" },
     "home.feature4_body": {
@@ -751,8 +752,8 @@
     },
     "home.cmd_moje_osiagniecia_code": { pl: "/moje_osiagniecia [tag_gracza]", en: "/my_achievements [player_tag]" },
     "home.cmd_moje_osiagniecia_desc": {
-      pl: "Odznaki i osiągnięcia gracza w klanie - serie, rekordy, kolekcja brawlerów.",
-      en: "Badges and achievements for a player in the clan - streaks, records, brawler collection.",
+      pl: "Odznaki i osiągnięcia gracza w klanie: serie, rekordy, staż, passa 7 i 30 dni na plusie, kolekcja brawlerów.",
+      en: "Badges and achievements for a player in the clan: streaks, records, tenure, 7 and 30 day streak badges, brawler collection.",
     },
     "home.cmd_pojedynek_code": { pl: "/pojedynek [tag_gracza_1] [tag_gracza_2]", en: "/duel [player_tag_1] [player_tag_2]" },
     "home.cmd_pojedynek_desc": {
@@ -779,10 +780,10 @@
       pl: "Rejestruje Twój tag do samodzielnego śledzenia historii pucharów, niezależnie od tego, czy serwer ma skonfigurowany klan.",
       en: "Registers your tag for self-tracking trophy history, regardless of whether the server has a clan configured.",
     },
-    "home.cmd_moje_podsumowanie_code": { pl: "/moje_podsumowanie", en: "/my_summary" },
+    "home.cmd_moje_podsumowanie_code": { pl: "/moje_podsumowanie [okres]", en: "/my_summary [period]" },
     "home.cmd_moje_podsumowanie_desc": {
-      pl: "Podsumowanie Twoich pucharów za tydzień albo miesiąc - tylko w wiadomości prywatnej z botem.",
-      en: "A summary of your trophies for the past week or month - direct messages with the bot only.",
+      pl: "Podsumowanie Twoich pucharów za tydzień, miesiąc albo od początku śledzenia, z percentylem tempa i passą dni na plusie.",
+      en: "A summary of your trophies for the week, month, or since tracking began, with a pace percentile and your current streak.",
     },
     "home.cmd_support_code": { pl: "/support", en: "/support" },
     "home.cmd_support_desc": {

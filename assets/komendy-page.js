@@ -286,7 +286,7 @@
                 <div class="command-block command-block--text-only" id="moje_osiagniecia" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.moje_osiagniecia_code">/moje_osiagniecia [tag_gracza]</code></div>
-                        <p data-i18n="komendy.moje_osiagniecia_desc">Odznaki i osiągnięcia gracza w klanie, liczone automatycznie z historii bota - m.in. najdłuższa seria na plusie, rekordowy dzień, staż w klanie, % ukończenia kolekcji brawlerów, najlepszy tydzień i kamienie milowe rekordu trofeów.</p>
+                        <p data-i18n="komendy.moje_osiagniecia_desc">Odznaki i osiągnięcia gracza w klanie, liczone automatycznie z historii bota, m.in. najdłuższa seria na plusie (z osobnymi odznakami za 7 i 30 dni na plusie), rekordowy dzień, staż w klanie, % ukończenia kolekcji brawlerów, najlepszy tydzień i kamienie milowe rekordu trofeów.</p>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/moje_osiagniecia-uzycie.png" data-src-en="/assets/screenshots/moje_osiagniecia-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.moje_osiagniecia_shot_usage_alt">
@@ -401,7 +401,12 @@
                 <div class="command-block command-block--text-only" id="moje_podsumowanie" data-has-shots="1" data-has-shots-en="1">
                     <div class="command-block-copy">
                         <div class="command-tag"><code data-i18n="komendy.moje_podsumowanie_code">/moje_podsumowanie [okres]</code> <span class="badge badge-pending" data-i18n="common.badge_pending">📸 Zrzuty ekranu wkrótce</span></div>
-                        <p data-i18n="komendy.moje_podsumowanie_desc">Podsumowanie Twoich statystyk z ostatniego tygodnia bądź miesiąca.</p>
+                        <p data-i18n="komendy.moje_podsumowanie_desc">Podsumowanie Twoich statystyk za wybrany okres: tydzień, miesiąc albo od początku śledzenia (cała zapisana historia). Działa zarówno na serwerze, jak i w wiadomości prywatnej z botem.</p>
+                        <ul>
+                            <li data-i18n="komendy.moje_podsumowanie_li1">🚀 Tempo na tle innych: dla okresu tydzień/miesiąc procent graczy BrawlManagera, którzy rosną wolniej od Ciebie (widoczne przy odpowiednio dużej bazie porównawczej)</li>
+                            <li data-i18n="komendy.moje_podsumowanie_li2">🔥 Passa: ile dni z rzędu jesteś na plusie</li>
+                            <li data-i18n="komendy.moje_podsumowanie_li3">📅 Twój staż: przy okresie „Od początku” pokazuje, od kiedy bot śledzi Twój profil i jak wypada to na tle innych graczy</li>
+                        </ul>
                     </div>
                     <div class="command-block-shots" hidden>
                         <img src="/assets/screenshots/moje_podsumowanie-uzycie.png" data-src-en="/assets/screenshots/moje_podsumowanie-uzycie-en.png" alt="" class="command-screenshot command-screenshot-usage" data-i18n-attr="alt:komendy.moje_podsumowanie_shot_usage_alt">
@@ -860,8 +865,8 @@
     "komendy.moje_osiagniecia_code": { pl: "/moje_osiagniecia [tag_gracza]", en: "/my_achievements [player_tag]" },
     "komendy.moje_osiagniecia_nav": { pl: "/moje_osiagniecia", en: "/my_achievements" },
     "komendy.moje_osiagniecia_desc": {
-      pl: "Odznaki i osiągnięcia gracza w klanie, liczone automatycznie z historii bota - m.in. najdłuższa seria na plusie, rekordowy dzień, staż w klanie, % ukończenia kolekcji brawlerów, najlepszy tydzień i kamienie milowe rekordu trofeów.",
-      en: "A player's badges and achievements in the clan, calculated automatically from the bot's history - including longest positive streak, record day, time in the clan, brawler collection completion %, best week, and trophy record milestones.",
+      pl: "Odznaki i osiągnięcia gracza w klanie, liczone automatycznie z historii bota, m.in. najdłuższa seria na plusie (z osobnymi odznakami za 7 i 30 dni na plusie), rekordowy dzień, staż w klanie, % ukończenia kolekcji brawlerów, najlepszy tydzień i kamienie milowe rekordu trofeów.",
+      en: "A player's badges and achievements in the clan, calculated automatically from the bot's history, including longest positive streak (with separate badges for 7 and 30 day streaks), record day, time in the clan, brawler collection completion %, best week, and trophy record milestones.",
     },
 
     "komendy.pojedynek_code": { pl: "/pojedynek [tag_gracza_1] [tag_gracza_2]", en: "/duel [player_tag_1] [player_tag_2]" },
@@ -917,8 +922,20 @@
     "komendy.moje_podsumowanie_code": { pl: "/moje_podsumowanie [okres]", en: "/my_summary [period]" },
     "komendy.moje_podsumowanie_nav": { pl: "/moje_podsumowanie", en: "/my_summary" },
     "komendy.moje_podsumowanie_desc": {
-      pl: "Podsumowanie Twoich statystyk z ostatniego tygodnia bądź miesiąca.",
-      en: "A summary of your stats from the last week or month.",
+      pl: "Podsumowanie Twoich statystyk za wybrany okres: tydzień, miesiąc albo od początku śledzenia (cała zapisana historia). Działa zarówno na serwerze, jak i w wiadomości prywatnej z botem.",
+      en: "A summary of your stats for the selected period: week, month, or since tracking began (your full recorded history). Works both on a server and in a direct message with the bot.",
+    },
+    "komendy.moje_podsumowanie_li1": {
+      pl: "🚀 Tempo na tle innych: dla okresu tydzień/miesiąc procent graczy BrawlManagera, którzy rosną wolniej od Ciebie (widoczne przy odpowiednio dużej bazie porównawczej)",
+      en: "🚀 Pace vs everyone else: for the week/month period, the percentage of BrawlManager players growing slower than you (shown once there's a large enough comparison group)",
+    },
+    "komendy.moje_podsumowanie_li2": {
+      pl: "🔥 Passa: ile dni z rzędu jesteś na plusie",
+      en: "🔥 Streak: how many days in a row you're on the plus side",
+    },
+    "komendy.moje_podsumowanie_li3": {
+      pl: "📅 Twój staż: przy okresie „Od początku” pokazuje, od kiedy bot śledzi Twój profil i jak wypada to na tle innych graczy",
+      en: "📅 Your tenure: for the \"All time\" period, shows how long the bot has tracked your profile and how that compares to other players",
     },
 
     "komendy.support_code": { pl: "/support", en: "/support" },
