@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-09-29T14:21:43Z",
+  "aktualizowano": "2026-09-29T16:21:43Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -38,10 +38,10 @@
       "koniec_aktualnego_slotu": "2026-09-30T08:00:00Z"
     },
     {
-      "tryb": "bounty",
-      "mapa_poprzednia": "False Sense Of Security",
-      "mapa_aktualna": "Choral Chambers",
-      "koniec_aktualnego_slotu": "2026-09-29T16:00:00Z"
+      "tryb": "tagTeam",
+      "mapa_poprzednia": "Choral Chambers",
+      "mapa_aktualna": "Search and Destroy",
+      "koniec_aktualnego_slotu": "2026-09-30T16:00:00Z"
     },
     {
       "tryb": "airHockey",
@@ -74,10 +74,10 @@
       "koniec_aktualnego_slotu": "2026-09-30T04:00:00Z"
     },
     {
-      "tryb": "brawlBall",
-      "mapa_poprzednia": "Backyard Bowl",
-      "mapa_aktualna": "Beach Ball",
-      "koniec_aktualnego_slotu": "2026-09-29T16:00:00Z"
+      "tryb": "knockout",
+      "mapa_poprzednia": "Beach Ball",
+      "mapa_aktualna": "New Perspective",
+      "koniec_aktualnego_slotu": "2026-09-29T18:00:00Z"
     }
   ]
 }
