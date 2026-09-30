@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-09-30T10:11:28Z",
+  "aktualizowano": "2026-09-30T12:11:25Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -74,10 +74,10 @@
       "koniec_aktualnego_slotu": "2026-10-01T04:00:00Z"
     },
     {
-      "tryb": "soloShowdown",
-      "mapa_poprzednia": "Flying Fantasies",
-      "mapa_aktualna": "Makeshift Scaffolding",
-      "koniec_aktualnego_slotu": "2026-09-30T12:00:00Z"
+      "tryb": "brawlBall",
+      "mapa_poprzednia": "Makeshift Scaffolding",
+      "mapa_aktualna": "Backyard Bowl",
+      "koniec_aktualnego_slotu": "2026-09-30T14:00:00Z"
     }
   ]
 }
