@@ -1,23 +1,23 @@
 {
-  "aktualizowano": "2026-10-01T06:11:25Z",
+  "aktualizowano": "2026-10-01T08:11:39Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Sunny Soccer",
-      "mapa_aktualna": "Super Beach",
-      "koniec_aktualnego_slotu": "2026-10-01T08:00:00Z"
+      "mapa_poprzednia": "Super Beach",
+      "mapa_aktualna": "Pump It Up",
+      "koniec_aktualnego_slotu": "2026-10-02T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
       "mapa_poprzednia": "Acid Lakes",
       "mapa_aktualna": "Rockwall Brawl",
-      "koniec_aktualnego_slotu": "2026-10-01T08:00:00Z"
+      "koniec_aktualnego_slotu": "2026-10-01T20:00:00Z"
     },
     {
       "tryb": "gemGrab",
-      "mapa_poprzednia": "Double Swoosh",
-      "mapa_aktualna": "Undermine",
-      "koniec_aktualnego_slotu": "2026-10-01T08:00:00Z"
+      "mapa_poprzednia": "Undermine",
+      "mapa_aktualna": "Let Me Dance",
+      "koniec_aktualnego_slotu": "2026-10-02T00:00:00Z"
     },
     {
       "tryb": "hotZone",
@@ -29,13 +29,25 @@
       "tryb": "duoShowdown",
       "mapa_poprzednia": "Acid Lakes",
       "mapa_aktualna": "Rockwall Brawl",
-      "koniec_aktualnego_slotu": "2026-10-01T08:00:00Z"
+      "koniec_aktualnego_slotu": "2026-10-01T20:00:00Z"
     },
     {
       "tryb": "knockout",
-      "mapa_poprzednia": "Belle's Rock",
-      "mapa_aktualna": "Out in the Open",
-      "koniec_aktualnego_slotu": "2026-10-01T08:00:00Z"
+      "mapa_poprzednia": "Out in the Open",
+      "mapa_aktualna": "Please Remain Standing",
+      "koniec_aktualnego_slotu": "2026-10-02T02:00:00Z"
+    },
+    {
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Twisting Vines",
+      "mapa_aktualna": "Scorched Stone",
+      "koniec_aktualnego_slotu": "2026-10-02T08:00:00Z"
+    },
+    {
+      "tryb": "heist",
+      "mapa_poprzednia": "Turbine Terrace",
+      "mapa_aktualna": "Bridge Too Far",
+      "koniec_aktualnego_slotu": "2026-10-02T08:00:00Z"
     },
     {
       "tryb": "bounty",
@@ -53,7 +65,7 @@
       "tryb": "trioShowdown",
       "mapa_poprzednia": "Acid Lakes",
       "mapa_aktualna": "Rockwall Brawl",
-      "koniec_aktualnego_slotu": "2026-10-01T08:00:00Z"
+      "koniec_aktualnego_slotu": "2026-10-01T20:00:00Z"
     },
     {
       "tryb": "brawlArena",
@@ -62,10 +74,10 @@
       "koniec_aktualnego_slotu": "2026-10-01T14:00:00Z"
     },
     {
-      "tryb": "brawlBall5V5",
-      "mapa_poprzednia": "Siberian Stand Off",
-      "mapa_aktualna": "Stockpile Stadium",
-      "koniec_aktualnego_slotu": "2026-10-01T08:00:00Z"
+      "tryb": "deathmatch5v5",
+      "mapa_poprzednia": "Stockpile Stadium",
+      "mapa_aktualna": "Hee Hee",
+      "koniec_aktualnego_slotu": "2026-10-01T12:00:00Z"
     },
     {
       "tryb": "deathmatch",
@@ -74,10 +86,10 @@
       "koniec_aktualnego_slotu": "2026-10-02T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-10-01T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-10-01T10:00:00Z"
     }
   ]
 }
