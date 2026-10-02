@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-10-02T06:21:07Z",
+  "aktualizowano": "2026-10-02T08:21:15Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Super Beach",
-      "mapa_aktualna": "Pump It Up",
-      "koniec_aktualnego_slotu": "2026-10-02T08:00:00Z"
+      "mapa_poprzednia": "Pump It Up",
+      "mapa_aktualna": "Triple Dribble",
+      "koniec_aktualnego_slotu": "2026-10-03T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -38,16 +38,16 @@
       "koniec_aktualnego_slotu": "2026-10-03T02:00:00Z"
     },
     {
-      "tryb": "soloShowdown",
-      "mapa_poprzednia": "Twisting Vines",
-      "mapa_aktualna": "Scorched Stone",
-      "koniec_aktualnego_slotu": "2026-10-02T08:00:00Z"
+      "tryb": "gemGrab",
+      "mapa_poprzednia": "Scorched Stone",
+      "mapa_aktualna": "Deathcap Trap",
+      "koniec_aktualnego_slotu": "2026-10-03T08:00:00Z"
     },
     {
-      "tryb": "heist",
-      "mapa_poprzednia": "Turbine Terrace",
-      "mapa_aktualna": "Bridge Too Far",
-      "koniec_aktualnego_slotu": "2026-10-02T08:00:00Z"
+      "tryb": "knockout",
+      "mapa_poprzednia": "Bridge Too Far",
+      "mapa_aktualna": "Snake Out",
+      "koniec_aktualnego_slotu": "2026-10-03T08:00:00Z"
     },
     {
       "tryb": "tagTeam",
@@ -86,10 +86,10 @@
       "koniec_aktualnego_slotu": "2026-10-03T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-10-02T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-10-02T10:00:00Z"
     }
   ]
 }
