@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-10-07T06:06:08Z",
+  "aktualizowano": "2026-10-07T08:06:30Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Spiraling Out",
-      "mapa_aktualna": "Beach Ball",
-      "koniec_aktualnego_slotu": "2026-10-07T08:00:00Z"
+      "mapa_poprzednia": "Beach Ball",
+      "mapa_aktualna": "Pinball Dreams",
+      "koniec_aktualnego_slotu": "2026-10-08T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -38,22 +38,40 @@
       "koniec_aktualnego_slotu": "2026-10-08T02:00:00Z"
     },
     {
-      "tryb": "soloShowdown",
-      "mapa_poprzednia": "New Perspective",
-      "mapa_aktualna": "Acid Lakes",
-      "koniec_aktualnego_slotu": "2026-10-07T08:00:00Z"
+      "tryb": "knockout5V5",
+      "mapa_poprzednia": "Acid Lakes",
+      "mapa_aktualna": "Unhappy Arena",
+      "koniec_aktualnego_slotu": "2026-10-08T08:00:00Z"
     },
     {
-      "tryb": "gemGrab5V5",
-      "mapa_poprzednia": "Acid Lakes",
-      "mapa_aktualna": "Treasure Island",
-      "koniec_aktualnego_slotu": "2026-10-07T08:00:00Z"
+      "tryb": "duoShowdown",
+      "mapa_poprzednia": "Treasure Island",
+      "mapa_aktualna": "Shadow Spirits",
+      "koniec_aktualnego_slotu": "2026-10-08T08:00:00Z"
     },
     {
       "tryb": "bounty",
       "mapa_poprzednia": "Stone Skipping",
       "mapa_aktualna": "Hideout",
       "koniec_aktualnego_slotu": "2026-10-07T16:00:00Z"
+    },
+    {
+      "tryb": "gemGrab",
+      "mapa_poprzednia": "Grass Knot",
+      "mapa_aktualna": "Crystal Arcade",
+      "koniec_aktualnego_slotu": "2026-10-15T08:00:00Z"
+    },
+    {
+      "tryb": "knockout",
+      "mapa_poprzednia": "Flaring Phoenix",
+      "mapa_aktualna": "Out in the Open",
+      "koniec_aktualnego_slotu": "2026-10-15T08:00:00Z"
+    },
+    {
+      "tryb": "hotZone",
+      "mapa_poprzednia": "Shooting Star",
+      "mapa_aktualna": "Golden Bay",
+      "koniec_aktualnego_slotu": "2026-10-15T08:00:00Z"
     },
     {
       "tryb": "airHockey",
@@ -86,10 +104,10 @@
       "koniec_aktualnego_slotu": "2026-10-08T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-10-07T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-10-07T10:00:00Z"
     }
   ]
 }
