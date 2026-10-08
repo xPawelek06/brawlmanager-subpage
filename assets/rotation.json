@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-10-08T10:21:11Z",
+  "aktualizowano": "2026-10-08T11:36:08Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -44,9 +44,9 @@
       "koniec_aktualnego_slotu": "2026-10-09T08:00:00Z"
     },
     {
-      "tryb": "hunterSurvivor",
-      "mapa_poprzednia": "Shadow Spirits",
-      "mapa_aktualna": "Seekret Passage",
+      "tryb": "bounty",
+      "mapa_poprzednia": "Seekret Passage",
+      "mapa_aktualna": "Brace for Impact",
       "koniec_aktualnego_slotu": "2026-10-09T08:00:00Z"
     },
     {
