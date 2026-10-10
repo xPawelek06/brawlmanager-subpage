@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-10-10T06:06:08Z",
+  "aktualizowano": "2026-10-10T08:06:15Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Pinhole Punt",
-      "mapa_aktualna": "Bustling Business",
-      "koniec_aktualnego_slotu": "2026-10-10T08:00:00Z"
+      "mapa_poprzednia": "Bustling Business",
+      "mapa_aktualna": "In Demand",
+      "koniec_aktualnego_slotu": "2026-10-11T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -38,16 +38,16 @@
       "koniec_aktualnego_slotu": "2026-10-11T02:00:00Z"
     },
     {
-      "tryb": "heist",
-      "mapa_poprzednia": "Feast or Famine",
-      "mapa_aktualna": "Eating Good!",
-      "koniec_aktualnego_slotu": "2026-10-10T08:00:00Z"
+      "tryb": "bounty",
+      "mapa_poprzednia": "Eating Good!",
+      "mapa_aktualna": "Supercut",
+      "koniec_aktualnego_slotu": "2026-10-11T08:00:00Z"
     },
     {
-      "tryb": "gemGrab5V5",
-      "mapa_poprzednia": "Brace for Impact",
-      "mapa_aktualna": "Treasure Island",
-      "koniec_aktualnego_slotu": "2026-10-10T08:00:00Z"
+      "tryb": "duoShowdown",
+      "mapa_poprzednia": "Treasure Island",
+      "mapa_aktualna": "Rice Field",
+      "koniec_aktualnego_slotu": "2026-10-11T08:00:00Z"
     },
     {
       "tryb": "tagTeam",
@@ -104,10 +104,10 @@
       "koniec_aktualnego_slotu": "2026-10-11T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-10-10T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-10-10T10:00:00Z"
     }
   ]
 }
