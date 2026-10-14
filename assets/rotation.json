@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-10-14T06:21:07Z",
+  "aktualizowano": "2026-10-14T08:21:17Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Match 1123581321",
-      "mapa_aktualna": "Sunny Soccer",
-      "koniec_aktualnego_slotu": "2026-10-14T08:00:00Z"
+      "mapa_poprzednia": "Sunny Soccer",
+      "mapa_aktualna": "Super Beach",
+      "koniec_aktualnego_slotu": "2026-10-15T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -38,16 +38,16 @@
       "koniec_aktualnego_slotu": "2026-10-15T02:00:00Z"
     },
     {
-      "tryb": "duoShowdown",
-      "mapa_poprzednia": "Stroke of Luck",
-      "mapa_aktualna": "Ghost Point",
-      "koniec_aktualnego_slotu": "2026-10-14T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Ghost Point",
+      "mapa_aktualna": "Eye of the Storm",
+      "koniec_aktualnego_slotu": "2026-10-15T08:00:00Z"
     },
     {
-      "tryb": "bounty",
-      "mapa_poprzednia": "Unhappy Arena",
-      "mapa_aktualna": "Alchemy",
-      "koniec_aktualnego_slotu": "2026-10-14T08:00:00Z"
+      "tryb": "trioShowdown",
+      "mapa_poprzednia": "Alchemy",
+      "mapa_aktualna": "Starr Fish",
+      "koniec_aktualnego_slotu": "2026-10-15T08:00:00Z"
     },
     {
       "tryb": "tagTeam",
@@ -104,10 +104,10 @@
       "koniec_aktualnego_slotu": "2026-10-15T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-10-14T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-10-14T10:00:00Z"
     }
   ]
 }
