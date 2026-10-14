@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-10-14T08:21:17Z",
+  "aktualizowano": "2026-10-14T08:36:09Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -45,8 +45,8 @@
     },
     {
       "tryb": "trioShowdown",
-      "mapa_poprzednia": "Alchemy",
-      "mapa_aktualna": "Starr Fish",
+      "mapa_poprzednia": "Starr Fish",
+      "mapa_aktualna": "Core of Orbit",
       "koniec_aktualnego_slotu": "2026-10-15T08:00:00Z"
     },
     {
