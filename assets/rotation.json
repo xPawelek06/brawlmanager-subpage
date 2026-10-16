@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-10-16T06:06:08Z",
+  "aktualizowano": "2026-10-16T08:06:13Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Super Beach",
-      "mapa_aktualna": "Pump It Up",
-      "koniec_aktualnego_slotu": "2026-10-16T08:00:00Z"
+      "mapa_poprzednia": "Pump It Up",
+      "mapa_aktualna": "Triple Dribble",
+      "koniec_aktualnego_slotu": "2026-10-17T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -36,18 +36,6 @@
       "mapa_poprzednia": "Please Remain Standing",
       "mapa_aktualna": "Double Decker",
       "koniec_aktualnego_slotu": "2026-10-17T02:00:00Z"
-    },
-    {
-      "tryb": "deathmatch5v5",
-      "mapa_poprzednia": "Eye of the Storm",
-      "mapa_aktualna": "Mirages of Madness",
-      "koniec_aktualnego_slotu": "2026-10-16T08:00:00Z"
-    },
-    {
-      "tryb": "heist",
-      "mapa_poprzednia": "Core of Orbit",
-      "mapa_aktualna": "Pit Stop",
-      "koniec_aktualnego_slotu": "2026-10-16T08:00:00Z"
     },
     {
       "tryb": "tagTeam",
@@ -86,10 +74,10 @@
       "koniec_aktualnego_slotu": "2026-10-17T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-10-16T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-10-16T10:00:00Z"
     }
   ]
 }
