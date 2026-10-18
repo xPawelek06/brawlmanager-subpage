@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-10-18T06:21:10Z",
+  "aktualizowano": "2026-10-18T08:21:15Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Triple Dribble",
-      "mapa_aktualna": "Sneaky Fields",
-      "koniec_aktualnego_slotu": "2026-10-18T08:00:00Z"
+      "mapa_poprzednia": "Sneaky Fields",
+      "mapa_aktualna": "Backyard Bowl",
+      "koniec_aktualnego_slotu": "2026-10-19T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -74,10 +74,10 @@
       "koniec_aktualnego_slotu": "2026-10-19T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-10-18T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-10-18T10:00:00Z"
     }
   ]
 }
