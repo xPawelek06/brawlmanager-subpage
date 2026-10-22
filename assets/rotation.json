@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-10-22T06:12:18Z",
+  "aktualizowano": "2026-10-22T08:08:28Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Beach Ball",
-      "mapa_aktualna": "Pinball Dreams",
-      "koniec_aktualnego_slotu": "2026-10-22T08:00:00Z"
+      "mapa_poprzednia": "Pinball Dreams",
+      "mapa_aktualna": "Pinhole Punt",
+      "koniec_aktualnego_slotu": "2026-10-23T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -74,10 +74,10 @@
       "koniec_aktualnego_slotu": "2026-10-23T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-10-22T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-10-22T10:00:00Z"
     }
   ]
 }
