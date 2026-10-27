@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-10-27T06:03:15Z",
+  "aktualizowano": "2026-10-27T08:03:17Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Grass Knot",
-      "mapa_aktualna": "Match 1123581321",
-      "koniec_aktualnego_slotu": "2026-10-27T08:00:00Z"
+      "mapa_poprzednia": "Match 1123581321",
+      "mapa_aktualna": "Sunny Soccer",
+      "koniec_aktualnego_slotu": "2026-10-28T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -74,10 +74,10 @@
       "koniec_aktualnego_slotu": "2026-10-28T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-10-27T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-10-27T10:00:00Z"
     }
   ]
 }
