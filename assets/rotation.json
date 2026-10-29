@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-10-29T14:18:17Z",
+  "aktualizowano": "2026-10-29T16:18:18Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -38,10 +38,10 @@
       "koniec_aktualnego_slotu": "2026-10-30T02:00:00Z"
     },
     {
-      "tryb": "bounty",
-      "mapa_poprzednia": "Search and Destroy",
-      "mapa_aktualna": "Shooting Star",
-      "koniec_aktualnego_slotu": "2026-10-29T16:00:00Z"
+      "tryb": "tagTeam",
+      "mapa_poprzednia": "Shooting Star",
+      "mapa_aktualna": "No Surrender",
+      "koniec_aktualnego_slotu": "2026-10-30T16:00:00Z"
     },
     {
       "tryb": "airHockey",
@@ -74,10 +74,10 @@
       "koniec_aktualnego_slotu": "2026-10-30T04:00:00Z"
     },
     {
-      "tryb": "brawlBall",
-      "mapa_poprzednia": "Backyard Bowl",
-      "mapa_aktualna": "Beach Ball",
-      "koniec_aktualnego_slotu": "2026-10-29T16:00:00Z"
+      "tryb": "knockout",
+      "mapa_poprzednia": "Beach Ball",
+      "mapa_aktualna": "New Perspective",
+      "koniec_aktualnego_slotu": "2026-10-29T18:00:00Z"
     }
   ]
 }
