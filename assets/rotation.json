@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-10-29T06:03:13Z",
+  "aktualizowano": "2026-10-29T08:03:20Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Sunny Soccer",
-      "mapa_aktualna": "Super Beach",
-      "koniec_aktualnego_slotu": "2026-10-29T08:00:00Z"
+      "mapa_poprzednia": "Super Beach",
+      "mapa_aktualna": "Pump It Up",
+      "koniec_aktualnego_slotu": "2026-10-30T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -74,10 +74,10 @@
       "koniec_aktualnego_slotu": "2026-10-30T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-10-29T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-10-29T10:00:00Z"
     }
   ]
 }
