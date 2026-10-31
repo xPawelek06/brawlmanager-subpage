@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-10-31T04:03:19Z",
+  "aktualizowano": "2026-10-31T06:18:13Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -75,9 +75,9 @@
     },
     {
       "tryb": "hotZone",
-      "mapa_poprzednia": "Below Zero",
-      "mapa_aktualna": "Open Business",
-      "koniec_aktualnego_slotu": "2026-10-31T06:00:00Z"
+      "mapa_poprzednia": "Open Business",
+      "mapa_aktualna": "Dueling Beetles",
+      "koniec_aktualnego_slotu": "2026-10-31T08:00:00Z"
     }
   ]
 }
