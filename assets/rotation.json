@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-11-03T14:18:30Z",
+  "aktualizowano": "2026-11-03T16:18:21Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -38,10 +38,10 @@
       "koniec_aktualnego_slotu": "2026-11-04T02:00:00Z"
     },
     {
-      "tryb": "tagTeam",
-      "mapa_poprzednia": "Supercut",
-      "mapa_aktualna": "Stone Skipping",
-      "koniec_aktualnego_slotu": "2026-11-03T16:00:00Z"
+      "tryb": "bounty",
+      "mapa_poprzednia": "Stone Skipping",
+      "mapa_aktualna": "Endothermic Shift",
+      "koniec_aktualnego_slotu": "2026-11-04T16:00:00Z"
     },
     {
       "tryb": "airHockey",
@@ -74,10 +74,10 @@
       "koniec_aktualnego_slotu": "2026-11-04T04:00:00Z"
     },
     {
-      "tryb": "brawlBall",
-      "mapa_poprzednia": "Backyard Bowl",
-      "mapa_aktualna": "Beach Ball",
-      "koniec_aktualnego_slotu": "2026-11-03T16:00:00Z"
+      "tryb": "knockout",
+      "mapa_poprzednia": "Beach Ball",
+      "mapa_aktualna": "New Perspective",
+      "koniec_aktualnego_slotu": "2026-11-03T18:00:00Z"
     }
   ]
 }
