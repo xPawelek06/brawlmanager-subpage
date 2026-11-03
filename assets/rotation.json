@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-11-03T06:18:15Z",
+  "aktualizowano": "2026-11-03T08:48:25Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Backyard Bowl",
-      "mapa_aktualna": "Spiraling Out",
-      "koniec_aktualnego_slotu": "2026-11-03T08:00:00Z"
+      "mapa_poprzednia": "Spiraling Out",
+      "mapa_aktualna": null,
+      "koniec_aktualnego_slotu": "2026-11-04T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -21,8 +21,8 @@
     },
     {
       "tryb": "heist",
-      "mapa_poprzednia": "Golden Bay",
-      "mapa_aktualna": "Hot Tubs",
+      "mapa_poprzednia": "Hot Tubs",
+      "mapa_aktualna": null,
       "koniec_aktualnego_slotu": "2026-11-03T18:00:00Z"
     },
     {
@@ -74,10 +74,10 @@
       "koniec_aktualnego_slotu": "2026-11-04T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-11-03T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-11-03T10:00:00Z"
     }
   ]
 }
