@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-11-08T06:03:14Z",
+  "aktualizowano": "2026-11-08T08:03:19Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Bustling Business",
-      "mapa_aktualna": "In Demand",
-      "koniec_aktualnego_slotu": "2026-11-08T08:00:00Z"
+      "mapa_poprzednia": "In Demand",
+      "mapa_aktualna": "Passing Through",
+      "koniec_aktualnego_slotu": "2026-11-09T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -39,9 +39,9 @@
     },
     {
       "tryb": "megaDuoShowdown",
-      "mapa_poprzednia": "Patchwork Peril",
-      "mapa_aktualna": "Roundabout Rumble",
-      "koniec_aktualnego_slotu": "2026-11-08T08:00:00Z"
+      "mapa_poprzednia": "Roundabout Rumble",
+      "mapa_aktualna": "Quadrant Clash",
+      "koniec_aktualnego_slotu": "2026-11-09T08:00:00Z"
     },
     {
       "tryb": "bounty",
@@ -80,10 +80,10 @@
       "koniec_aktualnego_slotu": "2026-11-09T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-11-08T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-11-08T10:00:00Z"
     }
   ]
 }
