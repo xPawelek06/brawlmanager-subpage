@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-11-11T14:07:38Z",
+  "aktualizowano": "2026-11-11T16:07:48Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -44,10 +44,10 @@
       "koniec_aktualnego_slotu": "2026-11-12T08:00:00Z"
     },
     {
-      "tryb": "tagTeam",
-      "mapa_poprzednia": "Eye of the Beholder",
-      "mapa_aktualna": "Search and Destroy",
-      "koniec_aktualnego_slotu": "2026-11-11T16:00:00Z"
+      "tryb": "bounty",
+      "mapa_poprzednia": "Search and Destroy",
+      "mapa_aktualna": "Shooting Star",
+      "koniec_aktualnego_slotu": "2026-11-12T16:00:00Z"
     },
     {
       "tryb": "megaDuoShowdown",
@@ -98,10 +98,10 @@
       "koniec_aktualnego_slotu": "2026-11-12T04:00:00Z"
     },
     {
-      "tryb": "brawlBall",
-      "mapa_poprzednia": "Backyard Bowl",
-      "mapa_aktualna": "Beach Ball",
-      "koniec_aktualnego_slotu": "2026-11-11T16:00:00Z"
+      "tryb": "knockout",
+      "mapa_poprzednia": "Beach Ball",
+      "mapa_aktualna": "New Perspective",
+      "koniec_aktualnego_slotu": "2026-11-11T18:00:00Z"
     }
   ]
 }
