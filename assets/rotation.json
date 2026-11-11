@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-11-11T06:07:19Z",
+  "aktualizowano": "2026-11-11T08:07:40Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Match 1123581321",
-      "mapa_aktualna": "Sunny Soccer",
-      "koniec_aktualnego_slotu": "2026-11-11T08:00:00Z"
+      "mapa_poprzednia": "Sunny Soccer",
+      "mapa_aktualna": "Front Tackle",
+      "koniec_aktualnego_slotu": "2026-11-12T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -38,16 +38,34 @@
       "koniec_aktualnego_slotu": "2026-11-12T02:00:00Z"
     },
     {
-      "tryb": "megaDuoShowdown",
-      "mapa_poprzednia": "Roundabout Rumble",
-      "mapa_aktualna": "Patchwork Peril",
-      "koniec_aktualnego_slotu": "2026-11-11T08:00:00Z"
+      "tryb": "megaShowdown",
+      "mapa_poprzednia": "Patchwork Peril",
+      "mapa_aktualna": "Quadrant Clash",
+      "koniec_aktualnego_slotu": "2026-11-12T08:00:00Z"
     },
     {
       "tryb": "tagTeam",
       "mapa_poprzednia": "Eye of the Beholder",
       "mapa_aktualna": "Search and Destroy",
       "koniec_aktualnego_slotu": "2026-11-11T16:00:00Z"
+    },
+    {
+      "tryb": "megaDuoShowdown",
+      "mapa_poprzednia": "Crystal Arcade",
+      "mapa_aktualna": "Patchwork Peril",
+      "koniec_aktualnego_slotu": "2026-11-16T08:00:00Z"
+    },
+    {
+      "tryb": "megaDuoShowdown",
+      "mapa_poprzednia": "Out in the Open",
+      "mapa_aktualna": "Roundabout Rumble",
+      "koniec_aktualnego_slotu": "2026-11-16T08:00:00Z"
+    },
+    {
+      "tryb": "megaDuoShowdown",
+      "mapa_poprzednia": "Golden Bay",
+      "mapa_aktualna": "Quadrant Clash",
+      "koniec_aktualnego_slotu": "2026-11-16T08:00:00Z"
     },
     {
       "tryb": "airHockey",
@@ -80,10 +98,10 @@
       "koniec_aktualnego_slotu": "2026-11-12T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-11-11T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-11-11T10:00:00Z"
     }
   ]
 }
