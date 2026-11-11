@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-11-11T16:07:48Z",
+  "aktualizowano": "2026-11-11T18:07:24Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -20,10 +20,10 @@
       "koniec_aktualnego_slotu": "2026-11-12T00:00:00Z"
     },
     {
-      "tryb": "heist",
-      "mapa_poprzednia": "Sectioned",
-      "mapa_aktualna": "On the Lookout",
-      "koniec_aktualnego_slotu": "2026-11-11T18:00:00Z"
+      "tryb": "hotZone",
+      "mapa_poprzednia": "On the Lookout",
+      "mapa_aktualna": "Sunken harbor",
+      "koniec_aktualnego_slotu": "2026-11-12T18:00:00Z"
     },
     {
       "tryb": "duoShowdown",
@@ -99,9 +99,9 @@
     },
     {
       "tryb": "knockout",
-      "mapa_poprzednia": "Beach Ball",
-      "mapa_aktualna": "New Perspective",
-      "koniec_aktualnego_slotu": "2026-11-11T18:00:00Z"
+      "mapa_poprzednia": "New Perspective",
+      "mapa_aktualna": "Healthy Middle Ground",
+      "koniec_aktualnego_slotu": "2026-11-11T20:00:00Z"
     }
   ]
 }
