@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-11-12T06:07:20Z",
+  "aktualizowano": "2026-11-12T08:07:27Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Sunny Soccer",
-      "mapa_aktualna": "Front Tackle",
-      "koniec_aktualnego_slotu": "2026-11-12T08:00:00Z"
+      "mapa_poprzednia": "Front Tackle",
+      "mapa_aktualna": "Pump It Up",
+      "koniec_aktualnego_slotu": "2026-11-13T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -38,10 +38,10 @@
       "koniec_aktualnego_slotu": "2026-11-13T02:00:00Z"
     },
     {
-      "tryb": "megaShowdown",
-      "mapa_poprzednia": "Patchwork Peril",
-      "mapa_aktualna": "Quadrant Clash",
-      "koniec_aktualnego_slotu": "2026-11-12T08:00:00Z"
+      "tryb": "megaDuoShowdown",
+      "mapa_poprzednia": "Quadrant Clash",
+      "mapa_aktualna": "Roundabout Rumble",
+      "koniec_aktualnego_slotu": "2026-11-13T08:00:00Z"
     },
     {
       "tryb": "bounty",
@@ -98,10 +98,10 @@
       "koniec_aktualnego_slotu": "2026-11-13T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-11-12T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-11-12T10:00:00Z"
     }
   ]
 }
