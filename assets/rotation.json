@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-11-13T06:14:34Z",
+  "aktualizowano": "2026-11-13T08:14:44Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Front Tackle",
-      "mapa_aktualna": "Pump It Up",
-      "koniec_aktualnego_slotu": "2026-11-13T08:00:00Z"
+      "mapa_poprzednia": "Pump It Up",
+      "mapa_aktualna": "Triple Dribble",
+      "koniec_aktualnego_slotu": "2026-11-14T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -38,10 +38,16 @@
       "koniec_aktualnego_slotu": "2026-11-14T02:00:00Z"
     },
     {
-      "tryb": "megaDuoShowdown",
-      "mapa_poprzednia": "Quadrant Clash",
-      "mapa_aktualna": "Roundabout Rumble",
-      "koniec_aktualnego_slotu": "2026-11-13T08:00:00Z"
+      "tryb": "megaShowdown",
+      "mapa_poprzednia": "Roundabout Rumble",
+      "mapa_aktualna": "Patchwork Peril",
+      "koniec_aktualnego_slotu": "2026-11-14T08:00:00Z"
+    },
+    {
+      "tryb": "loadedShowdown",
+      "mapa_poprzednia": "Pit Stop",
+      "mapa_aktualna": "Cavern Churn",
+      "koniec_aktualnego_slotu": "2026-11-14T08:00:00Z"
     },
     {
       "tryb": "tagTeam",
@@ -98,10 +104,10 @@
       "koniec_aktualnego_slotu": "2026-11-14T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-11-13T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-11-13T10:00:00Z"
     }
   ]
 }
