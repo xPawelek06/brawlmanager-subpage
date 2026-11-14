@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-11-14T06:22:30Z",
+  "aktualizowano": "2026-11-14T08:22:41Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Pump It Up",
-      "mapa_aktualna": "Triple Dribble",
-      "koniec_aktualnego_slotu": "2026-11-14T08:00:00Z"
+      "mapa_poprzednia": "Triple Dribble",
+      "mapa_aktualna": "Sneaky Fields",
+      "koniec_aktualnego_slotu": "2026-11-15T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -38,16 +38,16 @@
       "koniec_aktualnego_slotu": "2026-11-15T02:00:00Z"
     },
     {
-      "tryb": "megaShowdown",
-      "mapa_poprzednia": "Roundabout Rumble",
-      "mapa_aktualna": "Patchwork Peril",
-      "koniec_aktualnego_slotu": "2026-11-14T08:00:00Z"
+      "tryb": "megaDuoShowdown",
+      "mapa_poprzednia": "Patchwork Peril",
+      "mapa_aktualna": "Quadrant Clash",
+      "koniec_aktualnego_slotu": "2026-11-15T08:00:00Z"
     },
     {
       "tryb": "loadedShowdown",
-      "mapa_poprzednia": "Pit Stop",
-      "mapa_aktualna": "Cavern Churn",
-      "koniec_aktualnego_slotu": "2026-11-14T08:00:00Z"
+      "mapa_poprzednia": "Cavern Churn",
+      "mapa_aktualna": "Starfruit Supernova",
+      "koniec_aktualnego_slotu": "2026-11-15T08:00:00Z"
     },
     {
       "tryb": "bounty",
@@ -104,10 +104,10 @@
       "koniec_aktualnego_slotu": "2026-11-15T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-11-14T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-11-14T10:00:00Z"
     }
   ]
 }
