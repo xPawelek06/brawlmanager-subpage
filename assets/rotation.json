@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-11-14T14:22:42Z",
+  "aktualizowano": "2026-11-14T16:22:36Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -50,10 +50,10 @@
       "koniec_aktualnego_slotu": "2026-11-15T08:00:00Z"
     },
     {
-      "tryb": "bounty",
-      "mapa_poprzednia": "No Surrender",
-      "mapa_aktualna": "Sudden Movements",
-      "koniec_aktualnego_slotu": "2026-11-14T16:00:00Z"
+      "tryb": "tagTeam",
+      "mapa_poprzednia": "Sudden Movements",
+      "mapa_aktualna": "The Great Mighty Lou",
+      "koniec_aktualnego_slotu": "2026-11-15T16:00:00Z"
     },
     {
       "tryb": "megaDuoShowdown",
@@ -104,10 +104,10 @@
       "koniec_aktualnego_slotu": "2026-11-15T04:00:00Z"
     },
     {
-      "tryb": "brawlBall",
-      "mapa_poprzednia": "Backyard Bowl",
-      "mapa_aktualna": "Beach Ball",
-      "koniec_aktualnego_slotu": "2026-11-14T16:00:00Z"
+      "tryb": "knockout",
+      "mapa_poprzednia": "Beach Ball",
+      "mapa_aktualna": "New Perspective",
+      "koniec_aktualnego_slotu": "2026-11-14T18:00:00Z"
     }
   ]
 }
