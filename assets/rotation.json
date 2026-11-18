@@ -1,11 +1,11 @@
 {
-  "aktualizowano": "2026-11-18T06:18:28Z",
+  "aktualizowano": "2026-11-18T08:18:33Z",
   "sloty": [
     {
       "tryb": "brawlBall",
-      "mapa_poprzednia": "Spiraling Out",
-      "mapa_aktualna": "Human Nature",
-      "koniec_aktualnego_slotu": "2026-11-18T08:00:00Z"
+      "mapa_poprzednia": "Human Nature",
+      "mapa_aktualna": "Pinball Dreams",
+      "koniec_aktualnego_slotu": "2026-11-19T08:00:00Z"
     },
     {
       "tryb": "soloShowdown",
@@ -39,9 +39,9 @@
     },
     {
       "tryb": "megaDuoShowdown",
-      "mapa_poprzednia": "Roundabout Rumble",
-      "mapa_aktualna": "Quadrant Clash",
-      "koniec_aktualnego_slotu": "2026-11-18T08:00:00Z"
+      "mapa_poprzednia": "Quadrant Clash",
+      "mapa_aktualna": "Roundabout Rumble",
+      "koniec_aktualnego_slotu": "2026-11-19T08:00:00Z"
     },
     {
       "tryb": "bounty",
@@ -80,10 +80,10 @@
       "koniec_aktualnego_slotu": "2026-11-19T04:00:00Z"
     },
     {
-      "tryb": "hotZone",
-      "mapa_poprzednia": "Open Business",
-      "mapa_aktualna": "Dueling Beetles",
-      "koniec_aktualnego_slotu": "2026-11-18T08:00:00Z"
+      "tryb": "soloShowdown",
+      "mapa_poprzednia": "Dueling Beetles",
+      "mapa_aktualna": "Flying Fantasies",
+      "koniec_aktualnego_slotu": "2026-11-18T10:00:00Z"
     }
   ]
 }
