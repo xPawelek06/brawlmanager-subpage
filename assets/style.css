@@ -617,6 +617,26 @@ table.premium-table {
   font-size: 0.95rem;
 }
 
+.premium-free-banner {
+  margin-bottom: 20px;
+  padding: 16px 20px;
+  background: rgba(255, 199, 44, 0.12);
+  border: 1px solid rgba(255, 199, 44, 0.45);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px 14px;
+  text-align: center;
+  color: var(--text);
+}
+
+.premium-free-banner a {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
 /* ---------- ONBOARDING ---------- */
 
 .steps {
