@@ -1,5 +1,5 @@
 {
-  "aktualizowano": "2026-11-25T14:13:10Z",
+  "aktualizowano": "2026-11-25T18:13:12Z",
   "sloty": [
     {
       "tryb": "brawlBall",
@@ -20,10 +20,10 @@
       "koniec_aktualnego_slotu": "2026-11-26T00:00:00Z"
     },
     {
-      "tryb": "heist",
-      "mapa_poprzednia": "Sunken harbor",
-      "mapa_aktualna": "Printstream",
-      "koniec_aktualnego_slotu": "2026-11-25T18:00:00Z"
+      "tryb": "hotZone",
+      "mapa_poprzednia": "Printstream",
+      "mapa_aktualna": "Framework",
+      "koniec_aktualnego_slotu": "2026-11-26T18:00:00Z"
     },
     {
       "tryb": "duoShowdown",
@@ -50,10 +50,10 @@
       "koniec_aktualnego_slotu": "2026-11-26T08:00:00Z"
     },
     {
-      "tryb": "tagTeam",
-      "mapa_poprzednia": "Eye of the Beholder",
-      "mapa_aktualna": "Search and Destroy",
-      "koniec_aktualnego_slotu": "2026-11-25T16:00:00Z"
+      "tryb": "bounty",
+      "mapa_poprzednia": "Search and Destroy",
+      "mapa_aktualna": "Shooting Star",
+      "koniec_aktualnego_slotu": "2026-11-26T16:00:00Z"
     },
     {
       "tryb": "airHockey",
@@ -86,10 +86,10 @@
       "koniec_aktualnego_slotu": "2026-11-26T04:00:00Z"
     },
     {
-      "tryb": "brawlBall",
-      "mapa_poprzednia": "Backyard Bowl",
-      "mapa_aktualna": "Beach Ball",
-      "koniec_aktualnego_slotu": "2026-11-25T16:00:00Z"
+      "tryb": "knockout",
+      "mapa_poprzednia": "New Perspective",
+      "mapa_aktualna": "Healthy Middle Ground",
+      "koniec_aktualnego_slotu": "2026-11-25T20:00:00Z"
     }
   ]
 }
